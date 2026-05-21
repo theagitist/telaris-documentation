@@ -134,7 +134,33 @@ SHOTS: list[Shot] = [
         full_page=False,
         description="Edit Wormhole modal for Beach Strawberry (filled fields, media tabs visible).",
     ),
+    Shot(
+        name="07-media-video-tab",
+        route="/edit/?slug=manual-demo-coastal-plants",
+        prepare=lambda page: open_create_modal_on_tab(page, "video"),
+        full_page=False,
+        description="New Wormhole modal with the Video (MP4) media tab active.",
+    ),
+    Shot(
+        name="08-media-pdf-tab",
+        route="/edit/?slug=manual-demo-coastal-plants",
+        prepare=lambda page: open_create_modal_on_tab(page, "pdf"),
+        full_page=False,
+        description="New Wormhole modal with the PDF media tab active.",
+    ),
 ]
+
+
+def open_create_modal_on_tab(page: Page, tab: str) -> None:
+    """Open the New Wormhole modal and switch the primary-visual tab.
+
+    `tab` is one of 'image' (default), 'video', or 'pdf'. Image is the
+    starting state; for other tabs we click the corresponding tab button.
+    """
+    open_create_wormhole_modal(page)
+    if tab != "image":
+        page.click(f"#create-{tab}-tab")
+        page.wait_for_timeout(400)
 
 
 def open_galaxy_settings_modal(page: Page) -> None:
@@ -239,15 +265,16 @@ def main() -> int:
         login(page, base_url, email, password)
         print(f"logged in as {email}")
 
-        # Capture the rest. Pace requests so Cloudflare's rate limiter does not
-        # throttle the editor API and leave the page in an error state behind
-        # the modal we are screenshotting. 3 seconds between shots is enough
-        # for the per-IP 60-req/minute bucket to recover.
+        # Capture the rest. Pace requests so Cloudflare's rate limiter does
+        # not throttle the editor API and leave the page in an error state
+        # behind the modal we are screenshotting. Six seconds between shots
+        # is comfortable for the per-IP rate limiter under a chain of ~10
+        # API calls per shot.
         import time
         for shot in SHOTS:
             if shot.name == "01-login-form":
                 continue
-            time.sleep(3)
+            time.sleep(6)
             out = capture_one(page, base_url, shot)
             print(f"captured {out}")
 
