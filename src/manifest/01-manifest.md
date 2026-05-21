@@ -1,5 +1,8 @@
 # Manifest
 
+> [!warning] Draft
+> This Manifest is a draft, written 2026-05-21. Refinement will follow as the documentation matures.
+
 A statement of what Telaris is, what it refuses, and the principles that hold it together. Written for anyone reading the project from outside (a potential operator, a source community considering contributing, a student reading the documentation, a curator weighing whether to use the software). The rest of the documentation builds on the positions named here.
 
 ## What Telaris is
@@ -60,6 +63,3 @@ These are references, not authorities. The project sits in a conversation with t
 ## What this document is
 
 A position statement, kept short on purpose. The full architecture, the editorial conventions, the operator runbooks, and the federation specification live in their own documents. Read this one to know where Telaris stands; read the others to know how it works.
-
-> [!warning] Draft
-> This Manifest is a draft, written 2026-05-21. Refinement will follow as the documentation matures.
