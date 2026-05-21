@@ -325,7 +325,7 @@ def build(slug: str, emit_html: bool = False) -> Path:
     # Optional public-docs mirror. If TELARIS_WWW_DOCS_DIR is set to an
     # existing directory (typically /var/www/www.telaris.ca/docs/), every
     # built PDF is also copied there as <slug>.pdf. Used to keep the
-    # marketing site's download links in sync with the latest build
+    # Pluriverse website's download links in sync with the latest build
     # without an extra deploy step.
     www_docs_dir_env = os.environ.get("TELARIS_WWW_DOCS_DIR")
     if www_docs_dir_env:

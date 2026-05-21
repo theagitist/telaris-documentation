@@ -3,11 +3,11 @@
 > [!warning] Draft
 > This document is a placeholder. A finalised privacy notice is in progress and will replace this draft. For questions in the interim, write to the maintainer of the instance you are using.
 
-Telaris is a research-grade decolonial knowledge archive. The privacy posture described here applies to **www.telaris.ca** (the marketing site you are now reading) and to the **Telaris software** that runs on independent operator instances. Each operator instance is run by an independent operator and may carry additional privacy notices of its own; those notices govern the instance's content. This document covers the rest.
+Telaris is a research-grade decolonial knowledge archive. The privacy posture described here applies to **www.telaris.ca** (the website you are now reading) and to the **Telaris software** that runs on independent operator instances. Each operator instance is run by an independent operator and may carry additional privacy notices of its own; those notices govern the instance's content. This document covers the rest.
 
-## What the marketing site collects
+## What www.telaris.ca collects
 
-The marketing site at `www.telaris.ca` is a single static page. It does not run an analytics tool, does not place advertising trackers, does not set cookies, and does not collect personal information from visitors. The page is served through Cloudflare; standard Cloudflare access logs (truncated IP, user agent, requested URL, response status, timestamp) are kept for short retention by Cloudflare per their own policy. Beyond those access logs, the site does not record visits.
+The site at `www.telaris.ca` is a single static page. It does not run an analytics tool, does not place advertising trackers, does not set cookies, and does not collect personal information from visitors. The page is served through Cloudflare; standard Cloudflare access logs (truncated IP, user agent, requested URL, response status, timestamp) are kept for short retention by Cloudflare per their own policy. Beyond those access logs, the site does not record visits.
 
 The site links to downloadable PDFs and to independent Telaris instances. Following one of those links takes you to a different page; this notice does not govern what happens there.
 
@@ -25,7 +25,7 @@ Individual instances (any site running the Telaris software, including the three
 - **No advertising.** No third-party trackers, no advertising network, no behavioural profiling.
 - **No AI training on the corpus.** Telaris content is not used to train AI models, internally or externally.
 - **No third-party content scanning.** Content is not sent to external services for moderation or classification.
-- **No selling of data.** Editor accounts, content, and access logs are not sold or shared with third parties for marketing purposes.
+- **No selling of data.** Editor accounts, content, and access logs are not sold or shared with third parties for advertising or commercial purposes.
 
 ## Federation and cross-instance content
 
@@ -39,7 +39,7 @@ A source community, an editor, or any individual whose material is hosted on a T
 
 ## Contact
 
-Each Telaris instance lists the contact address of its operator on the instance's own site. Use that channel for instance-specific privacy questions. For questions about the marketing site, the software itself, or this notice, contact the maintainer named on the **/governance** page (forthcoming).
+Each Telaris instance lists the contact address of its operator on the instance's own site. Use that channel for instance-specific privacy questions. For questions about www.telaris.ca, the software itself, or this notice, contact the maintainer named on the **/governance** page (forthcoming).
 
 ## Version
 

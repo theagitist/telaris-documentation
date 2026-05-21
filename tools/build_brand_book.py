@@ -2351,7 +2351,7 @@ def main() -> None:
 
     # Optional public-docs mirror. Same convention as build.py: if
     # TELARIS_WWW_DOCS_DIR points at an existing directory, the brand book
-    # PDF is copied there as brand-book.pdf so the marketing site's
+    # PDF is copied there as brand-book.pdf so the Pluriverse website's
     # download surface stays in sync. Set the env var in the operator's
     # shell rcfile to opt in; leave unset to skip.
     www_docs_dir_env = os.environ.get("TELARIS_WWW_DOCS_DIR")

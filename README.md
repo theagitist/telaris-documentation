@@ -66,7 +66,7 @@ export TELARIS_BRAND_BOOK_MIRROR="$HOME/notes/Brand book/Brand book.pdf"
 
 The mirror is enforced by `build.py` for the shared pipeline and by `tools/build_brand_book.py` for the brand book (same env-var convention).
 
-### Optional marketing-site auto-publish
+### Optional Pluriverse-website auto-publish
 
 Setting `TELARIS_WWW_DOCS_DIR` to a writable directory makes every build also copy its PDF into that directory after the canonical `dist/` write. Used to keep `www.telaris.ca/docs/` (or any other web-served documentation directory) in sync without a deploy step. Skipped silently if unset or the directory does not exist. Example:
 
@@ -76,7 +76,7 @@ export TELARIS_WWW_DOCS_DIR="/var/www/www.telaris.ca/docs/"
 
 When set, `python3 build.py editor-manual` writes `dist/editor-manual.pdf` and copies the same file to `${TELARIS_WWW_DOCS_DIR}/editor-manual.pdf`. The brand-book builder follows the same convention and publishes its output as `brand-book.pdf` in the target directory.
 
-On the host this repo is developed on, `www.telaris.ca`'s `docs/` directory is `/var/www/www.telaris.ca/docs/`, served directly by nginx; the `telaris_website` repo gitignores its contents (the PDFs are generated artefacts whose source lives here).
+On the host this repo is developed on, the Pluriverse website's `docs/` directory is `/var/www/www.telaris.ca/docs/`, served directly by nginx; the `telaris_website` repo gitignores its contents (the PDFs are generated artefacts whose source lives here).
 
 ### Brand book (transitional)
 
