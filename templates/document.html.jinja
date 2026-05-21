@@ -30,11 +30,11 @@
       {% for level, anchor, text in toc %}
         {% if level == 1 %}
           <li class="toc-entry toc-l1">
-            <a href="#{{ anchor }}"><span class="toc-text">{{ text }}</span><span class="toc-page" data-href="{{ anchor }}"></span></a>
+            <a href="#{{ anchor }}">{{ text }}</a>
           </li>
         {% elif level == 2 %}
           <li class="toc-entry toc-l2">
-            <a href="#{{ anchor }}"><span class="toc-text">{{ text }}</span><span class="toc-page" data-href="{{ anchor }}"></span></a>
+            <a href="#{{ anchor }}">{{ text }}</a>
           </li>
         {% endif %}
       {% endfor %}

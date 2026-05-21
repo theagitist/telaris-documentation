@@ -120,20 +120,67 @@ SHOTS: list[Shot] = [
         full_page=False,
         description="Galaxy settings modal opened from the editor home (name, tagline, theme, tags, discovery section).",
     ),
+    Shot(
+        name="05-new-wormhole-modal",
+        route="/edit/?slug=manual-demo-coastal-plants",
+        prepare=lambda page: open_create_wormhole_modal(page),
+        full_page=False,
+        description="New Wormhole modal (empty fields, Object/Portal type radios, keyword input).",
+    ),
+    Shot(
+        name="06-edit-wormhole-modal",
+        route="/edit/?slug=manual-demo-coastal-plants",
+        prepare=lambda page: open_edit_wormhole_modal(page, "Beach Strawberry"),
+        full_page=False,
+        description="Edit Wormhole modal for Beach Strawberry (filled fields, media tabs visible).",
+    ),
 ]
 
 
 def open_galaxy_settings_modal(page: Page) -> None:
     """Click the Settings button next to the galaxy picker and wait for the modal."""
-    # The button is hidden by default and only shown when a specific galaxy is
-    # selected (not the "all" view). Wait for it to become visible.
     page.wait_for_selector("#galaxy-settings-btn:visible", timeout=10_000)
     page.click("#galaxy-settings-btn")
-    # The galaxy-edit modal is rendered via galaxy-edit-modal.js. Wait for it to
-    # be in the DOM and visible.
     page.wait_for_selector("dialog[open], .modal-open, #constellation_modal", timeout=10_000)
-    # Give the modal a moment to settle (form fields populated from API).
     page.wait_for_timeout(800)
+
+
+def open_create_wormhole_modal(page: Page) -> None:
+    """Open the New Wormhole modal by calling the global JS function."""
+    # The wormhole list loads asynchronously after page DOMContentLoaded; wait
+    # for at least one node row to confirm the page is ready to drive.
+    page.wait_for_selector("#nodes-list .node-edit-action, #create_node_modal", timeout=15_000)
+    page.evaluate("openCreateNodeModal()")
+    page.wait_for_selector("#create_node_modal[open]", timeout=10_000)
+    page.wait_for_timeout(600)
+
+
+# Wormhole IDs from tools/seed_demo_content.php. The seed creates rows in a
+# deterministic order on a fresh install, so these IDs are stable for the
+# demo content. If the demo is re-seeded with shifted IDs, refresh via:
+#   php -r 'require_once "/var/www/starmaps.polivoxia.ca/config.php"; require_once "/var/www/starmaps.polivoxia.ca/inc/db.php"; foreach (getDB()->query("SELECT id, name FROM nodes WHERE constellation_id IN (412,413) ORDER BY id")->fetchAll() as $r) printf("  %s => %d,\n", $r["name"], $r["id"]);'
+DEMO_WORMHOLE_IDS = {
+    "Beach Strawberry": 279,
+    "Sea Lavender": 280,
+    "Yellow Bush Lupine": 282,
+    "Coastal Sage": 285,
+    "Coastal field guide": 290,
+    "To the tide pools": 291,
+    "Sea Palm": 289,
+}
+
+
+def open_edit_wormhole_modal(page: Page, wormhole_name: str) -> None:
+    """Open the Edit Wormhole modal for one of the demo wormholes."""
+    if wormhole_name not in DEMO_WORMHOLE_IDS:
+        raise RuntimeError(f"unknown demo wormhole: {wormhole_name!r}; "
+                           f"add it to DEMO_WORMHOLE_IDS")
+    node_id = DEMO_WORMHOLE_IDS[wormhole_name]
+    page.wait_for_selector("#nodes-list", timeout=15_000)
+    page.wait_for_timeout(1500)  # let async list render settle
+    page.evaluate(f"editNode({node_id})")
+    page.wait_for_selector("#edit_modal[open]", timeout=10_000)
+    page.wait_for_timeout(1200)  # let media tabs and keyword chips populate
 
 
 # ---------------------------------------------------------------------------
@@ -166,6 +213,21 @@ def main() -> int:
         )
         page = context.new_page()
 
+        # Surface page console errors so capture-time bugs are visible.
+        page.on("pageerror", lambda exc: print(f"  [page error] {exc}"))
+        page.on("console", lambda msg: (
+            print(f"  [console.{msg.type}] {msg.text}")
+            if msg.type in ("error", "warning") else None
+        ))
+        # Surface failed network requests too.
+        page.on("requestfailed", lambda req: print(
+            f"  [request failed] {req.method} {req.url}: {req.failure}"
+        ))
+        page.on("response", lambda r: (
+            print(f"  [response {r.status}] {r.request.method} {r.url}")
+            if r.status >= 400 else None
+        ))
+
         # Capture the login page BEFORE authenticating, since the post-login
         # redirect leaves no clean way back to a fresh login form.
         login_shot = next(s for s in SHOTS if s.name == "01-login-form")
@@ -177,10 +239,15 @@ def main() -> int:
         login(page, base_url, email, password)
         print(f"logged in as {email}")
 
-        # Capture the rest.
+        # Capture the rest. Pace requests so Cloudflare's rate limiter does not
+        # throttle the editor API and leave the page in an error state behind
+        # the modal we are screenshotting. 3 seconds between shots is enough
+        # for the per-IP 60-req/minute bucket to recover.
+        import time
         for shot in SHOTS:
             if shot.name == "01-login-form":
                 continue
+            time.sleep(3)
             out = capture_one(page, base_url, shot)
             print(f"captured {out}")
 

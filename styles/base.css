@@ -38,10 +38,23 @@
   --p-rose: #f9a8d4;
   --p-blush: #fda4af;
 
-  /* Typography stack: monospace for chrome and code, neutral serif for body. */
-  --font-mono: "JetBrains Mono", "Iosevka", "Cascadia Mono", "Menlo", monospace;
-  --font-body: "Source Serif Pro", "Charter", "Iowan Old Style", Georgia, "Times New Roman", serif;
-  --font-display: "JetBrains Mono", "Iosevka", monospace;
+  /* Typography stack: monospace everywhere. Telaris is a monospace-only
+     system per the brand book (see Brand book/Type.md): no display face,
+     no serif body, no humanist sans alternate. The stack prefers each
+     platform's native monospace and resolves to WeasyPrint-bundled
+     fallbacks on the Linux print pipeline. */
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+               "Liberation Mono", "DejaVu Sans Mono", "Courier New", monospace;
+  --font-body: var(--font-mono);
+  --font-display: var(--font-mono);
+}
+
+/* Global monospace lock. Matches the `* { font-family: var(--font-mono)
+   !important; }` rule in the app's main-view.php. The PDF inherits the
+   same brand contract: the mono stack always wins, including in tables,
+   code blocks, callouts, and headings. */
+* {
+  font-family: var(--font-mono) !important;
 }
 
 /* WeasyPrint page chrome ---------------------------------------------------- */
@@ -70,16 +83,20 @@
 /* Page layout --------------------------------------------------------------- */
 
 html {
-  font-size: 10.5pt;
+  /* Brand body size: 1rem = 16px. PDF scales this to 10pt to fit the
+     A4 column at a comfortable measure for monospace. */
+  font-size: 10pt;
 }
 
 body {
-  font-family: var(--font-body);
-  line-height: 1.55;
+  /* Brand body line-height: 1.7. Monospace at body size needs more air
+     than a humanist face, and Telaris's content is meant to read as
+     careful, not data-dense. */
+  line-height: 1.7;
   color: var(--void);
   margin: 0;
   padding: 0;
-  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
 }
 
 /* Cover --------------------------------------------------------------------- */
@@ -99,48 +116,52 @@ body {
   color: var(--aurora);
 }
 
+/* Cover follows the brand wordmark / tagline rhythm:
+   uppercase ceremonial wordmark, large title, lowercase tagline with
+   ceremonial spacing (the brand's signature inversion). */
 .cover-wordmark {
-  font-family: var(--font-display);
-  font-size: 14pt;
-  letter-spacing: 0.25em;
+  font-size: 11pt;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--mint);
   margin-bottom: auto;
+  font-weight: 500;
 }
 
 .cover-title {
-  font-family: var(--font-display);
-  font-size: 36pt;
-  font-weight: 600;
+  font-size: 32pt;
+  font-weight: 500;
   line-height: 1.15;
   margin: 0 0 6mm 0;
   color: var(--aurora);
+  letter-spacing: -0.01em;
 }
 
 .cover-subtitle {
-  font-family: var(--font-body);
-  font-size: 14pt;
-  font-style: italic;
+  font-size: 12pt;
+  font-weight: 400;
+  line-height: 1.6;
   color: var(--aurora-60);
   margin: 0 0 12mm 0;
   max-width: 130mm;
 }
 
 .cover-tagline {
-  font-family: var(--font-mono);
-  font-size: 9pt;
-  letter-spacing: 0.10em;
+  font-size: 8.5pt;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
   color: var(--mint-85);
   margin: 0 0 12mm 0;
   max-width: 130mm;
+  font-weight: 500;
 }
 
 .cover-version {
-  font-family: var(--font-mono);
-  font-size: 9pt;
-  letter-spacing: 0.15em;
+  font-size: 8.5pt;
+  letter-spacing: 0.18em;
   color: var(--aurora-28);
   text-transform: uppercase;
+  font-weight: 500;
 }
 
 /* Table of contents --------------------------------------------------------- */
@@ -151,21 +172,21 @@ body {
 }
 
 .toc-title {
-  font-family: var(--font-display);
-  font-size: 22pt;
-  font-weight: 600;
+  font-size: 20pt;
+  font-weight: 500;
   margin: 0 0 12mm 0;
   color: var(--void);
   border-bottom: 0.4mm solid var(--void);
   padding-bottom: 3mm;
+  letter-spacing: -0.01em;
 }
 
 .toc-list {
   list-style: none;
   margin: 0;
   padding: 0;
-  font-family: var(--font-mono);
-  font-size: 10pt;
+  font-size: 9.5pt;
+  font-weight: 400;
 }
 
 .toc-entry {
@@ -175,25 +196,28 @@ body {
 
 .toc-entry a {
   display: flex;
+  justify-content: space-between;
   align-items: baseline;
   text-decoration: none;
   color: var(--void);
   padding: 1.5mm 0;
   border-bottom: 0.15mm dotted rgba(0, 0, 0, 0.18);
+  border: none;
 }
 
-.toc-l1 a { font-weight: 600; }
-.toc-l2 a { padding-left: 8mm; color: rgba(0, 0, 0, 0.78); }
+.toc-l1 a { font-weight: 500; }
+.toc-l2 a { padding-left: 8mm; color: rgba(0, 0, 0, 0.78); font-weight: 400; }
 
-.toc-text {
-  flex: 1;
-}
-
-.toc-page::after {
-  content: target-counter(attr(data-href), page);
-  font-family: var(--font-mono);
+/* Page number rendered automatically via target-counter. WeasyPrint
+   resolves attr(href) on the link, then looks up the page number of
+   the element with that id. The number sits on the right edge of the
+   flex row, opposite the title text. */
+.toc-entry a::after {
+  content: target-counter(attr(href), page);
   color: rgba(0, 0, 0, 0.55);
-  font-size: 9.5pt;
+  font-size: 9pt;
+  padding-left: 2em;
+  font-weight: 400;
 }
 
 /* Body content -------------------------------------------------------------- */
@@ -210,31 +234,53 @@ body {
   page-break-before: auto;
 }
 
+/* Headings: monospace, weight 500 (brand max for body-adjacent text;
+   weight 700 reserved for emphasis and chip-active states). Sentence
+   case in source markdown; no title case ever. Line-height tight on
+   single-line labels and headings. */
 h1, h2, h3, h4 {
-  font-family: var(--font-display);
-  font-weight: 600;
+  font-weight: 500;
   color: var(--void);
-  line-height: 1.2;
-  margin-top: 1.4em;
-  margin-bottom: 0.5em;
+  line-height: 1.15;
+  margin-top: 1.6em;
+  margin-bottom: 0.6em;
   page-break-after: avoid;
 }
 
 h1 {
-  font-size: 22pt;
+  font-size: 20pt;
   border-bottom: 0.4mm solid var(--void);
   padding-bottom: 3mm;
   margin-top: 0;
+  letter-spacing: -0.01em;
 }
 
-h2 { font-size: 16pt; }
-h3 { font-size: 13pt; }
-h4 { font-size: 11pt; text-transform: uppercase; letter-spacing: 0.08em; }
+h2 {
+  font-size: 14pt;
+  letter-spacing: -0.005em;
+}
+
+h3 {
+  font-size: 11.5pt;
+  letter-spacing: 0;
+}
+
+/* h4 reads as a HUD label: uppercase, ceremonial spacing, smaller. The
+   standard-label tier (0.18em-0.22em) per the brand letter-spacing scale. */
+h4 {
+  font-size: 9.5pt;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+}
 
 p {
-  margin: 0 0 0.6em 0;
-  hyphens: auto;
-  text-align: justify;
+  margin: 0 0 0.7em 0;
+  /* Monospace at 1.7 line-height does not need justification; left-align
+     keeps the rhythm regular and avoids river-of-spaces patterns that
+     justified monospace inevitably produces. */
+  text-align: left;
 }
 
 ul, ol {
@@ -253,9 +299,10 @@ a {
 }
 
 /* Code ---------------------------------------------------------------------- */
+/* The base body face is already monospace, so code styling is about
+   background + inline padding rather than font swap. */
 
 code, kbd, samp, pre {
-  font-family: var(--font-mono);
   font-size: 9.5pt;
 }
 
@@ -302,11 +349,10 @@ th, td {
 }
 
 th {
-  font-family: var(--font-display);
-  font-weight: 600;
+  font-weight: 500;
   border-bottom: 0.3mm solid var(--void);
-  font-size: 9pt;
-  letter-spacing: 0.04em;
+  font-size: 8.5pt;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
@@ -317,7 +363,8 @@ blockquote {
   padding: 2mm 5mm;
   border-left: 0.4mm solid var(--aurora-28);
   color: rgba(0, 0, 0, 0.75);
-  font-style: italic;
+  /* No italic: monospace italic resolves to slanted-mono on some
+     renderers and reads as glitchy. Indent + colour carry the quote. */
 }
 
 /* Callouts ------------------------------------------------------------------ */
@@ -332,12 +379,12 @@ blockquote {
 }
 
 .callout-title {
-  font-family: var(--font-mono);
-  font-size: 8.5pt;
-  letter-spacing: 0.12em;
+  font-size: 8pt;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.72);
   margin-bottom: 1.5mm;
+  font-weight: 500;
 }
 
 .callout-body p:last-child { margin-bottom: 0; }
