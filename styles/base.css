@@ -65,7 +65,10 @@
     content: counter(page);
     font-family: var(--font-mono);
     font-size: 9pt;
-    color: var(--aurora-60);
+    /* Body pages render on light ground, so the page-number colour needs
+       enough contrast on white. Document classes that use a dark ground
+       (brand book) override this in their own stylesheet. */
+    color: rgba(0, 0, 0, 0.55);
   }
 }
 

@@ -148,7 +148,52 @@ SHOTS: list[Shot] = [
         full_page=False,
         description="New Wormhole modal with the PDF media tab active.",
     ),
+    Shot(
+        name="09-bulk-by-keyword-modal",
+        route="/edit/?slug=manual-demo-coastal-plants",
+        prepare=lambda page: open_bulk_by_keyword_modal(page),
+        full_page=False,
+        description="Bulk by keyword modal: keyword list with counts and bulk-action buttons.",
+    ),
+    Shot(
+        name="10-keyword-canvas",
+        route="/edit/keyword-canvas.php?galaxy_id=413",
+        prepare=lambda page: wait_for_canvas(page),
+        full_page=False,
+        description="Keyword canvas: pastel chips with relation lines drawn between them.",
+    ),
+    Shot(
+        name="11-portal-type-selector",
+        route="/edit/?slug=manual-demo-coastal-plants",
+        prepare=lambda page: open_create_modal_as_portal(page),
+        full_page=False,
+        description="New Wormhole modal with Wormhole type set to Portal: target-galaxy dropdown visible.",
+    ),
 ]
+
+
+def open_create_modal_as_portal(page: Page) -> None:
+    """Open the New Wormhole modal and switch the type to Portal."""
+    open_create_wormhole_modal(page)
+    page.select_option("#node-type", "portal")
+    page.wait_for_timeout(500)
+
+
+def wait_for_canvas(page: Page) -> None:
+    """Let the keyword canvas hydrate (SVG + chip positions + relation lines)."""
+    page.wait_for_load_state("networkidle", timeout=15_000)
+    # The canvas paints animations + force-simulation tick frames; let it settle
+    # so the chips are not mid-flight in the screenshot.
+    page.wait_for_timeout(2500)
+
+
+def open_bulk_by_keyword_modal(page: Page) -> None:
+    """Open the Bulk by keyword modal via its trigger button."""
+    page.wait_for_selector("#bulk-by-keyword-btn", timeout=15_000)
+    page.wait_for_timeout(800)  # let the wormhole list finish loading first
+    page.click("#bulk-by-keyword-btn")
+    page.wait_for_selector("#bulk_by_keyword_modal[open]", timeout=10_000)
+    page.wait_for_timeout(800)
 
 
 def open_create_modal_on_tab(page: Page, tab: str) -> None:
@@ -173,9 +218,13 @@ def open_galaxy_settings_modal(page: Page) -> None:
 
 def open_create_wormhole_modal(page: Page) -> None:
     """Open the New Wormhole modal by calling the global JS function."""
-    # The wormhole list loads asynchronously after page DOMContentLoaded; wait
-    # for at least one node row to confirm the page is ready to drive.
-    page.wait_for_selector("#nodes-list .node-edit-action, #create_node_modal", timeout=15_000)
+    # Wait for the wormhole list to render at least one visible row. The
+    # selector below matches the row body (the area you'd click to open a
+    # wormhole for edit); it is visible as soon as the list paints.
+    page.wait_for_selector(
+        '#nodes-list [onclick*="editNode"]:visible',
+        timeout=20_000,
+    )
     page.evaluate("openCreateNodeModal()")
     page.wait_for_selector("#create_node_modal[open]", timeout=10_000)
     page.wait_for_timeout(600)
@@ -274,7 +323,7 @@ def main() -> int:
         for shot in SHOTS:
             if shot.name == "01-login-form":
                 continue
-            time.sleep(6)
+            time.sleep(10)
             out = capture_one(page, base_url, shot)
             print(f"captured {out}")
 

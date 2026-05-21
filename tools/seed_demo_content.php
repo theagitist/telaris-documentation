@@ -265,6 +265,58 @@ foreach ($tidePools as $animal) {
     ensure_node($tidePoolsId, $animal);
 }
 
+// Keyword canvas relations so the canvas screenshot has visible lines, not just
+// a grid of chips. The relations are illustrative; the editorial point is that
+// these connections make sense given the wormholes' keywords (native plants
+// are usually salt-tolerant on the coast; edible and medicinal overlap; etc.).
+echo "\nKeyword canvas relations:\n";
+$kwIds = [];
+$stmt = getDB()->prepare("SELECT id, keyword FROM keywords WHERE constellation_id = :cid");
+$stmt->execute([':cid' => $coastalId]);
+foreach ($stmt->fetchAll() as $row) {
+    $kwIds[$row['keyword']] = (int)$row['id'];
+}
+
+$desiredRelations = [
+    ['native', 'salt-tolerant', 'Most natives on this coast tolerate salt.'],
+    ['edible', 'native', 'Most edible plants here are native; ice plant is the exception.'],
+    ['edible', 'medicinal', 'Some species are both food and medicine in source-community use.'],
+    ['invasive', 'ground-cover', 'The most-spread invasives here are ground-covers.'],
+    ['nitrogen-fixer', 'native', null],
+    ['perennial', 'ground-cover', null],
+];
+
+foreach ($desiredRelations as [$a, $b, $note]) {
+    if (!isset($kwIds[$a]) || !isset($kwIds[$b])) {
+        echo "  skipped: {$a} <-> {$b} (keyword missing)\n";
+        continue;
+    }
+    // Idempotency: skip if a relation between these two already exists in
+    // either direction.
+    $check = getDB()->prepare(
+        "SELECT 1 FROM keyword_relations
+         WHERE (keyword_a_id = :a1 AND keyword_b_id = :b1)
+            OR (keyword_a_id = :b2 AND keyword_b_id = :a2)
+         LIMIT 1"
+    );
+    $check->execute([
+        ':a1' => $kwIds[$a], ':b1' => $kwIds[$b],
+        ':a2' => $kwIds[$a], ':b2' => $kwIds[$b],
+    ]);
+    if ($check->fetch()) {
+        echo "  reusing: {$a} <-> {$b}\n";
+        continue;
+    }
+    db_create_keyword_relation($kwIds[$a], $kwIds[$b], null, $note);
+    echo "  created: {$a} <-> {$b}" . ($note ? " ({$note})" : '') . "\n";
+}
+
+// Seed default positions for every chip so the canvas does not render with
+// every chip on top of every other at first load. The helper is idempotent.
+echo "\nKeyword canvas positions:\n";
+$seeded = db_seed_keyword_positions_for_galaxy($coastalId);
+echo "  seeded {$seeded} chip position(s) for coastal plants.\n";
+
 echo "\nEditor account:\n";
 $editorId = ensure_user(DEMO_EDITOR_EMAIL, DEMO_EDITOR_FIRST, DEMO_EDITOR_LAST, USER_TYPE_EDITOR);
 db_set_user_constellations($editorId, [$coastalId, $tidePoolsId]);
