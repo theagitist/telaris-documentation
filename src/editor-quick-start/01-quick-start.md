@@ -1,6 +1,8 @@
 # Quick start
 
-This is the short version. Five steps, four pages, and you have published your first wormhole. For everything beyond the basics (portals, the keyword canvas, tours, multigalaxy views, troubleshooting, the why-and-why-not of editorial choices), the full **Editor Manual** is available as a separate document; ask whoever sent you this Quick Start for a copy.
+This is the short version. Five steps, four pages, and you have published your first wormhole. For everything beyond the basics (portals, the keyword canvas, tours, multigalaxy views, troubleshooting, the why-and-why-not of editorial choices), the full **Editor Manual** is available at:
+
+<https://www.telaris.ca/docs/editor-manual.pdf>
 
 ## What you need
 
@@ -67,7 +69,7 @@ You have the loop. From here:
 
 - **Repeat.** Make another wormhole. Then another. A galaxy of one wormhole is technically valid; a galaxy of ten starts to feel like an archive.
 - **Explore.** This Quick Start covered the smallest possible path. The editor surface has much more on offer than what you have just seen. Click around the wormhole modal you already know; try the **Video (MP4)**, **PDF**, and audio fields; open the **Settings** button next to the galaxy picker and look at the discovery toggles; open the **Canvas** button and see the keyword canvas; try the **Bulk by keyword** button on the editor home. Nothing in the editor is destructive on first read; opening a modal does not change anything until you save.
-- **Read the full Editor Manual.** A complete user manual is available as a separate document, `Editor Manual.pdf`, in fifteen chapters that walk through every surface in detail: galaxies, every media type, portals between galaxies, the keyword canvas, visitor views, tours, multigalaxy work, editorial choices, troubleshooting, and a glossary. If you do not already have a copy, ask whoever sent you this Quick Start for one. Skim its table of contents and dip into the chapters you need; nothing in this Quick Start is invalidated by what you will find there.
+- **Read the full Editor Manual.** A complete user manual is available at <https://www.telaris.ca/docs/editor-manual.pdf>, in fifteen chapters that walk through every surface in detail: galaxies, every media type, portals between galaxies, the keyword canvas, visitor views, tours, multigalaxy work, editorial choices, troubleshooting, and a glossary. Skim its table of contents and dip into the chapters you need; nothing in this Quick Start is invalidated by what you will find there.
 - **Use keywords deliberately.** Two or three precise keywords per wormhole connect more usefully than ten generic ones. The keyword chips you assign are how visitors discover the web you are building.
 
 > [!tip] When something goes wrong

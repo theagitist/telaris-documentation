@@ -322,6 +322,19 @@ def build(slug: str, emit_html: bool = False) -> Path:
         shutil.copyfile(pdf_out, mirror)
         print(f"mirrored to {mirror}")
 
+    # Optional public-docs mirror. If TELARIS_WWW_DOCS_DIR is set to an
+    # existing directory (typically /var/www/www.telaris.ca/docs/), every
+    # built PDF is also copied there as <slug>.pdf. Used to keep the
+    # marketing site's download links in sync with the latest build
+    # without an extra deploy step.
+    www_docs_dir_env = os.environ.get("TELARIS_WWW_DOCS_DIR")
+    if www_docs_dir_env:
+        www_docs_dir = Path(www_docs_dir_env).expanduser()
+        if www_docs_dir.exists() and www_docs_dir.is_dir():
+            www_target = www_docs_dir / f"{slug}.pdf"
+            shutil.copyfile(pdf_out, www_target)
+            print(f"published to {www_target}")
+
     return pdf_out
 
 

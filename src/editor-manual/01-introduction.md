@@ -13,6 +13,13 @@ You are an editor if you have been given login credentials and asked to add or o
 > [!note] When something goes wrong
 > If a page will not load, a button does nothing, or a message appears that you do not understand, this is the moment to reach out to the person who runs your instance (your **operator**). They keep the lights on. This manual focuses on what you can do once everything is working as expected.
 
+> [!tip] If you only need the basics, start with the Quick Start
+> This document is the **complete** Editor Manual, written for editors who want to learn the surface in depth. If you just need to add a few wormholes right now and learn the rest as you go, a shorter **Editor Quick Start** covers the smallest possible path in five numbered steps, four pages, one read. It is available at:
+>
+> <https://www.telaris.ca/docs/editor-quick-start.pdf>
+>
+> After the Quick Start, come back to this document whenever you want the depth.
+
 ## How this manual is organized
 
 The chapters move from the smallest gesture to the largest. Each chapter opens with what the surface does, then walks through it step by step with screenshots, and closes with a short list of things worth knowing (small surprises, useful shortcuts, current limitations).

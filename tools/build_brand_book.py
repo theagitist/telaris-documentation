@@ -2349,6 +2349,19 @@ def main() -> None:
         shutil.copyfile(OUT_PATH, MIRROR_PATH)
         print(f"Mirrored to {MIRROR_PATH}")
 
+    # Optional public-docs mirror. Same convention as build.py: if
+    # TELARIS_WWW_DOCS_DIR points at an existing directory, the brand book
+    # PDF is copied there as brand-book.pdf so the marketing site's
+    # download surface stays in sync. Set the env var in the operator's
+    # shell rcfile to opt in; leave unset to skip.
+    www_docs_dir_env = os.environ.get("TELARIS_WWW_DOCS_DIR")
+    if www_docs_dir_env:
+        www_docs_dir = Path(www_docs_dir_env).expanduser()
+        if www_docs_dir.exists() and www_docs_dir.is_dir():
+            www_target = www_docs_dir / "brand-book.pdf"
+            shutil.copyfile(OUT_PATH, www_target)
+            print(f"Published to {www_target}")
+
 
 if __name__ == "__main__":
     main()
