@@ -73,7 +73,7 @@ PDF lands at `dist/brand-book.pdf` (and at the mirror location if `TELARIS_BRAND
 - Source is Markdown (CommonMark + GFM tables + footnotes). Wikilink syntax from Obsidian is not used here; documents are self-contained.
 - One section per file, prefixed with a two-digit order (`01-introduction.md`, `02-galaxies.md`, ...).
 - Section headings start at `# Section title` inside each file; the build script promotes / demotes as needed.
-- Images live in `assets/images/<slug>/`. Reference as `![Alt](../../assets/images/<slug>/file.png)`.
+- Images live in `assets/images/<slug>/`. Reference them with paths **relative to the repo root**: `![Alt](assets/images/<slug>/file.png)`. WeasyPrint's `base_url` is the repo root, not the markdown file's directory.
 - Page breaks: `<div class="page-break"></div>` between major sections; otherwise WeasyPrint handles them.
 - Callouts use `> [!note] ... > [!warning] ... > [!tip] ... ` syntax; the build script translates to styled blocks.
 - No em-dashes anywhere (project-wide rule); use colons, semicolons, parentheses, or restructure.
