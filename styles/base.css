@@ -1,0 +1,376 @@
+/* ===========================================================================
+   Telaris documentation: shared base styles.
+
+   Brand colours mirror the canonical palette in the brand book
+   (~/apps/obsidian/Academia/Projects/Telaris/Brand book/Palette.md).
+   This file defines variables, typography, page chrome, and shared
+   block-element styling. Document-class stylesheets layer on top.
+   =========================================================================== */
+
+:root {
+  /* Brand palette */
+  --void: #000000;
+  --aurora: #e8eef0;
+  --aurora-60: rgba(232, 238, 240, 0.6);
+  --aurora-28: rgba(232, 238, 240, 0.28);
+  --aurora-18: rgba(232, 238, 240, 0.18);
+  --mint: #00ffcc;
+  --mint-85: rgba(0, 255, 204, 0.85);
+  --mint-40: rgba(0, 255, 204, 0.40);
+  --mint-30: rgba(0, 255, 204, 0.30);
+  --mint-18: rgba(0, 255, 204, 0.18);
+
+  /* Pastel constellation palette, in case manual sections need accent dots */
+  --p-coral: #fca5a5;
+  --p-apricot: #fdba74;
+  --p-amber: #fcd34d;
+  --p-sun: #fde047;
+  --p-lime: #bef264;
+  --p-mint: #86efac;
+  --p-sea: #6ee7b7;
+  --p-teal: #5eead4;
+  --p-sky-cyan: #67e8f9;
+  --p-sky: #7dd3fc;
+  --p-cornflower: #93c5fd;
+  --p-iris: #a5b4fc;
+  --p-lavender: #c4b5fd;
+  --p-violet: #d8b4fe;
+  --p-orchid: #f0abfc;
+  --p-rose: #f9a8d4;
+  --p-blush: #fda4af;
+
+  /* Typography stack: monospace for chrome and code, neutral serif for body. */
+  --font-mono: "JetBrains Mono", "Iosevka", "Cascadia Mono", "Menlo", monospace;
+  --font-body: "Source Serif Pro", "Charter", "Iowan Old Style", Georgia, "Times New Roman", serif;
+  --font-display: "JetBrains Mono", "Iosevka", monospace;
+}
+
+/* WeasyPrint page chrome ---------------------------------------------------- */
+
+@page {
+  margin: 22mm 20mm 22mm 20mm;
+  @bottom-center {
+    content: counter(page);
+    font-family: var(--font-mono);
+    font-size: 9pt;
+    color: var(--aurora-60);
+  }
+}
+
+/* Cover and TOC pages have their own margins and no page number. */
+@page :first {
+  margin: 0;
+  @bottom-center { content: ""; }
+}
+
+@page toc-page {
+  margin: 22mm 20mm 22mm 20mm;
+  @bottom-center { content: ""; }
+}
+
+/* Page layout --------------------------------------------------------------- */
+
+html {
+  font-size: 10.5pt;
+}
+
+body {
+  font-family: var(--font-body);
+  line-height: 1.55;
+  color: var(--void);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Cover --------------------------------------------------------------------- */
+
+.cover {
+  page: cover;
+  page-break-after: always;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 35mm 25mm 30mm 25mm;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: var(--void);
+  color: var(--aurora);
+}
+
+.cover-wordmark {
+  font-family: var(--font-display);
+  font-size: 14pt;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--mint);
+  margin-bottom: auto;
+}
+
+.cover-title {
+  font-family: var(--font-display);
+  font-size: 36pt;
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0 0 6mm 0;
+  color: var(--aurora);
+}
+
+.cover-subtitle {
+  font-family: var(--font-body);
+  font-size: 14pt;
+  font-style: italic;
+  color: var(--aurora-60);
+  margin: 0 0 12mm 0;
+  max-width: 130mm;
+}
+
+.cover-tagline {
+  font-family: var(--font-mono);
+  font-size: 9pt;
+  letter-spacing: 0.10em;
+  color: var(--mint-85);
+  margin: 0 0 12mm 0;
+  max-width: 130mm;
+}
+
+.cover-version {
+  font-family: var(--font-mono);
+  font-size: 9pt;
+  letter-spacing: 0.15em;
+  color: var(--aurora-28);
+  text-transform: uppercase;
+}
+
+/* Table of contents --------------------------------------------------------- */
+
+.toc {
+  page: toc-page;
+  page-break-after: always;
+}
+
+.toc-title {
+  font-family: var(--font-display);
+  font-size: 22pt;
+  font-weight: 600;
+  margin: 0 0 12mm 0;
+  color: var(--void);
+  border-bottom: 0.4mm solid var(--void);
+  padding-bottom: 3mm;
+}
+
+.toc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-mono);
+  font-size: 10pt;
+}
+
+.toc-entry {
+  margin: 0;
+  padding: 0;
+}
+
+.toc-entry a {
+  display: flex;
+  align-items: baseline;
+  text-decoration: none;
+  color: var(--void);
+  padding: 1.5mm 0;
+  border-bottom: 0.15mm dotted rgba(0, 0, 0, 0.18);
+}
+
+.toc-l1 a { font-weight: 600; }
+.toc-l2 a { padding-left: 8mm; color: rgba(0, 0, 0, 0.78); }
+
+.toc-text {
+  flex: 1;
+}
+
+.toc-page::after {
+  content: target-counter(attr(data-href), page);
+  font-family: var(--font-mono);
+  color: rgba(0, 0, 0, 0.55);
+  font-size: 9.5pt;
+}
+
+/* Body content -------------------------------------------------------------- */
+
+.body {
+  max-width: 100%;
+}
+
+.doc-section {
+  page-break-before: always;
+}
+
+.doc-section:first-of-type {
+  page-break-before: auto;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--void);
+  line-height: 1.2;
+  margin-top: 1.4em;
+  margin-bottom: 0.5em;
+  page-break-after: avoid;
+}
+
+h1 {
+  font-size: 22pt;
+  border-bottom: 0.4mm solid var(--void);
+  padding-bottom: 3mm;
+  margin-top: 0;
+}
+
+h2 { font-size: 16pt; }
+h3 { font-size: 13pt; }
+h4 { font-size: 11pt; text-transform: uppercase; letter-spacing: 0.08em; }
+
+p {
+  margin: 0 0 0.6em 0;
+  hyphens: auto;
+  text-align: justify;
+}
+
+ul, ol {
+  margin: 0 0 0.9em 0;
+  padding-left: 6mm;
+}
+
+li {
+  margin-bottom: 0.25em;
+}
+
+a {
+  color: rgba(0, 80, 70, 0.92);
+  text-decoration: none;
+  border-bottom: 0.15mm solid var(--mint-40);
+}
+
+/* Code ---------------------------------------------------------------------- */
+
+code, kbd, samp, pre {
+  font-family: var(--font-mono);
+  font-size: 9.5pt;
+}
+
+p code, li code {
+  background: rgba(0, 0, 0, 0.06);
+  padding: 0.5mm 1.2mm;
+  border-radius: 0.5mm;
+  font-size: 9pt;
+}
+
+pre {
+  background: rgba(0, 0, 0, 0.05);
+  border-left: 0.4mm solid var(--mint);
+  padding: 3mm 4mm;
+  border-radius: 0.5mm;
+  overflow-x: auto;
+  margin: 0.8em 0;
+  page-break-inside: avoid;
+  font-size: 9pt;
+  line-height: 1.45;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+  font-size: 9pt;
+}
+
+/* Tables -------------------------------------------------------------------- */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.8em 0;
+  font-size: 9.5pt;
+  page-break-inside: avoid;
+}
+
+th, td {
+  border-bottom: 0.15mm solid rgba(0, 0, 0, 0.18);
+  padding: 1.5mm 2mm;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  font-family: var(--font-display);
+  font-weight: 600;
+  border-bottom: 0.3mm solid var(--void);
+  font-size: 9pt;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* Blockquotes (non-callout) -------------------------------------------------- */
+
+blockquote {
+  margin: 0.8em 0;
+  padding: 2mm 5mm;
+  border-left: 0.4mm solid var(--aurora-28);
+  color: rgba(0, 0, 0, 0.75);
+  font-style: italic;
+}
+
+/* Callouts ------------------------------------------------------------------ */
+
+.callout {
+  margin: 0.9em 0;
+  padding: 3mm 4mm 1mm 4mm;
+  border-left: 0.6mm solid var(--mint);
+  background: rgba(0, 255, 204, 0.06);
+  border-radius: 0.5mm;
+  page-break-inside: avoid;
+}
+
+.callout-title {
+  font-family: var(--font-mono);
+  font-size: 8.5pt;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.72);
+  margin-bottom: 1.5mm;
+}
+
+.callout-body p:last-child { margin-bottom: 0; }
+
+.callout-warning { border-left-color: #cf6f3a; background: rgba(207, 111, 58, 0.07); }
+.callout-warning .callout-title { color: #8a4419; }
+
+.callout-tip { border-left-color: #5e8fcc; background: rgba(94, 143, 204, 0.07); }
+.callout-tip .callout-title { color: #244a7a; }
+
+.callout-important { border-left-color: #b65fbf; background: rgba(182, 95, 191, 0.07); }
+.callout-important .callout-title { color: #6b2f72; }
+
+.callout-danger { border-left-color: #c43838; background: rgba(196, 56, 56, 0.07); }
+.callout-danger .callout-title { color: #7a1818; }
+
+.callout-example { border-left-color: var(--aurora-28); background: rgba(0, 0, 0, 0.04); }
+.callout-example .callout-title { color: rgba(0, 0, 0, 0.62); }
+
+/* Misc ---------------------------------------------------------------------- */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-break {
+  page-break-after: always;
+}
+
+hr {
+  border: none;
+  border-top: 0.15mm solid rgba(0, 0, 0, 0.2);
+  margin: 1.2em 0;
+}

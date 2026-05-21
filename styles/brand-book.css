@@ -1,0 +1,15 @@
+/* ===========================================================================
+   Telaris documentation: brand-book-class overrides.
+   Placeholder for the brand-book migration: dark cosmic ground, the visual
+   artifact identity. The bulk of brand-book styling will land here when the
+   existing build_brand_book_pdf.py is ported into this pipeline.
+   =========================================================================== */
+
+.doc-brand-book {
+  background: var(--void);
+  color: var(--aurora);
+}
+
+/* During migration, the brand book's per-page chrome, starfield backgrounds,
+   node-network panels, swatch grids, etc. will be added here. The current
+   freestanding build_brand_book_pdf.py is the source of truth until then. */

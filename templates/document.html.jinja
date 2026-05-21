@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="{{ meta.locale }}">
+<head>
+  <meta charset="utf-8">
+  <title>{{ meta.title }}</title>
+  <style>
+    {{ stylesheets_inline | safe }}
+
+    /* Per-document page size set from meta.yaml. */
+    @page {
+      size: {{ meta.page_size }};
+    }
+  </style>
+</head>
+<body class="doc doc-{{ meta.doc_class }}" data-slug="{{ meta.slug }}" lang="{{ meta.locale }}">
+
+  {# Cover page #}
+  <section class="cover">
+    <div class="cover-wordmark">Telaris</div>
+    <h1 class="cover-title">{{ meta.title }}</h1>
+    {% if meta.subtitle %}<div class="cover-subtitle">{{ meta.subtitle }}</div>{% endif %}
+    {% if meta.cover_tagline %}<div class="cover-tagline">{{ meta.cover_tagline }}</div>{% endif %}
+    <div class="cover-version">{{ meta.version }}</div>
+  </section>
+
+  {# Table of contents #}
+  <section class="toc">
+    <h1 class="toc-title">Contents</h1>
+    <ol class="toc-list">
+      {% for level, anchor, text in toc %}
+        {% if level == 1 %}
+          <li class="toc-entry toc-l1">
+            <a href="#{{ anchor }}"><span class="toc-text">{{ text }}</span><span class="toc-page" data-href="{{ anchor }}"></span></a>
+          </li>
+        {% elif level == 2 %}
+          <li class="toc-entry toc-l2">
+            <a href="#{{ anchor }}"><span class="toc-text">{{ text }}</span><span class="toc-page" data-href="{{ anchor }}"></span></a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ol>
+  </section>
+
+  {# Body #}
+  <main class="body">
+    {% for section in sections %}
+      <section class="doc-section" data-slug="{{ section.slug }}">
+        {{ section.html | safe }}
+      </section>
+    {% endfor %}
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+/* ===========================================================================
+   Telaris documentation: manual-class overrides.
+   Applied on top of base.css for editor-manual, admin-manual, and any future
+   operational manual. Tuned for long-form sustained reading.
+   =========================================================================== */
+
+.doc-manual {
+  /* Slight tint on the page background; readable but brand-aligned. */
+}
+
+@page {
+  background: #fbfcfc;
+}
+
+@page :first {
+  background: var(--void);
+}
+
+/* TOC for manuals: slightly tighter to fit denser content. */
+.doc-manual .toc-list { font-size: 9.5pt; }
+
+/* Manuals lean on small "kbd" indicators for menu paths. */
+.doc-manual kbd {
+  display: inline-block;
+  border: 0.15mm solid rgba(0, 0, 0, 0.35);
+  border-bottom-width: 0.4mm;
+  border-radius: 0.7mm;
+  padding: 0.3mm 1.4mm;
+  background: rgba(255, 255, 255, 0.85);
+  font-family: var(--font-mono);
+  font-size: 8.5pt;
+  color: rgba(0, 0, 0, 0.82);
+}
+
+/* "Menu path" pattern: Admin → Pluriverse → Inbox */
+.doc-manual .menu-path {
+  font-family: var(--font-mono);
+  font-size: 9pt;
+  color: rgba(0, 0, 0, 0.78);
+  background: rgba(0, 0, 0, 0.05);
+  padding: 0.4mm 1.6mm;
+  border-radius: 0.6mm;
+}
+
+/* Step lists: when an ordered list has class "steps", number more boldly. */
+.doc-manual ol.steps {
+  counter-reset: step;
+  list-style: none;
+  padding-left: 0;
+}
+
+.doc-manual ol.steps > li {
+  counter-increment: step;
+  position: relative;
+  padding-left: 9mm;
+  margin-bottom: 0.8em;
+}
+
+.doc-manual ol.steps > li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 6mm;
+  height: 6mm;
+  line-height: 6mm;
+  text-align: center;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 9.5pt;
+  color: var(--void);
+  border: 0.3mm solid var(--mint);
+  border-radius: 50%;
+  background: var(--mint-18);
+}
