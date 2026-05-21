@@ -106,7 +106,34 @@ SHOTS: list[Shot] = [
         full_page=False,
         description="Editor home: galaxy picker, wormhole list, the top-level workspace.",
     ),
+    Shot(
+        name="03-editor-home-single-galaxy",
+        route="/edit/?slug=manual-demo-coastal-plants",
+        prepare=None,
+        full_page=False,
+        description="Editor home when a specific galaxy is selected: View, Settings, Canvas buttons appear next to the picker.",
+    ),
+    Shot(
+        name="04-galaxy-settings-modal",
+        route="/edit/?slug=manual-demo-coastal-plants",
+        prepare=lambda page: open_galaxy_settings_modal(page),
+        full_page=False,
+        description="Galaxy settings modal opened from the editor home (name, tagline, theme, tags, discovery section).",
+    ),
 ]
+
+
+def open_galaxy_settings_modal(page: Page) -> None:
+    """Click the Settings button next to the galaxy picker and wait for the modal."""
+    # The button is hidden by default and only shown when a specific galaxy is
+    # selected (not the "all" view). Wait for it to become visible.
+    page.wait_for_selector("#galaxy-settings-btn:visible", timeout=10_000)
+    page.click("#galaxy-settings-btn")
+    # The galaxy-edit modal is rendered via galaxy-edit-modal.js. Wait for it to
+    # be in the DOM and visible.
+    page.wait_for_selector("dialog[open], .modal-open, #constellation_modal", timeout=10_000)
+    # Give the modal a moment to settle (form fields populated from API).
+    page.wait_for_timeout(800)
 
 
 # ---------------------------------------------------------------------------
