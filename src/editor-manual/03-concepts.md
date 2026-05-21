@@ -2,7 +2,7 @@
 
 Six words name almost everything in Telaris. Knowing them is enough to read the rest of this manual. Each gets a short page here, with an example drawn from the same sample galaxy ("Coastal plants") used in every screenshot in the rest of the manual.
 
-The concepts are *galaxy*, *wormhole*, *keyword*, *portal*, *canvas*, and *tour*. They build on each other; read them in order the first time, then come back for reference later.
+The concepts are *galaxy*, *wormhole*, *keyword*, *portal*, *keyword canvas*, and *tour*. They build on each other; read them in order the first time, then come back for reference later.
 
 ## Galaxy
 
@@ -58,7 +58,7 @@ Portals are how you move readers between galaxies on purpose. A keyword shared a
 
 Portals are not bidirectional. If you want the visitor to be able to come back, place a corresponding portal in the destination galaxy that points the other way. Chapter 9 covers portals in detail.
 
-## Canvas
+## Keyword canvas
 
 The **keyword canvas** is a drawing surface, separate from the wormhole list, where the editor lays out the keywords of a galaxy and draws relationships between them by hand. Each keyword appears as a coloured chip; you drag the chips around to compose; you draw lines between chips to record that those two keywords belong together; you can attach a short note to any line you draw.
 
@@ -82,6 +82,6 @@ Chapter 11 covers tours; chapter 10 covers all the other visitor settings that i
 
 ## How the concepts fit together
 
-A galaxy holds wormholes. Wormholes carry keywords. Keywords connect wormholes, both within a galaxy and across galaxies that share words. Portals are wormholes that take the visitor from one galaxy to another. The canvas is the drawing where the editor authors the relationships between keywords. A tour is a curated path through a galaxy's wormholes.
+A galaxy holds wormholes. Wormholes carry keywords. Keywords connect wormholes, both within a galaxy and across galaxies that share words. Portals are wormholes that take the visitor from one galaxy to another. The keyword canvas is the drawing where the editor authors the relationships between keywords. A tour is a curated path through a galaxy's wormholes.
 
 If you understand those six relationships, you understand the editor's whole world. The rest of this manual is a series of practical walk-throughs of each one.
