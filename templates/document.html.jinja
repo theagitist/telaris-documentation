@@ -23,7 +23,9 @@
     <div class="cover-version">{{ meta.version }}</div>
   </section>
 
-  {# Table of contents #}
+  {# Table of contents (suppressed when meta.show_toc is false; useful for
+     short reference docs where a TOC spread is overkill). #}
+  {% if meta.show_toc %}
   <section class="toc">
     <h1 class="toc-title">Contents</h1>
     <ol class="toc-list">
@@ -40,6 +42,7 @@
       {% endfor %}
     </ol>
   </section>
+  {% endif %}
 
   {# Body #}
   <main class="body">

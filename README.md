@@ -6,6 +6,7 @@ Canonical home for all Telaris documentation that ships as a PDF. One repo, one 
 
 | Slug | Audience | Status |
 |---|---|---|
+| `editor-quick-start` | New editors who need to add content right now. | **v0.1** (2026-05-21). Five-step walkthrough, 5 pages, 3 reused screenshots, no TOC (`show_toc: false`). Companion to `editor-manual`. |
 | `editor-manual` | Editors authoring galaxies, wormholes, keywords. | **v0.1 first draft complete** (2026-05-21). 15 chapters, 72 pages, 13 screenshots from the synthetic `[manual-demo]` galaxy. Strictly editor-side scope: no infra terminology, no admin / federation topics. |
 | `admin-manual` | Telaris-instance operators (federation, keys, backups). | Scaffolded under `src/admin-manual/`; full draft pending. |
 | `brand-book` | Visual identity, voice, palette. | v1 active; built by a transitional freestanding script at `tools/build_brand_book.py`. Markdown decomposition into the shared `src/brand-book/` pipeline still pending. |
