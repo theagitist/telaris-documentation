@@ -8,7 +8,7 @@ Canonical home for all Telaris documentation that ships as a PDF. One repo, one 
 |---|---|---|
 | `editor-manual` | Editors authoring galaxies, wormholes, keywords. | In progress (2026-05-21). |
 | `admin-manual` | Telaris-instance operators (federation, keys, backups). | Queued. |
-| `brand-book` | Visual identity, voice, palette. | Queued for migration from `~/apps/telaris/original_assets/brand/build_brand_book_pdf.py`. |
+| `brand-book` | Visual identity, voice, palette. | Built by a transitional freestanding script at `tools/build_brand_book.py`. Source content lives in the maintainer's working notes (the brand book sibling notes: Palette, Type, Voice and tone, Naming, Taglines, Iconography, Screenshots). Migration into the shared `src/brand-book/` markdown pipeline is still pending. |
 
 ## Build pattern
 
@@ -45,6 +45,16 @@ python3 build.py editor-manual
 ```
 
 PDF lands at `dist/editor-manual.pdf`.
+
+### Brand book (transitional)
+
+The brand book is not yet on the shared `build.py <slug>` pipeline. Until the markdown decomposition lands, build it via the freestanding script:
+
+```
+python3 tools/build_brand_book.py
+```
+
+PDF lands at `dist/brand-book.pdf`. If you also want the PDF mirrored to another location (e.g. a notes directory synced across devices), set `TELARIS_BRAND_BOOK_MIRROR=/path/to/Brand book.pdf` in your environment; the script copies to that path after the canonical write, but only if the parent directory exists. Otherwise the mirror step is skipped silently.
 
 ## Conventions
 
