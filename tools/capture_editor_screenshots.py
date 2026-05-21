@@ -169,7 +169,44 @@ SHOTS: list[Shot] = [
         full_page=False,
         description="New Wormhole modal with Wormhole type set to Portal: target-galaxy dropdown visible.",
     ),
+    Shot(
+        name="12-galaxy-discovery-section",
+        route="/edit/?slug=manual-demo-coastal-plants",
+        prepare=lambda page: open_galaxy_settings_modal_scrolled(page),
+        full_page=False,
+        description="Galaxy settings modal scrolled to the Discovery section (auto-tour, idle spotlight, chips, related, 2D view).",
+    ),
+    Shot(
+        name="13-visitor-scene",
+        route="/manual-demo-coastal-plants",
+        prepare=lambda page: wait_for_visitor_scene(page),
+        full_page=False,
+        description="Visitor 3D scene for the Coastal plants demo galaxy.",
+    ),
 ]
+
+
+def open_galaxy_settings_modal_scrolled(page: Page) -> None:
+    """Open the galaxy settings modal and scroll to the Discovery section."""
+    open_galaxy_settings_modal(page)
+    # Scroll the modal body so the Discovery toggles section is in view.
+    # page.evaluate runs the expression as a function body but a bare `return`
+    # at the top level is a syntax error; wrap in an IIFE.
+    page.evaluate("""(() => {
+        const modal = document.querySelector('#constellation_modal');
+        if (!modal) return;
+        const body = modal.querySelector('.modal-box, .modal-content, form, [class*="overflow"]')
+                  || modal;
+        body.scrollTop = body.scrollHeight;
+    })()""")
+    page.wait_for_timeout(600)
+
+
+def wait_for_visitor_scene(page: Page) -> None:
+    """Let the visitor 3D scene paint a few animation frames."""
+    # The Three.js scene paints asynchronously after a few hundred ms.
+    page.wait_for_load_state("networkidle", timeout=20_000)
+    page.wait_for_timeout(3500)
 
 
 def open_create_modal_as_portal(page: Page) -> None:
