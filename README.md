@@ -6,9 +6,9 @@ Canonical home for all Telaris documentation that ships as a PDF. One repo, one 
 
 | Slug | Audience | Status |
 |---|---|---|
-| `editor-manual` | Editors authoring galaxies, wormholes, keywords. | In progress (2026-05-21). |
-| `admin-manual` | Telaris-instance operators (federation, keys, backups). | Queued. |
-| `brand-book` | Visual identity, voice, palette. | Built by a transitional freestanding script at `tools/build_brand_book.py`. Source content lives in the maintainer's working notes (the brand book sibling notes: Palette, Type, Voice and tone, Naming, Taglines, Iconography, Screenshots). Migration into the shared `src/brand-book/` markdown pipeline is still pending. |
+| `editor-manual` | Editors authoring galaxies, wormholes, keywords. | **v0.1 first draft complete** (2026-05-21). 15 chapters, 72 pages, 13 screenshots from the synthetic `[manual-demo]` galaxy. Strictly editor-side scope: no infra terminology, no admin / federation topics. |
+| `admin-manual` | Telaris-instance operators (federation, keys, backups). | Scaffolded under `src/admin-manual/`; full draft pending. |
+| `brand-book` | Visual identity, voice, palette. | v1 active; built by a transitional freestanding script at `tools/build_brand_book.py`. Markdown decomposition into the shared `src/brand-book/` pipeline still pending. |
 
 ## Build pattern
 
@@ -16,25 +16,28 @@ Markdown source under `src/<slug>/` is rendered through a Jinja template into HT
 
 ```
 documentation/
-├── build.py                   # python3 build.py <slug>
+├── build.py                              # python3 build.py <slug>
 ├── requirements.txt
 ├── styles/
-│   ├── base.css               # Brand variables, typography, page chrome.
-│   ├── manual.css             # Manual-class styling (editor + admin).
-│   └── brand-book.css         # Brand-book-class styling.
+│   ├── base.css                          # Brand variables, typography, page chrome, callouts.
+│   ├── manual.css                        # doc_class = manual (editor + admin).
+│   └── brand-book.css                    # doc_class = brand-book.
 ├── templates/
-│   └── document.html.jinja    # One template; CSS class differentiates the look.
+│   └── document.html.jinja               # One template; CSS class differentiates the look.
 ├── src/
-│   ├── editor-manual/
-│   │   ├── meta.yaml          # Title, subtitle, version, doc_class, sections order.
-│   │   └── NN-section-slug.md # Markdown sections, ordered by filename prefix.
-│   ├── admin-manual/
-│   └── brand-book/
+│   ├── editor-manual/                    # 15 chapters drafted (v0.1).
+│   │   ├── meta.yaml
+│   │   └── NN-section-slug.md
+│   ├── admin-manual/                     # Placeholder; pending draft.
+│   └── brand-book/                       # Placeholder; pending migration.
 ├── assets/
-│   ├── images/                # Screenshots, diagrams (committed).
-│   └── generated/             # Build-time generated SVGs (committed; reproducible).
-├── tools/                     # Generators (e.g., starfield SVG for brand book).
-└── dist/                      # PDF output (gitignored).
+│   ├── images/editor-manual/             # 13 screenshots from the demo galaxy.
+│   └── generated/                        # Build-time generated SVGs (for brand book).
+├── tools/
+│   ├── build_brand_book.py               # Transitional brand-book builder.
+│   ├── seed_demo_content.php             # Seeds the [manual-demo] galaxies on starmaps.
+│   └── capture_editor_screenshots.py     # Playwright capture; logs in, drives the UI.
+└── dist/                                 # PDF output (gitignored).
 ```
 
 ## Build
@@ -67,6 +70,35 @@ python3 tools/build_brand_book.py
 ```
 
 PDF lands at `dist/brand-book.pdf` (and at the mirror location if `TELARIS_BRAND_BOOK_MIRROR` is set).
+
+## Screenshot pipeline (editor manual)
+
+The editor manual references screenshots captured from a synthetic demo galaxy on the dev Telaris instance (`starmaps.polivoxia.ca`). Two tools support this end-to-end:
+
+**`tools/seed_demo_content.php`** populates the dev instance with two `[manual-demo]` galaxies (`Coastal plants`, `Tide pools`) plus thirteen wormholes carrying neutral synthetic content (plants, tide-pool animals), seeds keyword-canvas relations and chip positions, and creates a sandboxed editor-only account `manual-capture-editor@telaris.local` assigned only to the demo galaxies. The seed is idempotent: rerunning detects existing rows and reuses them.
+
+```sh
+php tools/seed_demo_content.php
+```
+
+The script prints the editor credentials on first run; copy them into `~/.telaris-capture-credentials` (0600, outside any repo) in the form:
+
+```sh
+export TELARIS_EDITOR_URL="https://starmaps.polivoxia.ca"
+export TELARIS_EDITOR_USERNAME="manual-capture-editor@telaris.local"
+export TELARIS_EDITOR_PASSWORD='...'
+```
+
+**`tools/capture_editor_screenshots.py`** drives Playwright + headless Chromium against starmaps as the sandboxed editor. One `Shot` definition per surface; each shot has an optional `prepare` callable that opens a modal, switches a tab, or scrolls a section. Captures land in `assets/images/editor-manual/`.
+
+```sh
+set -a; source ~/.telaris-capture-credentials; set +a
+python3 tools/capture_editor_screenshots.py
+```
+
+The sandboxed editor account is the privacy floor of this pipeline: every dropdown, sidebar, and chrome element in every screenshot only ever reveals the two demo galaxies. Real user content never appears.
+
+If the dev UI changes, re-run the capture script and the manual rebuild picks up the new images automatically; if the change is structural (a new surface to document), add a new `Shot` to the script, capture, and reference the resulting filename from the markdown.
 
 ## Conventions
 
