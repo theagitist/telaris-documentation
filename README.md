@@ -46,6 +46,18 @@ python3 build.py editor-manual
 
 PDF lands at `dist/editor-manual.pdf`.
 
+### Optional vault / Syncthing mirror
+
+Every document supports an optional mirror to a secondary location after the canonical write to `dist/`. Set `TELARIS_<SLUG_UPPER>_MIRROR` in your environment (hyphens in the slug become underscores). If the env var is unset, or the parent directory of the target does not exist, the mirror step is silently skipped. Example shell rc:
+
+```
+export TELARIS_EDITOR_MANUAL_MIRROR="$HOME/notes/User Manuals/Editor Manual/Editor Manual.pdf"
+export TELARIS_ADMIN_MANUAL_MIRROR="$HOME/notes/User Manuals/Admin Manual/Admin Manual.pdf"
+export TELARIS_BRAND_BOOK_MIRROR="$HOME/notes/Brand book/Brand book.pdf"
+```
+
+The mirror is enforced by `build.py` for the shared pipeline and by `tools/build_brand_book.py` for the brand book (same env-var convention).
+
 ### Brand book (transitional)
 
 The brand book is not yet on the shared `build.py <slug>` pipeline. Until the markdown decomposition lands, build it via the freestanding script:
@@ -54,7 +66,7 @@ The brand book is not yet on the shared `build.py <slug>` pipeline. Until the ma
 python3 tools/build_brand_book.py
 ```
 
-PDF lands at `dist/brand-book.pdf`. If you also want the PDF mirrored to another location (e.g. a notes directory synced across devices), set `TELARIS_BRAND_BOOK_MIRROR=/path/to/Brand book.pdf` in your environment; the script copies to that path after the canonical write, but only if the parent directory exists. Otherwise the mirror step is skipped silently.
+PDF lands at `dist/brand-book.pdf` (and at the mirror location if `TELARIS_BRAND_BOOK_MIRROR` is set).
 
 ## Conventions
 

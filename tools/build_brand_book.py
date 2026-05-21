@@ -48,7 +48,7 @@ _mirror_env = os.environ.get("TELARIS_BRAND_BOOK_MIRROR")
 MIRROR_PATH = Path(_mirror_env).expanduser() if _mirror_env else None
 
 # ---------------------------------------------------------------------------
-# Canonical brand colours (mirror the vault note at Brand book/Palette.md).
+# Canonical brand colours (mirror the vault note at Documentation/Brand book/Palette.md).
 # ---------------------------------------------------------------------------
 
 VOID = "#000000"

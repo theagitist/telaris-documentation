@@ -18,7 +18,9 @@ of base.css.
 from __future__ import annotations
 
 import argparse
+import os
 import re
+import shutil
 import sys
 from dataclasses import dataclass
 from pathlib import Path
@@ -236,6 +238,35 @@ def collect_stylesheets(doc_class: str) -> list[Path]:
 
 
 # ---------------------------------------------------------------------------
+# Optional vault / Syncthing mirror.
+#
+# For each document, the operator can opt in to copying the built PDF to a
+# secondary location by setting an environment variable named
+# TELARIS_<SLUG_UPPER>_MIRROR (hyphens become underscores). Typical use: a
+# notes vault folder synced across devices so the PDF travels next to the
+# canonical working notes. If the variable is unset OR the parent directory
+# of the target path does not exist, the mirror step is skipped silently.
+# Examples:
+#   TELARIS_EDITOR_MANUAL_MIRROR=$HOME/notes/Editor Manual.pdf
+#   TELARIS_ADMIN_MANUAL_MIRROR=$HOME/notes/Admin Manual.pdf
+#   TELARIS_BRAND_BOOK_MIRROR=$HOME/notes/Brand book.pdf
+# ---------------------------------------------------------------------------
+
+def mirror_path_for(slug: str) -> Path | None:
+    """Resolve the optional mirror target for `slug` from the environment.
+
+    Returns None if the env var is unset or empty. Tilde-expansion is applied
+    so `~/...` works. Existence of the parent directory is checked at copy
+    time, not here.
+    """
+    env_key = f"TELARIS_{slug.upper().replace('-', '_')}_MIRROR"
+    env_val = os.environ.get(env_key)
+    if not env_val:
+        return None
+    return Path(env_val).expanduser()
+
+
+# ---------------------------------------------------------------------------
 # Build orchestration.
 # ---------------------------------------------------------------------------
 
@@ -283,6 +314,12 @@ def build(slug: str, emit_html: bool = False) -> Path:
     pdf_out = DIST_DIR / f"{slug}.pdf"
     HTML(string=rendered_html, base_url=str(REPO_ROOT)).write_pdf(str(pdf_out))
     print(f"wrote {pdf_out}")
+
+    mirror = mirror_path_for(slug)
+    if mirror is not None and mirror.parent.exists():
+        shutil.copyfile(pdf_out, mirror)
+        print(f"mirrored to {mirror}")
+
     return pdf_out
 
 
