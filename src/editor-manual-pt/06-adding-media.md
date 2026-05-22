@@ -8,7 +8,7 @@ Um buraco de minhoca carrega no máximo **um visual primário** por vez. Image, 
 
 A aba padrão, e a escolha de mídia mais comum. Use para fotografias, ilustrações, escaneamentos, diagramas, qualquer coisa parada.
 
-![Aba Image no modal New Wormhole: campo de URL e seletor de arquivo, além do interruptor Use-as-wormhole-icon](assets/images/editor-manual/05-new-wormhole-modal.png)
+![Aba Image no modal New Wormhole: campo de URL e seletor de arquivo, além do interruptor Use-as-wormhole-icon](assets/images/editor-manual-pt/05-new-wormhole-modal.png)
 
 Duas formas de anexar uma imagem:
 
@@ -25,7 +25,7 @@ De qualquer forma, a imagem vira o visual primário da visitante quando ela abre
 
 Use para trechos de filme, entrevistas gravadas, animações, qualquer coisa em movimento. Telaris suporta apenas MP4 neste momento; outros formatos (WebM, MOV, AVI) precisam ser transcodificados antes ou hospedados em um serviço de vídeo e embutidos (veja Embed code abaixo).
 
-![Aba Video no modal New Wormhole: URL de vídeo / seletor de arquivo para um MP4](assets/images/editor-manual/07-media-video-tab.png)
+![Aba Video no modal New Wormhole: URL de vídeo / seletor de arquivo para um MP4](assets/images/editor-manual-pt/07-media-video-tab.png)
 
 Os mesmos dois caminhos da imagem: cole uma URL para um MP4 hospedado em outro lugar, ou envie um arquivo. Uma vez salvo o buraco de minhoca, o cartão de informações da visitante mostra um player de vídeo com controles padrão (play, pause, busca, volume, tela cheia).
 
@@ -37,7 +37,7 @@ Se seu vídeo vive em um serviço de streaming (Vimeo, YouTube, archive.org), o 
 
 Para documentos: artigos, guias de campo, fotocópias, relatórios, partituras, manuscritos.
 
-![Aba PDF no modal New Wormhole: URL de PDF / seletor de arquivo](assets/images/editor-manual/08-media-pdf-tab.png)
+![Aba PDF no modal New Wormhole: URL de PDF / seletor de arquivo](assets/images/editor-manual-pt/08-media-pdf-tab.png)
 
 Mesmos dois caminhos. Uma vez salvo, o cartão de informações da visitante embute um leitor de PDF na própria página: ela pode rolar o documento, buscar, copiar texto, e baixá-lo (as funções padrão do visualizador de PDF).
 

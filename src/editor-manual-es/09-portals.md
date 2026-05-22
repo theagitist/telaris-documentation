@@ -23,7 +23,7 @@ Si nada de esto es cierto, una palabra clave o una etiqueta de galaxia suele ser
 
 Un portal es un agujero de gusano cuyo Wormhole type está fijado a **Portal**. Desde el modal New Wormhole:
 
-![Modal New Wormhole con Wormhole type fijado a Portal: aparece un desplegable Target Galaxy](assets/images/editor-manual/11-portal-type-selector.png)
+![Modal New Wormhole con Wormhole type fijado a Portal: aparece un desplegable Target Galaxy](assets/images/editor-manual-es/11-portal-type-selector.png)
 
 Pasos:
 

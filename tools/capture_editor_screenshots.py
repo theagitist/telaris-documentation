@@ -32,7 +32,23 @@ from typing import Callable
 from playwright.sync_api import Page, sync_playwright
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-SHOTS_DIR = REPO_ROOT / "assets" / "images" / "editor-manual"
+
+# Per-locale Accept-Language headers. EN uses no header (default UI),
+# ES + PT receive the standard regional variant so the app's
+# locale_resolve_from_request() returns the right code.
+ACCEPT_LANGUAGE_HEADERS = {
+    "en": "en-CA,en;q=0.9",
+    "es": "es-ES,es;q=0.9",
+    "pt": "pt-BR,pt;q=0.9",
+}
+
+def shots_dir_for(locale: str) -> Path:
+    """EN shots stay in assets/images/editor-manual/ for backwards compat;
+    ES / PT shots go into assets/images/editor-manual-<locale>/ so each
+    manual references its own image directory."""
+    if locale == "en":
+        return REPO_ROOT / "assets" / "images" / "editor-manual"
+    return REPO_ROOT / "assets" / "images" / f"editor-manual-{locale}"
 
 # Standard editor-manual screenshot dimensions. 1440x900 matches a common
 # laptop viewport and keeps shots readable when scaled down for print.
@@ -299,8 +315,8 @@ def open_edit_wormhole_modal(page: Page, wormhole_name: str) -> None:
 # Capture orchestration.
 # ---------------------------------------------------------------------------
 
-def capture_one(page: Page, base_url: str, shot: Shot) -> Path:
-    target = SHOTS_DIR / f"{shot.name}.png"
+def capture_one(page: Page, base_url: str, shot: Shot, shots_dir: Path) -> Path:
+    target = shots_dir / f"{shot.name}.png"
     page.goto(f"{base_url}{shot.route}", wait_until="domcontentloaded")
     if shot.prepare:
         shot.prepare(page)
@@ -311,17 +327,28 @@ def capture_one(page: Page, base_url: str, shot: Shot) -> Path:
 
 
 def main() -> int:
+    import argparse
+    parser = argparse.ArgumentParser(description="Capture editor-manual screenshots in a target locale.")
+    parser.add_argument("--locale", choices=["en", "es", "pt"], default="en",
+                        help="UI locale to capture against (sent via Accept-Language). Defaults to en.")
+    args = parser.parse_args()
+    locale = args.locale
+
     base_url = env_required("TELARIS_EDITOR_URL").rstrip("/")
     email = env_required("TELARIS_EDITOR_USERNAME")
     password = env_required("TELARIS_EDITOR_PASSWORD")
 
-    SHOTS_DIR.mkdir(parents=True, exist_ok=True)
+    shots_dir = shots_dir_for(locale)
+    shots_dir.mkdir(parents=True, exist_ok=True)
+    print(f"locale: {locale}  ->  shots dir: {shots_dir}")
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         context = browser.new_context(
             viewport=VIEWPORT,
             device_scale_factor=DEVICE_PIXEL_RATIO,
+            locale=locale,
+            extra_http_headers={"Accept-Language": ACCEPT_LANGUAGE_HEADERS[locale]},
         )
         page = context.new_page()
 
@@ -343,7 +370,7 @@ def main() -> int:
         # Capture the login page BEFORE authenticating, since the post-login
         # redirect leaves no clean way back to a fresh login form.
         login_shot = next(s for s in SHOTS if s.name == "01-login-form")
-        out = capture_one(page, base_url, login_shot)
+        out = capture_one(page, base_url, login_shot, shots_dir)
         print(f"captured {out}")
 
         # Authenticate.
@@ -361,12 +388,12 @@ def main() -> int:
             if shot.name == "01-login-form":
                 continue
             time.sleep(10)
-            out = capture_one(page, base_url, shot)
+            out = capture_one(page, base_url, shot, shots_dir)
             print(f"captured {out}")
 
         browser.close()
 
-    print(f"\nall shots in {SHOTS_DIR}")
+    print(f"\nall shots in {shots_dir}")
     return 0
 
 

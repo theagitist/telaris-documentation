@@ -15,7 +15,7 @@ Selecciona desde el inicio del editor la galaxia en la que quieres trabajar. Cua
 
 El lienzo abre en una escena oscura a pantalla completa con las palabras clave de la galaxia dispuestas como píldoras pastel sobre una cuadrícula de puntos:
 
-![Lienzo de palabras clave: píldoras pastel con líneas de relación trazadas entre ellas, sobre un fondo oscuro con cuadrícula de puntos](assets/images/editor-manual/10-keyword-canvas.png)
+![Lienzo de palabras clave: píldoras pastel con líneas de relación trazadas entre ellas, sobre un fondo oscuro con cuadrícula de puntos](assets/images/editor-manual-es/10-keyword-canvas.png)
 
 Cada píldora es una palabra clave. El color de la píldora coincide con el color usado en el resto de la aplicación: *native* es el mismo verdoso aquí que en una fila de agujero de gusano. Las píldoras se desplazan ligeramente cuando el lienzo está inactivo (una simulación física suave las mantiene vivas); arrastrar una píldora la fija en su lugar desde ese momento.
 

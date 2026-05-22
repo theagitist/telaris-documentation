@@ -10,7 +10,7 @@ Lo primero que el desplegable te enseña es la forma de tus responsabilidades ed
 
 Cuando eliges una galaxia específica, aparecen tres botones nuevos junto al desplegable:
 
-![Inicio del editor con una sola galaxia seleccionada: aparecen los botones View, Settings y Canvas](assets/images/editor-manual/03-editor-home-single-galaxy.png)
+![Inicio del editor con una sola galaxia seleccionada: aparecen los botones View, Settings y Canvas](assets/images/editor-manual-es/03-editor-home-single-galaxy.png)
 
 - **View** abre la galaxia en modo visitante, en una pestaña nueva. Úsalo cuando quieras comprobar cómo se lee un cambio desde el asiento de la visitante.
 - **Settings** abre la configuración de la galaxia. La mayor parte de este capítulo trata sobre lo que hay dentro de ese cuadro modal.
@@ -26,7 +26,7 @@ Cuando se crea una nueva galaxia, llega vacía: cero agujeros de gusano, ninguna
 
 Abre el botón **Settings** junto al selector. Se abre un cuadro modal:
 
-![Cuadro modal Edit Galaxy: Name, Tagline, Visual Theme, Tags, acciones por lote, y conmutadores de descubrimiento](assets/images/editor-manual/04-galaxy-settings-modal.png)
+![Cuadro modal Edit Galaxy: Name, Tagline, Visual Theme, Tags, acciones por lote, y conmutadores de descubrimiento](assets/images/editor-manual-es/04-galaxy-settings-modal.png)
 
 El cuadro modal es el lugar central donde das forma a lo que una galaxia es y cómo se comporta. Los campos, en orden:
 

@@ -4,7 +4,7 @@ El trabajo de la editora lo leen las visitantes. Casi cada elección editorial q
 
 A la vista de visitante se llega siguiendo cualquier URL de visitante de tu instancia: típicamente el slug de la galaxia, a veces sin slug en absoluto (tu operadora puede confirmar el camino de entrada).
 
-![Escena 3D de visitante para la galaxia de demo Coastal plants](assets/images/editor-manual/13-visitor-scene.png)
+![Escena 3D de visitante para la galaxia de demo Coastal plants](assets/images/editor-manual-es/13-visitor-scene.png)
 
 ## La escena 3D
 
@@ -37,7 +37,7 @@ Cuando la visitante hace clic en una píldora de palabra clave en la ficha, la e
 
 El modal de ajustes de galaxia carga una sección Discovery (el capítulo 4 introdujo el modal; aquí está lo que hace cada conmutador del lado visitante):
 
-![Modal de ajustes de galaxia desplazado a los conmutadores Discovery](assets/images/editor-manual/12-galaxy-discovery-section.png)
+![Modal de ajustes de galaxia desplazado a los conmutadores Discovery](assets/images/editor-manual-es/12-galaxy-discovery-section.png)
 
 Cada conmutador está apagado por defecto. Enciende uno cuando quieras la característica correspondiente.
 

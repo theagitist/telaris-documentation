@@ -21,7 +21,7 @@ Si falta algo, pregúntale a quien opera la instancia. Después vuelve aquí.
 
 Abre la dirección de tu instancia en cualquier navegador moderno. Ingresa tu correo y contraseña. Selecciona **Sign In**.
 
-![Formulario de inicio de sesión](assets/images/editor-manual/01-login-form.png)
+![Formulario de inicio de sesión](assets/images/editor-manual-es/01-login-form.png)
 
 Si olvidas tu contraseña, el enlace **Forgot your password?** envía un correo de restablecimiento.
 
@@ -29,7 +29,7 @@ Si olvidas tu contraseña, el enlace **Forgot your password?** envía un correo 
 
 Tras iniciar sesión, llegas a la página **Edit Wormholes**. El menú desplegable **Current Galaxy** en la parte superior elige la galaxia en la que estás editando. Selecciona la galaxia a la que te han pedido añadir contenido.
 
-![Página de edición: selector de galaxia arriba a la derecha, lista de agujeros de gusano debajo](assets/images/editor-manual/02-editor-home.png)
+![Página de edición: selector de galaxia arriba a la derecha, lista de agujeros de gusano debajo](assets/images/editor-manual-es/02-editor-home.png)
 
 Una galaxia es el contenedor donde vivirán tus agujeros de gusano. Cada agujero de gusano pertenece a una sola galaxia.
 
@@ -39,7 +39,7 @@ Una galaxia es el contenedor donde vivirán tus agujeros de gusano. Cada agujero
 
 Selecciona **New Wormhole** (junto al recuento de agujeros de gusano). Se abre un formulario:
 
-![Modal de nuevo agujero de gusano](assets/images/editor-manual/05-new-wormhole-modal.png)
+![Modal de nuevo agujero de gusano](assets/images/editor-manual-es/05-new-wormhole-modal.png)
 
 Completa tres campos, en orden. Omite el resto por ahora.
 

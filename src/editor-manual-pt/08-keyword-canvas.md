@@ -15,7 +15,7 @@ Selecione a galáxia em que quer trabalhar a partir da tela inicial da editora. 
 
 A tela abre em uma cena escura, ocupando toda a janela, com as palavras-chave da galáxia dispostas como chips pastéis sobre uma grade de pontos:
 
-![Tela de palavras-chave: chips pastéis com linhas de relação desenhadas entre eles, sobre um fundo escuro de grade pontilhada](assets/images/editor-manual/10-keyword-canvas.png)
+![Tela de palavras-chave: chips pastéis com linhas de relação desenhadas entre eles, sobre um fundo escuro de grade pontilhada](assets/images/editor-manual-pt/10-keyword-canvas.png)
 
 Cada chip é uma palavra-chave. A cor do chip coincide com a cor usada em outros lugares do aplicativo: *native* aqui é o mesmo esverdeado que aparece em uma linha de buraco de minhoca. Os chips derivam ligeiramente quando a tela está ociosa (uma simulação física suave mantém o conjunto vivo); arrastar um chip o fixa no lugar a partir de então.
 

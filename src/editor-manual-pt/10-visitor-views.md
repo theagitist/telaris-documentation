@@ -4,7 +4,7 @@ O trabalho da editora é lido por visitantes. Quase toda escolha editorial que v
 
 A vista da visitante se alcança seguindo qualquer URL de visitante da sua instância: tipicamente o slug da galáxia, às vezes sem slug nenhum (sua operadora pode confirmar o caminho de entrada).
 
-![Cena 3D da visitante para a galáxia de demonstração Coastal plants](assets/images/editor-manual/13-visitor-scene.png)
+![Cena 3D da visitante para a galáxia de demonstração Coastal plants](assets/images/editor-manual-pt/13-visitor-scene.png)
 
 ## A cena 3D
 
@@ -37,7 +37,7 @@ Quando a visitante clica em um chip de palavra-chave no cartão de informações
 
 O modal de configurações da galáxia traz uma seção Discovery (o capítulo 4 apresentou o modal; aqui está o que cada interruptor faz do lado da visitante):
 
-![Modal de configurações da galáxia rolado até os interruptores Discovery](assets/images/editor-manual/12-galaxy-discovery-section.png)
+![Modal de configurações da galáxia rolado até os interruptores Discovery](assets/images/editor-manual-pt/12-galaxy-discovery-section.png)
 
 Cada interruptor vem desligado por padrão. Ligue um quando quiser o recurso correspondente.
 

@@ -16,7 +16,7 @@ Si te falta cualquiera de las tres, pregunta a quien opera tu instancia.
 
 Abre la dirección de tu instancia en cualquier navegador moderno. Si todavía no has iniciado sesión, llegas a la página de inicio de sesión automáticamente. Si guardaste un favorito a otra parte de la instancia, el navegador te desviará a la página de inicio de sesión primero y luego te devolverá a donde ibas.
 
-![Formulario de inicio de sesión](assets/images/editor-manual/01-login-form.png)
+![Formulario de inicio de sesión](assets/images/editor-manual-es/01-login-form.png)
 
 Dos campos: **Email** y **Password**. Escribe tus credenciales y selecciona **Sign In**.
 
@@ -26,7 +26,7 @@ Si olvidas tu contraseña, hay un enlace **Forgot your password?** debajo del bo
 
 Llegas a la página **Edit Wormholes**. Este es el inicio del editor, el lugar desde el que comenzarás cada sesión de trabajo. Las próximas secciones del manual parten todas de aquí.
 
-![Inicio del editor: selector de galaxia arriba a la derecha, lista de agujeros de gusano debajo, búsqueda a la derecha](assets/images/editor-manual/02-editor-home.png)
+![Inicio del editor: selector de galaxia arriba a la derecha, lista de agujeros de gusano debajo, búsqueda a la derecha](assets/images/editor-manual-es/02-editor-home.png)
 
 La página está organizada en dos tarjetas:
 

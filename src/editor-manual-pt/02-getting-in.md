@@ -16,7 +16,7 @@ Se você não tem alguma dessas três coisas, peça a quem opera sua instância.
 
 Abra o endereço da sua instância em qualquer navegador moderno. Se você ainda não estiver autenticada, cai direto na página de login. Se já tiver um favorito apontando para outra parte da instância, o navegador faz um desvio pela página de login e depois te devolve ao destino original.
 
-![Formulário de login](assets/images/editor-manual/01-login-form.png)
+![Formulário de login](assets/images/editor-manual-pt/01-login-form.png)
 
 Dois campos: **Email** e **Password**. Digite as credenciais e selecione **Sign In**.
 
@@ -26,7 +26,7 @@ Se esquecer a senha, há um link **Forgot your password?** abaixo do botão Sign
 
 Você cai na página **Edit Wormholes**. Esta é a tela inicial da editora, o ponto de partida de toda sessão de trabalho. As seções seguintes deste manual começam todas aqui.
 
-![Tela inicial da editora: seletor de galáxia no alto à direita, lista de buracos de minhoca abaixo, busca à direita](assets/images/editor-manual/02-editor-home.png)
+![Tela inicial da editora: seletor de galáxia no alto à direita, lista de buracos de minhoca abaixo, busca à direita](assets/images/editor-manual-pt/02-editor-home.png)
 
 A página tem dois cartões:
 

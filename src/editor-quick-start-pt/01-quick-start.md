@@ -21,7 +21,7 @@ Se faltar algo, pergunte a quem opera a instância. Depois volte aqui.
 
 Abra o endereço da sua instância em qualquer navegador moderno. Digite seu e-mail e senha. Selecione **Sign In**.
 
-![Formulário de login](assets/images/editor-manual/01-login-form.png)
+![Formulário de login](assets/images/editor-manual-pt/01-login-form.png)
 
 Se esquecer a senha, o link **Forgot your password?** envia um e-mail para redefini-la.
 
@@ -29,7 +29,7 @@ Se esquecer a senha, o link **Forgot your password?** envia um e-mail para redef
 
 Após o login, você chega à página **Edit Wormholes**. O menu suspenso **Current Galaxy** no topo escolhe a galáxia em que você está editando. Escolha a galáxia à qual lhe pediram para adicionar conteúdo.
 
-![Página de edição: seletor de galáxia no topo à direita, lista de buracos de minhoca abaixo](assets/images/editor-manual/02-editor-home.png)
+![Página de edição: seletor de galáxia no topo à direita, lista de buracos de minhoca abaixo](assets/images/editor-manual-pt/02-editor-home.png)
 
 Uma galáxia é o recipiente onde seus buracos de minhoca vão viver. Cada buraco de minhoca pertence a uma única galáxia.
 
@@ -39,7 +39,7 @@ Uma galáxia é o recipiente onde seus buracos de minhoca vão viver. Cada burac
 
 Selecione **New Wormhole** (ao lado da contagem de buracos de minhoca). Um formulário se abre:
 
-![Modal de novo buraco de minhoca](assets/images/editor-manual/05-new-wormhole-modal.png)
+![Modal de novo buraco de minhoca](assets/images/editor-manual-pt/05-new-wormhole-modal.png)
 
 Preencha três campos, nesta ordem. Pule o resto por enquanto.
 

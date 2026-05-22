@@ -6,7 +6,7 @@ Um buraco de minhoca é a menor unidade de conteúdo em Telaris. Tudo o que uma 
 
 Na tela inicial da editora, selecione a galáxia em que está trabalhando e escolha **New Wormhole**. Um modal abre:
 
-![Modal Add New Wormhole: formulário vazio com Name, Galaxy, Type, Keywords, Description, URL, e abas de mídia visíveis](assets/images/editor-manual/05-new-wormhole-modal.png)
+![Modal Add New Wormhole: formulário vazio com Name, Galaxy, Type, Keywords, Description, URL, e abas de mídia visíveis](assets/images/editor-manual-pt/05-new-wormhole-modal.png)
 
 O formulário tem quatro regiões amplas, na ordem em que aparecem ao rolar o modal para baixo:
 
@@ -83,7 +83,7 @@ O campo de áudio é independente do visual primário; um buraco de minhoca com 
 
 Para editar um buraco de minhoca, clique em qualquer ponto da sua linha na lista, ou abra o menu de ações da linha e escolha **Edit**:
 
-![Modal Edit Wormhole para Beach Strawberry: nome preenchido, chips de palavras-chave, descrição, abas de mídia](assets/images/editor-manual/06-edit-wormhole-modal.png)
+![Modal Edit Wormhole para Beach Strawberry: nome preenchido, chips de palavras-chave, descrição, abas de mídia](assets/images/editor-manual-pt/06-edit-wormhole-modal.png)
 
 O modal é o mesmo do formulário de criação, com os valores existentes preenchidos. O id do buraco de minhoca aparece no canto superior direito (aqui, `#279`); editoras raramente precisam consultar ids, mas o número é útil ao reportar um problema à sua operadora.
 

@@ -6,7 +6,7 @@ Un agujero de gusano es la unidad más pequeña de contenido en Telaris. Todo lo
 
 Desde el inicio del editor, selecciona la galaxia en la que estás trabajando, luego elige **New Wormhole**. Se abre un cuadro modal:
 
-![Cuadro modal Add New Wormhole: formulario vacío con Name, Galaxy, Type, Keywords, Description, URL, y pestañas de medios visibles](assets/images/editor-manual/05-new-wormhole-modal.png)
+![Cuadro modal Add New Wormhole: formulario vacío con Name, Galaxy, Type, Keywords, Description, URL, y pestañas de medios visibles](assets/images/editor-manual-es/05-new-wormhole-modal.png)
 
 El formulario tiene cuatro regiones amplias, en el orden en que las encuentras al bajar por el modal:
 
@@ -83,7 +83,7 @@ El campo de audio es independiente del visual primario; un agujero de gusano con
 
 Para editar un agujero de gusano, haz clic en cualquier parte de su fila en la lista de agujeros de gusano, o abre el menú de acciones de la fila y elige **Edit**:
 
-![Modal Edit Wormhole para Beach Strawberry: nombre completado, píldoras de palabras clave, descripción, pestañas de medios](assets/images/editor-manual/06-edit-wormhole-modal.png)
+![Modal Edit Wormhole para Beach Strawberry: nombre completado, píldoras de palabras clave, descripción, pestañas de medios](assets/images/editor-manual-es/06-edit-wormhole-modal.png)
 
 El modal es el mismo que el formulario de creación, con los valores existentes pre-cargados. El id del agujero de gusano aparece en la esquina superior derecha (aquí, `#279`); las editoras rara vez necesitan referirse a los ids, pero el número es útil al reportar un problema a tu operadora.
 

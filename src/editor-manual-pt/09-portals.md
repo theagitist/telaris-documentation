@@ -23,7 +23,7 @@ Se nenhuma dessas três coisas se aplica, uma palavra-chave ou uma tag de galáx
 
 Um portal é um buraco de minhoca cujo Wormhole type está definido como **Portal**. A partir do modal New Wormhole:
 
-![Modal New Wormhole com Wormhole type ajustado para Portal: aparece um menu Target Galaxy](assets/images/editor-manual/11-portal-type-selector.png)
+![Modal New Wormhole com Wormhole type ajustado para Portal: aparece um menu Target Galaxy](assets/images/editor-manual-pt/11-portal-type-selector.png)
 
 Passos:
 

@@ -8,7 +8,7 @@ Un recorrido es **una configuración de una galaxia**, no un objeto separado. En
 
 Un recorrido vive dentro del modal **Galaxy settings**, en la sección Discovery (el capítulo 4 introduce el modal; el capítulo 10 introduce los conmutadores Discovery).
 
-![Modal de ajustes de galaxia en la sección Discovery](assets/images/editor-manual/12-galaxy-discovery-section.png)
+![Modal de ajustes de galaxia en la sección Discovery](assets/images/editor-manual-es/12-galaxy-discovery-section.png)
 
 El primer conmutador de la sección Discovery es **Auto-tour**. Encenderlo revela los campos de configuración del recorrido:
 

@@ -10,7 +10,7 @@ A primeira coisa que o menu te ensina é a forma das suas responsabilidades edit
 
 Quando você escolhe uma galáxia específica, três novos botões aparecem ao lado do menu suspenso:
 
-![Tela inicial da editora com uma única galáxia selecionada: aparecem os botões View, Settings, Canvas](assets/images/editor-manual/03-editor-home-single-galaxy.png)
+![Tela inicial da editora com uma única galáxia selecionada: aparecem os botões View, Settings, Canvas](assets/images/editor-manual-pt/03-editor-home-single-galaxy.png)
 
 - **View** abre a galáxia em modo visitante, em uma nova aba. Use sempre que quiser ver como uma mudança fica do assento da visitante.
 - **Settings** abre a configuração da galáxia. A maior parte deste capítulo é sobre o que está dentro daquele modal.
@@ -26,7 +26,7 @@ Quando uma nova galáxia é criada, ela aparece vazia: zero buracos de minhoca, 
 
 Abra o botão **Settings** ao lado do seletor. Um modal abre:
 
-![Modal Edit Galaxy: Name, Tagline, Visual Theme, Tags, ações em lote, e seletores de descoberta](assets/images/editor-manual/04-galaxy-settings-modal.png)
+![Modal Edit Galaxy: Name, Tagline, Visual Theme, Tags, ações em lote, e seletores de descoberta](assets/images/editor-manual-pt/04-galaxy-settings-modal.png)
 
 O modal é o lugar central onde você define o que uma galáxia é e como se comporta. Os campos, na ordem:
 

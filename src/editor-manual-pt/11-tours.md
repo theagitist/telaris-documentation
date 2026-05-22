@@ -8,7 +8,7 @@ Um percurso é **uma configuração de uma galáxia**, não um objeto separado. 
 
 Um percurso vive dentro do modal **Galaxy settings**, na seção Discovery (o capítulo 4 apresenta o modal; o capítulo 10 apresenta os interruptores Discovery).
 
-![Modal de configurações da galáxia na seção Discovery](assets/images/editor-manual/12-galaxy-discovery-section.png)
+![Modal de configurações da galáxia na seção Discovery](assets/images/editor-manual-pt/12-galaxy-discovery-section.png)
 
 O primeiro interruptor da seção Discovery é **Auto-tour**. Ligá-lo revela os campos de configuração do percurso:
 

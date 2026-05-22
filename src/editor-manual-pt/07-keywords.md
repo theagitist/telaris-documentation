@@ -46,7 +46,7 @@ Abra o modal Edit do buraco de minhoca (capítulo 5). O campo Keywords mostra os
 
 Quando você precisa agir sobre **todo buraco de minhoca que carrega uma certa palavra-chave** de uma vez, o modal Bulk by keyword é a superfície. Abra a partir da tela inicial da editora, na fileira de botões ao lado de **New Wormhole**:
 
-![Modal Bulk action by keyword: escolha uma palavra-chave, escolha Delete ou Move, veja a contagem, aplique](assets/images/editor-manual/09-bulk-by-keyword-modal.png)
+![Modal Bulk action by keyword: escolha uma palavra-chave, escolha Delete ou Move, veja a contagem, aplique](assets/images/editor-manual-pt/09-bulk-by-keyword-modal.png)
 
 O modal se limita à **galáxia atual**: só pode agir sobre buracos de minhoca dentro da galáxia selecionada. Passos:
 

@@ -46,7 +46,7 @@ Abre el modal Edit del agujero de gusano (capítulo 5). El campo Keywords muestr
 
 Cuando necesitas actuar sobre **todos los agujeros de gusano que cargan una palabra clave dada** a la vez, el modal Bulk by keyword es la superficie. Ábrelo desde el inicio del editor, en la fila de botones junto a **New Wormhole**:
 
-![Modal Bulk action by keyword: elige una palabra clave, elige Delete o Move, ve el conteo, aplica](assets/images/editor-manual/09-bulk-by-keyword-modal.png)
+![Modal Bulk action by keyword: elige una palabra clave, elige Delete o Move, ve el conteo, aplica](assets/images/editor-manual-es/09-bulk-by-keyword-modal.png)
 
 El modal está acotado a la **galaxia actual**: solo puede actuar sobre agujeros de gusano dentro de la galaxia que tienes seleccionada. Pasos:
 

@@ -8,7 +8,7 @@ Un agujero de gusano carga como máximo **un visual primario** a la vez. Image, 
 
 La pestaña por defecto, y la elección más común de medios. Úsala para fotografías, ilustraciones, escaneos, diagramas, cualquier cosa estática.
 
-![Pestaña Image en el modal New Wormhole: campo URL y selector de archivo, más el conmutador Use-as-wormhole-icon](assets/images/editor-manual/05-new-wormhole-modal.png)
+![Pestaña Image en el modal New Wormhole: campo URL y selector de archivo, más el conmutador Use-as-wormhole-icon](assets/images/editor-manual-es/05-new-wormhole-modal.png)
 
 Dos formas de adjuntar una imagen:
 
@@ -25,7 +25,7 @@ En cualquiera de los dos casos, la imagen se vuelve el visual primario de la vis
 
 Úsala para fragmentos de película, entrevistas grabadas, animaciones, cualquier cosa que se mueva. Telaris soporta solo MP4 por ahora; otros formatos (WebM, MOV, AVI) necesitan transcodificarse primero o alojarse en un servicio de video e incrustarse (ver Embed code más abajo).
 
-![Pestaña Video en el modal New Wormhole: Video URL / selector de archivo para un MP4](assets/images/editor-manual/07-media-video-tab.png)
+![Pestaña Video en el modal New Wormhole: Video URL / selector de archivo para un MP4](assets/images/editor-manual-es/07-media-video-tab.png)
 
 Las mismas dos rutas que en imagen: pega una URL a un MP4 alojado en otro sitio, o sube un archivo. Una vez guardado el agujero de gusano, la ficha de la visitante muestra un reproductor de video con controles estándar (play, pausa, scrub, volumen, pantalla completa).
 
@@ -37,7 +37,7 @@ Si tu video vive en un servicio de streaming (Vimeo, YouTube, archive.org), el c
 
 Para documentos: artículos, guías de campo, fotocopias, informes, partituras, manuscritos.
 
-![Pestaña PDF en el modal New Wormhole: PDF URL / selector de archivo](assets/images/editor-manual/08-media-pdf-tab.png)
+![Pestaña PDF en el modal New Wormhole: PDF URL / selector de archivo](assets/images/editor-manual-es/08-media-pdf-tab.png)
 
 Las mismas dos rutas. Una vez guardado, la ficha de la visitante incrusta un lector de PDF dentro de la página: puede desplazarse por el documento, buscar en él, copiar texto y descargarlo (las prestaciones del visor de PDF estándar).
 
