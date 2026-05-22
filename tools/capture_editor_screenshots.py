@@ -40,6 +40,7 @@ ACCEPT_LANGUAGE_HEADERS = {
     "en": "en-CA,en;q=0.9",
     "es": "es-ES,es;q=0.9",
     "pt": "pt-BR,pt;q=0.9",
+    "fr": "fr-CA,fr;q=0.9",
 }
 
 def shots_dir_for(locale: str) -> Path:
@@ -329,7 +330,7 @@ def capture_one(page: Page, base_url: str, shot: Shot, shots_dir: Path) -> Path:
 def main() -> int:
     import argparse
     parser = argparse.ArgumentParser(description="Capture editor-manual screenshots in a target locale.")
-    parser.add_argument("--locale", choices=["en", "es", "pt"], default="en",
+    parser.add_argument("--locale", choices=["en", "es", "pt", "fr"], default="en",
                         help="UI locale to capture against (sent via Accept-Language). Defaults to en.")
     parser.add_argument("--shots", default="",
                         help="Comma-separated shot names (or name prefixes) to capture. "
