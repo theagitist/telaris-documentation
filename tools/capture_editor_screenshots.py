@@ -331,8 +331,20 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Capture editor-manual screenshots in a target locale.")
     parser.add_argument("--locale", choices=["en", "es", "pt"], default="en",
                         help="UI locale to capture against (sent via Accept-Language). Defaults to en.")
+    parser.add_argument("--shots", default="",
+                        help="Comma-separated shot names (or name prefixes) to capture. "
+                             "Empty means all shots. Example: '04-galaxy-settings-modal,10-keyword-canvas'.")
     args = parser.parse_args()
     locale = args.locale
+    shot_filter = [s.strip() for s in args.shots.split(",") if s.strip()]
+
+    shots_to_capture = SHOTS
+    if shot_filter:
+        shots_to_capture = [s for s in SHOTS
+                            if any(s.name == f or s.name.startswith(f) for f in shot_filter)]
+        if not shots_to_capture:
+            sys.exit(f"no shots matched filter: {shot_filter}")
+        print(f"shot filter: {[s.name for s in shots_to_capture]}")
 
     base_url = env_required("TELARIS_EDITOR_URL").rstrip("/")
     email = env_required("TELARIS_EDITOR_USERNAME")
@@ -368,10 +380,13 @@ def main() -> int:
         ))
 
         # Capture the login page BEFORE authenticating, since the post-login
-        # redirect leaves no clean way back to a fresh login form.
-        login_shot = next(s for s in SHOTS if s.name == "01-login-form")
-        out = capture_one(page, base_url, login_shot, shots_dir)
-        print(f"captured {out}")
+        # redirect leaves no clean way back to a fresh login form. Only if the
+        # login shot is in the active filter (or no filter is set).
+        login_in_filter = any(s.name == "01-login-form" for s in shots_to_capture)
+        if login_in_filter:
+            login_shot = next(s for s in SHOTS if s.name == "01-login-form")
+            out = capture_one(page, base_url, login_shot, shots_dir)
+            print(f"captured {out}")
 
         # Authenticate.
         print("logging in...")
@@ -384,7 +399,7 @@ def main() -> int:
         # is comfortable for the per-IP rate limiter under a chain of ~10
         # API calls per shot.
         import time
-        for shot in SHOTS:
+        for shot in shots_to_capture:
             if shot.name == "01-login-form":
                 continue
             time.sleep(10)
