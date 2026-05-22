@@ -1,27 +1,27 @@
 # Telaris documentation
 
-Canonical home for all Telaris documentation that ships as a PDF. One repo, one build pattern, five public documents in three languages (English, Spanish, Portuguese) plus the brand book and the scaffolded admin manual.
+Canonical home for all Telaris documentation that ships as a PDF. One repo, one build pattern, five public documents in four languages (English, Spanish, Portuguese, French) plus the brand book and the scaffolded admin manual.
 
 ## Documents
 
-The five public-facing documents each ship as three sibling PDFs (`<slug>.pdf`, `<slug>-es.pdf`, `<slug>-pt.pdf`). The Spanish and Portuguese versions are not transliterations of the English: per the Telaris voice canon, the three languages carry the same observations in their own register, and the English is not the master.
+The five public-facing documents each ship as four sibling PDFs (`<slug>.pdf`, `<slug>-es.pdf`, `<slug>-pt.pdf`, `<slug>-fr.pdf`). The Spanish, Portuguese, and French versions are not transliterations of the English: per the Telaris voice canon, the four languages carry the same observations in their own register, and the English is not the master.
 
 | Slug | Audience | Status |
 |---|---|---|
-| `manifest` / `manifest-es` / `manifest-pt` | Anyone reading the project from outside. | **Draft** (2026-05-21). Positioning statement, six principles plus citations. No TOC. Three locales. Published at <https://www.telaris.ca/docs/manifest.pdf>, `manifest-es.pdf`, `manifest-pt.pdf`. |
-| `editor-quick-start` / `-es` / `-pt` | New editors who need to add content right now. | **v0.1** (2026-05-21). Five-step walkthrough, ~6 pages, 3 reused screenshots, no TOC (`show_toc: false`). Companion to `editor-manual`. Three locales. |
-| `editor-manual` / `-es` / `-pt` | Editors authoring galaxies, wormholes, keywords. | **v0.1 first draft complete** (2026-05-21). 15 chapters, ~72 pages, 13 screenshots from the synthetic `[manual-demo]` galaxy. Strictly editor-side scope: no infra terminology, no admin / federation topics. Three locales. |
+| `manifest` / `-es` / `-pt` / `-fr` | Anyone reading the project from outside. | **Draft** (2026-05-21; FR added 2026-05-22). Positioning statement, six principles plus citations. No TOC. Four locales. Published at <https://www.telaris.ca/docs/manifest.pdf>, `manifest-es.pdf`, `manifest-pt.pdf`, `manifest-fr.pdf`. |
+| `editor-quick-start` / `-es` / `-pt` / `-fr` | New editors who need to add content right now. | **v0.1** (2026-05-21; FR added 2026-05-22). Five-step walkthrough, ~6 pages, 3 reused screenshots, no TOC (`show_toc: false`). Companion to `editor-manual`. Four locales. |
+| `editor-manual` / `-es` / `-pt` / `-fr` | Editors authoring galaxies, wormholes, keywords. | **v0.1 first draft complete** (2026-05-21; FR added 2026-05-22). 15 chapters, ~72 pages, 13 screenshots per locale from the synthetic `[manual-demo]` galaxy (captured separately for each). Strictly editor-side scope: no infra terminology, no admin / federation topics. Four locales. |
 | `admin-manual` | Telaris-instance operators (federation, keys, backups). | Scaffolded under `src/admin-manual/`; full draft pending. Localizations will follow once the EN draft is complete. |
-| `privacy` / `privacy-es` / `privacy-pt` | Public-facing privacy notice. | **Draft** (2026-05-21). Conservative draft naming the no-AI-training posture, no platform-pattern collection, withdrawal of consent, federation behaviour. Marked draft pending finalisation. Three locales. |
-| `tos` / `tos-es` / `tos-pt` | Public-facing terms of use. | **Draft** (2026-05-21). Conservative draft naming how the site is offered, software is offered, withdrawal, limitations of liability. Marked draft pending finalisation. Three locales. |
+| `privacy` / `-es` / `-pt` / `-fr` | Public-facing privacy notice. | **Draft** (2026-05-21; FR added 2026-05-22). Conservative draft naming the no-AI-training posture, no platform-pattern collection, withdrawal of consent, federation behaviour. Marked draft pending finalisation. Four locales. |
+| `tos` / `-es` / `-pt` / `-fr` | Public-facing terms of use. | **Draft** (2026-05-21; FR added 2026-05-22). Conservative draft naming how the site is offered, software is offered, withdrawal, limitations of liability. Marked draft pending finalisation. Four locales. |
 | `brand-book` | Visual identity, voice, palette. | v1 active; built by a transitional freestanding script at `tools/build_brand_book.py`. Internal-facing, not localized. Markdown decomposition into the shared `src/brand-book/` pipeline still pending. |
 
 ### Localization conventions
 
-- **One slug per language**, not nested locales: `editor-manual`, `editor-manual-es`, `editor-manual-pt` are independent source directories under `src/`. Each builds with its own `python3 build.py <slug>` invocation. Languages can drift in sibling phrasing without lockstep updates.
-- **UI labels (buttons, menu paths, field names) stay in English** in the Spanish and Portuguese manuals while the application interface itself is not yet localized. The screenshots show English UI; localizing only the surrounding prose keeps the manuals consistent with what an editor will actually see on screen.
-- **Vocabulary mapping** (UI-side only): Galaxy / Galaxia / Galáxia, Wormhole / Agujero de Gusano / Buraco de Minhoca, Portal / Portal / Portal. Code identifiers stay on the internal vocabulary (`constellation`, `node`, `portal`). See the brand book's *Naming* note for the full table.
-- **House style across all languages**: no em-dashes, no exclamation marks, sentence-case headings. Feminine generic (`la editora`, `a editora`) is the chosen stance in the ES and PT drafts; flowing prose uses role-based phrasing (`quien opera la instancia`, `quem opera a instância`) where it reads more naturally than a noun.
+- **One slug per language**, not nested locales: `editor-manual`, `editor-manual-es`, `editor-manual-pt`, `editor-manual-fr` are independent source directories under `src/`. Each builds with its own `python3 build.py <slug>` invocation. Languages can drift in sibling phrasing without lockstep updates.
+- **UI labels (buttons, menu paths, field names) appear in the locale of the screenshot** since the application itself is now localized in all four languages (as of the localization sweep that closed 2026-05-22). Screenshots are captured per-locale via `python3 tools/capture_editor_screenshots.py --locale {en,es,pt,fr}`; outputs land under `assets/images/editor-manual{,-es,-pt,-fr}/`.
+- **Vocabulary mapping** (UI-side only): Galaxy / Galaxia / Galáxia / Galaxie, Wormhole / Agujero de Gusano / Buraco de Minhoca / Trou de Ver, Portal / Portal / Portal / Portail, Keyword canvas / Lienzo de palabras clave / Tela de palavras-chave / Toile de mots-clés. Code identifiers stay on the internal vocabulary (`constellation`, `node`, `portal`). See the brand book's *Naming* note for the full table.
+- **House style across all languages**: no em-dashes, no exclamation marks, sentence-case headings. **Gender-neutral, MUST**: verb-first, role-as-account (`cuenta de administración` / `conta de administração` / `compte d'administration`), relational phrasing (`quien opera la instancia` / `quem opera a instância` / `qui exploite l'instance`); no agent nouns where avoidable. French specifics: Canadian-French leanings where there's a clean choice (courriel, fichier, téléversement); no median-dot inclusive writing (`éditeur·rice` is out).
 
 ## Build pattern
 
