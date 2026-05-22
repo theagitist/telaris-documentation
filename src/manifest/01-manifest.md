@@ -22,6 +22,14 @@ Telaris is a graduate research project at the University of British Columbia's I
 
 These are method choices, not slogans. They show up in the code (no review-queue feature, no central-vocabulary table, no platform-administrator override) as readily as in the documentation.
 
+## Localization, all the way down
+
+A common pattern in software is to localize the visible strings and leave the identifiers, the error codes, the status keys, and other tokens in English. Telaris refuses this. The implicit logic of "English identifiers are neutral; user-visible English is what gets translated" presupposes that meaning lives in English; that the moment a system stops being English, it must become abstract or random. It is the same colonial pattern at a quieter layer.
+
+In practice: every token an end user or operator might encounter outside the source code is locale-invariant. API error codes use the form `<http-status>.<3-digit-subcode>` (RFC 9457 Problem Details), e.g., `404.001`. They carry meaning through positioning, not through English shorthand. The same principle extends to status keys, log categories, and any future identifier that crosses out of source code onto a user-visible surface. When a translation is missing for a given locale, the fallback is the code itself, not the English source string: the worst-case user-visible token is the documented identifier, not an unstated default-to-English.
+
+Source-code identifiers (variable names, function names, file paths, internal config keys) remain English: they live in the development context and the team reads them every day. The line is whether the token reaches a user or operator outside the source.
+
 ## What Telaris is not
 
 A clear refusal is a clearer position than a long manifesto.

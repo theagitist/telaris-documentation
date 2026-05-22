@@ -22,6 +22,14 @@ Telaris é um projeto de pesquisa de pós-graduação no Instituto de Gênero, R
 
 São escolhas de método, não palavras de ordem. Aparecem no código (sem funcionalidade de fila de revisão, sem tabela de vocabulário central, sem anulação do administrador de plataforma) tanto quanto na documentação.
 
+## Localização até o fim
+
+Um padrão comum em software é localizar os textos visíveis e deixar os identificadores, os códigos de erro, as chaves de estado e outros tokens em inglês. Telaris se recusa a isto. A lógica implícita de "os identificadores em inglês são neutros; o que se traduz é o inglês visível" pressupõe que o significado vive em inglês; que no momento em que um sistema deixa de ser inglês, precisa ficar abstrato ou aleatório. É o mesmo padrão colonial numa camada mais silenciosa.
+
+Na prática: todo token que possa chegar a quem usa ou a quem opera fora do código fonte é invariante por idioma. Os códigos de erro da API tomam a forma `<status-http>.<subcódigo-de-3-dígitos>` (RFC 9457 Problem Details), p. ex., `404.001`. Carregam significado pela posição, não por uma abreviação em inglês. O mesmo princípio se estende às chaves de estado, às categorias de log e a qualquer identificador futuro que cruze do código fonte para uma superfície visível. Quando falta a tradução para um idioma, o que aparece é o próprio código, não a cadeia original em inglês: o pior caso visível é o identificador documentado, não um inglês por padrão não declarado.
+
+Os identificadores do código fonte (nomes de variáveis, nomes de funções, caminhos de arquivos, chaves internas de configuração) permanecem em inglês: vivem no contexto de desenvolvimento e são lidos diariamente. A linha está em se o token chega a quem usa ou a quem opera fora do código.
+
 ## O que Telaris não é
 
 Uma recusa clara é uma posição mais clara que um manifesto longo.
