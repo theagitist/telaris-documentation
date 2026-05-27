@@ -857,6 +857,36 @@ html, body {{
     text-transform: none;
 }}
 
+.console-status {{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3mm;
+    margin: 3mm 0 6mm 0;
+}}
+.console-status .cs {{
+    font-size: 6.5pt;
+}}
+.console-status .cs-dot {{
+    display: inline-block;
+    width: 2.4mm;
+    height: 2.4mm;
+    border-radius: 50%;
+    margin-bottom: 1.4mm;
+}}
+.console-status .cs-label {{
+    display: block;
+    color: {AURORA};
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 6.5pt;
+    margin-bottom: 0.8mm;
+}}
+.console-status .cs-covers {{
+    display: block;
+    color: {AURORA_60};
+    letter-spacing: 0.04em;
+}}
+
 .radius-row {{
     display: flex;
     align-items: center;
@@ -1458,7 +1488,7 @@ def build_html() -> str:
         {COVER_NETWORK}
     </svg>
     <div class="cover-inner">
-        <div class="cover-eyebrow">Brand book &middot; v1 &middot; 2026·05·21</div>
+        <div class="cover-eyebrow">Brand book &middot; v1 &middot; 2026·05·27</div>
         <h1 class="wordmark">Telaris</h1>
         <div class="cover-tagline">weaving memory</div>
         <div class="cover-rule"></div>
@@ -1698,6 +1728,28 @@ def build_html() -> str:
     <p>Five values. Square-ish buttons (2px); standard chrome (4px); tooltips
     (12px); modal containers (lg); pills, dots, and switches (pill). Stay
     inside this vocabulary unless there is a strong content reason to break it.</p>
+    <h2>Operator &amp; admin console</h2>
+    <p>The operator and admin surfaces wear the same dark chrome in a quieter
+    register: Void ground, monospace, mint as signal, no starfield or
+    node-network. It is the cosmos's instrument panel, not a second cosmos and
+    not a light-mode departure. Section cards sit on the faintest lift off Void
+    (white at 1.5&#37; over a hairline white-8&#37; border); inputs and neutral
+    action buttons use white-4&#37; fills with white-18&#37; borders; focus is a
+    2px white outline. This is the canon for the Pluriverse's own dashboard and
+    admin, and the register the Telaris-instance admin and editor are being
+    ported to (the light Tailwind admin is transitional, not canonical).</p>
+    <h2>Status semantics &middot; a four-colour set</h2>
+    <p>Machine state (instance lifecycle, delivery status) is carried by a
+    small fixed palette, kept deliberately distinct from the constellation
+    pastels, which mean <em>keywords</em>. Mint stays a signal and is never a
+    status colour.</p>
+    <div class="console-status">
+        <div class="cs"><span class="cs-dot" style="background:rgba(255,210,110,0.92)"></span><span class="cs-label">Attention</span><span class="cs-covers">pending, verified</span></div>
+        <div class="cs"><span class="cs-dot" style="background:rgba(140,220,150,0.92)"></span><span class="cs-label">Live</span><span class="cs-covers">published</span></div>
+        <div class="cs"><span class="cs-dot" style="background:rgba(230,130,130,0.92)"></span><span class="cs-label">Refused</span><span class="cs-covers">rejected, blacklisted, revoked</span></div>
+        <div class="cs"><span class="cs-dot" style="background:rgba(180,180,180,0.78)"></span><span class="cs-label">Terminal</span><span class="cs-covers">expired, withdrawn, outdated</span></div>
+        <div class="cs"><span class="cs-dot" style="background:rgba(140,200,220,0.92)"></span><span class="cs-label">Reinstate</span><span class="cs-covers">reinstate action</span></div>
+    </div>
 </section>
 """
 
@@ -1923,10 +1975,10 @@ def build_html() -> str:
         </div>
         <div class="naming-card">
             <div class="nm-tag">The locales</div>
-            <div class="nm-name">en &middot; es &middot; pt</div>
-            <div class="nm-body">Translated into English, Spanish, Portuguese
-            from federation v1. French queued. Localisations are sibling
-            phrasings, not translations of an English master.</div>
+            <div class="nm-name">en &middot; es &middot; pt &middot; fr</div>
+            <div class="nm-body">Translated into English, Spanish, Portuguese,
+            and French. Localisations are sibling phrasings, not translations
+            of an English master.</div>
         </div>
     </div>
 </section>
@@ -2269,11 +2321,11 @@ def build_html() -> str:
     <h1>Colophon</h1>
     <div class="colo-block">
         <div class="colo-h">Version</div>
-        <div class="colo-p colo-code">Brand book v1 &middot; 2026-05-21</div>
+        <div class="colo-p colo-code">Brand book v1 &middot; 2026-05-27</div>
         <div class="colo-p">Compiled from the canonical brand-book notes
         (Palette, Type, Voice and tone, Naming, Taglines, Iconography,
-        Screenshots), the Pluriverse landing page, and the Telaris app
-        itself. The Telaris codebase is the practical reference; the
+        Screenshots), the Pluriverse (PHP at www.telaris.ca), and the Telaris
+        app itself. The Telaris codebase is the practical reference; the
         notes are the editorial one.</div>
     </div>
     <div class="colo-block">
