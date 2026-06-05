@@ -1,44 +1,44 @@
 # Terms of Use
 
-> [!warning] Draft
-> This document is a placeholder. A finalised terms-of-use is in progress and will replace this draft. For questions in the interim, write to the maintainer of the instance you are using.
-
-These terms describe how the website at **www.telaris.ca** is offered to visitors, and the general posture under which **Telaris software** is offered to operators who run independent instances. Individual instances may carry additional terms of their own that govern the content hosted on those instances; those instance-level terms control there.
+These terms describe how the website at **www.telaris.ca** is offered to visitors, and the posture under which the **Telaris software** is offered to operators who run independent instances. Individual instances may carry additional terms of their own that govern the content hosted there; those instance-level terms apply on those instances.
 
 ## What Telaris is
 
-Telaris is a research-grade decolonial knowledge archive. The website at `www.telaris.ca` describes the project, lists active instances, and offers downloadable documentation. The Telaris software itself is open source and runs on operator-managed instances elsewhere.
+Telaris is a research-grade, community, open-source decolonial knowledge archive. The website at `www.telaris.ca` describes the project, lists active instances, and offers downloadable documentation. The Telaris software is open source and runs on operator-managed instances elsewhere.
+
+## No warranty, and no responsibility for problems
+
+> [!important] Telaris is free, community, open-source software, provided "as is".
+> Telaris comes with **no warranty of any kind**. The maintainer of the software and of www.telaris.ca, and the operators of individual instances, take **no responsibility** for any problem, loss, damage, downtime, data loss, or other consequence arising from using Telaris, running an instance, contributing to one, or relying on anything published on one. **You use Telaris at your own risk.** This is the same posture as the open-source licence the software is released under, stated in plain language.
+
+If you need guarantees of uptime, accuracy, or that Telaris will suit some particular use, it is not the right tool, and nobody involved in it is promising those things.
 
 ## Use of www.telaris.ca
 
-You may read, share, and link to anything on `www.telaris.ca` without restriction. The downloadable documentation PDFs may be redistributed for non-commercial educational use, with attribution. Commercial republication of the PDFs (selling them, including them in paid products, etc.) is not permitted; please contact the maintainer for licensing.
+You may read, share, and link to anything on `www.telaris.ca` without restriction. The downloadable documentation may be redistributed for non-commercial educational use, with attribution. Commercial republication of the documentation (selling it, bundling it into paid products, and the like) is not permitted; contact the maintainer for licensing.
 
 ## Use of the Telaris software
 
-The Telaris software is offered as-is under the open-source licence stated in its repository. There is no warranty; the software may have bugs; the maintainers are not liable for any consequences of running it. Operators choose whether and how to run an instance; the maintainers do not run instances on operators' behalf.
+The Telaris software is offered under the open-source licence stated in its repository. You may run, study, modify, and share it under that licence. Operators choose whether and how to run an instance; the maintainers do not run instances on anyone's behalf and have no access to or control over instances other people operate.
 
 ## Editor and visitor conduct
 
-When you use a Telaris instance as an editor, the instance's operator decides what conduct is appropriate. Most operators expect editorial sovereignty (editors decide what to publish within their galaxy) paired with source-community consent (material contributed by a community is governed by that community's decisions). Specific behaviour rules are an instance-level concern.
+When you use a Telaris instance as an editor, the operator of that instance decides what conduct is appropriate. Most operators expect editorial sovereignty (editors decide what to publish within their galaxy) paired with source-community consent (material a community contributes is governed by that community's decisions). Specific behaviour rules are an instance-level matter. As an editor, you are responsible for having the right to publish what you publish, and for honouring the consent of the communities whose material you carry.
 
 When you use a Telaris instance as a visitor, you can read what editors have published. Visitors do not have accounts on Telaris instances by default.
 
 ## Federation
 
-Federation between Telaris instances is bilateral and consent-based. Two instances federate only when both their operators have agreed; either operator can withdraw the agreement at any time. Federated content carries cryptographic signatures so the receiving instance can verify the origin and so the origin's editorial sovereignty travels with the content.
-
-## Limitations of liability
-
-Telaris is offered without warranty. The maintainers of the software, the operators of individual instances, and the editors who publish on them do their work in good faith but cannot guarantee uptime, accuracy, completeness, or fitness for any particular purpose. To the extent permitted by law, the maintainers' liability is limited to the amount you paid for Telaris, which is nothing.
+Federation between Telaris instances is bilateral and consent-based. Two instances federate only when both operators agree, and either operator can withdraw the agreement at any time. Federated content carries cryptographic signatures so the receiving instance can verify its origin and so the origin's editorial sovereignty travels with the content. A retraction at the origin drops the mirror.
 
 ## Withdrawal and removal
 
-Anyone whose material is hosted on a Telaris instance may request its removal from that instance's operator. The operator is expected to honour the request. Maintainers of www.telaris.ca and of the software cannot remove content from instances they do not operate.
+Anyone whose material is hosted on a Telaris instance may request its removal from that instance's operator, who is expected to honour the request. The maintainers of www.telaris.ca and of the software cannot remove content from instances they do not operate.
 
 ## Contact
 
-For instance-specific questions, contact the operator of the instance in question (the contact address is listed on that instance's own site). For questions about www.telaris.ca, the software itself, or these terms, contact the maintainer named on the **/governance** page (forthcoming).
+For questions about a specific instance, contact that instance's operator (the address is listed on the instance's own site). For questions about www.telaris.ca, the software itself, or these terms, use the [Contact](https://www.telaris.ca/contact) page; the project's governance is described on the [Governance](https://www.telaris.ca/governance) page.
 
 ## Version
 
-Draft, 2026-05-21. Replaces no prior version. To be revised before public-facing release.
+Version 1.0, effective 2026-06-04. This is the first published version; it replaces the earlier draft. When these terms change in a way that affects editors, the version is incremented and editors are asked to review the new version on their next sign-in.

@@ -1,44 +1,44 @@
 # Termos de uso
 
-> [!warning] Rascunho
-> Este documento é provisório. Está em curso uma versão final dos termos de uso que substituirá este rascunho. Para perguntas no intervalo, escreva a quem mantém a instância que você está usando.
-
-Estes termos descrevem como o site **www.telaris.ca** é oferecido a quem o visita, e a postura geral sob a qual o **software de Telaris** é oferecido a quem opera instâncias independentes. Instâncias individuais podem ter termos adicionais próprios que regem o conteúdo hospedado nessas instâncias; esses termos de instância valem ali.
+Estes termos descrevem como o site **www.telaris.ca** é oferecido a quem o visita, e a postura sob a qual o **software de Telaris** é oferecido a quem opera instâncias independentes. Cada instância pode carregar termos próprios adicionais que governam o conteúdo hospedado ali; esses termos a nível de instância regem nessas instâncias.
 
 ## O que é Telaris
 
-Telaris é um arquivo de conhecimento decolonial de grau investigativo. O site em `www.telaris.ca` descreve o projeto, lista as instâncias ativas e oferece documentação para download. O próprio software de Telaris é de código aberto e roda em instâncias administradas por pessoas operadoras em outros lugares.
+Telaris é um arquivo de conhecimento decolonial de grau investigativo, comunitário e de código aberto. O site em `www.telaris.ca` descreve o projeto, lista as instâncias ativas e oferece documentação baixável. O software de Telaris é de código aberto e roda em instâncias geridas por quem as opera, em outros lugares.
+
+## Sem garantia e sem responsabilidade por problemas
+
+> [!important] Telaris é software livre, comunitário e de código aberto, oferecido "como está".
+> Telaris é oferecido **sem garantia de nenhum tipo**. Quem mantém o software e www.telaris.ca, e quem opera instâncias individuais, **não assume nenhuma responsabilidade** por nenhum problema, perda, dano, interrupção, perda de dados ou outra consequência decorrente de usar Telaris, operar uma instância, contribuir para uma ou confiar em algo publicado em uma. **Você usa Telaris por sua própria conta e risco.** É a mesma postura da licença de código aberto sob a qual o software é publicado, dita em linguagem clara.
+
+Se você precisa de garantias de disponibilidade, exatidão ou de que Telaris sirva para um fim específico, não é a ferramenta certa, e ninguém envolvido no projeto promete essas coisas.
 
 ## Uso de www.telaris.ca
 
-Você pode ler, compartilhar e fazer link para qualquer conteúdo em `www.telaris.ca` sem restrição. Os PDFs de documentação para download podem ser redistribuídos para fins educativos não comerciais, com atribuição. A republicação comercial dos PDFs (vendê-los, incluí-los em produtos pagos, etc.) não é permitida; por favor contate quem mantém o projeto para licenciamento.
+Você pode ler, compartilhar e fazer link para qualquer coisa de `www.telaris.ca` sem restrição. A documentação baixável pode ser redistribuída para uso educativo não comercial, com atribuição. A republicação comercial da documentação (vendê-la, incluí-la em produtos pagos e similares) não é permitida; contate quem mantém o projeto para licenciamento.
 
 ## Uso do software de Telaris
 
-O software de Telaris é oferecido como está, sob a licença de código aberto declarada em seu repositório. Não há garantia; o software pode ter bugs; quem o mantém não se responsabiliza pelas consequências de executá-lo. Quem opera escolhe se e como executar uma instância; quem mantém o software não opera instâncias em nome de quem opera.
+O software de Telaris é oferecido sob a licença de código aberto indicada no seu repositório. Você pode executá-lo, estudá-lo, modificá-lo e compartilhá-lo sob essa licença. Quem opera decide se executa uma instância e como; quem mantém o software não opera instâncias em nome de ninguém e não tem acesso nem controle sobre as instâncias que outras pessoas operam.
 
-## Conduta de editoras e visitantes
+## Conduta de quem edita e de quem visita
 
-Quando você usa uma instância de Telaris como editora, quem opera a instância decide qual conduta é apropriada. A maioria de quem opera espera soberania editorial (as editoras decidem o que publicar dentro de sua galáxia) combinada com consentimento da comunidade de origem (o material contribuído por uma comunidade é governado pelas decisões dessa comunidade). As regras de comportamento específicas são uma questão de instância.
+Quando você usa uma instância de Telaris como pessoa editora, quem opera essa instância decide qual conduta é apropriada. A maioria de quem opera espera soberania editorial (quem edita decide o que publicar dentro da sua galáxia) junto com consentimento da comunidade de origem (o material que uma comunidade contribui rege-se pelas decisões dessa comunidade). As regras de comportamento específicas são um assunto a nível de instância. Como pessoa editora, você é responsável por ter o direito de publicar o que publica e por respeitar o consentimento das comunidades cujo material você carrega.
 
-Quando você usa uma instância de Telaris como visitante, pode ler o que as editoras publicaram. As visitantes não têm conta nas instâncias de Telaris por padrão.
+Quando você usa uma instância de Telaris como visita, você pode ler o que quem edita publicou. Por padrão, quem visita não tem contas nas instâncias de Telaris.
 
 ## Federação
 
-A federação entre instâncias de Telaris é bilateral e baseada em consentimento. Duas instâncias se federam apenas quando quem as opera concordou; qualquer uma pode retirar o acordo a qualquer momento. O conteúdo federado carrega assinaturas criptográficas para que a instância receptora possa verificar a origem e para que a soberania editorial da origem viaje com o conteúdo.
-
-## Limitações de responsabilidade
-
-Telaris é oferecido sem garantia. Quem mantém o software, quem opera instâncias individuais, e quem publica nelas fazem seu trabalho de boa-fé mas não podem garantir disponibilidade, exatidão, completude, nem adequação a um propósito particular. Na medida permitida por lei, a responsabilidade de quem mantém o software limita-se ao valor que você pagou por Telaris, que é nada.
+A federação entre instâncias de Telaris é bilateral e baseada no consentimento. Duas instâncias se federam apenas quando ambas as pessoas operadoras concordam, e qualquer uma das duas pode retirar o acordo a qualquer momento. O conteúdo federado leva assinaturas criptográficas para que a instância receptora possa verificar a sua origem e para que a soberania editorial da origem viaje com o conteúdo. Uma retratação na origem remove a réplica.
 
 ## Retirada e remoção
 
-Qualquer pessoa cujo material esteja hospedado em uma instância de Telaris pode solicitar sua remoção a quem opera essa instância. Espera-se que quem opera honre a solicitação. Quem mantém www.telaris.ca e o software não pode remover conteúdo de instâncias que não opera.
+Qualquer pessoa cujo material esteja hospedado em uma instância de Telaris pode pedir a sua remoção a quem opera essa instância, que se espera que acate o pedido. Quem mantém www.telaris.ca e o software não pode remover conteúdo de instâncias que não opera.
 
 ## Contato
 
-Para perguntas específicas de uma instância, contate quem opera essa instância (o endereço de contato está listado no site da própria instância). Para perguntas sobre www.telaris.ca, sobre o software em si, ou sobre estes termos, contate quem mantém o projeto na página **/governance** (em breve).
+Para perguntas sobre uma instância específica, contate quem a opera (o endereço consta no site da própria instância). Para perguntas sobre www.telaris.ca, sobre o software em si ou sobre estes termos, use a página de [Contato](https://www.telaris.ca/contact); a governança do projeto é descrita na página de [Governança](https://www.telaris.ca/governance).
 
 ## Versão
 
-Rascunho, 2026-05-21. Não substitui uma versão anterior. Será revisado antes de sua publicação definitiva.
+Versão 1.0, em vigor desde 2026-06-04. É a primeira versão publicada; substitui o rascunho anterior. Quando estes termos mudarem de uma forma que afete quem edita, a versão é incrementada e é pedido que se revise a nova versão no próximo início de sessão.
