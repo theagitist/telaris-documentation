@@ -4,6 +4,8 @@ El cuerpo de un agujero de gusano es la descripción; sus **medios** son todo lo
 
 Un agujero de gusano carga como máximo **un visual primario** a la vez. Image, Video y PDF son tres pestañas en el modal que comparten un único espacio subyacente; elegir una y guardar borra las otras. El cuarto tipo de medio, **audio**, es independiente del visual primario: un agujero de gusano con una imagen *y* una pista de audio reproduce el audio mientras la imagen permanece en pantalla.
 
+La propia sección de medios tiene dos pestañas de nivel superior: **Clásico** y **Hotglue**. Todo lo descrito arriba (imagen, video, PDF, audio, código de incrustación) vive bajo **Clásico**, la opción predeterminada. **Hotglue** es otra manera de construir los medios de un agujero de gusano: en lugar de una sola imagen o un solo video, compones una página libre, colocando texto e imágenes donde quieras sobre un lienzo abierto. Las dos son alternativas; la pestaña que esté abierta al guardar es lo que ven las visitantes. Hotglue se trata al final de este capítulo.
+
 ## La pestaña Image
 
 La pestaña por defecto, y la elección más común de medios. Úsala para fotografías, ilustraciones, escaneos, diagramas, cualquier cosa estática.
@@ -78,6 +80,30 @@ La mayoría de las editoras no necesitan esto; los iconos por defecto del tema c
 Los medios subidos se guardan en tu instancia. Las subidas de cada agujero de gusano viven bajo una carpeta identificada por el id del agujero de gusano; restaurar una instantánea trae las subidas con ella, eliminar un agujero de gusano elimina sus subidas.
 
 Los medios enlazados por URL se quedan en su servidor original; si el servidor elimina el archivo, los medios del agujero de gusano se vuelven oscuros. Las editoras con referencias externas valiosas deberían considerar subir el archivo en vez de enlazarlo, para que el archivo sobreviva a su origen.
+
+## Componer una página con Hotglue
+
+A veces una sola imagen o un solo video no bastan. Quieres una pequeña composición: un título, un párrafo, dos fotografías una al lado de la otra, un pie de foto debajo, un enlace hacia afuera. **Hotglue** es el modo de medios para eso. En lugar de llenar un espacio fijo, compones una página libre donde cada elemento se puede colocar, dimensionar y disponer a mano, y esa página se convierte en los medios del agujero de gusano.
+
+En el modal de editar agujero de gusano, abre la sección **Medios** y elige la pestaña **Hotglue**, luego elige **Editar contenido hotglue**. Se abre un editor casi a pantalla completa sobre la página. Es un lienzo abierto: no hay filas ni columnas a las que ajustarse. Agregas un bloque de texto o una imagen y luego lo arrastras a donde quieras, lo redimensionas y superpones unos elementos sobre otros.
+
+![El modal de editar agujero de gusano con la pestaña de medios Hotglue activa: una breve línea de ayuda y el botón Editar contenido hotglue](assets/images/editor-manual-es/14-media-hotglue-tab.png)
+
+Los movimientos básicos:
+
+- **Agregar texto.** Haz doble clic en un área vacía del lienzo para crear un bloque de texto y escribe. Haz clic fuera de él para terminar. Arrastra el bloque para reposicionarlo; arrastra su borde para redimensionarlo.
+- **Agregar una imagen.** Arrastra un archivo de imagen desde tu computadora al lienzo, o usa la barra de herramientas para elegir una. La imagen se guarda con la página. Arrástrala y redimensiónala como cualquier otro elemento.
+- **Disponer con libertad.** Los elementos pueden estar en cualquier lugar y superponerse. No hay cuadrícula; la disposición que construyas es la que ven las visitantes.
+- **La página se guarda mientras trabajas.** No hay un botón de guardar aparte dentro del lienzo; tus cambios se conservan a medida que los haces. Cuando termines, cierra el editor.
+
+De vuelta en el modal del agujero de gusano, deja seleccionada la pestaña **Hotglue** y guarda el agujero de gusano. A partir de entonces, abrir ese agujero de gusano muestra tu página compuesta en lugar de la imagen o el video clásicos. Las visitantes ven la página exactamente como la dispusiste; no pueden editarla.
+
+Algunas cosas que tener presentes:
+
+- **Solo editas páginas en galaxias en las que tienes un asiento.** La edición con Hotglue sigue la misma regla de acceso que el resto del agujero de gusano: puedes componer páginas en tus propias galaxias, y no en galaxias a las que no se te ha dado acceso.
+- **Una página de Hotglue es una sola superficie compuesta.** A diferencia del resto de Telaris, no se traduce sola según el idioma de quien visita; el texto que colocas es el texto que ve todo el mundo. Si tu público es multilingüe, escribe la página teniéndolo en cuenta.
+- **La disposición libre es el modo de medios más expresivo y el menos indulgente.** La colocación absoluta se ve exactamente como la fijaste, lo que también significa que no se reajusta para pantallas pequeñas ni para tecnología de asistencia como sí lo hace el texto ordinario. Úsala donde la composición importe; apóyate en las pestañas clásicas Image o PDF para documentos sencillos.
+- **Clásico y Hotglue son alternativas, no una pila.** Un agujero de gusano muestra uno u otro, según qué pestaña esté abierta al guardar. Volver a Clásico no borra la página de Hotglue; solo deja de mostrarla, así que puedes regresar a ella más tarde reseleccionando la pestaña Hotglue.
 
 ## Cosas que vale la pena saber
 

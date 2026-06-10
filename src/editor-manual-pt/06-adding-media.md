@@ -4,6 +4,8 @@ O corpo de um buraco de minhoca é a descrição; sua **mídia** é tudo o que �
 
 Um buraco de minhoca carrega no máximo **um visual primário** por vez. Image, Video, e PDF são três abas no modal que compartilham um único slot subjacente; escolher uma e salvar limpa as outras. O quarto tipo de mídia, **áudio**, é independente do visual primário: um buraco de minhoca com uma imagem *e* uma trilha de áudio toca o áudio enquanto a imagem permanece na tela.
 
+A própria seção de mídia tem duas abas de nível superior: **Clássico** e **Hotglue**. Tudo o que foi descrito acima (imagem, video, PDF, áudio, código de incorporação) fica sob **Clássico**, a opção padrão. **Hotglue** é outra maneira de construir a mídia de um buraco de minhoca: em vez de uma única imagem ou um único video, você compõe uma página livre, posicionando texto e imagens onde quiser sobre uma tela aberta. As duas são alternativas; a aba que estiver aberta ao salvar é o que as visitantes veem. Hotglue é tratada no fim deste capítulo.
+
 ## A aba Image
 
 A aba padrão, e a escolha de mídia mais comum. Use para fotografias, ilustrações, escaneamentos, diagramas, qualquer coisa parada.
@@ -78,6 +80,30 @@ A maioria das editoras não precisa disso; os ícones padrão do tema cobrem a m
 A mídia enviada por upload é armazenada na sua instância. Os uploads de cada buraco de minhoca vivem sob uma pasta identificada pelo id do buraco; restaurar um snapshot traz os uploads junto, apagar um buraco de minhoca remove seus uploads.
 
 A mídia ligada por URL permanece no host original; se o host remove o arquivo, a mídia do buraco de minhoca fica escura. Editoras com referências externas valiosas devem considerar enviar o arquivo por upload em vez de só ligar, para que o arquivo sobreviva ao host original.
+
+## Compor uma página com Hotglue
+
+Às vezes uma única imagem ou um único video não bastam. Você quer uma pequena composição: um título, um parágrafo, duas fotografias lado a lado, uma legenda embaixo, um link para fora. **Hotglue** é o modo de mídia para isso. Em vez de preencher um espaço fixo, você compõe uma página livre onde cada elemento pode ser posicionado, dimensionado e organizado à mão, e essa página se torna a mídia do buraco de minhoca.
+
+No modal de editar buraco de minhoca, abra a seção **Mídia** e escolha a aba **Hotglue**, depois escolha **Editar conteúdo hotglue**. Abre-se um editor quase em tela cheia sobre a página. É uma tela aberta: não há linhas nem colunas às quais se ajustar. Você adiciona um bloco de texto ou uma imagem e depois o arrasta para onde quiser, redimensiona e sobrepõe um elemento ao outro.
+
+![O modal de editar buraco de minhoca com a aba de mídia Hotglue ativa: uma breve linha de ajuda e o botão Editar conteúdo hotglue](assets/images/editor-manual-pt/14-media-hotglue-tab.png)
+
+Os movimentos básicos:
+
+- **Adicionar texto.** Dê um duplo clique em uma área vazia da tela para criar um bloco de texto e digite. Clique fora dele para terminar. Arraste o bloco para reposicioná-lo; arraste a borda para redimensioná-lo.
+- **Adicionar uma imagem.** Arraste um arquivo de imagem do seu computador para a tela, ou use a barra de ferramentas para escolher uma. A imagem é guardada com a página. Arraste-a e redimensione-a como qualquer outro elemento.
+- **Organizar com liberdade.** Os elementos podem ficar em qualquer lugar e se sobrepor. Não há grade; a disposição que você construir é a que as visitantes veem.
+- **A página é salva enquanto você trabalha.** Não há um botão de salvar à parte dentro da tela; suas mudanças são mantidas conforme você as faz. Quando terminar, feche o editor.
+
+De volta ao modal do buraco de minhoca, deixe a aba **Hotglue** selecionada e salve o buraco de minhoca. A partir daí, abrir esse buraco de minhoca mostra sua página composta no lugar da imagem ou do video clássicos. As visitantes veem a página exatamente como você a organizou; elas não podem editá-la.
+
+Algumas coisas a ter em mente:
+
+- **Você só edita páginas em galáxias nas quais tem um assento.** A edição com Hotglue segue a mesma regra de acesso do resto do buraco de minhoca: você pode compor páginas nas suas próprias galáxias, e não em galáxias às quais não recebeu acesso.
+- **Uma página de Hotglue é uma única superfície composta.** Diferente do resto do Telaris, ela não se traduz sozinha conforme o idioma de quem visita; o texto que você coloca é o texto que todo mundo vê. Se o seu público é multilíngue, escreva a página tendo isso em conta.
+- **A disposição livre é o modo de mídia mais expressivo e o menos tolerante.** O posicionamento absoluto aparece exatamente como você o fixou, o que também significa que ele não se reajusta para telas pequenas nem para tecnologia assistiva como o texto comum se reajusta. Use-a onde a composição importa; apoie-se nas abas clássicas Image ou PDF para documentos simples.
+- **Clássico e Hotglue são alternativas, não uma pilha.** Um buraco de minhoca mostra um ou outro, conforme qual aba estiver aberta ao salvar. Voltar para Clássico não apaga a página de Hotglue; apenas deixa de mostrá-la, então você pode voltar a ela mais tarde reselecionando a aba Hotglue.
 
 ## Coisas que vale a pena saber
 

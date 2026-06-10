@@ -4,6 +4,8 @@ A wormhole's body is the description; its **media** is everything visual or soni
 
 A wormhole carries at most **one primary visual** at a time. Image, Video, and PDF are three tabs in the modal that share a single underlying slot; picking one and saving clears the others. The fourth media type, **audio**, is independent of the primary visual: a wormhole with an image *and* an audio track plays the audio while the image stays on screen.
 
+The Media section itself has two top-level tabs: **Classic** and **Hotglue**. Everything described above (Image, Video, PDF, audio, embed code) lives under **Classic**, the default. **Hotglue** is a different way to build a wormhole's media: instead of one image or one video, you compose a freeform page, placing text and images anywhere you like on an open canvas. The two are alternatives; whichever tab is open when you save is what visitors see. Hotglue is covered at the end of this chapter.
+
 ## The Image tab
 
 The default tab, and the most common media choice. Use it for photographs, illustrations, scans, diagrams, anything still.
@@ -78,6 +80,30 @@ Most editors do not need this; the theme's default icons cover most cases. When 
 Uploaded media is stored on your instance. Each wormhole's uploads live under a folder identified by the wormhole's id; restoring a snapshot brings uploads with it, deleting a wormhole removes its uploads.
 
 URL-linked media stays at its original host; if the host removes the file, the wormhole's media goes dark. Editors with valuable external references should consider uploading the file rather than linking, so the archive survives the original host.
+
+## Composing a page with Hotglue
+
+Sometimes one image or one video is not enough. You want a small composition: a heading, a paragraph, two photographs side by side, a caption underneath, a link out. **Hotglue** is the media mode for that. Instead of filling a fixed slot, you compose a freeform page where every element can be placed, sized, and arranged by hand, and that page becomes the wormhole's media.
+
+In the Edit Wormhole modal, open the **Media** section and choose the **Hotglue** tab, then choose **Edit hotglue content**. A near-full-screen editor opens over the page. This is an open canvas: there are no rows or columns to fit into. You add a text block or an image and then drag it wherever you want it, resize it, and layer elements over one another.
+
+![The Edit Wormhole modal with the Hotglue media tab active: a short help line and the Edit hotglue content button](assets/images/editor-manual/14-media-hotglue-tab.png)
+
+The basic moves:
+
+- **Add text.** Double-click an empty area of the canvas to create a text block, then type. Click outside it to finish. Drag the block to reposition it; drag its edge to resize.
+- **Add an image.** Drag an image file from your computer onto the canvas, or use the toolbar to pick one. The image is stored with the page. Drag and resize it like any other element.
+- **Arrange freely.** Elements can sit anywhere and overlap. There is no grid; the layout you build is the layout visitors see.
+- **The page saves as you work.** There is no separate save button inside the canvas; your changes are kept as you make them. When you are done, close the editor.
+
+Back in the wormhole modal, leave the **Hotglue** tab selected and save the wormhole. From then on, opening that wormhole shows your composed page in place of the classic image or video. Visitors see the page exactly as you arranged it; they cannot edit it.
+
+A few things to keep in mind:
+
+- **You only edit pages on galaxies you have a seat in.** Hotglue editing follows the same access rule as the rest of the wormhole: you can compose pages on your own galaxies, and not on galaxies you have not been given access to.
+- **A hotglue page is a single composed surface.** Unlike the rest of Telaris, it does not translate itself per visitor language; the text you place is the text everyone sees. If your audience is multilingual, write the page with that in mind.
+- **Freeform layout is the most expressive media mode and the least forgiving.** Absolute placement looks exactly as you set it, which also means it does not reflow for small screens or assistive technology the way ordinary text does. Use it where the composition matters; lean on the classic Image or PDF tabs for plain documents.
+- **Classic and Hotglue are alternatives, not a stack.** A wormhole shows one or the other, decided by which tab is open when you save. Switching back to Classic does not erase the hotglue page; it just stops showing it, so you can return to it later by reselecting the Hotglue tab.
 
 ## Things worth knowing
 

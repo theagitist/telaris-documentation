@@ -200,7 +200,28 @@ SHOTS: list[Shot] = [
         full_page=False,
         description="Visitor 3D scene for the Coastal plants demo galaxy.",
     ),
+    Shot(
+        name="14-media-hotglue-tab",
+        route="/edit/?slug=manual-demo-coastal-plants",
+        prepare=lambda page: open_edit_modal_on_hotglue_tab(page, "Beach Strawberry"),
+        full_page=False,
+        description="Edit Wormhole modal with the Hotglue media tab active: the help line and the centered Edit hotglue content button.",
+    ),
 ]
+
+
+def open_edit_modal_on_hotglue_tab(page: Page, wormhole_name: str) -> None:
+    """Open the Edit Wormhole modal, switch the Media section to the Hotglue
+    tab, and centre the media block so the help line and the Edit-hotglue-content
+    button are framed."""
+    open_edit_wormhole_modal(page, wormhole_name)
+    page.click("#edit-media-hotglue-tab")
+    page.wait_for_timeout(400)
+    page.evaluate("""(() => {
+        const el = document.getElementById('edit-media-hotglue-content');
+        if (el) el.scrollIntoView({block: 'center'});
+    })()""")
+    page.wait_for_timeout(500)
 
 
 def open_galaxy_settings_modal_scrolled(page: Page) -> None:

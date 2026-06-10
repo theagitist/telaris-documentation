@@ -4,6 +4,8 @@ Le corps d'un trou de ver est la description ; ses **médias** sont tout ce que 
 
 Un trou de ver porte au plus **un visuel principal** à la fois. Image, Vidéo et PDF sont trois onglets dans la fenêtre qui partagent un même emplacement sous-jacent ; en choisir un et enregistrer efface les autres. Le quatrième type de média, **audio**, est indépendant du visuel principal : un trou de ver avec une image *et* une piste audio joue l'audio pendant que l'image reste à l'écran.
 
+La section des médias a elle-même deux onglets de premier niveau : **Classique** et **Hotglue**. Tout ce qui est décrit plus haut (image, vidéo, PDF, audio, code d'intégration) se trouve sous **Classique**, l'option par défaut. **Hotglue** est une autre façon de construire les médias d'un trou de ver : au lieu d'une seule image ou d'une seule vidéo, tu composes une page libre, en plaçant texte et images où tu veux sur une toile ouverte. Les deux sont des alternatives ; l'onglet ouvert au moment d'enregistrer est ce que voit qui visite. Hotglue est traité à la fin de ce chapitre.
+
 ## L'onglet Image
 
 L'onglet par défaut, et le choix de média le plus courant. Utilise-le pour les photographies, les illustrations, les scans, les diagrammes, tout ce qui est immobile.
@@ -78,6 +80,30 @@ La plupart des comptes d'édition n'en ont pas besoin ; les icônes par défaut 
 Les médias téléversés sont stockés sur ton instance. Les téléversements de chaque trou de ver vivent sous un dossier identifié par l'identifiant du trou de ver ; restaurer un instantané ramène les téléversements avec lui, supprimer un trou de ver retire ses téléversements.
 
 Les médias liés par URL restent chez leur hôte d'origine ; si l'hôte supprime le fichier, le média du trou de ver s'éteint. L'édition avec des références externes précieuses devrait songer à téléverser le fichier plutôt qu'à le lier, pour que l'archive survive à l'hôte d'origine.
+
+## Composer une page avec Hotglue
+
+Parfois une seule image ou une seule vidéo ne suffit pas. Tu veux une petite composition : un titre, un paragraphe, deux photographies côte à côte, une légende en dessous, un lien vers l'extérieur. **Hotglue** est le mode de média pour cela. Au lieu de remplir un emplacement fixe, tu composes une page libre où chaque élément peut être placé, dimensionné et disposé à la main, et cette page devient les médias du trou de ver.
+
+Dans la fenêtre de modification du trou de ver, ouvre la section **Médias** et choisis l'onglet **Hotglue**, puis choisis **Modifier le contenu hotglue**. Un éditeur presque en plein écran s'ouvre par-dessus la page. C'est une toile ouverte : il n'y a ni lignes ni colonnes auxquelles s'ajuster. Tu ajoutes un bloc de texte ou une image, puis tu le glisses où tu veux, tu le redimensionnes et tu superposes les éléments les uns sur les autres.
+
+![La fenêtre de modification du trou de ver avec l'onglet de média Hotglue actif : une courte ligne d'aide et le bouton Modifier le contenu hotglue](assets/images/editor-manual-fr/14-media-hotglue-tab.png)
+
+Les gestes de base :
+
+- **Ajouter du texte.** Double-clique sur une zone vide de la toile pour créer un bloc de texte, puis écris. Clique en dehors pour terminer. Glisse le bloc pour le repositionner ; glisse son bord pour le redimensionner.
+- **Ajouter une image.** Glisse un fichier image depuis ton ordinateur sur la toile, ou utilise la barre d'outils pour en choisir une. L'image est enregistrée avec la page. Glisse-la et redimensionne-la comme n'importe quel autre élément.
+- **Disposer librement.** Les éléments peuvent se trouver n'importe où et se chevaucher. Il n'y a pas de grille ; la disposition que tu construis est celle que voit qui visite.
+- **La page s'enregistre pendant que tu travailles.** Il n'y a pas de bouton d'enregistrement séparé dans la toile ; tes changements sont conservés au fur et à mesure. Quand tu as terminé, ferme l'éditeur.
+
+De retour dans la fenêtre du trou de ver, laisse l'onglet **Hotglue** sélectionné et enregistre le trou de ver. Dès lors, ouvrir ce trou de ver montre ta page composée à la place de l'image ou de la vidéo classiques. Qui visite voit la page exactement comme tu l'as disposée, sans pouvoir la modifier.
+
+Quelques points à garder en tête :
+
+- **Tu ne modifies que les pages des galaxies où tu as un siège.** La modification avec Hotglue suit la même règle d'accès que le reste du trou de ver : tu peux composer des pages sur tes propres galaxies, et non sur des galaxies auxquelles on ne t'a pas donné accès.
+- **Une page Hotglue est une seule surface composée.** Contrairement au reste de Telaris, elle ne se traduit pas d'elle-même selon la langue de qui visite ; le texte que tu places est le texte que tout le monde voit. Si ton public est multilingue, écris la page en conséquence.
+- **La disposition libre est le mode de média le plus expressif et le moins indulgent.** Le placement absolu apparaît exactement comme tu l'as fixé, ce qui veut aussi dire qu'il ne se réajuste pas pour les petits écrans ni pour les technologies d'assistance comme le fait le texte ordinaire. Utilise-le là où la composition compte ; appuie-toi sur les onglets classiques Image ou PDF pour les documents simples.
+- **Classique et Hotglue sont des alternatives, pas un empilement.** Un trou de ver montre l'un ou l'autre, selon l'onglet ouvert au moment d'enregistrer. Revenir à Classique n'efface pas la page Hotglue ; cela cesse seulement de l'afficher, donc tu peux y revenir plus tard en resélectionnant l'onglet Hotglue.
 
 ## Choses qu'il vaut la peine de savoir
 
