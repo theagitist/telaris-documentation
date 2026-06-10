@@ -5,3 +5,4 @@ doc_class: manual
 locale: en
 page_size: A4
 cover_tagline: A field guide to a non-hierarchical archive.
+app_version: Covers Telaris v6.12.0

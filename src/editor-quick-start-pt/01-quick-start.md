@@ -58,7 +58,7 @@ Dentro do mesmo modal, role até **Primary visual**. A aba **Image** está ativa
 
 Se quiser que a imagem seja exibida como ícone do buraco de minhoca na cena 3D (em vez do ícone padrão do tema da galáxia), ative **Use as wormhole icon**. Caso contrário, a imagem só aparece dentro do cartão de informações do buraco de minhoca quando uma visitante o abre.
 
-A imagem é o tipo de mídia mais comum. O mesmo modal também suporta vídeo, áudio e PDF; o Manual do editor completo percorre cada um. Para seu primeiro buraco de minhoca, uma imagem é suficiente.
+A imagem é o tipo de mídia mais comum. O mesmo modal também suporta vídeo, áudio e PDF, e uma aba **Hotglue** para compor a mídia do buraco de minhoca como uma página livre de texto e imagens que você organiza à mão; o Manual do editor completo percorre cada um. Para seu primeiro buraco de minhoca, uma imagem é suficiente.
 
 ## Passo 5: Salvar
 
@@ -71,7 +71,7 @@ Para vê-lo como uma visitante o verá, encontre o botão **View** ao lado do se
 Você tem o ciclo. A partir daqui:
 
 - **Repita.** Faça outro buraco de minhoca. E mais outro. Uma galáxia de um buraco de minhoca é tecnicamente válida; uma galáxia de dez já começa a parecer um arquivo.
-- **Explore.** Este Início rápido cobriu o caminho mais curto possível. A superfície de edição tem muito mais do que o que você acabou de ver. Explore o modal de buraco de minhoca que já conhece; experimente os campos **Video (MP4)**, **PDF** e áudio; abra o botão **Settings** ao lado do seletor de galáxia e veja as opções de descoberta; abra o botão **Canvas** e conheça a tela de palavras-chave; experimente o botão **Bulk by keyword** na página de edição. Nada na edição é destrutivo à primeira vista; abrir um modal não muda nada até que você salve.
+- **Explore.** Este Início rápido cobriu o caminho mais curto possível. A superfície de edição tem muito mais do que o que você acabou de ver. Explore o modal de buraco de minhoca que já conhece; experimente os campos **Video (MP4)**, **PDF** e áudio e a aba **Hotglue**; abra o botão **Settings** ao lado do seletor de galáxia e veja as opções de descoberta; abra o botão **Canvas** e conheça a tela de palavras-chave; experimente o botão **Bulk by keyword** na página de edição. Nada na edição é destrutivo à primeira vista; abrir um modal não muda nada até que você salve.
 - **Leia o Manual do editor completo.** Um manual completo está disponível em <https://www.telaris.ca/docs/editor-manual-pt.pdf>, em quinze capítulos que percorrem cada superfície em detalhe: galáxias, cada tipo de mídia, portais entre galáxias, a tela de palavras-chave, vistas de visitante, percursos, trabalho multigaláxia, decisões editoriais, resolução de problemas, e um glossário. Folheie o índice e mergulhe nos capítulos de que precisar; nada deste Início rápido fica invalidado pelo que você vai encontrar lá.
 - **Use as palavras-chave com cuidado.** Duas ou três palavras-chave precisas por buraco de minhoca conectam mais utilmente que dez genéricas. As fichas de palavras-chave que você atribui são como as visitantes descobrem a rede que você está tecendo.
 

@@ -55,7 +55,7 @@ Still inside the same modal, scroll down to **Primary visual**. The **Image** ta
 
 If you want the image to render as the wormhole's icon in the 3D scene (instead of the galaxy's default theme icon), toggle **Use as wormhole icon** on. Otherwise the image only appears inside the wormhole's info card when a visitor opens it.
 
-The image is the most common kind of media. The same modal also supports video, audio, and PDF; the full Editor Manual walks through each. For your first wormhole, an image is plenty.
+The image is the most common kind of media. The same modal also supports video, audio, and PDF, and a **Hotglue** tab for composing the wormhole's media as a freeform page of text and images you lay out by hand; the full Editor Manual walks through each. For your first wormhole, an image is plenty.
 
 ## Step 5: Save
 
@@ -68,7 +68,7 @@ To see it as a visitor will, find the **View** button next to the galaxy picker 
 You have the loop. From here:
 
 - **Repeat.** Make another wormhole. Then another. A galaxy of one wormhole is technically valid; a galaxy of ten starts to feel like an archive.
-- **Explore.** This Quick Start covered the smallest possible path. The editor surface has much more on offer than what you have just seen. Click around the wormhole modal you already know; try the **Video (MP4)**, **PDF**, and audio fields; open the **Settings** button next to the galaxy picker and look at the discovery toggles; open the **Canvas** button and see the keyword canvas; try the **Bulk by keyword** button on the editor home. Nothing in the editor is destructive on first read; opening a modal does not change anything until you save.
+- **Explore.** This Quick Start covered the smallest possible path. The editor surface has much more on offer than what you have just seen. Click around the wormhole modal you already know; try the **Video (MP4)**, **PDF**, and audio fields and the **Hotglue** tab; open the **Settings** button next to the galaxy picker and look at the discovery toggles; open the **Canvas** button and see the keyword canvas; try the **Bulk by keyword** button on the editor home. Nothing in the editor is destructive on first read; opening a modal does not change anything until you save.
 - **Read the full Editor Manual.** A complete user manual is available at <https://www.telaris.ca/docs/editor-manual.pdf>, in fifteen chapters that walk through every surface in detail: galaxies, every media type, portals between galaxies, the keyword canvas, visitor views, tours, multigalaxy work, editorial choices, troubleshooting, and a glossary. Skim its table of contents and dip into the chapters you need; nothing in this Quick Start is invalidated by what you will find there.
 - **Use keywords deliberately.** Two or three precise keywords per wormhole connect more usefully than ten generic ones. The keyword chips you assign are how visitors discover the web you are building.
 

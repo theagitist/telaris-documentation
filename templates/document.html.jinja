@@ -21,6 +21,7 @@
     {% if meta.subtitle %}<div class="cover-subtitle">{{ meta.subtitle }}</div>{% endif %}
     {% if meta.cover_tagline %}<div class="cover-tagline">{{ meta.cover_tagline }}</div>{% endif %}
     <div class="cover-version">{{ meta.version }}</div>
+    {% if meta.app_version %}<div class="cover-appversion">{{ meta.app_version }}</div>{% endif %}
   </section>
 
   {# Table of contents (suppressed when meta.show_toc is false; useful for

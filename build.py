@@ -60,6 +60,7 @@ class DocMeta:
     cover_tagline: str
     page_size: str  # WeasyPrint accepts 'A4', 'Letter', etc.
     show_toc: bool  # render the dedicated TOC spread (default True)
+    app_version: str  # optional: the Telaris app version this doc covers (cover line)
 
 
 def load_meta(slug: str) -> DocMeta:
@@ -78,6 +79,7 @@ def load_meta(slug: str) -> DocMeta:
         cover_tagline=raw.get("cover_tagline", ""),
         page_size=raw.get("page_size", "A4"),
         show_toc=bool(raw.get("show_toc", True)),
+        app_version=raw.get("app_version", ""),
     )
 
 

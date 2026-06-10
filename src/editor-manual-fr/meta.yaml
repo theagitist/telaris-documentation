@@ -5,3 +5,4 @@ doc_class: manual
 locale: fr
 page_size: A4
 cover_tagline: Un guide de terrain pour une archive non hiérarchique.
+app_version: Couvre Telaris v6.12.0

@@ -58,7 +58,7 @@ Dentro del mismo modal, baja hasta **Primary visual**. La pestaña **Image** est
 
 Si quieres que la imagen se muestre como ícono del agujero de gusano en la escena 3D (en vez del ícono por defecto del tema de la galaxia), activa **Use as wormhole icon**. De lo contrario, la imagen solo aparece dentro de la tarjeta de información del agujero de gusano cuando una visitante lo abre.
 
-La imagen es el tipo de contenido más común. El mismo modal también admite video, audio y PDF; el Manual del editor completo recorre cada uno. Para tu primer agujero de gusano, una imagen es suficiente.
+La imagen es el tipo de contenido más común. El mismo modal también admite video, audio y PDF, y una pestaña **Hotglue** para componer los medios del agujero de gusano como una página libre de texto e imágenes que dispones a mano; el Manual del editor completo recorre cada uno. Para tu primer agujero de gusano, una imagen es suficiente.
 
 ## Paso 5: Guardar
 
@@ -71,7 +71,7 @@ Para verlo como lo verá una visitante, busca el botón **View** junto al select
 Ya tienes el bucle. Desde aquí:
 
 - **Repite.** Haz otro agujero de gusano. Y otro. Una galaxia de un agujero de gusano es técnicamente válida; una galaxia de diez ya empieza a sentirse como un archivo.
-- **Explora.** Este Inicio rápido cubrió el camino más corto posible. La superficie de edición tiene mucho más que lo que acabas de ver. Curiosea por el modal de agujero de gusano que ya conoces; prueba los campos **Video (MP4)**, **PDF** y audio; abre el botón **Settings** junto al selector de galaxia y mira las opciones de descubrimiento; abre el botón **Canvas** y conoce el lienzo de palabras clave; prueba el botón **Bulk by keyword** en la página de edición. Nada en la edición es destructivo a primera vista; abrir un modal no cambia nada hasta que guardas.
+- **Explora.** Este Inicio rápido cubrió el camino más corto posible. La superficie de edición tiene mucho más que lo que acabas de ver. Curiosea por el modal de agujero de gusano que ya conoces; prueba los campos **Video (MP4)**, **PDF** y audio y la pestaña **Hotglue**; abre el botón **Settings** junto al selector de galaxia y mira las opciones de descubrimiento; abre el botón **Canvas** y conoce el lienzo de palabras clave; prueba el botón **Bulk by keyword** en la página de edición. Nada en la edición es destructivo a primera vista; abrir un modal no cambia nada hasta que guardas.
 - **Lee el Manual del editor completo.** Hay un manual completo disponible en <https://www.telaris.ca/docs/editor-manual-es.pdf>, en quince capítulos que recorren cada superficie en detalle: galaxias, cada tipo de medio, portales entre galaxias, el lienzo de palabras clave, vistas de visitante, recorridos, trabajo multigalaxia, decisiones editoriales, resolución de problemas, y un glosario. Hojea su tabla de contenidos y métete en los capítulos que necesites; nada de este Inicio rápido queda invalidado por lo que encontrarás allí.
 - **Usa las palabras clave con cuidado.** Dos o tres palabras clave precisas por agujero de gusano conectan más útilmente que diez genéricas. Las fichas de palabras clave que asignas son cómo las visitantes descubren la red que estás tejiendo.
 

@@ -167,6 +167,15 @@ body {
   font-weight: 500;
 }
 
+.cover-appversion {
+  font-size: 8.5pt;
+  letter-spacing: 0.18em;
+  color: var(--mint-85);
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 3mm;
+}
+
 /* Table of contents --------------------------------------------------------- */
 
 .toc {
