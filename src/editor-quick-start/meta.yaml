@@ -1,9 +1,9 @@
 title: Editor Quick Start
 subtitle: The shortest path from your credentials to your first wormhole.
-version: v0.1
+version: v0.2
 doc_class: manual
 locale: en
 page_size: A4
 cover_tagline: Five minutes. One wormhole.
 show_toc: false
-app_version: Covers Telaris v6.12.0
+app_version: Covers Telaris v6.12.15

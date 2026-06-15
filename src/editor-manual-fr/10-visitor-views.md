@@ -45,7 +45,7 @@ Chaque bascule est désactivée par défaut. Active-en une quand tu veux la fonc
 
 Une visite qui se déroule toute seule à travers la galaxie. Quand elle est activée, des options supplémentaires apparaissent :
 
-- **Mode de départ** (manuel, inactivité, immédiat) :
+- **Mode de démarrage** (manuel, inactivité, immédiat) :
   - **Manuel** : qui visite doit appuyer sur un bouton Lecture pour lancer la visite.
   - **Inactivité** : la visite démarre automatiquement après que qui visite n'a pas interagi avec la scène pendant un certain nombre de secondes (configurable).
   - **Immédiat** : la visite démarre dès que qui visite arrive sur la galaxie.

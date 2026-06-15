@@ -25,6 +25,8 @@ The Telaris software is offered under the open-source licence stated in its repo
 
 When you use a Telaris instance as an editor, the operator of that instance decides what conduct is appropriate. Most operators expect editorial sovereignty (editors decide what to publish within their galaxy) paired with source-community consent (material a community contributes is governed by that community's decisions). Specific behaviour rules are an instance-level matter. As an editor, you are responsible for having the right to publish what you publish, and for honouring the consent of the communities whose material you carry.
 
+How you become an editor is up to the operator. Most operators create editor accounts themselves. Some open their instance to self-service signup, where anyone can request an editor account with a confirmed email address; an operator who enables this can also withdraw it, and can decide what each editor may change. However you join, the same expectations apply: editorial sovereignty, source-community consent, and the responsibility to have the right to publish what you publish.
+
 When you use a Telaris instance as a visitor, you can read what editors have published. Visitors do not have accounts on Telaris instances by default.
 
 ## Federation

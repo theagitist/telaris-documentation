@@ -6,25 +6,25 @@ Voici la version courte. Cinq étapes, quatre pages, et tu auras publié ton pre
 
 ## Ce dont tu as besoin
 
-Trois choses, fournies par qui exploite ton instance de Telaris :
+Deux choses, plus un moyen de te connecter :
 
 - L'adresse de ton instance, par exemple `https://ton-instance.exemple`.
 - Ton courriel d'édition.
-- Ton mot de passe.
+- Un moyen de te connecter : certaines personnes qui éditent ont un mot de passe, d'autres utilisent un lien à usage unique qui leur est envoyé par courriel chaque fois. La page de connexion offre les deux.
 
 S'il manque quelque chose, demande à qui exploite l'instance. Ensuite reviens ici.
 
 ## Étape 1 : Connecte-toi
 
-Ouvre l'adresse de ton instance dans un navigateur moderne. Saisis ton courriel et ton mot de passe. Sélectionne **Se connecter**.
+Ouvre l'adresse de ton instance dans un navigateur moderne.
 
 ![Formulaire de connexion](assets/images/editor-manual-fr/01-login-form.png)
 
-Si tu oublies ton mot de passe, le lien **Mot de passe oublié ?** envoie un courriel de réinitialisation.
+La façon la plus simple d'entrer : saisis ton courriel, sélectionne **Envoie-moi un lien de connexion**, puis ouvre le lien que Telaris t'envoie. Tu es connectée, sans rien d'autre à taper. Si tu as plutôt un mot de passe, ouvre la section **J'ai un mot de passe**, saisis-le, et sélectionne **Se connecter**.
 
 ## Étape 2 : Choisis une galaxie
 
-Une fois connectée, tu arrives à la page **Modifier les trous de ver**. Le menu déroulant **Galaxie courante** en haut sélectionne la galaxie dans laquelle tu édites. Choisis la galaxie à laquelle on t'a demandé d'ajouter du contenu.
+Une fois connectée, tu arrives à la page **Modifier les trous de ver**. Le menu déroulant **Galaxie actuelle** en haut sélectionne la galaxie dans laquelle tu édites. Choisis la galaxie à laquelle on t'a demandé d'ajouter du contenu.
 
 ![Page d'édition : sélecteur de galaxie en haut à droite, liste de trous de ver en dessous](assets/images/editor-manual-fr/02-editor-home.png)
 
@@ -53,13 +53,13 @@ Toujours dans la même fenêtre, descends jusqu'à **Visuel principal**. L'ongle
 - Pour joindre une image **depuis ton ordinateur** : sélectionne **Choisir un fichier** et choisis l'image.
 - Pour joindre une image **déjà sur le web** : colle son URL dans le champ.
 
-Si tu veux que l'image s'affiche comme icône du trou de ver dans la scène 3D (au lieu de l'icône par défaut du thème de la galaxie), active **Utiliser comme icône de trou de ver**. Sinon, l'image n'apparaît qu'à l'intérieur de la fiche d'information du trou de ver, quand qui visite l'ouvre.
+Si tu veux que l'image s'affiche comme icône du trou de ver dans la scène 3D (au lieu de l'icône par défaut du thème de la galaxie), active **Utiliser comme icône du trou de ver**. Sinon, l'image n'apparaît qu'à l'intérieur de la fiche d'information du trou de ver, quand qui visite l'ouvre.
 
 L'image est le type de média le plus courant. La même fenêtre prend aussi en charge la vidéo, l'audio et le PDF, ainsi qu'un onglet **Hotglue** pour composer les médias du trou de ver comme une page libre de texte et d'images que tu disposes à la main ; le Manuel d'édition complet parcourt chacun. Pour ton premier trou de ver, une image suffit largement.
 
 ## Étape 5 : Enregistre
 
-Sélectionne **Enregistrer** au bas de la fenêtre. Ton trou de ver apparaît immédiatement dans la liste.
+Sélectionne **Ajouter le trou de ver** au bas de la fenêtre. Ton trou de ver apparaît immédiatement dans la liste.
 
 Pour le voir comme qui visite le verra, repère le bouton **Voir** à côté du sélecteur de galaxie sur la page d'édition ; il ouvre la galaxie dans la scène 3D dans un nouvel onglet. Ton trou de ver y est.
 
@@ -68,7 +68,7 @@ Pour le voir comme qui visite le verra, repère le bouton **Voir** à côté du 
 Tu tiens la boucle. À partir d'ici :
 
 - **Répète.** Fais un autre trou de ver. Puis un autre. Une galaxie d'un seul trou de ver est techniquement valide ; une galaxie de dix commence à ressembler à une archive.
-- **Explore.** Ce Démarrage rapide a couvert le chemin le plus court possible. La surface d'édition offre bien plus que ce que tu viens de voir. Fouine dans la fenêtre de trou de ver que tu connais déjà ; essaie les champs **Vidéo (MP4)**, **PDF** et audio et l'onglet **Hotglue** ; ouvre le bouton **Paramètres** à côté du sélecteur de galaxie et regarde les options de découverte ; ouvre le bouton **Toile** pour voir la toile de mots-clés ; essaie le bouton **Action groupée par mot-clé** sur la page d'édition. Rien dans l'édition n'est destructif à première vue ; ouvrir une fenêtre ne change rien tant que tu n'enregistres pas.
+- **Explore.** Ce Démarrage rapide a couvert le chemin le plus court possible. La surface d'édition offre bien plus que ce que tu viens de voir. Fouine dans la fenêtre de trou de ver que tu connais déjà ; essaie les champs **Vidéo (MP4)**, **PDF** et audio et l'onglet **Hotglue** ; ouvre le bouton **Paramètres** à côté du sélecteur de galaxie et regarde les options de découverte ; ouvre le bouton **Toile** pour voir la toile de mots-clés ; essaie le bouton **Action en masse par mot-clé** sur la page d'édition. Rien dans l'édition n'est destructif à première vue ; ouvrir une fenêtre ne change rien tant que tu n'enregistres pas.
 - **Lis le Manuel d'édition complet.** Un manuel complet est disponible à <https://www.telaris.ca/docs/editor-manual-fr.pdf>, en quinze chapitres qui parcourent chaque surface en détail : galaxies, chaque type de média, portails entre galaxies, toile de mots-clés, vues pour qui visite, visites, travail multigalaxies, choix éditoriaux, dépannage, et un glossaire. Parcours sa table des matières et plonge dans les chapitres dont tu as besoin ; rien dans ce Démarrage rapide n'est invalidé par ce que tu y trouveras.
 - **Utilise les mots-clés avec soin.** Deux ou trois mots-clés précis par trou de ver connectent plus utilement que dix génériques. Les étiquettes de mots-clés que tu attribues sont la manière dont qui visite découvre la trame que tu tisses.
 

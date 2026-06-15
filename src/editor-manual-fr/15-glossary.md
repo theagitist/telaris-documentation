@@ -2,7 +2,7 @@
 
 Chaque concept nommé dans le manuel d'édition, en un seul endroit. Style dictionnaire ; chaque entrée te dit ce que signifie le terme et quel chapitre le parcourt.
 
-**Action groupée par mot-clé**. Une fenêtre (chapitre 7) qui agit sur chaque trou de ver de la galaxie courante porteur d'un mot-clé choisi : les supprimer en lot, ou les déplacer en lot vers une autre galaxie.
+**Action en masse par mot-clé**. Une fenêtre (chapitre 7) qui agit sur chaque trou de ver de la galaxie courante porteur d'un mot-clé choisi : les supprimer en lot, ou les déplacer en lot vers une autre galaxie.
 
 **Amas**. Un regroupement de galaxies géré par l'administration qui se comporte comme une galaxie à part entière. L'édition ne rédige pas d'amas ; elle les voit dans le sélecteur si elle y a accès. Le chapitre 12 couvre le comportement d'union en général.
 
@@ -14,7 +14,7 @@ Chaque concept nommé dans le manuel d'édition, en un seul endroit. Style dicti
 
 **Boucle**. (1) La bascule de boucle audio : une piste audio redémarre après sa fin. (2) La bascule de boucle de visite : la visite automatique revient au début après le dernier trou de ver. Chapitres 6 et 11.
 
-**Cadre éditorial**. Le court paragraphe qui ouvre une galaxie pour qui visite. Pas un champ unique ; combinaison de l'accroche et, sur certaines instances, d'un trou de ver de cadrage dédié. Chapitre 4.
+**Cadre éditorial**. Le court paragraphe qui ouvre une galaxie pour qui visite. Pas un champ unique ; combinaison de la devise et, sur certaines instances, d'un trou de ver de cadrage dédié. Chapitre 4.
 
 **Carte (fiche d'information)**. Voir *Fiche d'information*.
 
@@ -102,7 +102,7 @@ Chaque concept nommé dans le manuel d'édition, en un seul endroit. Style dicti
 
 **Union de galaxies**. Une vue qui montre ensemble les trous de ver de deux galaxies ou plus tout en gardant chaque trou de ver dans sa galaxie source. Atteinte via étiquettes de galaxie, préfixe entre crochets, ou URL `?galaxies=` explicite. Chapitre 12.
 
-**Utiliser comme icône de trou de ver**. Une bascule par trou de ver qui rend l'image du trou de ver comme son icône de scène 3D, en remplaçant celle par défaut du thème. Chapitre 6.
+**Utiliser comme icône du trou de ver**. Une bascule par trou de ver qui rend l'image du trou de ver comme son icône de scène 3D, en remplaçant celle par défaut du thème. Chapitre 6.
 
 **Vidéo**. Un type de média visuel principal ; MP4 uniquement. Chapitre 6.
 

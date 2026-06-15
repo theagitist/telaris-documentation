@@ -25,6 +25,8 @@ Le logiciel Telaris est offert sous la licence open source indiquée dans son d�
 
 Quand tu utilises une instance de Telaris en tant que personne qui édite, qui opère cette instance décide quelle conduite est appropriée. La plupart des personnes qui opèrent attendent une souveraineté éditoriale (qui édite décide de ce qu'il faut publier dans sa galaxie) associée au consentement de la communauté d'origine (le matériel qu'une communauté contribue est régi par les décisions de cette communauté). Les règles de comportement précises relèvent de l'instance. En tant que personne qui édite, tu es responsable d'avoir le droit de publier ce que tu publies et de respecter le consentement des communautés dont tu portes le matériel.
 
+La façon dont tu deviens une personne qui édite dépend de qui opère. La plupart créent elles-mêmes les comptes d'édition. Certaines ouvrent leur instance à l'inscription autonome, où n'importe qui peut demander un compte d'édition avec une adresse e-mail confirmée ; qui active cela peut aussi le désactiver et peut décider de ce que chaque personne qui édite peut modifier. Quelle que soit ta façon de te joindre, les mêmes attentes s'appliquent : souveraineté éditoriale, consentement de la communauté d'origine et la responsabilité d'avoir le droit de publier ce que tu publies.
+
 Quand tu utilises une instance de Telaris en tant que visite, tu peux lire ce que qui édite a publié. Par défaut, qui visite n'a pas de compte sur les instances de Telaris.
 
 ## Fédération

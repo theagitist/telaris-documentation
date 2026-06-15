@@ -42,9 +42,9 @@ C'est aussi pourquoi renommer un mot-clé change la couleur : la couleur est att
 
 Ouvre la fenêtre Modifier du trou de ver (chapitre 5). Le champ Mots-clés montre les étiquettes existantes. Ajoute des étiquettes comme ci-dessus ; retire avec le × ; enregistre. Les changements s'appliquent au prochain chargement de page de qui visite.
 
-## Opérations en lot : la fenêtre Action groupée par mot-clé
+## Opérations en lot : la fenêtre Action en masse par mot-clé
 
-Quand tu as besoin d'agir sur **chaque trou de ver porteur d'un mot-clé donné** à la fois, la fenêtre Action groupée par mot-clé est la surface. Ouvre-la depuis la page d'édition, dans la rangée de boutons à côté de **Nouveau trou de ver** :
+Quand tu as besoin d'agir sur **chaque trou de ver porteur d'un mot-clé donné** à la fois, la fenêtre Action en masse par mot-clé est la surface. Ouvre-la depuis la page d'édition, dans la rangée de boutons à côté de **Nouveau trou de ver** :
 
 ![Fenêtre d'action groupée par mot-clé : choisis un mot-clé, choisis Supprimer ou Déplacer, vois le compte, applique](assets/images/editor-manual-fr/09-bulk-by-keyword-modal.png)
 
@@ -78,5 +78,5 @@ C'est un filtre doux (il ne retire pas les trous de ver de la scène, il les att
 - **Un trou de ver sans mots-clés est permis mais silencieux.** Qui visite peut encore l'atteindre par la recherche par nom ou en cliquant en 3D ; la personne ne l'atteindra pas par la couche d'étiquettes de mots-clés. Utilise zéro mot-clé quand le rôle du trou de ver est purement solitaire.
 - **Les noms de mots-clés sont cherchés dans le champ de recherche de la page d'édition** aux côtés des noms et descriptions de trous de ver. Chercher un mot-clé est la manière la plus rapide d'auditer quels trous de ver le portent.
 - **Renommer un mot-clé le met à jour partout sur l'instance.** Renommer *médicinale* le renomme dans chaque galaxie qui utilise le mot. Il n'y a pas de renommage par galaxie.
-- **Supprimer un mot-clé le retire de chaque trou de ver qui le porte.** Les trous de ver survivent ; l'étiquette du mot-clé disparaît d'eux. Les suppressions passent par la toile de mots-clés (chapitre 8) ; elles ne sont pas dans la fenêtre Action groupée par mot-clé, qui supprime des trous de ver, pas des mots-clés.
+- **Supprimer un mot-clé le retire de chaque trou de ver qui le porte.** Les trous de ver survivent ; l'étiquette du mot-clé disparaît d'eux. Les suppressions passent par la toile de mots-clés (chapitre 8) ; elles ne sont pas dans la fenêtre Action en masse par mot-clé, qui supprime des trous de ver, pas des mots-clés.
 - **Il n'y a pas de nombre maximum de mots-clés par trou de ver**, mais la lisibilité pratique suggère que trois à sept suffisent. Au-delà de dix, la bande d'étiquettes sur la fiche d'information commence à passer à la ligne de façon disgracieuse.

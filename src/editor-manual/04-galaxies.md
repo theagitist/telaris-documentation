@@ -6,7 +6,9 @@ A galaxy is a container, a vantage point, and an editorial position all at once.
 
 The **Current Galaxy** dropdown at the top of the editor home is how you pick which galaxy you are working in. *All my galaxies* shows wormholes from everywhere you have access; selecting a specific galaxy filters everything below to that one.
 
-The first thing the dropdown teaches you is the shape of your editorial responsibilities: every galaxy listed is a galaxy you can edit. If a colleague's galaxy is missing, your operator has not assigned it to you. (Visitors of your instance see every public galaxy; editors only see the ones they are responsible for.)
+The first thing the dropdown teaches you is the shape of your editorial responsibilities: every galaxy listed is one you have been given access to. If a colleague's galaxy is missing, your operator has not assigned it to you. (Visitors of your instance see every public galaxy; editors only see the ones they are responsible for.)
+
+Access can be either read-write or read-only, set per galaxy. In a read-write galaxy you can add and change wormholes as this manual describes. In a read-only galaxy you can open and view everything, but the controls that would change it are not available; this lets an operator share a galaxy for reference without handing over editing. Your own galaxy, one you created, is always yours to edit.
 
 When you pick a specific galaxy, three new buttons appear next to the dropdown:
 

@@ -9,8 +9,9 @@ Las situaciones cotidianas con las que se encuentra una editora, qué intentar, 
 **Qué intentar**, en orden:
 
 1. Confirma que la dirección de correo y la contraseña son correctas. Ambas distinguen mayúsculas y minúsculas.
-2. Usa el enlace **Forgot your password?** debajo del botón Sign In. En menos de un minuto llega un correo con un enlace de restablecimiento.
-3. Comprueba que estás en la dirección de tu instancia. Si tu operadora corre varias instancias, tu inicio de sesión está acotado a una.
+2. Si tu cuenta no tiene contraseña, usa el botón **Envíame un enlace de acceso**: escribe tu correo, selecciónalo, y abre el enlace que llega a tu bandeja de entrada.
+3. Si tienes contraseña y la olvidaste, abre la sección **Tengo contraseña** y usa el enlace **¿Olvidaste la contraseña?** debajo del botón **Iniciar sesión**. En menos de un minuto llega un correo con un enlace de restablecimiento.
+4. Comprueba que estás en la dirección de tu instancia. Si tu operadora corre varias instancias, tu inicio de sesión está acotado a una.
 
 **Cuándo preguntar a tu operadora**: si el enlace de restablecimiento no llega (revisa primero el spam), si tu correo de restablecimiento rebota, o si estás segura de que la contraseña es correcta y el formulario sigue rechazándola.
 
@@ -20,11 +21,11 @@ Las situaciones cotidianas con las que se encuentra una editora, qué intentar, 
 
 **Qué intentar**:
 
-1. Confirma que el desplegable **Current Galaxy** está en la galaxia correcta (o fijado en *All my galaxies*). El agujero de gusano puede estar en una galaxia distinta a la que esperas, sobre todo si usaste el desplegable Galaxy dentro del modal del agujero de gusano.
+1. Confirma que el desplegable **Galaxia actual** está en la galaxia correcta (o fijado en *Todas mis galaxias*). El agujero de gusano puede estar en una galaxia distinta a la que esperas, sobre todo si usaste el desplegable Galaxia dentro del modal del agujero de gusano.
 2. Usa el cuadro de búsqueda en el inicio del editor. Busca por el nombre del agujero de gusano; si existe en cualquier galaxia que puedas editar, la búsqueda lo encuentra.
-3. Comprueba el filtro **Touched today**; si lo hiciste clic por accidente, solo se muestran las ediciones de hoy.
+3. Comprueba el filtro **Modificados hoy**; si lo hiciste clic por accidente, solo se muestran las ediciones de hoy.
 
-**Cuándo preguntar a tu operadora**: si la búsqueda en All my galaxies no devuelve nada y estás segura de que guardaste el agujero de gusano. El agujero de gusano puede haber sido eliminado (por ti, o por otra editora); tu operadora puede ser capaz de restaurarlo desde una instantánea.
+**Cuándo preguntar a tu operadora**: si la búsqueda en Todas mis galaxias no devuelve nada y estás segura de que guardaste el agujero de gusano. El agujero de gusano puede haber sido eliminado (por ti, o por otra editora); tu operadora puede ser capaz de restaurarlo desde una instantánea.
 
 ## No puedo editar un agujero de gusano; el modal abre en modo visor
 
@@ -56,7 +57,7 @@ Las situaciones cotidianas con las que se encuentra una editora, qué intentar, 
 **Qué intentar**:
 
 1. Arrastra la píldora a donde la quieres; la nueva posición se guarda automáticamente.
-2. Si muchas píldoras están mal dispuestas, usa la opción **Reset all chip positions** en la capa de ayuda del lienzo (el **?** en la parte superior).
+2. Si muchas píldoras están mal dispuestas, usa la opción **Restablecer todas las posiciones de las fichas** en la capa de ayuda del lienzo (el **?** en la parte superior).
 3. Recarga la página; el lienzo vuelve a traer la última disposición.
 
 **Cuándo preguntar a tu operadora**: rara vez. El lienzo es indulgente; casi todo problema se resuelve arrastrando.
@@ -68,7 +69,7 @@ Las situaciones cotidianas con las que se encuentra una editora, qué intentar, 
 **Qué intentar**:
 
 1. Recarga la pestaña de visitante. Telaris no empuja actualizaciones en vivo; el cambio aparece en la próxima recarga.
-2. Comprueba que guardaste con **Save**, no que cerraste el modal con **Cancel** o haciendo clic fuera.
+2. Comprueba que guardaste con el botón de guardar del modal, no que cerraste el modal con **Cancelar** o haciendo clic fuera.
 3. Comprueba que estás mirando la misma galaxia. La pestaña de visitante puede estar en una galaxia distinta a la que editaste.
 
 **Cuándo preguntar a tu operadora**: si guardaste y recargaste y el cambio sigue sin ser visible tras un minuto. Las cachés de borde pueden tardar un instante en invalidarse; si persiste, eso es territorio de operadora.
@@ -79,7 +80,7 @@ Las situaciones cotidianas con las que se encuentra una editora, qué intentar, 
 
 **Lo que podrías estar viendo**:
 
-- El botón está **condicionado a algo que aún no has hecho**. Por ejemplo, el botón Settings junto al selector de galaxia solo se habilita cuando hay una galaxia específica seleccionada (no *All my galaxies*).
+- El botón está **condicionado a algo que aún no has hecho**. Por ejemplo, el botón Ajustes junto al selector de galaxia solo se habilita cuando hay una galaxia específica seleccionada (no *Todas mis galaxias*).
 - El botón está **acotado por tu rol**. Si eres editora y la acción es solo para administradoras, el botón puede aparecer pero quedar deshabilitado.
 
 **Cuándo preguntar a tu operadora**: si crees que deberías tener acceso a la acción y el botón sigue deshabilitado. Tu rol puede necesitar ajuste.
@@ -113,7 +114,7 @@ Las situaciones cotidianas con las que se encuentra una editora, qué intentar, 
 **Qué intentar**:
 
 1. Comprueba que el agujero de gusano que abriste es el que querías escribir contenido para. Los agujeros de gusano vacíos están permitidos; simplemente no tienen cuerpo.
-2. Abre el agujero de gusano en el editor y confirma que el campo Description tiene el texto que esperas.
+2. Abre el agujero de gusano en el editor y confirma que el campo Descripción tiene el texto que esperas.
 3. Si la descripción aparece en el editor pero no en la vista de visitante, recarga ambas pestañas del navegador.
 
 **Cuándo preguntar a tu operadora**: si el agujero de gusano tiene contenido en el editor pero está en blanco en la vista de visitante después de recargar.
@@ -129,7 +130,7 @@ Las situaciones cotidianas con las que se encuentra una editora, qué intentar, 
 
 **Qué intentar**:
 
-- Sugiere a la visitante que use el conmutador **2D view** (capítulo 10) si está habilitado en la galaxia.
+- Sugiere a la visitante que use el conmutador **vista 2D** (capítulo 10) si está habilitado en la galaxia.
 - Para las galaxias que escribes, considera si todas las marcas de imagen-como-icono son necesarias; una galaxia con doce agujeros de gusano iconizados por imagen es más rápida que una con cincuenta.
 
 **Cuándo preguntar a tu operadora**: si la lentitud es universal (cada visitante la ve) y no es específica de un dispositivo.

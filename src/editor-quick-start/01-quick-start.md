@@ -6,21 +6,21 @@ This is the short version. Five steps, four pages, and you have published your f
 
 ## What you need
 
-Three things, supplied by your operator (the person who runs your Telaris instance):
+Two things, plus a way to sign in:
 
 - The address of your instance, like `https://your-instance.example`.
 - Your editor email.
-- Your password.
+- A way to sign in: some editors have a password, others use a one-time link emailed to them each time. The login page offers both.
 
-If anything is missing, ask your operator. Then come back here.
+If anything is missing, ask your operator (the person who runs your Telaris instance). Then come back here.
 
 ## Step 1: Sign in
 
-Open your instance's address in any modern browser. Enter your email and password. Select **Sign In**.
+Open your instance's address in any modern browser.
 
-![Login form](assets/images/editor-manual/01-login-form.png)
+![Login page: an email field, an "Email me a sign-in link" button, and a collapsible "I have a password" section](assets/images/editor-manual/01-login-form.png)
 
-If you forget your password, the **Forgot your password?** link sends a reset email.
+The easiest way in: type your email, select **Email me a sign-in link**, then open the link Telaris sends you. You are signed in, with nothing else to type. If you have a password instead, open the **I have a password** section, enter it, and select **Sign In**.
 
 ## Step 2: Pick a galaxy
 

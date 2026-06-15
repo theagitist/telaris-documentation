@@ -4,11 +4,11 @@ Telaris is a website. To use the editor, you open your instance in a web browser
 
 ## What you need
 
-Three things, all supplied by your operator:
+Three things; the person who runs your instance can tell you any you are missing:
 
 - **The address of your Telaris instance**: a web link, something like `https://your-instance.example`. Bookmark it.
-- **Your editor email**: the address your operator created the account under.
-- **Your password**: chosen by you or sent to you by your operator. If your operator created your account, expect to be asked to set a new password the first time you log in.
+- **Your editor email**: the address your account is registered under. If your operator created your account, it is the address they used; if you signed up yourself, it is the address you entered.
+- **A way to sign in.** Some editors have a password. Others sign in with a one-time link emailed to them each time, and have no password at all. Which you use depends on how your account was set up; the login page, below, offers both.
 
 If you do not have any of these, ask the person who runs your instance.
 
@@ -16,11 +16,15 @@ If you do not have any of these, ask the person who runs your instance.
 
 Open your instance's address in any modern browser. If you are not already signed in, you land on the login page automatically. If you have already saved a bookmark to a different part of the instance, the browser will detour you to the login page first and then return to where you were going.
 
-![Login form](assets/images/editor-manual/01-login-form.png)
+![Login page: an email field, an "Email me a sign-in link" button, and a collapsible "I have a password" section below it](assets/images/editor-manual/01-login-form.png)
 
-Two fields: **Email** and **Password**. Type your credentials and select **Sign In**.
+The simplest way in is the **Email me a sign-in link** button. Type your email, select it, and Telaris sends you a one-time link; open that link from your inbox and you are signed in, with nothing else to type. The link works for a short window; if it expires, request a new one. If your account has no password, this is how you sign in every time.
 
-If you forget your password, there is a **Forgot your password?** link below the Sign In button. The link asks for your email; an email with a reset link lands in your inbox within a minute. Reset links expire after a short window; if the link no longer works, request a new one.
+If you have a password, open the **I have a password** section below the button. A password field appears, with its own **Sign In** button. Inside that section, a **Forgot your password?** link emails you a reset link if you need one; reset links also expire after a short window.
+
+Not sure which you have? Use the sign-in link. It works whether or not your account has a password.
+
+Some editors start with no password and are given the option to set one later (your operator decides when). If that happens, you receive an email with a link to set a password; from then on you can use either the password or a sign-in link.
 
 ## After you sign in
 
@@ -34,7 +38,7 @@ The page is laid out in two cards:
 
 - The page title, **Edit Wormholes**, sits at the top left.
 - Below the title, a small line greets you by name and confirms your role: *Welcome, Your Name (Editor)*. The role determines what you can do; if you see something this manual describes but cannot reach it, your role does not include that surface, and your operator can adjust it.
-- To the right of the title, **Current Galaxy** is a dropdown that picks which galaxy you are currently editing. *All my galaxies* is the default and shows wormholes from every galaxy you have access to. Picking a specific galaxy filters everything below to that one galaxy.
+- To the right of the title, **Current Galaxy** is a dropdown that picks which galaxy you are currently editing. *All my galaxies* is the default and shows wormholes from every galaxy you have access to. If you have your own galaxy (one you created), the editor opens straight to it instead; you can always switch back to *All my galaxies* or any other from the same dropdown. Picking a specific galaxy filters everything below to that one galaxy.
 - Next to the dropdown, the **View** button opens your current galaxy in the visitor view (the 3D scene). It is the same view your readers see; it is useful to flip into it from time to time to check that the changes you are making read the way you expect.
 - The **Logout** button at the far right ends your session. Telaris keeps your session active across browser restarts unless you log out explicitly.
 

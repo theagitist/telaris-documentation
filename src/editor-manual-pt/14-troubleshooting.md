@@ -9,7 +9,7 @@ As situações cotidianas em que uma editora se encontra, o que tentar, e quando
 **O que tentar**, em ordem:
 
 1. Confirme se o endereço de e-mail e a senha estão corretos. Ambos diferenciam maiúsculas de minúsculas.
-2. Use o link **Forgot your password?** abaixo do botão Sign In. Um e-mail com link de redefinição chega em menos de um minuto.
+2. Use o link **Esqueceu a senha?** abaixo do botão **Entrar**. Um e-mail com link de redefinição chega em menos de um minuto.
 3. Verifique se você está no endereço da sua instância. Se sua operadora opera várias instâncias, seu login se aplica a uma só.
 
 **Quando perguntar à sua operadora**: se o link de redefinição não chegar (cheque o spam antes), se o e-mail de redefinição volta como rejeitado, ou se você tem certeza de que a senha está correta e o formulário ainda recusa.
@@ -20,11 +20,11 @@ As situações cotidianas em que uma editora se encontra, o que tentar, e quando
 
 **O que tentar**:
 
-1. Confirme que o menu suspenso **Current Galaxy** está na galáxia certa (ou em *All my galaxies*). O buraco de minhoca pode estar em uma galáxia diferente da esperada, especialmente se você usou o menu Galaxy dentro do modal do buraco de minhoca.
+1. Confirme que o menu suspenso **Galáxia atual** está na galáxia certa (ou em *Todas as minhas galáxias*). O buraco de minhoca pode estar em uma galáxia diferente da esperada, especialmente se você usou o menu **Galáxia destino** dentro do modal do buraco de minhoca.
 2. Use a caixa de busca da tela inicial da editora. Busque pelo nome do buraco de minhoca; se ele existe em qualquer galáxia que você pode editar, a busca encontra.
-3. Verifique o filtro **Touched today**; se você clicou nele sem querer, só as edições de hoje aparecem.
+3. Verifique o filtro **Modificados hoje**; se você clicou nele sem querer, só as edições de hoje aparecem.
 
-**Quando perguntar à sua operadora**: se a busca em All my galaxies não retorna nada e você tem certeza de que salvou o buraco de minhoca. Ele pode ter sido apagado (por você, ou por outra editora); sua operadora talvez possa restaurar a partir de um snapshot.
+**Quando perguntar à sua operadora**: se a busca em **Todas as minhas galáxias** não retorna nada e você tem certeza de que salvou o buraco de minhoca. Ele pode ter sido apagado (por você, ou por outra editora); sua operadora talvez possa restaurar a partir de um snapshot.
 
 ## Não consigo editar um buraco de minhoca; o modal abre em modo de visualização
 
@@ -56,7 +56,7 @@ As situações cotidianas em que uma editora se encontra, o que tentar, e quando
 **O que tentar**:
 
 1. Arraste o chip para onde você quer; a nova posição salva automaticamente.
-2. Se muitos chips estão mal arranjados, use a opção **Reset all chip positions** no painel de ajuda da tela (o **?** no topo da tela).
+2. Se muitos chips estão mal arranjados, use a opção **Redefinir todas as posições dos chips** no painel de ajuda da tela (o **?** no topo da tela).
 3. Atualize a página; a tela busca o layout mais recente.
 
 **Quando perguntar à sua operadora**: raramente. A tela é tolerante; quase todo problema se resolve arrastando.
@@ -68,7 +68,7 @@ As situações cotidianas em que uma editora se encontra, o que tentar, e quando
 **O que tentar**:
 
 1. Atualize a aba da visitante. Telaris não empurra atualizações ao vivo; a mudança chega no próximo carregamento da página.
-2. Verifique se você salvou com **Save**, e não fechou o modal com **Cancel** ou clicando fora.
+2. Verifique se você salvou (com o botão de salvar do modal), e não fechou o modal com **Cancelar** ou clicando fora.
 3. Verifique se você está olhando a mesma galáxia. A aba da visitante pode estar em uma galáxia diferente da que você editou.
 
 **Quando perguntar à sua operadora**: se você salvou e atualizou e a mudança ainda não aparece depois de um minuto. Caches de borda podem levar um instante para invalidar; se persiste, é território da operadora.
@@ -79,7 +79,7 @@ As situações cotidianas em que uma editora se encontra, o que tentar, e quando
 
 **O que você pode estar vendo**:
 
-- O botão é **condicional a algo que você ainda não fez**. Por exemplo, o botão Settings ao lado do seletor de galáxia só habilita quando uma galáxia específica está selecionada (não em *All my galaxies*).
+- O botão é **condicional a algo que você ainda não fez**. Por exemplo, o botão **Configurações** ao lado do seletor de galáxia só habilita quando uma galáxia específica está selecionada (não em *Todas as minhas galáxias*).
 - O botão é **restrito pelo seu papel**. Se você é editora e a ação é só para administradoras, o botão pode aparecer mas permanecer desabilitado.
 
 **Quando perguntar à sua operadora**: se você acredita que deveria ter acesso à ação e o botão ainda está desabilitado. Seu papel pode precisar de ajuste.
@@ -113,7 +113,7 @@ As situações cotidianas em que uma editora se encontra, o que tentar, e quando
 **O que tentar**:
 
 1. Verifique se o buraco de minhoca que você abriu é aquele para o qual você queria escrever conteúdo. Buracos de minhoca vazios são permitidos; eles simplesmente não têm corpo.
-2. Abra o buraco de minhoca na superfície de edição e confirme que o campo Description tem o texto que você espera.
+2. Abra o buraco de minhoca na superfície de edição e confirme que o campo **Descrição** tem o texto que você espera.
 3. Se a descrição aparece no editor mas não na vista da visitante, atualize as duas abas do navegador.
 
 **Quando perguntar à sua operadora**: se o buraco de minhoca tem conteúdo no editor mas está em branco na vista da visitante depois de atualizar.
@@ -129,7 +129,7 @@ As situações cotidianas em que uma editora se encontra, o que tentar, e quando
 
 **O que tentar**:
 
-- Sugira que a visitante alterne para a **2D view** (capítulo 10), se estiver habilitada na galáxia.
+- Sugira que a visitante alterne para a **vista 2D** (capítulo 10), se estiver habilitada na galáxia.
 - Para galáxias que você compõe, considere se todas as marcas image-as-icon são necessárias; uma galáxia com doze buracos de minhoca em imagem-ícone é mais rápida que uma com cinquenta.
 
 **Quando perguntar à sua operadora**: se a lentidão é universal (toda visitante vê) e não específica de um dispositivo.

@@ -1,8 +1,8 @@
 title: Manual del editor
 subtitle: Para personas que crean galaxias, agujeros de gusano y conexiones dentro de una instancia de Telaris.
-version: v0.1
+version: v0.2
 doc_class: manual
 locale: es
 page_size: A4
 cover_tagline: Una guía de campo para un archivo no jerárquico.
-app_version: Cubre Telaris v6.12.0
+app_version: Cubre Telaris v6.12.15

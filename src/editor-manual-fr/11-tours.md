@@ -12,14 +12,14 @@ Une visite vit à l'intérieur de la fenêtre **Paramètres de galaxie**, dans l
 
 La première bascule de la section Découverte est **Visite automatique**. La passer en position activée révèle les champs de configuration de la visite :
 
-- Mode de départ.
+- Mode de démarrage.
 - Sélection de nœuds.
 - Durée de pause à chaque arrêt.
 - Boucle activée / désactivée.
 
 En dessous se trouve un bouton **Aperçu de la visite**.
 
-## Mode de départ
+## Mode de démarrage
 
 Choisis comment la visite commence :
 

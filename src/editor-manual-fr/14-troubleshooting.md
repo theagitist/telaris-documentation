@@ -20,9 +20,9 @@ Les situations quotidiennes qu'une personne qui édite rencontre, ce qu'il faut 
 
 **Ce qu'il faut essayer** :
 
-1. Confirme que le menu déroulant **Galaxie courante** est sur la bonne galaxie (ou réglé sur *Toutes mes galaxies*). Le trou de ver peut être dans une galaxie différente de ce que tu attends, surtout si tu as utilisé le menu déroulant Galaxie à l'intérieur de la fenêtre de trou de ver.
+1. Confirme que le menu déroulant **Galaxie actuelle** est sur la bonne galaxie (ou réglé sur *Toutes mes galaxies*). Le trou de ver peut être dans une galaxie différente de ce que tu attends, surtout si tu as utilisé le menu déroulant Galaxie à l'intérieur de la fenêtre de trou de ver.
 2. Utilise le champ de recherche sur la page d'édition. Cherche le nom du trou de ver ; s'il existe dans n'importe quelle galaxie que tu peux éditer, la recherche le trouve.
-3. Vérifie le filtre **Touchés aujourd'hui** ; si tu l'as cliqué par accident, seules les éditions du jour s'affichent.
+3. Vérifie le filtre **Modifiés aujourd'hui** ; si tu l'as cliqué par accident, seules les éditions du jour s'affichent.
 
 **Quand demander à qui exploite** : si la recherche sur Toutes mes galaxies ne renvoie rien et que tu es certaine d'avoir enregistré le trou de ver. Le trou de ver a peut-être été supprimé (par toi, ou par un autre compte d'édition) ; qui exploite peut peut-être restaurer depuis un instantané.
 
@@ -68,7 +68,7 @@ Les situations quotidiennes qu'une personne qui édite rencontre, ce qu'il faut 
 **Ce qu'il faut essayer** :
 
 1. Rafraîchis l'onglet de visite. Telaris ne pousse pas les mises à jour en direct ; le changement apparaît au prochain chargement de page.
-2. Vérifie que tu as enregistré avec **Enregistrer**, et que tu n'as pas fermé la fenêtre avec **Annuler** ou en cliquant à l'extérieur.
+2. Vérifie que tu as enregistré avec **Mettre à jour le trou de ver**, et que tu n'as pas fermé la fenêtre avec **Annuler** ou en cliquant à l'extérieur.
 3. Vérifie que tu regardes la même galaxie. L'onglet de visite peut être sur une galaxie différente de celle que tu as éditée.
 
 **Quand demander à qui exploite** : si tu as enregistré et rafraîchi et que le changement n'est toujours pas visible après une minute. Les caches périphériques peuvent prendre un bref moment à s'invalider ; si cela persiste, c'est du territoire de qui exploite.

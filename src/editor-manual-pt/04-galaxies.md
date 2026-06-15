@@ -4,17 +4,19 @@ Uma galáxia é, ao mesmo tempo, um continente, um ponto de vista, e uma posiç�
 
 ## Selecionar uma galáxia
 
-O menu suspenso **Current Galaxy** no topo da tela inicial da editora é como você escolhe em qual galáxia está trabalhando. *All my galaxies* mostra buracos de minhoca de todos os lugares a que você tem acesso; selecionar uma galáxia específica filtra tudo abaixo para aquela.
+O menu suspenso **Galáxia atual** no topo da tela inicial da editora é como você escolhe em qual galáxia está trabalhando. *Todas as minhas galáxias* mostra buracos de minhoca de todos os lugares a que você tem acesso; selecionar uma galáxia específica filtra tudo abaixo para aquela.
 
 A primeira coisa que o menu te ensina é a forma das suas responsabilidades editoriais: cada galáxia listada é uma galáxia que você pode editar. Se uma galáxia de uma colega está faltando, sua operadora não te atribuiu. (As visitantes da sua instância veem todas as galáxias públicas; as editoras só veem aquelas pelas quais são responsáveis.)
 
+O acesso pode ser de leitura e escrita ou somente leitura, definido por galáxia. Numa galáxia de leitura e escrita você pode adicionar e mudar buracos de minhoca como este manual descreve. Numa galáxia somente leitura você pode abrir e ver tudo, mas os controles que a alterariam não ficam disponíveis; isso permite que uma operadora compartilhe uma galáxia para referência sem entregar a edição. Sua galáxia própria, uma que você criou, é sempre sua para editar.
+
 Quando você escolhe uma galáxia específica, três novos botões aparecem ao lado do menu suspenso:
 
-![Tela inicial da editora com uma única galáxia selecionada: aparecem os botões View, Settings, Canvas](assets/images/editor-manual-pt/03-editor-home-single-galaxy.png)
+![Tela inicial da editora com uma única galáxia selecionada: aparecem os botões Ver, Configurações, Tela](assets/images/editor-manual-pt/03-editor-home-single-galaxy.png)
 
-- **View** abre a galáxia em modo visitante, em uma nova aba. Use sempre que quiser ver como uma mudança fica do assento da visitante.
-- **Settings** abre a configuração da galáxia. A maior parte deste capítulo é sobre o que está dentro daquele modal.
-- **Canvas** abre a tela de palavras-chave, a superfície de desenho relacional coberta no capítulo 8.
+- **Ver** abre a galáxia em modo visitante, em uma nova aba. Use sempre que quiser ver como uma mudança fica do assento da visitante.
+- **Configurações** abre a configuração da galáxia. A maior parte deste capítulo é sobre o que está dentro daquele modal.
+- **Tela** abre a tela de palavras-chave, a superfície de desenho relacional coberta no capítulo 8.
 
 ## Criar uma galáxia
 
@@ -24,36 +26,36 @@ Quando uma nova galáxia é criada, ela aparece vazia: zero buracos de minhoca, 
 
 ## Configurações da galáxia
 
-Abra o botão **Settings** ao lado do seletor. Um modal abre:
+Abra o botão **Configurações** ao lado do seletor. Um modal abre:
 
-![Modal Edit Galaxy: Name, Tagline, Visual Theme, Tags, ações em lote, e seletores de descoberta](assets/images/editor-manual-pt/04-galaxy-settings-modal.png)
+![Modal Editar galáxia: Nome, Lema, Tema visual, Tags, ações em lote, e seletores de descoberta](assets/images/editor-manual-pt/04-galaxy-settings-modal.png)
 
 O modal é o lugar central onde você define o que uma galáxia é e como se comporta. Os campos, na ordem:
 
-**Name** (obrigatório). O nome que as visitantes veem no seletor de galáxia e no topo da cena. Os nomes de galáxia não são únicos na rede, mas duas galáxias com o mesmo nome na mesma instância confundem; escolha algo legível e distinto. Você pode mudar o nome de uma galáxia a qualquer momento.
+**Nome** (obrigatório). O nome que as visitantes veem no seletor de galáxia e no topo da cena. Os nomes de galáxia não são únicos na rede, mas duas galáxias com o mesmo nome na mesma instância confundem; escolha algo legível e distinto. Você pode mudar o nome de uma galáxia a qualquer momento.
 
-**Tagline** (opcional, curta). Uma descrição em uma linha mostrada ao lado ou abaixo do nome da galáxia na interface da visitante. A tagline não aparece na cena 3D; seu público principal é o seletor e a listagem pública.
+**Lema** (opcional, curta). Uma descrição em uma linha mostrada ao lado ou abaixo do nome da galáxia na interface da visitante. O lema não aparece na cena 3D; seu público principal é o seletor e a listagem pública.
 
-**Visual Theme**. Um menu suspenso que escolhe a aparência da cena 3D: *Cosmic* (estrelas, planetas, foguetes) é o padrão e o mais comum; outros temas são *Simple*, *Abstract*, *Rectangles*, *Stripes*, e *Tech*. Escolha aquele cujo vocabulário combina com o conteúdo. O tema pode ser trocado a qualquer momento; a mudança vale para todas as visitantes imediatamente, mas não altera o que você criou, só como é renderizado.
+**Tema visual**. Um menu suspenso que escolhe a aparência da cena 3D: *Cósmico* (estrelas, planetas, foguetes) é o padrão e o mais comum; outros temas são *Simples*, *Abstrato*, *Retângulos*, *Listras*, e *Tech*. Escolha aquele cujo vocabulário combina com o conteúdo. O tema pode ser trocado a qualquer momento; a mudança vale para todas as visitantes imediatamente, mas não altera o que você criou, só como é renderizado.
 
 **Tags** (opcional). Rótulos curtos que agrupam esta galáxia com outras. Duas galáxias que compartilham uma tag formam uma *união de galáxias*: visitantes que seguem a tag veem buracos de minhoca das duas de uma vez, cada um mantendo o estilo visual da sua galáxia de origem. Use tags quando várias galáxias forem irmãs em algum arranjo maior. O campo Tags autocompleta com tags que você usou em outras galáxias suas e com tags compartilhadas por galáxias prefixadas com o mesmo `[colchete]`.
 
-**Bulk wormhole actions**. Dois botões que aplicam uma única configuração a todos os buracos de minhoca desta galáxia de uma vez.
+**Ações em massa de buracos de minhoca**. Dois botões que aplicam uma única configuração a todos os buracos de minhoca desta galáxia de uma vez.
 
-- **Use images as icons (all wormholes)** faz com que cada buraco de minhoca com imagem renderize sua imagem como o nó 3D, em vez do ícone padrão do tema. Útil quando você tem uma galáxia de fotografias e quer que as fotos *sejam* a cena.
-- **Revert all to theme icons** desfaz o anterior: cada buraco de minhoca volta ao ícone do tema, tenha imagem ou não.
+- **Usar imagens como ícones (todos os buracos de minhoca)** faz com que cada buraco de minhoca com imagem renderize sua imagem como o nó 3D, em vez do ícone padrão do tema. Útil quando você tem uma galáxia de fotografias e quer que as fotos *sejam* a cena.
+- **Reverter todos aos ícones do tema** desfaz o anterior: cada buraco de minhoca volta ao ícone do tema, tenha imagem ou não.
 
 Essas ações são em lote; cada buraco de minhoca pode ainda ser ajustado individualmente depois (capítulo 5).
 
-**Discovery toggles**. Um conjunto de interruptores no rodapé do modal que controla como a visitante experimenta sua galáxia. Vêm desligados por padrão; ligue cada um quando quiser o recurso correspondente. Cada interruptor é coberto no capítulo 10 (Vistas de visitante), junto da função que controla.
+**Interruptores de descoberta**. Um conjunto de interruptores no rodapé do modal que controla como a visitante experimenta sua galáxia. Vêm desligados por padrão; ligue cada um quando quiser o recurso correspondente. Cada interruptor é coberto no capítulo 10 (Vistas de visitante), junto da função que controla.
 
-Salve o modal com **Save**; feche sem mudanças com **Cancel** ou clicando fora. As alterações se aplicam às visitantes imediatamente.
+Salve o modal com **Atualizar galáxia**; feche sem mudanças com **Cancelar** ou clicando fora. As alterações se aplicam às visitantes imediatamente.
 
 ## Enquadramento editorial
 
 O enquadramento de uma galáxia é o parágrafo curto que a abre para as visitantes. É a resposta à pergunta *o que é esta galáxia?* antes da visitante ter encontrado qualquer buraco de minhoca. Dois lugares para escrevê-lo:
 
-1. O campo **Tagline** no modal da galáxia, para o resumo em uma linha que aparece ao lado do nome da galáxia.
+1. O campo **Lema** no modal da galáxia, para o resumo em uma linha que aparece ao lado do nome da galáxia.
 2. (Em algumas instâncias) um buraco de minhoca dedicado ao enquadramento dentro da galáxia, em geral o primeiro que a visitante vê ao entrar. Se sua instância usa esse padrão, sua operadora avisa.
 
 Ambos são escolhas editoriais, não técnicas. Escreva o enquadramento na sua própria voz; a galáxia é sua para apresentar.

@@ -37,7 +37,7 @@ Una visitante que llega a una unión por etiqueta de galaxia (por ejemplo `/tag/
 - Una escena compuesta de los agujeros de gusano de cada galaxia que carga la etiqueta.
 - **Temas de origen por agujero de gusano**: cada agujero de gusano se representa con el tema de su galaxia de origen, no con un tema único unificado. Esto es intencional; la visitante ve la unión como el *encuentro de galaxias*, no como un aplanamiento de ellas.
 - Una franja o selector de galaxia arriba mostrando las galaxias constituyentes, con la opción de cambiar a una sola.
-- Las mismas funciones de Discovery que cualquier galaxia (keyword chips, related wormholes, etc.), ahora extraídas de la unión.
+- Las mismas funciones de descubrimiento que cualquier galaxia (fichas de palabras clave, agujeros de gusano relacionados, etc.), ahora extraídas de la unión.
 
 La barra de URL de la visitante se queda en `/tag/<tag>` mientras está en la unión; hacer clic en un agujero de gusano abre su ficha sin salir de la unión.
 

@@ -2,16 +2,13 @@
 
 Este manual é para as **editoras**: as pessoas que dão forma ao que uma instância de Telaris contém. Se você cria galáxias, coloca buracos de minhoca, conecta palavras-chave, ou cura as relações entre peças de conteúdo, este manual é a referência do dia a dia para como as superfícies de edição funcionam.
 
-> [!note] Sobre a interface
-> Os rótulos e botões do aplicativo aparecem em inglês nas capturas e nos nomes em negrito deste documento; a interface ainda não está localizada para o português. O manual está traduzido; a interface estará em uma versão futura.
-
 ## O que é Telaris, em um parágrafo
 
 Telaris é um arquivo tridimensional, não hierárquico. O conteúdo vive em **galáxias**: agrupamentos de **buracos de minhoca**, que são as menores unidades de conteúdo (uma passagem, uma imagem, um vídeo, uma ideia). Os buracos de minhoca se conectam entre si através de **palavras-chave** compartilhadas, e as próprias palavras-chave se conectam entre si através da **tela de palavras-chave**. Não há pastas, nem pais, nem trilhas de navegação; o rizoma é a estrutura. As editoras não constroem uma árvore; cuidam de uma moita.
 
 ## Para quem é este manual
 
-Você é editora se recebeu credenciais de acesso e foi solicitada a adicionar ou organizar conteúdo. Vai precisar de três coisas para começar: o endereço da sua instância de Telaris (um link web, como `https://sua-instancia.exemplo`), seu e-mail de editora, e sua senha. Nada mais; o manual é autossuficiente a partir daí.
+Você é editora se recebeu credenciais de acesso e foi solicitada a adicionar ou organizar conteúdo. Vai precisar de três coisas para começar: o endereço da sua instância de Telaris (um link web, como `https://sua-instancia.exemplo`), seu e-mail de editora, e uma forma de entrar (uma senha ou um link de acesso enviado por e-mail). Nada mais; o manual é autossuficiente a partir daí.
 
 > [!note] Quando algo dá errado
 > Se uma página não carrega, um botão não responde, ou aparece uma mensagem que você não entende, este é o momento de escrever a quem opera sua instância (sua **operadora**). Essa pessoa mantém as luzes acesas. Este manual se concentra no que você pode fazer quando tudo funciona como esperado.
@@ -44,10 +41,10 @@ Os capítulos vão do gesto menor ao maior. Cada capítulo abre com o que a supe
 
 ## Convenções
 
-- Os **caminhos de menu** aparecem assim: <span class="menu-path">Galaxies &rarr; New galaxy</span>.
-- Os **botões e campos de formulário** aparecem em negrito: **Save**, **Title**, **Visible to visitors**.
+- Os **caminhos de menu** aparecem assim: <span class="menu-path">Galáxias &rarr; Criar nova galáxia</span>.
+- Os **botões e campos de formulário** aparecem em negrito: **Atualizar galáxia**, **Título**, **Nome**.
 - Os **atalhos de teclado** usam <kbd>Cmd</kbd> + <kbd>S</kbd> (ou <kbd>Ctrl</kbd> + <kbd>S</kbd> em Windows ou Linux).
-- Os **nomes de campos, botões e itens de menu** correspondem exatamente ao que você vê na tela (e aparecem em inglês enquanto a interface não estiver localizada).
+- Os **nomes de campos, botões e itens de menu** correspondem exatamente ao que você vê na tela.
 - O *itálico* introduz um termo na primeira vez que aparece.
 
 > [!tip] Se encontrar um erro

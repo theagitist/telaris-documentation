@@ -68,13 +68,13 @@ Se a sua instância não tem um padrão de galáxia de rascunho, pergunte à sua
 
 ## Não há fila de revisão
 
-Telaris não tem fluxo de aprovação. Não há botão "Submit for review", não há editora-chefe, não há um par de olhos central que decide o que é bom o suficiente. A decisão de publicar vive no instante em que você salva o buraco de minhoca.
+Telaris não tem fluxo de aprovação. Não há botão "Enviar para revisão", não há editora-chefe, não há um par de olhos central que decide o que é bom o suficiente. A decisão de publicar vive no instante em que você salva o buraco de minhoca.
 
 Isso é por design. Uma fila de revisão importaria a suposição de que o julgamento de uma editora precisa da aprovação de outra, que é o padrão de plataforma que Telaris se recusa a importar. O custo é a responsabilidade: quando você salva, você publica.
 
 Duas práticas que se sustentam:
 
-- **Leia o buraco de minhoca como visitante antes de salvar.** O botão View no menu de ações abre o cartão de informações em modo somente leitura; este é o momento de pegar uma tag pela qual você não responderia, uma descrição mais afiada do que você pretendia, uma palavra-chave que conecta para onde você não quis.
+- **Leia o buraco de minhoca como visitante antes de salvar.** O botão **Ver** no menu de ações abre o cartão de informações em modo somente leitura; este é o momento de pegar uma tag pela qual você não responderia, uma descrição mais afiada do que você pretendia, uma palavra-chave que conecta para onde você não quis.
 - **Conversa com outras editoras, onde houver.** Telaris não formaliza, mas as conversas entre editoras de galáxias relacionadas são como uma rede mantém sua coerência editorial. Se sua instância tem mais de uma editora, encontrem um ritmo para conversar sobre as escolhas; o software não faz, nem vai fazer.
 
 ## Coisas que vale a pena saber

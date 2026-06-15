@@ -72,11 +72,20 @@ def env_required(key: str) -> str:
 
 
 def login(page: Page, base_url: str, email: str, password: str) -> None:
-    """Submit the login form and wait for the post-login redirect."""
+    """Submit the login form and wait for the post-login redirect.
+
+    The login page leads with the passwordless "email me a sign-in link"
+    button and keeps the password field inside a collapsed <details> ("I have
+    a password"). Open that disclosure first, then submit the password branch
+    explicitly (its button carries name=action value=password) so we do not
+    trip the sign-in-link button, which is the first submit on the form.
+    """
     page.goto(f"{base_url}/utils/login.php", wait_until="domcontentloaded")
     page.fill('input[name="email"]', email)
+    # Reveal the password field (it sits in a collapsed <details>).
+    page.evaluate("document.querySelectorAll('details').forEach(d => d.open = true)")
     page.fill('input[name="password"]', password)
-    page.click('button[type="submit"], input[type="submit"]')
+    page.click('button[name="action"][value="password"]')
     # The login redirects to /admin/ or /edit/ depending on user type.
     page.wait_for_load_state("networkidle", timeout=15_000)
 

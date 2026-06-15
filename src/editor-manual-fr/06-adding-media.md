@@ -19,7 +19,7 @@ Deux manières d'attacher une image :
 
 Dans les deux cas, l'image devient le visuel principal de qui visite à l'ouverture du trou de ver.
 
-**Utiliser comme icône de trou de ver** est une bascule sous les champs d'image. Quand elle est activée, l'image remplace l'icône 3D par défaut du thème : qui visite voit l'image *comme* le trou de ver dans la scène 3D, pas seulement à l'intérieur de la fiche d'information. Utile quand l'image est l'identité du trou de ver (un portrait, une couverture, un logo). Quand elle est désactivée, la scène 3D montre l'icône par défaut du thème et l'image n'apparaît que dans la fiche d'information ouverte.
+**Utiliser comme icône du trou de ver** est une bascule sous les champs d'image. Quand elle est activée, l'image remplace l'icône 3D par défaut du thème : qui visite voit l'image *comme* le trou de ver dans la scène 3D, pas seulement à l'intérieur de la fiche d'information. Utile quand l'image est l'identité du trou de ver (un portrait, une couverture, un logo). Quand elle est désactivée, la scène 3D montre l'icône par défaut du thème et l'image n'apparaît que dans la fiche d'information ouverte.
 
 **Attribution de l'image** est un petit champ libre qui voyage avec l'image. Utilise-le pour le crédit photographique, l'archive source, une note de licence, tout ce qui s'attacherait à l'image si elle paraissait dans un livre imprimé. Qui visite voit cette mention à côté de l'image dans la fiche d'information.
 

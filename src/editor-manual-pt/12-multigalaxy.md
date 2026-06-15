@@ -37,7 +37,7 @@ Uma visitante que chega a uma união por tag de galáxia (por exemplo, `/tag/coa
 - Uma cena composta pelos buracos de minhoca de cada galáxia que carrega a tag.
 - **Temas de origem por buraco de minhoca**: cada buraco de minhoca renderiza com o tema da sua galáxia de origem, não com um tema unificado. Isso é intencional; a visitante vê a união como o *encontro de galáxias*, não como um achatamento delas.
 - Uma faixa ou seletor de galáxias no topo mostrando as galáxias constituintes, com a opção de entrar em uma específica.
-- Os mesmos recursos Discovery de qualquer galáxia (keyword chips, related wormholes, etc.), agora bebendo da união.
+- Os mesmos recursos Discovery de qualquer galáxia (chips de palavras-chave, **Buracos de minhoca relacionados**, etc.), agora bebendo da união.
 
 A URL da visitante permanece em `/tag/<tag>` enquanto ela está na união; clicar em um buraco de minhoca abre seu cartão de informações sem sair da união.
 

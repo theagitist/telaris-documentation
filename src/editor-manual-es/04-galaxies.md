@@ -4,17 +4,19 @@ Una galaxia es a la vez un contenedor, un punto de vista, y una posición editor
 
 ## Seleccionar una galaxia
 
-El desplegable **Current Galaxy** en la parte superior del inicio del editor es como eliges en qué galaxia estás trabajando. *All my galaxies* muestra agujeros de gusano de todos los lugares donde tienes acceso; seleccionar una galaxia específica filtra todo lo de abajo a esa galaxia.
+El desplegable **Galaxia actual** en la parte superior del inicio del editor es como eliges en qué galaxia estás trabajando. *Todas mis galaxias* muestra agujeros de gusano de todos los lugares donde tienes acceso; seleccionar una galaxia específica filtra todo lo de abajo a esa galaxia.
 
-Lo primero que el desplegable te enseña es la forma de tus responsabilidades editoriales: toda galaxia listada es una galaxia que puedes editar. Si falta la galaxia de una colega, tu operadora no te la ha asignado. (Las visitantes de tu instancia ven todas las galaxias públicas; las editoras solo ven las que tienen a su cargo.)
+Lo primero que el desplegable te enseña es la forma de tus responsabilidades editoriales: toda galaxia listada es una galaxia a la que se te ha dado acceso. Si falta la galaxia de una colega, tu operadora no te la ha asignado. (Las visitantes de tu instancia ven todas las galaxias públicas; las editoras solo ven las que tienen a su cargo.)
+
+El acceso puede ser de lectura y escritura o de solo lectura, y se fija por galaxia. En una galaxia de lectura y escritura puedes añadir y cambiar agujeros de gusano como describe este manual. En una galaxia de solo lectura puedes abrir y ver todo, pero los controles que la cambiarían no están disponibles; esto permite que tu operadora comparta una galaxia como referencia sin ceder la edición. Tu propia galaxia, una que creaste, siempre es tuya para editarla.
 
 Cuando eliges una galaxia específica, aparecen tres botones nuevos junto al desplegable:
 
-![Inicio del editor con una sola galaxia seleccionada: aparecen los botones View, Settings y Canvas](assets/images/editor-manual-es/03-editor-home-single-galaxy.png)
+![Inicio del editor con una sola galaxia seleccionada: aparecen los botones Ver, Ajustes y Lienzo](assets/images/editor-manual-es/03-editor-home-single-galaxy.png)
 
-- **View** abre la galaxia en modo visitante, en una pestaña nueva. Úsalo cuando quieras comprobar cómo se lee un cambio desde el asiento de la visitante.
-- **Settings** abre la configuración de la galaxia. La mayor parte de este capítulo trata sobre lo que hay dentro de ese cuadro modal.
-- **Canvas** abre el lienzo de palabras clave, la superficie relacional de dibujo cubierta en el capítulo 8.
+- **Ver** abre la galaxia en modo visitante, en una pestaña nueva. Úsalo cuando quieras comprobar cómo se lee un cambio desde el asiento de la visitante.
+- **Ajustes** abre la configuración de la galaxia. La mayor parte de este capítulo trata sobre lo que hay dentro de ese cuadro modal.
+- **Lienzo** abre el lienzo de palabras clave, la superficie relacional de dibujo cubierta en el capítulo 8.
 
 ## Crear una galaxia
 
@@ -24,43 +26,43 @@ Cuando se crea una nueva galaxia, llega vacía: cero agujeros de gusano, ninguna
 
 ## Ajustes de galaxia
 
-Abre el botón **Settings** junto al selector. Se abre un cuadro modal:
+Abre el botón **Ajustes** junto al selector. Se abre un cuadro modal:
 
-![Cuadro modal Edit Galaxy: Name, Tagline, Visual Theme, Tags, acciones por lote, y conmutadores de descubrimiento](assets/images/editor-manual-es/04-galaxy-settings-modal.png)
+![Cuadro modal de ajustes de galaxia: Nombre, Lema, Tema visual, Etiquetas, acciones por lote, y conmutadores de descubrimiento](assets/images/editor-manual-es/04-galaxy-settings-modal.png)
 
 El cuadro modal es el lugar central donde das forma a lo que una galaxia es y cómo se comporta. Los campos, en orden:
 
-**Name** (obligatorio). El nombre que ven las visitantes en el selector de galaxia y en la parte superior de la escena. Los nombres de galaxia no son únicos en la red, pero dos galaxias con el mismo nombre en la misma instancia confunden; elige algo legible y distinto. Puedes cambiar el nombre de una galaxia en cualquier momento.
+**Nombre** (obligatorio). El nombre que ven las visitantes en el selector de galaxia y en la parte superior de la escena. Los nombres de galaxia no son únicos en la red, pero dos galaxias con el mismo nombre en la misma instancia confunden; elige algo legible y distinto. Puedes cambiar el nombre de una galaxia en cualquier momento.
 
-**Tagline** (opcional, corto). Una descripción de una línea que se muestra junto al nombre de la galaxia o debajo, en la interfaz de la visitante. La tagline no aparece en la escena 3D; su público principal es el selector y el listado público.
+**Lema** (opcional, corto). Una descripción de una línea que se muestra junto al nombre de la galaxia o debajo, en la interfaz de la visitante. El lema no aparece en la escena 3D; su público principal es el selector y el listado público.
 
-**Visual Theme**. Un desplegable que elige el aspecto de la escena 3D: *Cosmic* (estrellas, planetas, cohetes) es la opción por defecto y la más común; otros temas son *Simple*, *Abstract*, *Rectangles*, *Stripes*, y *Tech*. Elige el cuyo vocabulario calce con tu contenido. El tema puede cambiarse en cualquier momento; el cambio se aplica a todas las visitantes inmediatamente, pero no altera lo que escribiste, solo cómo se representa.
+**Tema visual**. Un desplegable que elige el aspecto de la escena 3D: *Cósmico* (estrellas, planetas, cohetes) es la opción por defecto y la más común; otros temas son *Simple*, *Abstracto*, *Rectángulos*, *Rayas*, y *Tech*. Elige el cuyo vocabulario calce con tu contenido. El tema puede cambiarse en cualquier momento; el cambio se aplica a todas las visitantes inmediatamente, pero no altera lo que escribiste, solo cómo se representa.
 
-**Tags** (opcional). Etiquetas cortas que agrupan esta galaxia con otras galaxias. Dos galaxias que comparten una etiqueta forman una *unión de galaxias*: las visitantes que siguen la etiqueta ven los agujeros de gusano de ambas a la vez, manteniendo cada agujero el estilo visual de su galaxia de origen. Usa etiquetas cuando varias galaxias sean hermanas en algún arreglo más amplio. El campo Tags autocompleta a partir de etiquetas que has usado en tus otras galaxias y de etiquetas compartidas por galaxias con el mismo prefijo `[entre corchetes]`.
+**Etiquetas** (opcional). Etiquetas cortas que agrupan esta galaxia con otras galaxias. Dos galaxias que comparten una etiqueta forman una *unión de galaxias*: las visitantes que siguen la etiqueta ven los agujeros de gusano de ambas a la vez, manteniendo cada agujero el estilo visual de su galaxia de origen. Usa etiquetas cuando varias galaxias sean hermanas en algún arreglo más amplio. El campo Etiquetas autocompleta a partir de etiquetas que has usado en tus otras galaxias y de etiquetas compartidas por galaxias con el mismo prefijo `[entre corchetes]`.
 
 **Acciones por lote sobre agujeros de gusano**. Dos botones que aplican un único ajuste a todos los agujeros de gusano de esta galaxia a la vez.
 
-- **Use images as icons (all wormholes)** hace que cada agujero de gusano que tenga imagen represente esa imagen como el nodo 3D en lugar del icono por defecto del tema. Útil cuando tienes una galaxia de fotografías y quieres que las fotos *sean* la escena.
-- **Revert all to theme icons** deshace lo anterior: cada agujero de gusano vuelve al icono del tema, tenga imagen o no.
+- **Usar imágenes como íconos** hace que cada agujero de gusano que tenga imagen represente esa imagen como el nodo 3D en lugar del icono por defecto del tema. Útil cuando tienes una galaxia de fotografías y quieres que las fotos *sean* la escena.
+- **Restaurar todos los íconos del tema** deshace lo anterior: cada agujero de gusano vuelve al icono del tema, tenga imagen o no.
 
 Estos actúan por lote; cada agujero de gusano todavía puede invertirse uno por uno después (capítulo 5).
 
 **Conmutadores de descubrimiento**. Un conjunto de interruptores al pie del cuadro modal que controlan cómo experimenta tu galaxia la visitante. Vienen apagados por defecto; enciende cada uno cuando quieras la característica correspondiente. Cada conmutador se cubre en el capítulo 10 (Vistas de visitante) donde también se muestra la característica que controla.
 
-Guarda el modal con **Save**; cierra sin cambios con **Cancel** o haciendo clic fuera del modal. Los cambios se aplican a las visitantes inmediatamente.
+Guarda el modal con **Actualizar galaxia**; cierra sin cambios con **Cancelar** o haciendo clic fuera del modal. Los cambios se aplican a las visitantes inmediatamente.
 
 ## Marco editorial
 
 El marco de una galaxia es el párrafo corto que la abre para las visitantes. Es la respuesta a la pregunta *qué es esta galaxia* antes de que la visitante haya conocido cualquier agujero de gusano. Dos lugares donde escribirlo:
 
-1. El campo **Tagline** del modal de galaxia, para el resumen de una línea que aparece junto al nombre de la galaxia.
+1. El campo **Lema** del modal de galaxia, para el resumen de una línea que aparece junto al nombre de la galaxia.
 2. (Algunas instancias) un agujero de gusano dedicado al marco dentro de la galaxia, a menudo el primero que ve una visitante al entrar. Si tu instancia usa este patrón, tu operadora te lo dirá.
 
 Ambos son elecciones editoriales, no técnicas. Escribe el marco en tu propia voz; la galaxia es tuya para presentarla.
 
 ## Compartir agujeros de gusano entre galaxias mediante etiquetas
 
-Si tienes una galaxia cuyo contenido es parte de una constelación más amplia de trabajo (una exposición con varias salas; una revista con varios números; una serie de colecciones relacionadas), el campo **Tags** es como lo dices. Añade la misma etiqueta a cada galaxia que pertenezca al conjunto; la unión queda alcanzable para las visitantes en `/tag/<tag-slug>` (tu operadora puede compartir el enlace).
+Si tienes una galaxia cuyo contenido es parte de una constelación más amplia de trabajo (una exposición con varias salas; una revista con varios números; una serie de colecciones relacionadas), el campo **Etiquetas** es como lo dices. Añade la misma etiqueta a cada galaxia que pertenezca al conjunto; la unión queda alcanzable para las visitantes en `/tag/<tag-slug>` (tu operadora puede compartir el enlace).
 
 Las etiquetas no crean ni modifican agujeros de gusano. Son puramente una disposición de visualización: en la vista de unión, la visitante ve los agujeros de gusano de todas las galaxias etiquetadas a la vez, pero cada agujero de gusano se queda en su galaxia de origen. Edita una galaxia, las otras quedan intactas.
 

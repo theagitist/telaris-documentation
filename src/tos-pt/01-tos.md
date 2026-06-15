@@ -25,6 +25,8 @@ O software de Telaris é oferecido sob a licença de código aberto indicada no 
 
 Quando você usa uma instância de Telaris como pessoa editora, quem opera essa instância decide qual conduta é apropriada. A maioria de quem opera espera soberania editorial (quem edita decide o que publicar dentro da sua galáxia) junto com consentimento da comunidade de origem (o material que uma comunidade contribui rege-se pelas decisões dessa comunidade). As regras de comportamento específicas são um assunto a nível de instância. Como pessoa editora, você é responsável por ter o direito de publicar o que publica e por respeitar o consentimento das comunidades cujo material você carrega.
 
+Como você se torna pessoa editora depende de quem opera. A maioria cria as contas de edição por conta própria. Algumas abrem a sua instância ao cadastro autônomo, onde qualquer pessoa pode solicitar uma conta de edição com um e-mail confirmado; quem ativa isso também pode desativá-lo e pode decidir o que cada pessoa editora pode modificar. Seja como for que você se junte, valem as mesmas expectativas: soberania editorial, consentimento da comunidade de origem e a responsabilidade de ter o direito de publicar o que publica.
+
 Quando você usa uma instância de Telaris como visita, você pode ler o que quem edita publicou. Por padrão, quem visita não tem contas nas instâncias de Telaris.
 
 ## Federação

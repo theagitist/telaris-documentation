@@ -6,10 +6,10 @@ Este capítulo percorre a superfície, suas affordances de desenho, e a discipli
 
 ## Abrir a tela
 
-Selecione a galáxia em que quer trabalhar a partir da tela inicial da editora. Quando uma galáxia específica está selecionada, três botões aparecem ao lado do seletor de galáxia; o terceiro é **Canvas**. Selecione-o. A tela abre em uma nova aba.
+Selecione a galáxia em que quer trabalhar a partir da tela inicial da editora. Quando uma galáxia específica está selecionada, três botões aparecem ao lado do seletor de galáxia; o terceiro é **Tela**. Selecione-o. A tela abre em uma nova aba.
 
 > [!warning] Apenas desktop
-> A tela é uma superfície apenas para desktop. Em um celular ou tablet, as interações de chip e linha não se comportam bem; o botão Canvas fica escondido nesses contextos. Se você precisa trabalhar o arranjo de palavras-chave de uma galáxia a partir de uma tela pequena, a lista de buracos de minhoca e o campo de palavras-chave dentro do modal de cada buraco de minhoca ainda funcionam; a tela não.
+> A tela é uma superfície apenas para desktop. Em um celular ou tablet, as interações de chip e linha não se comportam bem; o botão Tela fica escondido nesses contextos. Se você precisa trabalhar o arranjo de palavras-chave de uma galáxia a partir de uma tela pequena, a lista de buracos de minhoca e o campo de palavras-chave dentro do modal de cada buraco de minhoca ainda funcionam; a tela não.
 
 ## O que você vê
 
@@ -22,10 +22,10 @@ Cada chip é uma palavra-chave. A cor do chip coincide com a cor usada em outros
 As linhas entre chips são **relações** que a editora desenhou. Cada linha tem dois pontos finais (os chips que conecta), uma anotação opcional (uma frase explicando a conexão), e um registro de quem a desenhou e quando.
 
 A barra superior carrega:
-- **Back**: te devolve à tela inicial da editora para esta galáxia.
+- **Voltar**: te devolve à tela inicial da editora para esta galáxia.
 - O nome da galáxia.
 - **?**: abre um pequeno painel de ajuda listando cada interação de teclado e mouse da tela.
-- **Ready** (ou **Saving…**): um pequeno indicador de status confirmando que a tela salvou sua mudança mais recente.
+- **Pronto** (ou **Salvando…**): um pequeno indicador de status confirmando que a tela salvou sua mudança mais recente.
 
 ## Desenhar uma relação
 
@@ -50,8 +50,8 @@ Este é o pequeno segredo da tela: o layout que você vê é em parte trabalho d
 
 Passe o mouse sobre uma linha; um pequeno menu de contexto aparece com duas opções:
 
-- **Edit note**: muda a anotação anexada à linha.
-- **Delete**: remove a relação inteira.
+- **Editar nota**: muda a anotação anexada à linha.
+- **Excluir**: remove a relação inteira.
 
 As deleções são permanentes no nível da linha (não há desfazer dentro da tela), mas os pontos finais (os chips) permanecem na tela. Você pode redesenhar uma relação entre os mesmos dois chips depois; a nova linha é um registro fresco no histórico subjacente, não uma restauração da anterior.
 
@@ -59,9 +59,9 @@ As deleções são permanentes no nível da linha (não há desfazer dentro da t
 
 Clique com o botão direito (ou pressione longamente em touch) em um chip para abrir suas opções:
 
-- **Rename**: muda a palavra. O renome se aplica a cada buraco de minhoca que carrega a palavra-chave em toda galáxia da instância, porque as palavras-chave são globais por texto. A cor do chip muda para casar com o novo texto (as cores são determinísticas pela palavra).
-- **Merge into…**: selecione outro chip da tela em que esta palavra-chave deve se fundir. Após a fusão, cada buraco de minhoca que carregava a palavra-chave de origem agora carrega a palavra-chave de destino. O chip de origem desaparece.
-- **Delete**: remove a palavra-chave de cada buraco de minhoca que a carregava na instância.
+- **Renomear**: muda a palavra. O renome se aplica a cada buraco de minhoca que carrega a palavra-chave em toda galáxia da instância, porque as palavras-chave são globais por texto. A cor do chip muda para casar com o novo texto (as cores são determinísticas pela palavra).
+- **Fundir em…**: selecione outro chip da tela em que esta palavra-chave deve se fundir. Após a fusão, cada buraco de minhoca que carregava a palavra-chave de origem agora carrega a palavra-chave de destino. O chip de origem desaparece.
+- **Excluir**: remove a palavra-chave de cada buraco de minhoca que a carregava na instância.
 
 São ferramentas afiadas. Fundir é a mais gentil das três (sem perda de dados; apenas rerotulagem), depois renomear (também sem perda de dados; a palavra muda mas as conexões ficam), depois apagar (a palavra-chave desaparece; os buracos de minhoca sobrevivem sem ela). Opere em um dia tranquilo se a galáxia tem muitas editoras.
 
@@ -69,8 +69,8 @@ São ferramentas afiadas. Fundir é a mais gentil das três (sem perda de dados;
 
 A tela expõe duas operações de reset em lote pelo painel de ajuda **?**:
 
-- **Reset all chip positions** nesta galáxia: cada chip volta a uma posição uniforme padrão. Use quando o layout acumulou bagunça e você quer começar de novo.
-- **Reset all relations** nesta galáxia: apaga toda linha de relação desta galáxia. Os chips permanecem. Use quando quiser redesenhar o mapa conceitual do zero.
+- **Redefinir todas as posições dos chips** nesta galáxia: cada chip volta a uma posição uniforme padrão. Use quando o layout acumulou bagunça e você quer começar de novo.
+- **Redefinir todas as relações** nesta galáxia: apaga toda linha de relação desta galáxia. Os chips permanecem. Use quando quiser redesenhar o mapa conceitual do zero.
 
 Ambos se limitam à **galáxia atual**; não tocam em outras galáxias.
 
@@ -91,7 +91,7 @@ Se uma galáxia nunca parece pedir que se abra a tela, isso é um desfecho bom. 
 
 ## Coisas que vale a pena saber
 
-- **A tela salva cada mudança automaticamente.** Não há botão Save. O indicador **Saving…** / **Ready** no alto à direita reflete o estado da persistência.
+- **A tela salva cada mudança automaticamente.** Não há botão Salvar. O indicador **Salvando…** / **Pronto** no alto à direita reflete o estado da persistência.
 - **Não há desfazer na superfície da tela.** Um movimento errado se corrige com outro movimento; uma deleção acidental, redesenhando a linha. Se algo der muito errado, pergunte à sua operadora sobre um snapshot.
 - **A visitante não vê os chips diretamente.** A tela é uma superfície da editora; o que as visitantes veem na cena 3D é influenciado pelo arranjo das palavras-chave (quais buracos de minhoca compartilham palavras; quais chips têm relações), mas elas não olham para a grade de chips em si.
 - **As anotações das linhas aparecem para a visitante apenas ao passar o mouse** no painel de buracos de minhoca relacionados (o capítulo 10 traz o detalhe do lado da visitante). A anotação é parte do artefato público; escreva-a para uma leitora futura, não para você mesma.

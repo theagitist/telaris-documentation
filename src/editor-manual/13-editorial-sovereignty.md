@@ -1,6 +1,6 @@
 # Editorial sovereignty
 
-This is the chapter most software manuals skip. Telaris's structure — no folders, no review queue, no central vocabulary, no "wrong" tag — only works if editors hold the position with intention. The choices you make are sovereign. They are not validated by anyone else. They are not run through an approval flow. They are not silently corrected by an algorithm. The decision to apply a keyword is yours; the decision to leave one off is also yours.
+This is the chapter most software manuals skip. Telaris's structure (no folders, no review queue, no central vocabulary, no "wrong" tag) only works if editors hold the position with intention. The choices you make are sovereign. They are not validated by anyone else. They are not run through an approval flow. They are not silently corrected by an algorithm. The decision to apply a keyword is yours; the decision to leave one off is also yours.
 
 This chapter is about what that means in practice.
 

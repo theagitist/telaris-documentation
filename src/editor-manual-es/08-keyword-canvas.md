@@ -6,10 +6,10 @@ Este capítulo recorre la superficie, sus prestaciones de dibujo, y la disciplin
 
 ## Abrir el lienzo
 
-Selecciona desde el inicio del editor la galaxia en la que quieres trabajar. Cuando hay una galaxia específica seleccionada, aparecen tres botones junto al selector de galaxia; el tercero es **Canvas**. Selecciónalo. El lienzo abre en una pestaña nueva.
+Selecciona desde el inicio del editor la galaxia en la que quieres trabajar. Cuando hay una galaxia específica seleccionada, aparecen tres botones junto al selector de galaxia; el tercero es **Lienzo**. Selecciónalo. El lienzo abre en una pestaña nueva.
 
 > [!warning] Solo escritorio
-> El lienzo es una superficie solo de escritorio. En un teléfono o tableta, las interacciones de píldoras y líneas no se comportan bien; el botón Canvas se oculta en esos contextos. Si necesitas trabajar en el arreglo de palabras clave de una galaxia desde una pantalla pequeña, la lista de agujeros de gusano y el campo de palabras clave dentro del modal de cada agujero de gusano todavía funcionan; el lienzo no.
+> El lienzo es una superficie solo de escritorio. En un teléfono o tableta, las interacciones de píldoras y líneas no se comportan bien; el botón Lienzo se oculta en esos contextos. Si necesitas trabajar en el arreglo de palabras clave de una galaxia desde una pantalla pequeña, la lista de agujeros de gusano y el campo de palabras clave dentro del modal de cada agujero de gusano todavía funcionan; el lienzo no.
 
 ## Lo que ves
 
@@ -22,10 +22,10 @@ Cada píldora es una palabra clave. El color de la píldora coincide con el colo
 Las líneas entre píldoras son **relaciones** que la editora ha dibujado. Cada línea tiene dos extremos (las píldoras que conecta), una nota opcional (una oración que explica la conexión), y un registro de quién la dibujó y cuándo.
 
 La barra superior carga:
-- **Back**: te devuelve al inicio del editor para esta galaxia.
+- **Atrás**: te devuelve al inicio del editor para esta galaxia.
 - El nombre de la galaxia.
 - **?**: abre una pequeña capa de ayuda que lista cada interacción de teclado y ratón del lienzo.
-- **Ready** (o **Saving…**): un pequeño indicador de estado que confirma que el lienzo ha guardado tu cambio más reciente.
+- **Listo** (o **Guardando…**): un pequeño indicador de estado que confirma que el lienzo ha guardado tu cambio más reciente.
 
 ## Dibujar una relación
 
@@ -50,8 +50,8 @@ Este es el pequeño secreto del lienzo: la disposición que ves es en parte obra
 
 Pasa el ratón sobre una línea; aparece un pequeño menú contextual con dos opciones:
 
-- **Edit note**: cambia la nota en línea adjunta a la línea.
-- **Delete**: elimina la relación por completo.
+- **Editar nota**: cambia la nota en línea adjunta a la línea.
+- **Eliminar**: elimina la relación por completo.
 
 Las eliminaciones son permanentes a nivel de línea (no hay deshacer dentro del lienzo), pero los extremos de las píldoras permanecen en el lienzo. Puedes volver a trazar una relación entre las mismas dos píldoras después; la nueva línea es un registro fresco en el subyacente, no una restauración del antiguo.
 
@@ -59,9 +59,9 @@ Las eliminaciones son permanentes a nivel de línea (no hay deshacer dentro del 
 
 Haz clic derecho (o presiona largo en táctil) sobre una píldora para abrir sus opciones:
 
-- **Rename**: cambia la palabra. El renombrado se aplica a cada agujero de gusano que carga la palabra clave en cada galaxia de la instancia, porque las palabras clave son globales por texto. El color de la píldora cambia para coincidir con el nuevo texto (los colores son deterministas por la palabra).
-- **Merge into…**: selecciona otra píldora del lienzo para fusionar esta palabra clave dentro. Tras la fusión, cada agujero de gusano que cargaba la palabra clave de origen ahora carga la de destino. La píldora de origen desaparece.
-- **Delete**: quita la palabra clave de cada agujero de gusano que la cargaba en la instancia.
+- **Renombrar**: cambia la palabra. El renombrado se aplica a cada agujero de gusano que carga la palabra clave en cada galaxia de la instancia, porque las palabras clave son globales por texto. El color de la píldora cambia para coincidir con el nuevo texto (los colores son deterministas por la palabra).
+- **Fusionar en…**: selecciona otra píldora del lienzo para fusionar esta palabra clave dentro. Tras la fusión, cada agujero de gusano que cargaba la palabra clave de origen ahora carga la de destino. La píldora de origen desaparece.
+- **Eliminar**: quita la palabra clave de cada agujero de gusano que la cargaba en la instancia.
 
 Estas son herramientas afiladas. Fusionar es la más amable de las tres (sin pérdida de datos; solo un reetiquetado), luego renombrar (también sin pérdida de datos; la palabra cambia pero las conexiones permanecen), luego eliminar (la palabra clave se va; los agujeros de gusano sobreviven sin ella). Opera en un día tranquilo si una galaxia tiene muchas editoras.
 
@@ -69,8 +69,8 @@ Estas son herramientas afiladas. Fusionar es la más amable de las tres (sin pé
 
 El lienzo expone dos operaciones de reinicio por lote a través de la capa de ayuda **?**:
 
-- **Reset all chip positions** en esta galaxia: cada píldora vuelve a una posición por defecto uniforme. Úsalo cuando la disposición ha acumulado costra y quieres empezar de nuevo.
-- **Reset all relations** en esta galaxia: elimina cada línea de relación en esta galaxia. Las píldoras permanecen. Úsalo cuando quieras volver a dibujar el mapa conceptual desde cero.
+- **Restablecer todas las posiciones de las fichas** en esta galaxia: cada píldora vuelve a una posición por defecto uniforme. Úsalo cuando la disposición ha acumulado costra y quieres empezar de nuevo.
+- **Restablecer todas las relaciones** en esta galaxia: elimina cada línea de relación en esta galaxia. Las píldoras permanecen. Úsalo cuando quieras volver a dibujar el mapa conceptual desde cero.
 
 Ambas están acotadas a la **galaxia actual**; no tocan otras galaxias.
 
@@ -91,7 +91,7 @@ Si una galaxia nunca se siente como si justificara abrir el lienzo, ese es un re
 
 ## Cosas que vale la pena saber
 
-- **El lienzo guarda cada cambio automáticamente.** No hay botón Save. El indicador **Saving…** / **Ready** arriba a la derecha refleja el estado de persistencia.
+- **El lienzo guarda cada cambio automáticamente.** No hay botón Guardar. El indicador **Guardando…** / **Listo** arriba a la derecha refleja el estado de persistencia.
 - **No hay deshacer dentro de la superficie del lienzo.** Un movimiento equivocado se corrige con otro movimiento; una eliminación accidental volviendo a trazar la línea. Si algo sale muy mal, pregunta a tu operadora por una instantánea.
 - **La visitante no ve las píldoras directamente.** El lienzo es una superficie de editora; lo que las visitantes ven en la escena 3D está influido por la disposición de las palabras clave (qué agujeros de gusano comparten palabras clave; qué píldoras tienen relaciones), pero las visitantes no miran la cuadrícula de píldoras misma.
 - **Las notas de línea se exponen a las visitantes solo al pasar el ratón** en el panel de agujeros de gusano relacionados (el capítulo 10 tiene el detalle del lado visitante). La nota es parte del artefacto público; escríbela para una lectora futura, no para ti misma.

@@ -13,9 +13,9 @@ La vista de visitante por defecto es una escena tridimensional donde cada agujer
 Lo que tú eliges como editora y se muestra aquí:
 
 - **El tema de la galaxia** (capítulo 4) controla el aspecto: qué iconos representan los agujeros de gusano, cómo es el fondo, cómo se siente la iluminación.
-- **El conmutador Use-as-wormhole-icon** de cada agujero de gusano (capítulo 5) decide si ese agujero de gusano se representa como su imagen (cuando está encendido) o como el icono por defecto del tema (cuando está apagado).
-- **La marca Accentuate** en un agujero de gusano lo hace más grande y prominente en la escena.
-- **La marca Show Keywords** imprime las palabras clave del agujero de gusano como etiquetas flotantes junto al icono.
+- **El conmutador Usar como icono del agujero de gusano** de cada agujero de gusano (capítulo 5) decide si ese agujero de gusano se representa como su imagen (cuando está encendido) o como el icono por defecto del tema (cuando está apagado).
+- **La marca Acentuar agujero de gusano** en un agujero de gusano lo hace más grande y prominente en la escena.
+- **La marca Mostrar palabras clave** imprime las palabras clave del agujero de gusano como etiquetas flotantes junto al icono.
 
 Estas cuatro elecciones interactúan: una galaxia de agujeros de gusano acentuados, iconizados por imagen, y con palabras clave visibles es una escena cargada; una de agujeros de gusano iconizados por tema, planos, es una escena tranquila. No hay un modo "correcto"; elige el registro visual que coincida con el registro editorial del contenido.
 
@@ -29,62 +29,62 @@ Una visitante que hace clic en un agujero de gusano ve su **ficha** abrirse sobr
 - El **reproductor de audio** si hay audio adjunto.
 - El **código de embed** si se proveyó alguno.
 - Una fila de **píldoras de palabras clave** al pie de la ficha, cada una cliqueable.
-- El botón **Open Link** si el agujero de gusano carga una URL.
+- El botón **Abrir enlace** si el agujero de gusano carga una URL.
 
 Cuando la visitante hace clic en una píldora de palabra clave en la ficha, la escena atenúa los agujeros de gusano que no cargan esa palabra clave. La ficha se cierra. Esta es una de las formas principales en que las visitantes navegan por etiquetas en vez de por nombre.
 
-## Los conmutadores de Discovery
+## Los conmutadores de Descubrimiento
 
-El modal de ajustes de galaxia carga una sección Discovery (el capítulo 4 introdujo el modal; aquí está lo que hace cada conmutador del lado visitante):
+El modal de ajustes de galaxia carga una sección de Descubrimiento (el capítulo 4 introdujo el modal; aquí está lo que hace cada conmutador del lado visitante):
 
-![Modal de ajustes de galaxia desplazado a los conmutadores Discovery](assets/images/editor-manual-es/12-galaxy-discovery-section.png)
+![Modal de ajustes de galaxia desplazado a los conmutadores de descubrimiento](assets/images/editor-manual-es/12-galaxy-discovery-section.png)
 
 Cada conmutador está apagado por defecto. Enciende uno cuando quieras la característica correspondiente.
 
-### Auto-tour
+### Recorrido automático
 
 Un recorrido autorreproducido por la galaxia. Cuando está encendido, aparecen opciones adicionales:
 
-- **Start mode** (manual, idle, immediate):
+- **Modo de inicio** (manual, inactivo, inmediato):
   - **Manual**: la visitante debe presionar un botón Play para iniciar el recorrido.
-  - **Idle**: el recorrido empieza automáticamente cuando la visitante no ha interactuado con la escena por un número configurable de segundos.
-  - **Immediate**: el recorrido empieza tan pronto como la visitante aterriza en la galaxia.
-- **Node selection** (all, accentuated, random N, tagged keywords):
-  - **All**: el recorrido visita cada agujero de gusano en la galaxia en orden.
-  - **Accentuated only**: visita solo los agujeros de gusano marcados como acentuados.
-  - **Random N**: elige N agujeros de gusano al azar cada sesión; el número es configurable.
-  - **Tagged keywords**: visita solo los agujeros de gusano que cargan una de un conjunto elegido de palabras clave. La lista de palabras clave se fija en un subcampo que aparece cuando esta opción está seleccionada.
-- **Dwell time** en segundos en cada parada, antes de que el recorrido pase al siguiente.
-- **Loop**: cuando está encendido, el recorrido vuelve al principio tras la última parada; cuando está apagado, termina en silencio.
+  - **Inactivo**: el recorrido empieza automáticamente cuando la visitante no ha interactuado con la escena por un número configurable de segundos.
+  - **Inmediato**: el recorrido empieza tan pronto como la visitante aterriza en la galaxia.
+- **Selección de nodos** (todos, destacados, muestra aleatoria de N, palabras clave etiquetadas):
+  - **Todos los nodos**: el recorrido visita cada agujero de gusano en la galaxia en orden.
+  - **Solo nodos destacados**: visita solo los agujeros de gusano marcados como acentuados.
+  - **Una muestra aleatoria de N nodos**: elige N agujeros de gusano al azar cada sesión; el número es configurable.
+  - **Nodos etiquetados con una de estas palabras clave**: visita solo los agujeros de gusano que cargan una de un conjunto elegido de palabras clave. La lista de palabras clave se fija en un subcampo que aparece cuando esta opción está seleccionada.
+- **Pausa en nodos sin contenido** en segundos en cada parada, antes de que el recorrido pase al siguiente.
+- **Repetir el recorrido al terminar**: cuando está encendido, el recorrido vuelve al principio tras la última parada; cuando está apagado, termina en silencio.
 
-Un botón **Preview tour** aparece junto a los campos del Auto-tour; seleccionarlo abre la vista de visitante en una pestaña nueva con el recorrido corriendo, para que puedas comprobar el timing sin guardar la configuración.
+Un botón **Vista previa del recorrido** aparece junto a los campos del recorrido automático; seleccionarlo abre la vista de visitante en una pestaña nueva con el recorrido corriendo, para que puedas comprobar el timing sin guardar la configuración.
 
 El capítulo 11 profundiza en los recorridos.
 
-### Idle spotlight
+### Foco al estar inactiva
 
-Cuando está encendido, la escena destaca suavemente un agujero de gusano distinto cada N segundos cuando la visitante está inactiva. A diferencia del Auto-tour, no mueve la cámara ni abre fichas; solo trae un agujero de gusano hacia adelante, suavemente, como un museo cambiando la iluminación de la sala.
+Cuando está encendido, la escena destaca suavemente un agujero de gusano distinto cada N segundos cuando la visitante está inactiva. A diferencia del recorrido automático, no mueve la cámara ni abre fichas; solo trae un agujero de gusano hacia adelante, suavemente, como un museo cambiando la iluminación de la sala.
 
 Dos ajustes:
 
-- **Idle threshold** en segundos antes de que empiece el foco.
-- **Selection** (all, accentuated only).
+- **Umbral de inactividad** en segundos antes de que empiece el foco.
+- **Selección** (todos, solo destacados).
 
-Idle spotlight calza bien con galaxias de sensación ambiental (un ciclo de poemas; una secuencia de fotografías); le da a la sala algo que hacer cuando la visitante ha dejado de hacer clic.
+El foco al estar inactiva calza bien con galaxias de sensación ambiental (un ciclo de poemas; una secuencia de fotografías); le da a la sala algo que hacer cuando la visitante ha dejado de hacer clic.
 
-### Keyword chips
+### Fichas de palabras clave
 
 Cuando está encendido, la escena pinta una franja de píldoras pastel al pie de la pantalla de la visitante, una píldora por cada palabra clave más usada en la galaxia. Las visitantes pueden hacer clic en una píldora para atenuar cada agujero de gusano que no la carga.
 
 Úsalo cuando la galaxia tenga un vocabulario de palabras clave fuerte por el que las visitantes naturalmente navegarían; apágalo cuando las palabras clave sean demasiado granulares o demasiadas para que las píldoras sean útiles.
 
-### Related wormholes
+### Agujeros de gusano relacionados
 
 Cuando está encendido, una ficha abre con hasta cinco píldoras de agujeros de gusano **relacionados** al pie: otros agujeros de gusano (en esta o en galaxias hermanas) que comparten al menos una palabra clave con el abierto. La visitante puede hacer clic en una píldora para saltar directamente al agujero de gusano relacionado.
 
 Esta es la forma principal en que las visitantes viajan lateralmente por una red sin abrir un portal. Enciéndelo cuando quieras que la visitante descubra la trama; apágalo cuando quieras que la visitante se mantenga enfocada en un agujero de gusano a la vez.
 
-### 2D view
+### Conmutador de vista 2D
 
 Cuando está encendido, aparece un pequeño conmutador **3D / 2D** en la parte superior de la pantalla de la visitante. Cambiar a 2D colapsa la escena en una cuadrícula plana de píldoras de agujeros de gusano: cada píldora es el icono del agujero de gusano más su nombre, ordenadas en filas. La vista 2D carga más rápido y es más fácil de ojear; algunas visitantes la prefieren para encontrar un agujero de gusano específico rápidamente.
 
@@ -99,6 +99,6 @@ No hay un conmutador global para ocultar los pies de procedencia; si tu trabajo 
 ## Cosas que vale la pena saber
 
 - **La visitante ve lo que has publicado, no tu borrador.** No hay un modo "preview" separado de la vista publicada; una vez que guardas un agujero de gusano o un ajuste de galaxia, la próxima recarga de página de la visitante refleja el cambio. Para previsualizar un cambio sin afectar a las visitantes, tendrías que hacer el cambio en una galaxia que aún no sea pública.
-- **La escena 3D corre en el navegador de la visitante.** Dispositivos antiguos o computadoras de poca potencia pueden tener dificultades con galaxias muy densas. El conmutador 2D view es el remedio estándar.
-- **El audio que se autorreproduce puede ser bloqueado por el navegador de la visitante.** La mayoría de los navegadores no permiten que el audio empiece sin la interacción de la visitante. Si enciendes Autoplay (capítulo 6) y una visitante reporta que no hay sonido, esta es la causa más probable; el primer clic de la visitante en la página suele desbloquear el audio.
-- **Los conmutadores Discovery son independientes entre sí.** Auto-tour e idle spotlight pueden estar encendidos al mismo tiempo (el foco se activa si el recorrido termina o no se ha iniciado). Elige las combinaciones que calcen con tu intención editorial; los conmutadores no se condicionan entre sí.
+- **La escena 3D corre en el navegador de la visitante.** Dispositivos antiguos o computadoras de poca potencia pueden tener dificultades con galaxias muy densas. El conmutador de vista 2D es el remedio estándar.
+- **El audio que se autorreproduce puede ser bloqueado por el navegador de la visitante.** La mayoría de los navegadores no permiten que el audio empiece sin la interacción de la visitante. Si enciendes Reproducir automáticamente (capítulo 6) y una visitante reporta que no hay sonido, esta es la causa más probable; el primer clic de la visitante en la página suele desbloquear el audio.
+- **Los conmutadores de descubrimiento son independientes entre sí.** El recorrido automático y el foco al estar inactiva pueden estar encendidos al mismo tiempo (el foco se activa si el recorrido termina o no se ha iniciado). Elige las combinaciones que calcen con tu intención editorial; los conmutadores no se condicionan entre sí.

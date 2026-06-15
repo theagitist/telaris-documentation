@@ -2,9 +2,6 @@
 
 Este manual es para las **editoras**: las personas que dan forma a lo que una instancia de Telaris contiene. Si autoras galaxias, colocas agujeros de gusano, enlazas palabras clave, o curas las relaciones entre piezas de contenido, este manual es la referencia cotidiana de cómo funcionan las superficies de edición.
 
-> [!note] Sobre la interfaz
-> Los rótulos y botones de la aplicación aparecen en inglés en las capturas y en los nombres en negrita de este documento; la interfaz aún no está localizada al español. El manual está traducido; la interfaz lo estará en una versión futura.
-
 ## Qué es Telaris, en un párrafo
 
 Telaris es un archivo tridimensional, no jerárquico. El contenido vive en **galaxias**: agrupaciones de **agujeros de gusano**, que son las unidades más pequeñas de contenido (un pasaje, una imagen, un video, una idea). Los agujeros de gusano se conectan entre sí a través de **palabras clave** compartidas, y las palabras clave a su vez se conectan entre sí a través del **lienzo de palabras clave**. No hay carpetas, ni padres, ni migas de pan; el rizoma es la estructura. Las editoras no construyen un árbol; cuidan una espesura.
@@ -44,10 +41,10 @@ Los capítulos van del gesto más pequeño al más grande. Cada capítulo abre c
 
 ## Convenciones
 
-- Las **rutas de menú** aparecen así: <span class="menu-path">Galaxies &rarr; New galaxy</span>.
-- Los **botones y campos de formulario** aparecen en negrita: **Save**, **Title**, **Visible to visitors**.
+- Las **rutas de menú** aparecen así: <span class="menu-path">Galaxias &rarr; Nueva galaxia</span>.
+- Los **botones y campos de formulario** aparecen en negrita: **Actualizar galaxia**, **Nombre**, **Lema**.
 - Los **atajos de teclado** usan <kbd>Cmd</kbd> + <kbd>S</kbd> (o <kbd>Ctrl</kbd> + <kbd>S</kbd> en Windows o Linux).
-- Los **nombres de campos, botones y elementos de menú** coinciden exactamente con lo que ves en pantalla (y aparecen en inglés mientras la interfaz no esté localizada).
+- Los **nombres de campos, botones y elementos de menú** coinciden exactamente con lo que ves en pantalla.
 - Las *cursivas* introducen un término la primera vez que aparece.
 
 > [!tip] Si encuentras un error

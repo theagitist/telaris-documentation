@@ -13,9 +13,9 @@ A vista padrão da visitante é uma cena tridimensional onde cada buraco de minh
 O que você escolhe como editora que se mostra aqui:
 
 - **O tema da galáxia** (capítulo 4) controla a aparência: quais ícones renderizam os buracos de minhoca, como é o fundo, como é a iluminação.
-- **O interruptor Use-as-wormhole-icon** em cada buraco de minhoca (capítulo 5) decide se aquele buraco de minhoca renderiza como sua imagem (quando ligado) ou como o ícone padrão do tema (quando desligado).
-- **A marca Accentuate** em um buraco de minhoca o renderiza maior e mais proeminente na cena.
-- **A marca Show Keywords** imprime as palavras-chave do buraco de minhoca como rótulos flutuantes ao lado do ícone.
+- **O interruptor Usar como ícone do buraco de minhoca** em cada buraco de minhoca (capítulo 5) decide se aquele buraco de minhoca renderiza como sua imagem (quando ligado) ou como o ícone padrão do tema (quando desligado).
+- **A marca Acentuar buraco de minhoca** em um buraco de minhoca o renderiza maior e mais proeminente na cena.
+- **A marca Mostrar palavras-chave** imprime as palavras-chave do buraco de minhoca como rótulos flutuantes ao lado do ícone.
 
 Essas quatro escolhas interagem: uma galáxia de buracos de minhoca acentuados, com imagens como ícones e palavras-chave à mostra, é uma cena agitada; uma galáxia de buracos de minhoca com ícones do tema e sem rótulos é uma cena quieta. Não existe modo "certo"; escolha o registro visual que combina com o registro editorial do conteúdo.
 
@@ -29,62 +29,62 @@ Uma visitante que clica em um buraco de minhoca vê seu **cartão de informaçõ
 - O **player de áudio** se houver áudio anexado.
 - O **código de embed** se algum foi fornecido.
 - Uma fileira de **chips de palavras-chave** no rodapé do cartão, cada um clicável.
-- O botão **Open Link** se o buraco de minhoca carrega uma URL.
+- O botão **Abrir link** se o buraco de minhoca carrega uma URL.
 
 Quando a visitante clica em um chip de palavra-chave no cartão de informações, a cena esmaece os buracos de minhoca que não carregam aquela palavra-chave. O cartão se fecha. Essa é uma das principais formas pelas quais visitantes navegam por tags, em vez de por nome.
 
-## Os interruptores Discovery
+## Os interruptores de Descoberta
 
-O modal de configurações da galáxia traz uma seção Discovery (o capítulo 4 apresentou o modal; aqui está o que cada interruptor faz do lado da visitante):
+O modal de configurações da galáxia traz uma seção Descoberta (o capítulo 4 apresentou o modal; aqui está o que cada interruptor faz do lado da visitante):
 
-![Modal de configurações da galáxia rolado até os interruptores Discovery](assets/images/editor-manual-pt/12-galaxy-discovery-section.png)
+![Modal de configurações da galáxia rolado até os interruptores de Descoberta](assets/images/editor-manual-pt/12-galaxy-discovery-section.png)
 
 Cada interruptor vem desligado por padrão. Ligue um quando quiser o recurso correspondente.
 
-### Auto-tour
+### Passeio automático
 
 Um percurso que roda sozinho pela galáxia. Quando ligado, opções adicionais aparecem:
 
-- **Start mode** (manual, idle, immediate):
-  - **Manual**: a visitante precisa apertar um botão Play para iniciar o percurso.
-  - **Idle**: o percurso começa automaticamente depois que a visitante não interage com a cena por um certo número de segundos (configurável).
-  - **Immediate**: o percurso começa assim que a visitante chega na galáxia.
-- **Node selection** (all, accentuated, random N, tagged keywords):
-  - **All**: o percurso visita cada buraco de minhoca da galáxia em ordem.
-  - **Accentuated only**: visita apenas os buracos de minhoca marcados como Accentuated.
-  - **Random N**: escolhe N buracos de minhoca aleatórios a cada sessão; o número é configurável.
-  - **Tagged keywords**: visita apenas buracos de minhoca que carregam alguma de um conjunto escolhido de palavras-chave. A lista de palavras-chave é definida em um sub-campo que aparece quando esta opção é selecionada.
-- **Dwell time** em segundos em cada parada, antes de o percurso seguir para o próximo.
-- **Loop**: quando ligado, o percurso volta ao começo depois da parada final; quando desligado, encerra discretamente.
+- **Modo de início** (manual, inativo, imediato):
+  - **Manual**: a visitante precisa apertar um botão de reprodução para iniciar o percurso.
+  - **Inativo**: o percurso começa automaticamente depois que a visitante não interage com a cena por um certo número de segundos (configurável).
+  - **Imediato**: o percurso começa assim que a visitante chega na galáxia.
+- **Seleção de nós** (todos, apenas destacados, amostra aleatória de N, marcados por palavra-chave):
+  - **Todos os nós**: o percurso visita cada buraco de minhoca da galáxia em ordem.
+  - **Apenas nós destacados**: visita apenas os buracos de minhoca acentuados.
+  - **Uma amostra aleatória de N nós**: escolhe N buracos de minhoca aleatórios a cada sessão; o número é configurável.
+  - **Nós marcados com uma destas palavras-chave**: visita apenas buracos de minhoca que carregam alguma de um conjunto escolhido de palavras-chave. A lista de palavras-chave é definida em um sub-campo que aparece quando esta opção é selecionada.
+- **Pausa em nós sem conteúdo** em segundos em cada parada, antes de o percurso seguir para o próximo.
+- **Repetir o passeio ao terminar**: quando ligado, o percurso volta ao começo depois da parada final; quando desligado, encerra discretamente.
 
-Um botão **Preview tour** aparece junto dos campos de Auto-tour; selecioná-lo abre a vista da visitante em uma nova aba com o percurso rodando, para você conferir a temporização sem salvar a configuração.
+Um botão **Pré-visualizar passeio** aparece junto dos campos de Passeio automático; selecioná-lo abre a vista da visitante em uma nova aba com o percurso rodando, para você conferir a temporização sem salvar a configuração.
 
 O capítulo 11 percorre percursos em maior profundidade.
 
-### Idle spotlight
+### Foco em inatividade
 
-Quando ligado, a cena ilumina suavemente um buraco de minhoca diferente a cada N segundos quando a visitante está ociosa. Diferente do auto-tour, não move a câmera nem abre cartões de informações; só traz um buraco de minhoca para a frente, com leveza, como um museu mudando a iluminação da sala.
+Quando ligado, a cena ilumina suavemente um buraco de minhoca diferente a cada N segundos quando a visitante está ociosa. Diferente do passeio automático, não move a câmera nem abre cartões de informações; só traz um buraco de minhoca para a frente, com leveza, como um museu mudando a iluminação da sala.
 
 Duas configurações:
 
-- **Idle threshold** em segundos antes de o destaque começar.
-- **Selection** (all, accentuated only).
+- **Limite de inatividade** em segundos antes de o destaque começar.
+- **Seleção** (todos, apenas destacados).
 
-O Idle spotlight cabe bem em galáxias de tom ambiente (um ciclo de poemas; uma sequência de fotografias); dá à sala algo a fazer quando a visitante parou de clicar.
+O foco em inatividade cabe bem em galáxias de tom ambiente (um ciclo de poemas; uma sequência de fotografias); dá à sala algo a fazer quando a visitante parou de clicar.
 
-### Keyword chips
+### Chips de palavra-chave
 
 Quando ligado, a cena pinta uma faixa de chips pastel no rodapé da tela da visitante, um chip por palavra-chave mais usada na galáxia. As visitantes podem clicar em um chip para esmaecer cada buraco de minhoca que não a carrega.
 
 Use quando a galáxia tem um vocabulário forte de palavras-chave pelo qual visitantes naturalmente navegariam; desligue quando as palavras-chave são granulares demais ou numerosas demais para que chips sejam úteis.
 
-### Related wormholes
+### Buracos de minhoca relacionados
 
 Quando ligado, um cartão de informações abre com até cinco chips de buracos de minhoca **relacionados** no rodapé: outros buracos de minhoca (nesta galáxia ou em galáxias irmãs) que compartilham pelo menos uma palavra-chave com o aberto. A visitante pode clicar em um chip para saltar diretamente para o relacionado.
 
 Essa é a principal forma pela qual visitantes viajam lateralmente por uma rede sem abrir um portal. Ligue quando quiser que a visitante descubra a teia; desligue quando quiser que a visitante permaneça concentrada em um buraco de minhoca por vez.
 
-### 2D view
+### Vista 2D
 
 Quando ligado, um pequeno alternador **3D / 2D** aparece no topo da tela da visitante. Mudar para 2D colapsa a cena em uma grade plana de chips de buraco de minhoca: cada chip é o ícone do buraco de minhoca mais o nome, dispostos em linhas. A vista 2D carrega mais rápido e é mais fácil de escanear; algumas visitantes preferem para encontrar um buraco de minhoca específico depressa.
 
@@ -100,5 +100,5 @@ Não há interruptor global para esconder rodapés de procedência; se o seu tra
 
 - **A visitante vê o que você publicou, não o seu rascunho.** Não há um modo "preview" separado da vista publicada; quando você salva um buraco de minhoca ou uma configuração de galáxia, o próximo carregamento da página da visitante reflete a mudança. Para pré-visualizar uma mudança sem afetar visitantes, você precisaria fazer a mudança em uma galáxia que ainda não é pública.
 - **A cena 3D roda no navegador da visitante.** Dispositivos mais antigos ou computadores de baixa potência podem ter dificuldade com galáxias muito densas. O alternador para a vista 2D é o remédio padrão.
-- **Áudio com autoplay pode ser bloqueado pelo navegador da visitante.** A maioria dos navegadores não permite que áudio comece sem a interação da visitante. Se você liga o Autoplay (capítulo 6) e uma visitante relata que não há som, esta é a causa mais provável; o primeiro clique da visitante na página costuma desbloquear o áudio.
-- **Os interruptores Discovery são independentes entre si.** Auto-tour e idle spotlight podem estar ligados ao mesmo tempo (o spotlight entra se o percurso termina ou não começou). Escolha as combinações que casam com sua intenção editorial; os interruptores não se condicionam mutuamente.
+- **Áudio com reprodução automática pode ser bloqueado pelo navegador da visitante.** A maioria dos navegadores não permite que áudio comece sem a interação da visitante. Se você liga o Reproduzir automaticamente (capítulo 6) e uma visitante relata que não há som, esta é a causa mais provável; o primeiro clique da visitante na página costuma desbloquear o áudio.
+- **Os interruptores de Descoberta são independentes entre si.** Passeio automático e foco em inatividade podem estar ligados ao mesmo tempo (o spotlight entra se o percurso termina ou não começou). Escolha as combinações que casam com sua intenção editorial; os interruptores não se condicionam mutuamente.

@@ -21,28 +21,28 @@ Se nenhuma dessas três coisas se aplica, uma palavra-chave ou uma tag de galáx
 
 ## Criar um portal
 
-Um portal é um buraco de minhoca cujo Wormhole type está definido como **Portal**. A partir do modal New Wormhole:
+Um portal é um buraco de minhoca cujo **Tipo de buraco de minhoca** está definido como **Portal**. A partir do modal **Novo buraco de minhoca**:
 
-![Modal New Wormhole com Wormhole type ajustado para Portal: aparece um menu Target Galaxy](assets/images/editor-manual-pt/11-portal-type-selector.png)
+![Modal Novo buraco de minhoca com Tipo de buraco de minhoca ajustado para Portal: aparece um menu Galáxia destino](assets/images/editor-manual-pt/11-portal-type-selector.png)
 
 Passos:
 
-1. Abra **New Wormhole** na tela inicial da editora (ou abra o modal de edição de um buraco de minhoca existente e mude seu tipo).
-2. Defina **Wormhole type** como **Portal**. Um campo **Target Galaxy** aparece, com um menu suspenso listando cada galáxia a que você tem acesso.
-3. Escolha a galáxia de destino no menu suspenso. O botão ao lado, **Create New Galaxy**, é um atalho para o caso em que o destino ainda não existe; selecioná-lo te deixa criar a galáxia de destino inline. Na maioria das vezes, você escolhe uma galáxia existente.
+1. Abra **Novo buraco de minhoca** na tela inicial da editora (ou abra o modal de edição de um buraco de minhoca existente e mude seu tipo).
+2. Defina **Tipo de buraco de minhoca** como **Portal**. Um campo **Galáxia destino** aparece, com um menu suspenso listando cada galáxia a que você tem acesso.
+3. Escolha a galáxia de destino no menu suspenso. O botão ao lado, **Criar nova galáxia**, é um atalho para o caso em que o destino ainda não existe; selecioná-lo te deixa criar a galáxia de destino inline. Na maioria das vezes, você escolhe uma galáxia existente.
 4. **Nomeie** o portal de forma legível. Um portal é um buraco de minhoca, então o nome aparece em listas e na cena 3D; escolha um nome que sinalize a jornada, não só o destino. *To the tide pools* lê melhor que *Tide pools*.
-5. Adicione uma **Description** se quiser que um parágrafo curto apareça quando a visitante abre o cartão de informações do portal. A descrição é mostrada brevemente antes da jornada à galáxia de destino começar; trate-a como uma frase de soleira.
+5. Adicione uma **Descrição** se quiser que um parágrafo curto apareça quando a visitante abre o cartão de informações do portal. A descrição é mostrada brevemente antes da jornada à galáxia de destino começar; trate-a como uma frase de soleira.
 6. Opcional: atribua algumas **palavras-chave**. Os portais podem carregar palavras-chave como qualquer outro buraco de minhoca; isso ajuda o portal a aparecer na descoberta por palavras-chave.
 7. Salve.
 
-O portal agora aparece na lista de buracos de minhoca com a etiqueta **Portal** na coluna Type, e como um nó distinguível na cena 3D.
+O portal agora aparece na lista de buracos de minhoca com a etiqueta **Portal** na coluna Tipo, e como um nó distinguível na cena 3D.
 
 ## O que as visitantes experimentam
 
 Uma visitante que clica em um portal na cena 3D vê:
 
 - O cartão de informações do portal abre, como em qualquer buraco de minhoca.
-- O cartão mostra o nome do portal, a descrição, e (dependendo das configurações da instância) um botão de chamada, **Travel** ou nome semelhante.
+- O cartão mostra o nome do portal, a descrição, e (dependendo das configurações da instância) um botão de chamada, **Viajar** ou nome semelhante.
 - Ativar a chamada fecha a galáxia atual e carrega o destino.
 - Na galáxia de destino, a visitante chega à entrada da galáxia (a posição inicial padrão), não a um buraco de minhoca específico.
 
@@ -67,7 +67,7 @@ Os chips de palavras-chave de um portal aparecem na tela de palavras-chave como 
 
 - **Um portal só pode apontar para uma galáxia por vez.** Se você quer um "hub" que se ramifica para muitas galáxias, a resposta é muitos portais, não um só. Você pode colocar vários portais em uma única galáxia, cada um apontando para um destino diferente.
 - **O menu suspenso de destino lista só galáxias que você pode editar.** Se a galáxia para a qual você quer abrir um portal está em outra instância, isso é território da federação e cabe à operadora; a superfície de edição não compõe portais entre instâncias.
-- **Um portal pode ser redirecionado** editando-o e escolhendo outra galáxia no campo Target Galaxy. As visitantes que tinham o portal favoritado continuam aterrissando na galáxia que estiver selecionada agora. Planeje isso ao mudar destinos depois de publicar.
+- **Um portal pode ser redirecionado** editando-o e escolhendo outra galáxia no campo Galáxia destino. As visitantes que tinham o portal favoritado continuam aterrissando na galáxia que estiver selecionada agora. Planeje isso ao mudar destinos depois de publicar.
 - **Um portal apontando para sua própria galáxia** é tecnicamente permitido, mas funcionalmente inútil: a visitante aterrissa de volta de onde veio. A interface não vai te impedir, mas o resultado é nada.
 - **Apagar um portal remove o buraco de minhoca por inteiro.** A galáxia de destino fica inalterada; só a conexão se perde. Os portais próprios do destino (se houver) continuam funcionando.
 - **Portais não carregam mídia.** Têm um nome, uma descrição, e palavras-chave, além da galáxia de destino. Os campos de imagem, vídeo, áudio e PDF continuam no modal mas devem ficar vazios para portais; se você os preenche, são simplesmente ignorados pela experiência da visitante.
