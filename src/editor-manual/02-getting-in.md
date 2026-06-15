@@ -16,6 +16,8 @@ If you do not have any of these, ask the person who runs your instance.
 
 This is optional, and not every instance has it. On many instances your operator creates your account for you, and there is nothing to sign up for: skip ahead to *The login page*. But some operators open their instance to self-service signup, so you can create your own editor account. You can tell which: when self-signup is open, an **Enrol as Editor** link appears in the instance's menu and on the login page. If you do not see it in either place, this instance has not opened self-signup (or has reached the number of self-enrolled editors it accepts); ask the operator for an account instead.
 
+![The Enrol as an editor form: a name field, an email field, a consent checkbox for the Terms and Privacy, and a Request access button](assets/images/editor-manual/01b-enroll-form.png)
+
 When the link is there, the whole flow is short:
 
 1. Select **Enrol as Editor**. A small form opens, titled *Enrol as an editor*.

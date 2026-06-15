@@ -16,6 +16,8 @@ Se você não tem alguma dessas coisas, peça a quem opera sua instância.
 
 Isto é opcional, e nem toda instância tem. Em muitas instâncias quem opera cria a sua conta e não há nada a cadastrar: pule direto para *A página de login*. Mas algumas pessoas operadoras abrem a sua instância ao cadastro autônomo, para que você crie a sua própria conta de edição. Como saber: quando o cadastro autônomo está aberto, aparece um link **Entrar como editor** no menu da instância e na página de login. Se você não o vê em nenhum dos dois lugares, esta instância não abriu o cadastro autônomo (ou já atingiu o número de pessoas editoras autoinscritas que aceita); nesse caso, peça uma conta a quem opera.
 
+![O formulário Entre como editor: um campo de nome, um campo de e-mail, uma caixa de consentimento para os Termos e a Privacidade, e um botão Solicitar acesso](assets/images/editor-manual-pt/01b-enroll-form.png)
+
 Quando o link está lá, o fluxo é curto:
 
 1. Selecione **Entrar como editor**. Abre-se um formulário pequeno, intitulado *Entre como editor*.

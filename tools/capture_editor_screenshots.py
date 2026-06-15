@@ -108,6 +108,10 @@ class Shot:
     prepare: Callable[[Page], None] | None = None
     full_page: bool = False
     description: str = ""
+    # pre_auth shots are captured BEFORE authenticating (e.g. the login form
+    # and the self-enrolment form, which exist only for logged-out visitors).
+    # If a run requests only pre_auth shots, the login step is skipped entirely.
+    pre_auth: bool = False
 
 
 def shot_login_page(page: Page) -> None:
@@ -124,6 +128,15 @@ SHOTS: list[Shot] = [
         prepare=None,
         full_page=False,
         description="Login form, empty fields, the very first screen an editor sees.",
+        pre_auth=True,
+    ),
+    Shot(
+        name="01b-enroll-form",
+        route="/utils/enroll.php",
+        prepare=None,
+        full_page=False,
+        description="Self-enrolment form (renders only when auto-enroll is enabled on the instance): name, email, consent checkbox, Request access.",
+        pre_auth=True,
     ),
     Shot(
         name="02-editor-home",
@@ -410,32 +423,31 @@ def main() -> int:
             if r.status >= 400 else None
         ))
 
-        # Capture the login page BEFORE authenticating, since the post-login
-        # redirect leaves no clean way back to a fresh login form. Only if the
-        # login shot is in the active filter (or no filter is set).
-        login_in_filter = any(s.name == "01-login-form" for s in shots_to_capture)
-        if login_in_filter:
-            login_shot = next(s for s in SHOTS if s.name == "01-login-form")
-            out = capture_one(page, base_url, login_shot, shots_dir)
-            print(f"captured {out}")
-
-        # Authenticate.
-        print("logging in...")
-        login(page, base_url, email, password)
-        print(f"logged in as {email}")
-
-        # Capture the rest. Pace requests so Cloudflare's rate limiter does
-        # not throttle the editor API and leave the page in an error state
-        # behind the modal we are screenshotting. Six seconds between shots
-        # is comfortable for the per-IP rate limiter under a chain of ~10
-        # API calls per shot.
-        import time
-        for shot in shots_to_capture:
-            if shot.name == "01-login-form":
-                continue
-            time.sleep(10)
+        # Capture pre-auth shots (login form, enrol form) BEFORE authenticating,
+        # since the post-login redirect leaves no clean way back to a fresh
+        # logged-out page.
+        pre_auth_shots = [s for s in shots_to_capture if s.pre_auth]
+        for shot in pre_auth_shots:
             out = capture_one(page, base_url, shot, shots_dir)
             print(f"captured {out}")
+
+        # Authenticate only if there are post-auth shots to take. A run that
+        # asks for just the login/enrol forms skips login entirely.
+        post_auth_shots = [s for s in shots_to_capture if not s.pre_auth]
+        if post_auth_shots:
+            print("logging in...")
+            login(page, base_url, email, password)
+            print(f"logged in as {email}")
+
+            # Pace requests so Cloudflare's rate limiter does not throttle the
+            # editor API and leave the page in an error state behind the modal
+            # we are screenshotting. Ten seconds between shots is comfortable
+            # for the per-IP rate limiter under a chain of ~10 API calls per shot.
+            import time
+            for shot in post_auth_shots:
+                time.sleep(10)
+                out = capture_one(page, base_url, shot, shots_dir)
+                print(f"captured {out}")
 
         browser.close()
 

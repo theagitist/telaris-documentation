@@ -16,6 +16,8 @@ Si te falta cualquiera de estas cosas, pregunta a quien opera tu instancia.
 
 Esto es opcional, y no todas las instancias lo tienen. En muchas instancias quien opera crea tu cuenta y no hay nada que registrar: pasa directamente a *La página de inicio de sesión*. Pero algunas personas operadoras abren su instancia al registro autónomo, para que crees tu propia cuenta de edición. Cómo saberlo: cuando el registro autónomo está abierto, aparece un enlace **Unirme como editor** en el menú de la instancia y en la página de inicio de sesión. Si no lo ves en ninguno de los dos sitios, esta instancia no ha abierto el registro autónomo (o ya alcanzó el número de personas editoras autoinscritas que acepta); en ese caso, pide una cuenta a quien opera.
 
+![El formulario Únete como editor: un campo de nombre, un campo de correo, una casilla de consentimiento para las Condiciones y la Privacidad, y un botón Solicitar acceso](assets/images/editor-manual-es/01b-enroll-form.png)
+
 Cuando el enlace está, el flujo es corto:
 
 1. Selecciona **Unirme como editor**. Se abre un formulario pequeño, titulado *Únete como editor*.

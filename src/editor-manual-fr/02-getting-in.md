@@ -16,6 +16,8 @@ S'il te manque l'un de ces éléments, demande à qui exploite ton instance.
 
 C'est facultatif, et toutes les instances ne l'ont pas. Sur beaucoup d'instances, qui exploite l'instance crée ton compte et il n'y a rien à faire : passe directement à *La page de connexion*. Mais certaines personnes qui exploitent ouvrent leur instance à l'inscription autonome, pour que tu crées ton propre compte d'édition. Comment le savoir : quand l'inscription autonome est ouverte, un lien **Devenir éditeur** apparaît dans le menu de l'instance et sur la page de connexion. Si tu ne le vois nulle part, cette instance n'a pas ouvert l'inscription autonome (ou a atteint le nombre de personnes autoinscrites qu'elle accepte) ; dans ce cas, demande un compte à qui exploite l'instance.
 
+![Le formulaire Devenir éditeur : un champ nom, un champ courriel, une case de consentement pour les Conditions et la confidentialité, et un bouton Demander l'accès](assets/images/editor-manual-fr/01b-enroll-form.png)
+
 Quand le lien est là, le parcours est court :
 
 1. Sélectionne **Devenir éditeur**. Un petit formulaire s'ouvre, intitulé *Devenir éditeur*.
