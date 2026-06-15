@@ -14,6 +14,8 @@ Dos cosas, más una forma de iniciar sesión:
 
 Si falta algo, pregúntale a quien opera la instancia. Después vuelve aquí.
 
+¿Todavía no tienes cuenta? Algunas instancias (no todas) te dejan registrarte por tu cuenta. Si la tuya lo permite, aparece un enlace **Unirme como editor** en la página de inicio de sesión y en el menú de la instancia: selecciónalo, escribe tu nombre y correo, acepta las Condiciones y la Privacidad, y haz clic en el enlace de confirmación que Telaris te envía por correo. Eso te deja dentro sin ninguna contraseña que elegir. El Manual del editor completo lo explica en detalle.
+
 ## Paso 1: Inicia sesión
 
 Abre la dirección de tu instancia en cualquier navegador moderno.

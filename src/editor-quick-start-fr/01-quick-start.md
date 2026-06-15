@@ -14,6 +14,8 @@ Deux choses, plus un moyen de te connecter :
 
 S'il manque quelque chose, demande à qui exploite l'instance. Ensuite reviens ici.
 
+Pas encore de compte ? Certaines instances (pas toutes) te laissent t'inscrire toi-même. Si la tienne le permet, un lien **Devenir éditeur** apparaît sur la page de connexion et dans le menu de l'instance : sélectionne-le, indique ton nom et ton courriel, accepte les Conditions et la confidentialité, et clique sur le lien de confirmation que Telaris t'envoie par courriel. Cela te connecte sans aucun mot de passe à choisir. Le Manuel d'édition complet l'explique en détail.
+
 ## Étape 1 : Connecte-toi
 
 Ouvre l'adresse de ton instance dans un navigateur moderne.

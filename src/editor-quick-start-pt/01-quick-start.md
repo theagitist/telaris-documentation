@@ -14,6 +14,8 @@ Duas coisas, mais uma forma de entrar:
 
 Se faltar algo, pergunte a quem opera a instância. Depois volte aqui.
 
+Ainda não tem conta? Algumas instâncias (nem todas) deixam você se cadastrar por conta própria. Se a sua deixa, aparece um link **Entrar como editor** na página de login e no menu da instância: selecione-o, informe o seu nome e e-mail, aceite os Termos e a Privacidade, e clique no link de confirmação que o Telaris envia por e-mail. Isso entra com você sem nenhuma senha a escolher. O Manual do editor completo explica isso em detalhe.
+
 ## Passo 1: Faça login
 
 Abra o endereço da sua instância em qualquer navegador moderno.

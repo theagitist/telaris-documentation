@@ -12,6 +12,20 @@ Três coisas, e quem opera sua instância pode te informar qualquer uma que este
 
 Se você não tem alguma dessas coisas, peça a quem opera sua instância.
 
+## Cadastrar-se por conta própria
+
+Isto é opcional, e nem toda instância tem. Em muitas instâncias quem opera cria a sua conta e não há nada a cadastrar: pule direto para *A página de login*. Mas algumas pessoas operadoras abrem a sua instância ao cadastro autônomo, para que você crie a sua própria conta de edição. Como saber: quando o cadastro autônomo está aberto, aparece um link **Entrar como editor** no menu da instância e na página de login. Se você não o vê em nenhum dos dois lugares, esta instância não abriu o cadastro autônomo (ou já atingiu o número de pessoas editoras autoinscritas que aceita); nesse caso, peça uma conta a quem opera.
+
+Quando o link está lá, o fluxo é curto:
+
+1. Selecione **Entrar como editor**. Abre-se um formulário pequeno, intitulado *Entre como editor*.
+2. Preencha **O seu nome** e **E-mail**, e marque a caixa para aceitar os Termos de Uso e a Política de Privacidade. Ambos estão com link no formulário, e aceitar é obrigatório.
+3. Selecione **Solicitar acesso**. A página pede que você verifique o seu e-mail: um link de confirmação está a caminho e expira em 24 horas.
+4. Abra o **e-mail de confirmação** e selecione o link dele. Isso confirma o seu endereço, cria a sua conta e entra com você na hora. Não há senha a escolher.
+5. Em seguida chega um **e-mail de boas-vindas** curto, que indica onde fica a documentação. A partir daqui você faz parte da equipe de edição, e o resto deste manual se aplica a você.
+
+Assim, uma conta criada por conta própria não tem senha: você confirma por e-mail uma vez e, depois, entra com um link de uso único a cada vez (veja *A página de login* abaixo). Se quem opera decidir mais tarde dar uma senha à sua conta, você recebe um e-mail separado com um link para defini-la; a partir de então pode usar a senha ou um link de acesso.
+
 ## A página de login
 
 Abra o endereço da sua instância em qualquer navegador moderno. Se você ainda não estiver autenticada, cai direto na página de login. Se já tiver um favorito apontando para outra parte da instância, o navegador faz um desvio pela página de login e depois te devolve ao destino original.

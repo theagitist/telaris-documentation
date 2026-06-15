@@ -12,6 +12,20 @@ Trois choses ; qui exploite ton instance peut te fournir celles qui te manquent 
 
 S'il te manque l'un de ces éléments, demande à qui exploite ton instance.
 
+## T'inscrire toi-même
+
+C'est facultatif, et toutes les instances ne l'ont pas. Sur beaucoup d'instances, qui exploite l'instance crée ton compte et il n'y a rien à faire : passe directement à *La page de connexion*. Mais certaines personnes qui exploitent ouvrent leur instance à l'inscription autonome, pour que tu crées ton propre compte d'édition. Comment le savoir : quand l'inscription autonome est ouverte, un lien **Devenir éditeur** apparaît dans le menu de l'instance et sur la page de connexion. Si tu ne le vois nulle part, cette instance n'a pas ouvert l'inscription autonome (ou a atteint le nombre de personnes autoinscrites qu'elle accepte) ; dans ce cas, demande un compte à qui exploite l'instance.
+
+Quand le lien est là, le parcours est court :
+
+1. Sélectionne **Devenir éditeur**. Un petit formulaire s'ouvre, intitulé *Devenir éditeur*.
+2. Remplis **Ton nom** et **Courriel**, et coche la case pour accepter les Conditions d'utilisation et la Politique de confidentialité. Les deux sont liées depuis le formulaire, et l'acceptation est obligatoire.
+3. Sélectionne **Demander l'accès**. La page te dit de vérifier ton courriel : un lien de confirmation est en route, et il expire dans 24 heures.
+4. Ouvre le **courriel de confirmation** et sélectionne son lien. Cela confirme ton adresse, crée ton compte et te connecte aussitôt. Il n'y a pas de mot de passe à choisir.
+5. Un court **courriel de bienvenue** arrive ensuite, t'indiquant où se trouve la documentation. À partir d'ici tu fais partie de l'équipe d'édition, et le reste de ce manuel s'applique.
+
+Ainsi, un compte que tu crées toi-même n'a pas de mot de passe : tu confirmes une fois par courriel, puis tu te connectes avec un lien à usage unique à chaque fois (voir *La page de connexion* ci-dessous). Si qui exploite l'instance décide plus tard de donner un mot de passe à ton compte, tu reçois un courriel séparé avec un lien pour le définir ; dès lors, tu peux utiliser le mot de passe ou un lien de connexion.
+
 ## La page de connexion
 
 Ouvre l'adresse de ton instance dans un navigateur moderne. Si tu n'es pas déjà connectée, tu arrives automatiquement sur la page de connexion. Si tu avais enregistré un favori vers une autre partie de l'instance, le navigateur fera un détour par la page de connexion d'abord puis te ramènera là où tu allais.

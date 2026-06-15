@@ -12,6 +12,20 @@ Tres cosas; quien opera tu instancia puede darte cualquiera que te falte:
 
 Si te falta cualquiera de estas cosas, pregunta a quien opera tu instancia.
 
+## Registrarte por tu cuenta
+
+Esto es opcional, y no todas las instancias lo tienen. En muchas instancias quien opera crea tu cuenta y no hay nada que registrar: pasa directamente a *La página de inicio de sesión*. Pero algunas personas operadoras abren su instancia al registro autónomo, para que crees tu propia cuenta de edición. Cómo saberlo: cuando el registro autónomo está abierto, aparece un enlace **Unirme como editor** en el menú de la instancia y en la página de inicio de sesión. Si no lo ves en ninguno de los dos sitios, esta instancia no ha abierto el registro autónomo (o ya alcanzó el número de personas editoras autoinscritas que acepta); en ese caso, pide una cuenta a quien opera.
+
+Cuando el enlace está, el flujo es corto:
+
+1. Selecciona **Unirme como editor**. Se abre un formulario pequeño, titulado *Únete como editor*.
+2. Completa **Tu nombre** y **Correo**, y marca la casilla para aceptar las Condiciones de Uso y la Política de Privacidad. Ambas están enlazadas desde el formulario, y aceptarlas es obligatorio.
+3. Selecciona **Solicitar acceso**. La página te dice que revises tu correo: un enlace de confirmación va en camino y caduca en 24 horas.
+4. Abre el **correo de confirmación** y selecciona su enlace. Eso confirma tu dirección, crea tu cuenta y te deja dentro de inmediato. No hay contraseña que elegir.
+5. Después llega un **correo de bienvenida** breve, que te indica dónde está la documentación. A partir de aquí formas parte del equipo de edición, y el resto de este manual te aplica.
+
+Así, una cuenta que creas por tu cuenta no tiene contraseña: confirmas por correo una vez, y luego inicias sesión con un enlace de un solo uso cada vez (consulta *La página de inicio de sesión* más abajo). Si quien opera decide más tarde darle una contraseña a tu cuenta, recibes un correo aparte con un enlace para establecerla; desde entonces puedes usar la contraseña o un enlace de acceso.
+
 ## La página de inicio de sesión
 
 Abre la dirección de tu instancia en cualquier navegador moderno. Si todavía no has iniciado sesión, llegas a la página de inicio de sesión automáticamente. Si guardaste un favorito a otra parte de la instancia, el navegador te desviará a la página de inicio de sesión primero y luego te devolverá a donde ibas.

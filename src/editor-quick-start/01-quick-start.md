@@ -14,6 +14,8 @@ Two things, plus a way to sign in:
 
 If anything is missing, ask your operator (the person who runs your Telaris instance). Then come back here.
 
+No account yet? Some instances (not all) let you sign up yourself. If yours does, an **Enrol as Editor** link shows on the login page and the instance menu: select it, enter your name and email, agree to the Terms and Privacy, and click the confirmation link Telaris emails you. That signs you in with no password to set. The full Editor Manual covers this in detail.
+
 ## Step 1: Sign in
 
 Open your instance's address in any modern browser.

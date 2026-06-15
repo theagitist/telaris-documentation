@@ -12,6 +12,20 @@ Three things; the person who runs your instance can tell you any you are missing
 
 If you do not have any of these, ask the person who runs your instance.
 
+## Signing up yourself
+
+This is optional, and not every instance has it. On many instances your operator creates your account for you, and there is nothing to sign up for: skip ahead to *The login page*. But some operators open their instance to self-service signup, so you can create your own editor account. You can tell which: when self-signup is open, an **Enrol as Editor** link appears in the instance's menu and on the login page. If you do not see it in either place, this instance has not opened self-signup (or has reached the number of self-enrolled editors it accepts); ask the operator for an account instead.
+
+When the link is there, the whole flow is short:
+
+1. Select **Enrol as Editor**. A small form opens, titled *Enrol as an editor*.
+2. Fill in **Your name** and **Email**, and tick the box to agree to the Terms of Use and the Privacy Policy. Both are linked from the form, and agreeing is required.
+3. Select **Request access**. The page tells you to check your email: a confirmation link is on its way, and it expires in 24 hours.
+4. Open the **confirmation email** and select its link. That confirms your address, creates your account, and signs you in right away. There is no password to choose.
+5. A short **welcome email** arrives next, pointing you to where the documentation lives. From here you are an editor, and the rest of this manual applies.
+
+So a self-signed-up account has **no password**: you confirm by email once, and after that you sign in with a one-time link each time (see *The login page* below). If your operator later decides to give your account a password, you receive a separate email with a link to set one; from then on you can use either the password or a sign-in link.
+
 ## The login page
 
 Open your instance's address in any modern browser. If you are not already signed in, you land on the login page automatically. If you have already saved a bookmark to a different part of the instance, the browser will detour you to the login page first and then return to where you were going.
