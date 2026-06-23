@@ -1566,6 +1566,7 @@ def build_html() -> str:
         ("Tagline", "sec-tagline"),
         ("Iconography &middot; signature motifs", "sec-iconog"),
         ("Iconography &middot; the six themes", "sec-themes"),
+        ("Components &middot; the UI catalogue", "sec-components"),
         ("Colophon", "sec-colophon"),
     ]
     toc_lis = "\n".join(
@@ -2311,11 +2312,58 @@ def build_html() -> str:
 </section>
 """
 
+    # ----- Components -----
+    components = f"""
+<section class="section" id="sec-components">
+    <div class="section-header">
+        <div class="section-eyebrow"><span class="dot"></span> 15 &middot; Components</div>
+        <div class="section-num">15</div>
+    </div>
+    <h1>Components</h1>
+    <p class="lead">The reusable UI as the Telaris app builds it. The app is the
+    reference of truth; every other surface, the Pluriverse included, embodies
+    these patterns rather than inventing its own. The palette and type sections
+    are the vocabulary; this is the grammar.</p>
+    <h2>The dark-console contract</h2>
+    <p>The app does not restyle components one by one. Three moves in
+    <span class="leg-spec">inc/admin-console-theme.php</span> and every DaisyUI
+    component inherits the brand: the page sets <span class="leg-spec">data-theme="dark"</span>;
+    the <span class="leg-spec">[data-theme="dark"]</span> OKLCH channels are pulled
+    toward Void / Aurora / Wormhole mint; and the raw light-mode utility classes
+    (with their hover/focus variants) are remapped, collapsing the colour rainbow
+    onto the four-colour status set. A new surface includes that partial, sets the
+    theme, and writes ordinary DaisyUI markup. This is the contract the Pluriverse
+    adopts to match the app.</p>
+    <h2>Surfaces &amp; controls</h2>
+    <div class="surfaces-legend">
+        <div class="leg"><span class="leg-tag">Glass panel</span><span class="leg-spec">blur 12px / rgba(0,0,0,0.5) / 1px white-15&#37; / radius 4px</span></div>
+        <div class="leg"><span class="leg-tag">Elevated modal</span><span class="leg-spec">#0A0A0C&middot;.9 / white-20&#37; / radius lg / mint halo 0 0 50px -10px</span></div>
+        <div class="leg"><span class="leg-tag">Navbar</span><span class="leg-spec">rgba(0,0,0,0.55) / blur 8px / uppercase / tracking .25em / hover mint</span></div>
+        <div class="leg"><span class="leg-tag">Buttons</span><span class="leg-spec">DaisyUI btn / btn-primary (mint) / btn-ghost, sized btn-sm / btn-xs</span></div>
+        <div class="leg"><span class="leg-tag">Mint CTA</span><span class="leg-spec">transparent fill / mint border .4 to .85 on hover / blur 6px</span></div>
+        <div class="leg"><span class="leg-tag">Form controls</span><span class="leg-spec">input-bordered / select / textarea / checkbox / toggle; border lifts to mint on focus</span></div>
+        <div class="leg"><span class="leg-tag">Tabs &amp; tables</span><span class="leg-spec">DaisyUI tab / tab-active, table; hairline row rules, hover lift</span></div>
+        <div class="leg"><span class="leg-tag">Focus</span><span class="leg-spec">outline 2px solid mint, never removed</span></div>
+    </div>
+    <h2>Signal &middot; status, not the rainbow</h2>
+    <p>Coloured utilities collapse onto a closed four-colour status set (plus a
+    quiet info cyan); keyword chips use the seventeen-colour constellation pastels.
+    The two vocabularies never mix, and mint stays a signal, never a status.</p>
+    <div class="console-status">
+        <div class="cs"><span class="cs-dot" style="background:rgba(255,210,110,0.92)"></span><span class="cs-label">Attention</span><span class="cs-covers">amber</span></div>
+        <div class="cs"><span class="cs-dot" style="background:rgba(140,220,150,0.92)"></span><span class="cs-label">Live</span><span class="cs-covers">green</span></div>
+        <div class="cs"><span class="cs-dot" style="background:rgba(230,130,130,0.92)"></span><span class="cs-label">Refused</span><span class="cs-covers">red</span></div>
+        <div class="cs"><span class="cs-dot" style="background:rgba(180,180,180,0.78)"></span><span class="cs-label">Terminal</span><span class="cs-covers">grey</span></div>
+        <div class="cs"><span class="cs-dot" style="background:rgba(140,200,220,0.92)"></span><span class="cs-label">Info</span><span class="cs-covers">cyan</span></div>
+    </div>
+</section>
+"""
+
     # ----- Colophon -----
     colophon = f"""
 <section class="section colophon" id="sec-colophon">
     <div class="section-header">
-        <div class="section-eyebrow"><span class="dot"></span> 15 &middot; Colophon</div>
+        <div class="section-eyebrow"><span class="dot"></span> 16 &middot; Colophon</div>
         <div class="section-num">15</div>
     </div>
     <h1>Colophon</h1>
@@ -2380,6 +2428,7 @@ def build_html() -> str:
 {tagline}
 {iconog}
 {themes_html}
+{components}
 {colophon}
 </body>
 </html>
