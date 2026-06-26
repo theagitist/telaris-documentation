@@ -421,6 +421,35 @@ blockquote {
 img {
   max-width: 100%;
   height: auto;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+/* Screenshots / figures: never split one across pages, and keep it attached to
+   the text that introduces it (so an image is not orphaned onto the next page
+   away from its lead-in line). */
+figure.shot {
+  margin: 0.9em 0;
+  page-break-inside: avoid;
+  break-inside: avoid;
+  page-break-before: avoid;
+  break-before: avoid;
+}
+
+figure.shot img {
+  display: block;
+}
+
+/* Avoid stranded single lines of body text at the top or bottom of a page. */
+p, li {
+  orphans: 3;
+  widows: 3;
+}
+
+/* Keep a list item (and any screenshot nested under it) together. */
+li {
+  page-break-inside: avoid;
+  break-inside: avoid;
 }
 
 .page-break {

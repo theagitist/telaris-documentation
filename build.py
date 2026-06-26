@@ -218,12 +218,23 @@ def add_heading_anchors(html: str, section_slug: str) -> tuple[str, list[tuple[i
     return HEADING_RE.sub(repl, html), toc
 
 
+# A standalone image renders as <p><img ...></p>. Wrap it in a figure so the
+# stylesheet can keep the screenshot whole and attached to its intro text
+# (no image split across a page break, no image orphaned from the line above it).
+SHOT_RE = re.compile(r"<p>\s*(<img\b[^>]*>)\s*</p>")
+
+
+def wrap_shots(html: str) -> str:
+    return SHOT_RE.sub(r'<figure class="shot">\1</figure>', html)
+
+
 def render_section_html(section: Section, md_renderer: MarkdownIt) -> tuple[str, list[tuple[int, str, str]]]:
     """Markdown to HTML for one section, with callouts and heading anchors."""
     body = transform_callouts(section.body_md)
     raw_html = md_renderer.render(body)
     with_callouts = render_callouts(raw_html, md_renderer)
-    with_ids, toc = add_heading_anchors(with_callouts, section.slug)
+    with_shots = wrap_shots(with_callouts)
+    with_ids, toc = add_heading_anchors(with_shots, section.slug)
     return with_ids, toc
 
 
