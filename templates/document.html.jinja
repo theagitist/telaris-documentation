@@ -27,8 +27,9 @@
   {# Table of contents (suppressed when meta.show_toc is false; useful for
      short reference docs where a TOC spread is overkill). #}
   {% if meta.show_toc %}
+  {% set toc_titles = {'en': 'Contents', 'es': 'Índice', 'pt': 'Sumário', 'fr': 'Sommaire'} %}
   <section class="toc">
-    <h1 class="toc-title">Contents</h1>
+    <h1 class="toc-title">{{ toc_titles.get(meta.locale, 'Contents') }}</h1>
     <ol class="toc-list">
       {% for level, anchor, text in toc %}
         {% if level == 1 %}
