@@ -48,6 +48,9 @@ Preencha três campos, nesta ordem. Pule o resto por enquanto.
 
 Deixe **Tipo de buraco de minhoca** em **Objeto**; esse é o padrão para um buraco de minhoca que carrega conteúdo.
 
+> [!tip] Modelos
+> Depois de fazer um buraco de minhoca de que você gosta, pode salvar a forma dele como um modelo e começar buracos de minhoca futuros a partir dela. O menu suspenso ao lado de **Novo buraco de minhoca** escolhe um modelo (ou **Sem modelo** para um formulário em branco). O Manual do editor cobre os modelos por inteiro.
+
 ## Passo 4: Adicione uma imagem (opcional)
 
 Dentro do mesmo modal, role até **Visual principal**. A aba **Imagem** está ativa por padrão.

@@ -1,8 +1,8 @@
 title: Manuel d'édition
 subtitle: Pour qui crée galaxies, trous de ver et connexions à l'intérieur d'une instance de Telaris.
-version: v0.2
+version: v0.3
 doc_class: manual
 locale: fr
 page_size: A4
 cover_tagline: Un guide de terrain pour une archive non hiérarchique.
-app_version: Couvre Telaris v6.12.15
+app_version: Couvre Telaris v6.12.28

@@ -14,7 +14,7 @@ La vue montre un tableau des pages Hotglue que tu peux atteindre, avec un décom
 
 ![La liste Contenu hotglue avec trois pages : une attribuée à un trou de ver, une sans attribution, et une deuxième page attribuée, chacune avec une date de mise à jour et un menu d'actions](assets/images/hotglue-manual-fr/02-hotglue-content-list.png)
 
-Clique sur le titre d'une page pour l'ouvrir dans la superposition d'édition.
+Clique sur le titre d'une page pour l'ouvrir dans la superposition d'édition. Clique sur l'en-tête de colonne **Titre**, **Trou de ver attribué** ou **Mises à jour** pour trier selon cette colonne ; clique de nouveau pour inverser l'ordre. Une petite flèche marque la colonne selon laquelle tu as trié.
 
 ## Créer et nommer une page
 
@@ -43,6 +43,7 @@ L'action **Dupliquer** dans le menu d'une ligne crée une copie d'une page (son 
 Le menu d'actions d'une ligne donne trois façons de regarder une page :
 
 - **Voir dans le navigateur** ouvre la page Hotglue nue dans un nouvel onglet, exactement comme la verrait une personne qui visite, et copie son adresse dans ton presse-papiers. Cela fonctionne pour n'importe quelle page, attribuée ou non.
+- **Copier l'URL directe** copie cette même adresse dans ton presse-papiers sans ouvrir d'onglet. Utilise-le quand tu veux simplement le lien à coller quelque part.
 - **Voir dans le trou de ver** ouvre un aperçu de la page à l'intérieur de son trou de ver, dans la même fenêtre. Disponible uniquement pour les pages attribuées.
 - **Voir dans la galaxie** ouvre le visualiseur de galaxie tridimensionnel en direct, centré sur le trou de ver, dans une nouvelle fenêtre. Disponible uniquement pour les pages attribuées.
 
@@ -54,6 +55,7 @@ Pendant qu'une page est ouverte dans l'éditeur, le bouton **Révisions** ouvre 
 
 - La boîte **Rechercher** filtre la liste à mesure que tu tapes, en cherchant dans le titre de la page, le nom du trou de ver et le nom de la galaxie.
 - Le sélecteur de galaxie de l'en-tête de l'éditeur sert aussi de filtre : choisis une galaxie pour n'afficher que les pages Hotglue dont les trous de ver s'y trouvent, ou laisse-le sur toutes les galaxies pour tout voir.
+- **Les pages sans attribution apparaissent sous chaque filtre de galaxie.** Une page rattachée à aucun trou de ver n'a pas de galaxie propre, elle reste donc visible quelle que soit la galaxie sur laquelle tu filtres. Une page que tu viens de créer ne « disparaîtra » pas parce que tu as changé le sélecteur de galaxie ; elle est simplement sans attribution tant que tu ne l'attribues pas.
 
 ## Travailler en lot
 

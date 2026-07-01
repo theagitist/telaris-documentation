@@ -91,12 +91,60 @@ Salvar persiste a alteração imediatamente. As visitantes que estão vendo a ga
 
 ## Duplicar, visualizar, apagar
 
-O menu de ações em cada linha de buraco de minhoca oferece quatro operações:
+O menu de ações em cada linha de buraco de minhoca oferece estas operações:
 
 - **Ver** abre uma prévia somente leitura do cartão de informações como a visitante o veria. Use sempre que quiser checar uma mudança antes de tratar o trabalho como pronto.
 - **Editar** abre o modal acima.
 - **Duplicar** cria uma cópia do buraco de minhoca, com o mesmo conteúdo, na mesma galáxia, chamada "Original Name (Copy)". O novo buraco de minhoca recebe uma posição fresca na cena 3D; o resto vem junto. Útil quando você quer um quase-duplicado como ponto de partida.
+- **Criar modelo** salva a forma do buraco de minhoca como um modelo reutilizável a partir do qual você pode estampar novos buracos de minhoca depois. A seção Modelos, abaixo, cobre isso por inteiro.
 - **Excluir** remove o buraco de minhoca. Um modal de confirmação aparece primeiro; deleções são permanentes (a sua operadora às vezes consegue restaurar de um snapshot, mas a resposta deve ser: não apague a menos que esteja decidida).
+
+Duplicar e Criar modelo respondem a duas necessidades diferentes: Duplicar te dá mais um buraco de minhoca agora mesmo, nesta galáxia; Criar modelo te dá um molde que você pode reutilizar entre galáxias e entre sessões.
+
+## Ordenar a lista de buracos de minhoca
+
+Clique em qualquer cabeçalho de coluna na lista de buracos de minhoca para ordenar por aquela coluna; clique de novo para inverter a ordem. Ordene por nome para achar um buraco de minhoca em ordem alfabética, ou pela coluna de última modificação para trazer o trabalho mais recente ao topo. A ordenação é apenas uma conveniência de visualização; não muda nada nos buracos de minhoca em si nem como eles aparecem para as visitantes.
+
+## Modelos
+
+Um modelo é um ponto de partida reutilizável para novos buracos de minhoca. Se você se pega criando um buraco de minhoca atrás do outro com a mesma forma (o mesmo tipo, o mesmo punhado de palavras-chave, o mesmo tom de descrição, o mesmo tipo de mídia embutida), pode capturar essa forma uma vez e estampar novos buracos de minhoca a partir dela, em vez de preencher os mesmos campos à mão toda vez.
+
+Os modelos são **privados de você**. Os modelos que você cria são só seus; outra pessoa editora na mesma instância não os vê, e você não vê os dela. (Quem administra pode ver todos os modelos, do mesmo jeito que pode ver todas as galáxias.)
+
+### Criar um modelo a partir de um buraco de minhoca
+
+Você não constrói um modelo a partir de um formulário em branco. Você o constrói a partir de um buraco de minhoca de que já gosta. Abra o menu de ações da linha do buraco de minhoca e escolha **Criar modelo**:
+
+![Um menu de ações de linha de buraco de minhoca aberto, mostrando Ver, Editar, Duplicar, Criar modelo e Excluir](assets/images/editor-manual-pt/15-create-template-action.png)
+
+Telaris captura uma cópia da estrutura e do conteúdo daquele buraco de minhoca: o tipo, as palavras-chave, a descrição, a URL, os interruptores de comportamento e as configurações de mídia. Se o buraco de minhoca carrega conteúdo Hotglue, o modelo copia também esse conteúdo, de modo que um buraco de minhoca criado a partir do modelo abre sobre a sua própria cópia privada da mesma página em formato livre. O buraco de minhoca original fica intacto; o modelo é uma coisa separada e autônoma a partir do momento em que é feito. Editar ou apagar o buraco de minhoca depois não altera o modelo, e vice-versa.
+
+O novo modelo assume o nome do buraco de minhoca. Você pode renomeá-lo depois pela aba Modelos.
+
+### Basear um novo buraco de minhoca em um modelo
+
+Ao lado de **Novo buraco de minhoca** na tela inicial da editora há um pequeno menu suspenso. Seu padrão é **Sem modelo**, que te dá o formulário em branco de sempre. Escolha um modelo no menu suspenso, e o próximo buraco de minhoca que você criar abre com os campos daquele modelo já preenchidos:
+
+![A barra de ferramentas da tela inicial da editora: o botão Novo buraco de minhoca ao lado de um menu suspenso com Sem modelo, acompanhado de uma lista de modelos salvos](assets/images/editor-manual-pt/16-template-selector.png)
+
+O modal que se abre é o modal Novo buraco de minhoca de sempre, pré-preenchido. Tudo continua editável: mude o nome (você quase sempre vai querer, já que o nome do modelo é só um espaço reservado), ajuste as palavras-chave, reescreva a descrição. Nada fica travado. O modelo só decide onde o formulário começa, não onde ele termina. Se o modelo incluía conteúdo Hotglue, o novo buraco de minhoca recebe a sua própria cópia privada desse conteúdo, que você depois edita de forma independente.
+
+Escolher um modelo é uma escolha por criação. O menu suspenso não fica "armado"; depois que você cria um buraco de minhoca a partir de um modelo, ele volta para **Sem modelo**, de modo que o próximo buraco de minhoca fica em branco a menos que você escolha um modelo de novo.
+
+### Gerenciar seus modelos
+
+A tela inicial da editora tem três abas no alto: **Buracos de minhoca**, **Modelos** e **Conteúdo hotglue**. A aba Modelos lista todos os modelos que você possui:
+
+![A aba Modelos: uma tabela de modelos com colunas Nome e Hotglue, uma caixa de busca, e ações Renomear e Excluir por linha](assets/images/editor-manual-pt/17-templates-tab.png)
+
+A lista tem duas colunas: o **Nome** do modelo e uma coluna **Hotglue** que marca os modelos que carregam conteúdo Hotglue. Uma caixa de busca filtra a lista por nome. Clique em um cabeçalho de coluna para ordenar.
+
+As ações de cada modelo são:
+
+- **Renomear** muda o nome do modelo. Isso é puramente um rótulo para seu próprio uso; não toca em nenhum buraco de minhoca já criado a partir do modelo.
+- **Excluir** remove o modelo. Os buracos de minhoca que você já criou a partir dele não são afetados; agora são buracos de minhoca comuns, sem nenhum vínculo vivo de volta ao modelo. Excluir um modelo não pode ser desfeito.
+
+Nesta primeira versão, renomear e excluir são as únicas edições. Para mudar o que um modelo contém, crie um modelo novo a partir de um buraco de minhoca que tenha a forma que você quer, e apague o antigo.
 
 ## Coisas que vale a pena saber
 

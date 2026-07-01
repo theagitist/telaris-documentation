@@ -10,8 +10,6 @@ Every named concept in the editor manual, in one place. Dictionary-style; each e
 
 **Bracket prefix**. A naming convention (e.g., `[exhibit] Room A`) that groups galaxies into a visible family in the picker and a `/[exhibit]` union URL. Chapter 12.
 
-**Bulk by keyword**. A modal (chapter 7) that operates on every wormhole in the current galaxy carrying a chosen keyword: delete them in bulk, or move them in bulk to another galaxy.
-
 **Canvas**. Short for the keyword canvas (chapter 8). The drawing surface where editors lay out keyword chips and draw relationships between them.
 
 **Chip**. The pastel pill that represents a keyword in the editor UI. Each keyword has a deterministic colour by text; the colour is the same everywhere on the instance.
@@ -89,6 +87,8 @@ Every named concept in the editor manual, in one place. Dictionary-style; each e
 **Source community**. A community whose work is hosted in a Telaris galaxy. The community's consent is the editorial floor; withdrawal of consent is final. Chapter 13.
 
 **Tagged keywords**. An auto-tour node-selection mode: visit only wormholes carrying one of a chosen set of keywords. Chapter 11.
+
+**Template**. A private, reusable starting point for new wormholes, captured from an existing wormhole (its type, keywords, description, media, and any Hotglue content). Managed on the Templates tab; applied through the dropdown next to New Wormhole. Chapter 5.
 
 **Theme**. The visual style of a galaxy: cosmic, simple, abstract, rectangles, stripes, tech. Chosen in the galaxy settings modal. Chapter 4.
 

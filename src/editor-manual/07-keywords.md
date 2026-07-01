@@ -2,7 +2,7 @@
 
 Keywords are short labels you attach to wormholes. They are how Telaris connects content without folders. A keyword is the difference between a galaxy that is a *list* and a galaxy that is a *web*; everything else, in the editor's day-to-day, is built on top.
 
-This chapter covers assigning keywords from inside the wormhole modal, the chip palette, and the bulk operations for working with many wormholes at once. The keyword **canvas** (the relational drawing surface for keywords) is its own chapter (8).
+This chapter covers assigning keywords from inside the wormhole modal, the chip palette, and how to work across many wormholes at once. The keyword **canvas** (the relational drawing surface for keywords) is its own chapter (8).
 
 ## Assigning keywords
 
@@ -42,24 +42,9 @@ This is also why renaming a keyword changes the colour: the colour is keyed to t
 
 Open the wormhole's Edit modal (chapter 5). The Keywords field shows the existing chips. Add chips as above; remove with the ×; save. Changes apply on the visitor's next page load.
 
-## Bulk operations: the Bulk-by-keyword modal
+## Acting on many wormholes at once
 
-When you need to act on **every wormhole carrying a given keyword** at once, the Bulk by keyword modal is the surface. Open it from the editor home, in the row of buttons next to **New Wormhole**:
-
-![Bulk action by keyword modal: pick a keyword, choose Delete or Move, see the count, apply](assets/images/editor-manual/09-bulk-by-keyword-modal.png)
-
-The modal scopes to the **current galaxy**: it can only act on wormholes inside the galaxy you have selected. Steps:
-
-1. **Pick a keyword** from the dropdown. The dropdown lists every keyword in the galaxy, with its usage count next to each. Telaris updates the wormhole count below as you change selection, so you always know what the action will hit.
-2. **Choose an action**:
-   - **Delete the matching wormholes** removes every wormhole carrying the chosen keyword. The deletes are permanent (the same caveat as in chapter 5 applies; ask the operator about a snapshot before doing anything irreversible).
-   - **Move them to another galaxy** appears with an additional dropdown when selected. The wormholes are transferred to the chosen galaxy along with their keywords and media.
-3. **Apply** runs the operation. **Cancel** dismisses without changes.
-
-The Bulk modal is a sharp tool. Two ways to make it less sharp:
-
-- Take a snapshot before the operation, if your operator has set you up to take snapshots, or ask them to take one.
-- Run a quick search (the search box on the editor home) for the keyword before opening the modal, so you can see exactly which wormholes will be affected and confirm none of them are kept-by-mistake.
+To find and act on every wormhole carrying a given keyword, type the keyword into the search box on the editor home. The list narrows to the matching wormholes, and you can open each one's actions menu to edit, move (by changing its galaxy in the Edit modal), or delete it. Searching first, then acting per wormhole, keeps you looking at exactly what you are about to change, rather than triggering a single sweeping action against a count you cannot see.
 
 ## Aliases (per-galaxy synonyms)
 
@@ -78,5 +63,5 @@ This is a soft filter (it does not remove wormholes from the scene, just dim the
 - **A wormhole without keywords is allowed but quiet.** Visitors can still reach it through name search or by 3D-clicking; they will not reach it through the keyword chip layer. Use zero keywords when the wormhole's role is purely solitary.
 - **Keyword names are searched in the editor home search box** alongside wormhole names and descriptions. Searching for a keyword is the fastest way to audit which wormholes carry it.
 - **Renaming a keyword updates it everywhere on the instance.** Renaming *medicinal* renames it in every galaxy that uses the word. There is no per-galaxy rename.
-- **Deleting a keyword removes it from every wormhole that carries it.** The wormholes survive; the keyword chip drops off them. Deletes happen through the keyword canvas (chapter 8); they are not in the Bulk by keyword modal, which deletes wormholes, not keywords.
+- **Deleting a keyword removes it from every wormhole that carries it.** The wormholes survive; the keyword chip drops off them. Deleting a keyword (through the keyword canvas, chapter 8) removes the word; deleting a wormhole (through its row actions menu, chapter 5) removes the content. They are different operations.
 - **There is no maximum number of keywords per wormhole**, but practical legibility suggests three to seven is plenty. Past ten, the chip strip on the info card starts to wrap awkwardly.

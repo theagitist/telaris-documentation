@@ -91,12 +91,60 @@ El botón Actualizar agujero de gusano persiste el cambio inmediatamente. Las vi
 
 ## Duplicar, ver, eliminar
 
-El menú de acciones en cada fila de agujero de gusano ofrece cuatro operaciones:
+El menú de acciones en cada fila de agujero de gusano ofrece estas operaciones:
 
 - **Ver** abre una vista previa de solo lectura de la ficha del agujero de gusano tal como la vería la visitante. Úsalo cuando quieras revisar un cambio antes de dar el trabajo por hecho.
 - **Editar** abre el modal de arriba.
 - **Duplicar** crea una copia del agujero de gusano, con el mismo contenido, en la misma galaxia, llamada "Nombre original (Copia)". El nuevo agujero de gusano recibe una posición fresca en la escena 3D; todo lo demás se traslada. Útil cuando quieres un casi duplicado como punto de partida.
+- **Crear plantilla** guarda la forma del agujero de gusano como una plantilla reutilizable con la que podrás estampar nuevos agujeros de gusano más adelante. La sección Plantillas de abajo lo cubre en detalle.
 - **Eliminar** elimina el agujero de gusano. Aparece primero un cuadro modal de confirmación; las eliminaciones son permanentes (tu operadora a veces puede restaurar desde una instantánea, pero la respuesta debería ser: no elimines a menos que lo quieras decir).
+
+Duplicar y Crear plantilla responden a dos necesidades distintas: Duplicar te da un agujero de gusano más ahora mismo, en esta galaxia; Crear plantilla te da un molde que puedes reutilizar entre galaxias y entre sesiones.
+
+## Ordenar la lista de agujeros de gusano
+
+Haz clic en el encabezado de cualquier columna de la lista de agujeros de gusano para ordenar por esa columna; haz clic de nuevo para invertir el orden. Ordena por nombre para encontrar un agujero de gusano alfabéticamente, o por la columna de última modificación para traer tu trabajo más reciente arriba. El orden es solo una comodidad de vista; no cambia nada de los agujeros de gusano en sí ni de cómo se les aparecen a las visitantes.
+
+## Plantillas
+
+Una plantilla es un punto de partida reutilizable para nuevos agujeros de gusano. Si te encuentras creando un agujero de gusano tras otro con la misma forma (el mismo tipo, el mismo puñado de palabras clave, el mismo tono de descripción, el mismo tipo de medio incrustado), puedes capturar esa forma una vez y estampar nuevos agujeros de gusano a partir de ella, en lugar de rellenar los mismos campos a mano cada vez.
+
+Las plantillas son **privadas para ti**. Las plantillas que creas son solo tuyas; otra persona editora en la misma instancia no ve las tuyas, y tú no ves las suyas. (Quien administra puede ver todas las plantillas, igual que puede ver todas las galaxias.)
+
+### Crear una plantilla a partir de un agujero de gusano
+
+No construyes una plantilla desde un formulario en blanco. La construyes a partir de un agujero de gusano que ya te gusta. Abre el menú de acciones de la fila del agujero de gusano y elige **Crear plantilla**:
+
+![Un menú de acciones de fila de agujero de gusano abierto, mostrando Ver, Editar, Duplicar, Crear plantilla y Eliminar](assets/images/editor-manual-es/15-create-template-action.png)
+
+Telaris captura una copia de la estructura y el contenido de ese agujero de gusano: su tipo, palabras clave, descripción, URL, interruptores de comportamiento y ajustes de medios. Si el agujero de gusano lleva contenido de Hotglue, la plantilla también copia ese contenido, de modo que un agujero de gusano creado desde la plantilla se abre sobre su propia copia privada de la misma página de formato libre. El agujero de gusano original queda intacto; la plantilla es una cosa separada y autónoma desde el momento en que se crea. Editar o eliminar el agujero de gusano después no cambia la plantilla, y viceversa.
+
+La nueva plantilla toma el nombre del agujero de gusano. Puedes cambiarle el nombre más tarde desde la pestaña Plantillas.
+
+### Basar un nuevo agujero de gusano en una plantilla
+
+Junto a **Nuevo agujero de gusano** en el inicio del editor hay un pequeño desplegable. Su valor por defecto es **Sin plantilla**, que te da el formulario en blanco de siempre. Elige en su lugar una plantilla del desplegable, y el próximo agujero de gusano que crees se abre con los campos de esa plantilla ya rellenados:
+
+![La barra de herramientas del inicio del editor: el botón Nuevo agujero de gusano junto a un desplegable que dice Sin plantilla, con una lista de plantillas guardadas](assets/images/editor-manual-es/16-template-selector.png)
+
+El modal que se abre es el modal de Nuevo agujero de gusano de siempre, prellenado. Todo sigue siendo editable: cambia el nombre (casi siempre querrás hacerlo, ya que el nombre de la plantilla es solo un marcador de posición), ajusta las palabras clave, reescribe la descripción. Nada queda bloqueado. La plantilla solo decide dónde empieza el formulario, no dónde termina. Si la plantilla incluía contenido de Hotglue, el nuevo agujero de gusano recibe su propia copia privada de ese contenido, que luego editas de forma independiente.
+
+Elegir una plantilla es una decisión por creación. El desplegable no se queda "armado"; después de crear un agujero de gusano a partir de una plantilla, vuelve a **Sin plantilla**, así que tu próximo agujero de gusano queda en blanco a menos que elijas una plantilla de nuevo.
+
+### Gestionar tus plantillas
+
+El inicio del editor tiene tres pestañas en la parte superior: **Agujeros de gusano**, **Plantillas** y **Contenido hotglue**. La pestaña Plantillas lista todas las plantillas que posees:
+
+![La pestaña Plantillas: una tabla de plantillas con columnas Nombre y Hotglue, un cuadro de búsqueda, y acciones por fila de Cambiar nombre y Eliminar](assets/images/editor-manual-es/17-templates-tab.png)
+
+La lista tiene dos columnas: el **Nombre** de la plantilla, y una columna **Hotglue** que marca las plantillas que llevan contenido de Hotglue. Un cuadro de búsqueda filtra la lista por nombre. Haz clic en el encabezado de una columna para ordenar.
+
+Las acciones de cada plantilla son:
+
+- **Cambiar nombre** cambia el nombre de la plantilla. Es puramente una etiqueta para tu propio uso; no toca ningún agujero de gusano ya creado a partir de la plantilla.
+- **Eliminar** quita la plantilla. Los agujeros de gusano que ya creaste a partir de ella no se ven afectados; ahora son agujeros de gusano ordinarios, sin ningún vínculo vivo de vuelta a la plantilla. Eliminar una plantilla no se puede deshacer.
+
+En esta primera versión, cambiar el nombre y eliminar son las únicas ediciones. Para cambiar lo que contiene una plantilla, crea una plantilla fresca a partir de un agujero de gusano que tenga la forma que quieres, y elimina la antigua.
 
 ## Cosas que vale la pena saber
 

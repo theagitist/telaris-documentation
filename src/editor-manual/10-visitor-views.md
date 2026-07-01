@@ -86,7 +86,9 @@ This is the main way visitors travel laterally through a network without opening
 
 ### 2D view
 
-When on, a small **3D / 2D** toggle appears at the top of the visitor's screen. Switching to 2D collapses the scene into a flat grid of wormhole chips: each chip is the wormhole's icon plus name, arranged in rows. The 2D view is faster to load and easier to scan; some visitors prefer it for finding a specific wormhole quickly.
+When on, a small **3D / 2D** toggle appears at the top of the visitor's screen. Switching to 2D collapses the scene into a flat map of wormhole chips: each chip is the wormhole's icon plus name. The 2D view is faster to load and easier to scan; some visitors prefer it for finding a specific wormhole quickly.
+
+The 2D map can be **zoomed and panned** (scroll or pinch to zoom, drag to pan), and a **Fit** control returns every wormhole to view at once, so nothing stays stacked off-screen no matter how many wormholes the galaxy holds. When more than one galaxy is in view (a galaxy union, chapter 12), the galaxy list beside the map dims the galaxies you are not pointing at, and each wormhole chip carries its galaxy's name as a prefix so you can tell same-named wormholes apart.
 
 The visitor's choice between 3D and 2D persists in their browser (you do not have to keep choosing).
 
@@ -100,5 +102,5 @@ There is no global toggle to hide provenance footers; if your work credits a pho
 
 - **The visitor sees what you have published, not your draft.** There is no "preview" mode separate from the published view; once you save a wormhole or a galaxy setting, the visitor's next page load reflects the change. To preview a change without affecting visitors, you would need to make the change in a galaxy that is not yet public.
 - **The 3D scene runs in the visitor's browser.** Older devices or low-power computers may struggle with very dense galaxies. The 2D view toggle is the standard remedy.
-- **Audio that autoplays may be blocked by the visitor's browser.** Most browsers do not allow audio to start without the visitor's interaction. If you turn on Autoplay (chapter 6) and a visitor reports no sound, this is the most likely cause; the visitor's first click on the page usually un-blocks the audio.
+- **Audio that autoplays may be blocked by the visitor's browser.** Most browsers do not allow audio to start without the visitor's interaction. If you turn on Autoplay (chapter 6) and a visitor reports no sound, this is the most likely cause; the visitor's first click on the page usually un-blocks the audio. A galaxy with a soundscape shows a small **sound on/off** control in the scene; the first time a visitor turns it on, the soundscape starts (the same browser gesture rule applies).
 - **The Discovery toggles are independent of each other.** Auto-tour and idle spotlight can both be on at the same time (the spotlight kicks in if the tour ends or is not started). Pick the combinations that fit your editorial intent; the toggles do not gate each other.

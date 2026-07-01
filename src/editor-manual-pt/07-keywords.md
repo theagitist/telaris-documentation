@@ -2,7 +2,7 @@
 
 Palavras-chave são rótulos curtos que você anexa a buracos de minhoca. São como Telaris conecta conteúdo sem pastas. Uma palavra-chave é a diferença entre uma galáxia que é uma *lista* e uma galáxia que é uma *teia*; o resto, no dia a dia da editora, é construído sobre isso.
 
-Este capítulo cobre atribuir palavras-chave a partir do modal do buraco de minhoca, a paleta de chips, e as operações em lote para trabalhar com muitos buracos de minhoca de uma vez. A **tela** de palavras-chave (a superfície de desenho relacional) tem seu próprio capítulo (8).
+Este capítulo cobre atribuir palavras-chave a partir do modal do buraco de minhoca, a paleta de chips, e como trabalhar com muitos buracos de minhoca de uma vez. A **tela** de palavras-chave (a superfície de desenho relacional) tem seu próprio capítulo (8).
 
 ## Atribuir palavras-chave
 
@@ -42,24 +42,9 @@ Cada palavra-chave recebe uma cor pastel determinística, escolhida pelo texto d
 
 Abra o modal **Editar** do buraco de minhoca (capítulo 5). O campo **Palavras-chave** mostra os chips existentes. Adicione chips como acima; remova com o ×; salve. As mudanças se aplicam no próximo carregamento da página da visitante.
 
-## Operações em lote: o modal Bulk-by-keyword
+## Agir sobre muitos buracos de minhoca de uma vez
 
-Quando você precisa agir sobre **todo buraco de minhoca que carrega uma certa palavra-chave** de uma vez, o modal **Ação em massa por palavra-chave** é a superfície. Abra a partir da tela inicial da editora, na fileira de botões ao lado de **Novo buraco de minhoca**:
-
-![Modal Ação em massa por palavra-chave: escolha uma palavra-chave, escolha Excluir ou Mover, veja a contagem, aplique](assets/images/editor-manual-pt/09-bulk-by-keyword-modal.png)
-
-O modal se limita à **galáxia atual**: só pode agir sobre buracos de minhoca dentro da galáxia selecionada. Passos:
-
-1. **Escolha uma palavra-chave** no menu suspenso. O menu lista cada palavra-chave da galáxia, com sua contagem de uso ao lado. Telaris atualiza a contagem de buracos de minhoca embaixo conforme você muda a seleção, para que você sempre saiba o que a ação vai atingir.
-2. **Escolha uma ação**:
-   - **Excluir os buracos de minhoca correspondentes** remove cada buraco de minhoca que carrega a palavra-chave escolhida. As deleções são permanentes (vale o mesmo cuidado do capítulo 5; pergunte à operadora sobre um snapshot antes de qualquer coisa irreversível).
-   - **Movê-los para outra galáxia** aparece com um menu suspenso adicional quando selecionada. Os buracos de minhoca são transferidos para a galáxia escolhida junto com suas palavras-chave e mídia.
-3. **Aplicar** executa a operação. **Cancelar** descarta sem mudanças.
-
-O modal de ação em massa é uma ferramenta afiada. Duas formas de torná-la menos afiada:
-
-- Tire um snapshot antes da operação, se sua operadora te habilitou para tirar snapshots, ou peça que ela tire.
-- Faça uma busca rápida (a caixa de busca na tela inicial da editora) pela palavra-chave antes de abrir o modal, para ver exatamente quais buracos de minhoca serão afetados e confirmar que nenhum deles foi mantido por engano.
+Para achar e agir sobre todo buraco de minhoca que carrega uma certa palavra-chave, digite a palavra-chave na caixa de busca da tela inicial da editora. A lista se estreita aos buracos de minhoca correspondentes, e você pode abrir o menu de ações de cada um para editar, mover (mudando sua galáxia no modal Editar) ou excluir. Buscar primeiro e depois agir buraco de minhoca por buraco de minhoca mantém você olhando exatamente para o que está prestes a mudar, em vez de disparar uma única ação varredora contra uma contagem que você não pode ver.
 
 ## Sinônimos (apelidos por galáxia)
 
@@ -78,5 +63,5 @@ Esse é um filtro suave (não remove buracos de minhoca da cena, só os esmaece)
 - **Um buraco de minhoca sem palavras-chave é permitido, mas silencioso.** As visitantes ainda podem alcançá-lo por busca de nome ou clicando no 3D; não vão alcançá-lo pela camada de chips. Use zero palavras-chave quando o papel do buraco de minhoca for puramente solitário.
 - **Nomes de palavras-chave são buscados na caixa de busca da tela inicial da editora** junto com nomes e descrições de buracos de minhoca. Buscar por uma palavra-chave é a forma mais rápida de auditar quais buracos de minhoca a carregam.
 - **Renomear uma palavra-chave atualiza em toda a instância.** Renomear *medicinal* renomeia em toda galáxia que usa a palavra. Não há renome por galáxia.
-- **Apagar uma palavra-chave remove de todo buraco de minhoca que a carrega.** Os buracos de minhoca sobrevivem; o chip cai. As deleções acontecem pela tela de palavras-chave (capítulo 8); não estão no modal Ação em massa por palavra-chave, que apaga buracos de minhoca, não palavras-chave.
+- **Apagar uma palavra-chave remove de todo buraco de minhoca que a carrega.** Os buracos de minhoca sobrevivem; o chip cai. Apagar uma palavra-chave (pela tela de palavras-chave, capítulo 8) remove a palavra; apagar um buraco de minhoca (pelo menu de ações da sua linha, capítulo 5) remove o conteúdo. São operações diferentes.
 - **Não há número máximo de palavras-chave por buraco de minhoca**, mas, na prática, três a sete dão boa legibilidade. Passando de dez, a faixa de chips no cartão de informações começa a quebrar feio.

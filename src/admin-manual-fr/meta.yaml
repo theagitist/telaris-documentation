@@ -1,0 +1,8 @@
+title: "Manuel d'administration"
+subtitle: "Pour la personne qui exploite une instance de Telaris : comptes, accès, paramètres, fédération et sauvegardes."
+version: v0.1
+doc_class: manual
+locale: fr
+page_size: A4
+cover_tagline: "La console derrière l'archive."
+app_version: Couvre Telaris v6.12.28

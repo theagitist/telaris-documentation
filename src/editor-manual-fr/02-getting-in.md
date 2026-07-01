@@ -61,13 +61,15 @@ La page se présente en deux cartes :
 **Carte du bas : tes trous de ver.**
 
 - **Trous de ver (N)** en haut à gauche t'indique combien de trous de ver se trouvent dans la vue de galaxie courante. *N* est un nombre ; quand tu choisis *Toutes mes galaxies*, il compte à travers toutes les galaxies.
-- **Nouveau trou de ver** ouvre le formulaire pour créer un nouveau trou de ver. Le chapitre 5 le couvre en détail.
-- **Modifiés aujourd'hui** restreint la liste aux trous de ver que tu as édités depuis minuit. Utile pour reprendre là où tu en étais.
-- **Action en masse par mot-clé** ouvre une fenêtre pour des opérations en lot sur plusieurs trous de ver à la fois (supprimer tous les trous de ver portant un mot-clé donné, les déplacer tous vers une autre galaxie). Le chapitre 7 couvre cette surface.
+- **Nouveau trou de ver** ouvre le formulaire pour créer un nouveau trou de ver. Le chapitre 5 le couvre en détail. À côté se trouve un petit menu déroulant de modèles (par défaut **Aucun modèle**) qui permet à un nouveau trou de ver de partir d'un modèle enregistré ; le chapitre 5 couvre les modèles.
 - **?** ouvre un petit panneau qui liste tous les raccourcis clavier que l'édition prend en charge. En mémoriser ne serait-ce que deux ou trois te fera gagner du temps ; les plus utiles sont `n` (nouveau trou de ver), `/` (mettre le focus sur la recherche), et `g` (ouvrir les paramètres de galaxie).
 - **Rechercher** filtre la liste des trous de ver à mesure que tu tapes. Elle parcourt les noms de trous de ver, les descriptions, les noms de galaxies et les mots-clés ; un seul champ, quatre colonnes.
 
-La liste de trous de ver elle-même montre : nom, type, galaxie, mots-clés, un drapeau de mise en avant, date de création, date de mise à jour, et un menu d'actions. Les chapitres suivants expliquent chaque colonne.
+En haut de la carte se trouvent trois onglets : **Trous de ver** (la liste décrite ici), **Modèles** (tes points de départ réutilisables de trous de ver), et **Contenu hotglue** (des pages de média en forme libre). Le chapitre 5 couvre les Modèles ; le Manuel Hotglue séparé couvre le contenu hotglue.
+
+La liste de trous de ver elle-même montre : nom, type, galaxie, mots-clés, un drapeau de mise en avant, date de création, date de mise à jour, et un menu d'actions. Clique sur n'importe quel en-tête de colonne pour trier selon cette colonne. Les chapitres suivants expliquent chaque colonne.
+
+Sur un téléphone ou un écran étroit, la même liste se réorganise en cartes empilées, un trou de ver par carte, chaque champ étiqueté ; le menu d'actions et chaque bouton restent accessibles. La surface d'édition est utilisable sur téléphone, mais un écran plus large est plus confortable pour disposer les mots-clés et les médias.
 
 ## Se déconnecter
 

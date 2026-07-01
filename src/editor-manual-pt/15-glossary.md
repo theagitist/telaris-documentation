@@ -16,8 +16,6 @@ Cada conceito nomeado no manual da editora, em um só lugar. Estilo de dicionár
 
 **Prefixo entre colchetes**. Uma convenção de nomeação (por exemplo, `[exhibit] Room A`) que agrupa galáxias em uma família visível no seletor e em uma URL de união `/[exhibit]`. Capítulo 12.
 
-**Ação em massa por palavra-chave**. Um modal (capítulo 7) que opera sobre cada buraco de minhoca da galáxia atual que carrega uma palavra-chave escolhida: apagá-los em lote, ou movê-los em lote para outra galáxia.
-
 **Buraco de minhoca**. A menor unidade de conteúdo em Telaris. Uma única passagem de texto, imagem, vídeo, PDF, áudio, ou composto. Capítulo 5.
 
 **Tela**. Forma curta de *tela de palavras-chave* (capítulo 8). A superfície de desenho onde editoras dispõem chips de palavras-chave e desenham relações entre eles.
@@ -55,6 +53,8 @@ Cada conceito nomeado no manual da editora, em um só lugar. Estilo de dicionár
 **Manual**. (1) Este documento. (2) Um modo de início do passeio automático em que a visitante precisa apertar **Play**. Capítulo 11.
 
 **Mídia**. O nome coletivo de imagem, vídeo, áudio, PDF, e código de embed anexados a um buraco de minhoca. Capítulo 6.
+
+**Modelo**. Um ponto de partida privado e reutilizável para novos buracos de minhoca, capturado a partir de um buraco de minhoca existente (seu tipo, palavras-chave, descrição, mídia, e qualquer conteúdo Hotglue). Gerido na aba Modelos; aplicado pelo menu suspenso ao lado de Novo buraco de minhoca. Capítulo 5.
 
 **Multigaláxia**. O nome geral para vistas que mostram mais de uma galáxia ao mesmo tempo. Conseguido por tags, prefixo entre colchetes, ou lista explícita por URL. Capítulo 12.
 

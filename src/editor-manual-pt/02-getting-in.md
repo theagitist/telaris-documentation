@@ -61,13 +61,15 @@ A página tem dois cartões:
 **Cartão inferior: seus buracos de minhoca.**
 
 - **Buracos de minhoca (N)** no alto à esquerda informa quantos buracos de minhoca estão na vista de galáxia atual. *N* é um número; quando você escolhe *Todas as minhas galáxias*, conta todas as galáxias juntas.
-- **Novo buraco de minhoca** abre o formulário para criar um novo buraco de minhoca. O capítulo 5 cobre isso em detalhe.
-- **Modificados hoje** restringe a lista a buracos de minhoca que você editou desde a meia-noite. Útil para retomar de onde parou.
-- **Ação em massa por palavra-chave** abre um modal para operações em lote sobre muitos buracos de minhoca de uma vez (apagar todos com determinada palavra-chave, movê-los todos para outra galáxia). O capítulo 7 cobre essa superfície.
+- **Novo buraco de minhoca** abre o formulário para criar um novo buraco de minhoca. O capítulo 5 cobre isso em detalhe. Ao lado dele há um pequeno menu suspenso de modelos (padrão **Sem modelo**) que permite iniciar um novo buraco de minhoca a partir de um modelo salvo; o capítulo 5 cobre os modelos.
 - **?** abre um pequeno painel listando todos os atalhos de teclado que a superfície de edição suporta. Memorizar dois ou três acelera o seu dia; os mais úteis são `n` (novo buraco de minhoca), `/` (foco no campo de busca), e `g` (abrir configurações da galáxia).
 - **Buscar buracos de minhoca** filtra a lista de buracos de minhoca conforme você digita. A busca atravessa nomes de buracos de minhoca, descrições, nomes de galáxias e palavras-chave; uma caixa só, quatro colunas.
 
-A lista de buracos de minhoca em si mostra: nome, tipo, galáxia, palavras-chave, um sinal de destaque, data de criação, data de atualização, e um menu de ações. Os capítulos seguintes explicam cada coluna.
+No alto do cartão há três abas: **Buracos de minhoca** (a lista aqui descrita), **Modelos** (seus pontos de partida reutilizáveis para buracos de minhoca) e **Conteúdo hotglue** (páginas de mídia em formato livre). O capítulo 5 cobre os Modelos; o Manual do Hotglue, à parte, cobre o Conteúdo hotglue.
+
+A lista de buracos de minhoca em si mostra: nome, tipo, galáxia, palavras-chave, um sinal de destaque, data de criação, data de atualização, e um menu de ações. Clique em qualquer cabeçalho de coluna para ordenar por ela. Os capítulos seguintes explicam cada coluna.
+
+Em um telefone ou em uma tela estreita, a mesma lista se reorganiza em cartões empilhados, um buraco de minhoca por cartão, com cada campo rotulado; o menu de ações e todos os botões seguem alcançáveis. A superfície de edição é usável no telefone, ainda que uma tela mais larga seja mais confortável para dispor palavras-chave e mídia.
 
 ## Como sair
 

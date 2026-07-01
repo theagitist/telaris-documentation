@@ -2,7 +2,7 @@
 
 Las palabras clave son etiquetas cortas que adjuntas a los agujeros de gusano. Son como Telaris conecta contenido sin carpetas. Una palabra clave es la diferencia entre una galaxia que es una *lista* y una galaxia que es una *red*; todo lo demás, en el día a día de la editora, se construye encima.
 
-Este capítulo cubre cómo asignar palabras clave desde dentro del modal del agujero de gusano, la paleta de píldoras, y las operaciones por lote para trabajar con muchos agujeros de gusano a la vez. El **lienzo** de palabras clave (la superficie relacional de dibujo) tiene su propio capítulo (8).
+Este capítulo cubre cómo asignar palabras clave desde dentro del modal del agujero de gusano, la paleta de píldoras, y cómo trabajar con muchos agujeros de gusano a la vez. El **lienzo** de palabras clave (la superficie relacional de dibujo) tiene su propio capítulo (8).
 
 ## Asignar palabras clave
 
@@ -42,24 +42,9 @@ Por esto también renombrar una palabra clave cambia el color: el color está vi
 
 Abre el modal Editar del agujero de gusano (capítulo 5). El campo Palabras clave muestra las píldoras existentes. Añade píldoras como arriba; quita con la ×; guarda. Los cambios se aplican en la próxima recarga de página de la visitante.
 
-## Operaciones por lote: el modal Acción en bloque por palabra clave
+## Actuar sobre muchos agujeros de gusano a la vez
 
-Cuando necesitas actuar sobre **todos los agujeros de gusano que cargan una palabra clave dada** a la vez, el modal Acción en bloque por palabra clave es la superficie. Ábrelo desde el inicio del editor, en la fila de botones junto a **Nuevo agujero de gusano**:
-
-![Modal de acción en bloque por palabra clave: elige una palabra clave, elige Eliminar o Mover, ve el conteo, aplica](assets/images/editor-manual-es/09-bulk-by-keyword-modal.png)
-
-El modal está acotado a la **galaxia actual**: solo puede actuar sobre agujeros de gusano dentro de la galaxia que tienes seleccionada. Pasos:
-
-1. **Elige una palabra clave** del desplegable. El desplegable lista todas las palabras clave de la galaxia, con su conteo de uso junto a cada una. Telaris actualiza el conteo de agujeros de gusano debajo a medida que cambias la selección, para que siempre sepas qué tocará la acción.
-2. **Elige una acción**:
-   - **Eliminar los agujeros de gusano que coincidan** elimina todos los agujeros de gusano que cargan la palabra clave elegida. Las eliminaciones son permanentes (la misma advertencia del capítulo 5 aplica; pregúntale a tu operadora sobre una instantánea antes de hacer algo irreversible).
-   - **Moverlos a otra galaxia** aparece con un desplegable adicional cuando se selecciona. Los agujeros de gusano se trasladan a la galaxia elegida junto con sus palabras clave y medios.
-3. **Aplicar** ejecuta la operación. **Cancelar** descarta sin cambios.
-
-El modal Bulk es una herramienta afilada. Dos formas de bajarle el filo:
-
-- Toma una instantánea antes de la operación, si tu operadora te ha configurado para tomar instantáneas, o pídele que tome una.
-- Haz una búsqueda rápida (el cuadro de búsqueda en el inicio del editor) por la palabra clave antes de abrir el modal, para ver exactamente qué agujeros de gusano serán afectados y confirmar que ninguno se queda por error.
+Para encontrar y actuar sobre cada agujero de gusano que carga una palabra clave dada, escribe la palabra clave en el cuadro de búsqueda del inicio del editor. La lista se acota a los agujeros de gusano que coinciden, y puedes abrir el menú de acciones de cada uno para editarlo, moverlo (cambiando su galaxia en el modal Editar) o eliminarlo. Buscar primero, luego actuar por agujero de gusano, te mantiene mirando exactamente lo que estás a punto de cambiar, en vez de disparar una única acción global contra un conteo que no puedes ver.
 
 ## Alias (sinónimos por galaxia)
 
@@ -78,5 +63,5 @@ Este es un filtro suave (no quita agujeros de gusano de la escena, solo los aten
 - **Un agujero de gusano sin palabras clave está permitido pero es silencioso.** Las visitantes todavía pueden alcanzarlo por búsqueda por nombre o haciendo clic en 3D; no lo alcanzarán por la capa de píldoras de palabras clave. Usa cero palabras clave cuando el papel del agujero de gusano sea puramente solitario.
 - **Los nombres de palabras clave se buscan en el cuadro de búsqueda del inicio del editor** junto con nombres y descripciones de agujeros de gusano. Buscar por una palabra clave es la forma más rápida de auditar qué agujeros de gusano la cargan.
 - **Renombrar una palabra clave la actualiza en todas partes de la instancia.** Renombrar *medicinal* la renombra en cada galaxia que use la palabra. No hay renombrado por galaxia.
-- **Eliminar una palabra clave la quita de cada agujero de gusano que la cargaba.** Los agujeros de gusano sobreviven; la píldora de palabra clave cae de ellos. Las eliminaciones ocurren a través del lienzo de palabras clave (capítulo 8); no están en el modal Acción en bloque por palabra clave, que elimina agujeros de gusano, no palabras clave.
+- **Eliminar una palabra clave la quita de cada agujero de gusano que la cargaba.** Los agujeros de gusano sobreviven; la píldora de palabra clave cae de ellos. Eliminar una palabra clave (a través del lienzo de palabras clave, capítulo 8) quita la palabra; eliminar un agujero de gusano (a través del menú de acciones de su fila, capítulo 5) quita el contenido. Son operaciones distintas.
 - **No hay un número máximo de palabras clave por agujero de gusano**, pero la legibilidad práctica sugiere que de tres a siete es suficiente. Pasadas las diez, la franja de píldoras en la ficha empieza a envolverse de manera incómoda.

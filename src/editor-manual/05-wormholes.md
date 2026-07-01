@@ -91,12 +91,60 @@ Save persists the change immediately. Visitors viewing the galaxy see your updat
 
 ## Duplicating, viewing, deleting
 
-The actions menu on each wormhole row offers four operations:
+The actions menu on each wormhole row offers these operations:
 
 - **View** opens a read-only preview of the wormhole's info card as the visitor would see it. Use this whenever you want to check a change before treating the work as done.
 - **Edit** opens the modal above.
 - **Duplicate** creates a copy of the wormhole, with the same content, in the same galaxy, named "Original Name (Copy)". The new wormhole gets a fresh position in the 3D scene; everything else carries over. Useful when you want a near-duplicate as a starting point.
+- **Create Template** saves the wormhole's shape as a reusable template you can stamp new wormholes from later. The Templates section below covers this in full.
 - **Delete** removes the wormhole. A confirmation modal appears first; deletes are permanent (your operator can sometimes restore from a snapshot, but the answer should be: do not delete unless you mean it).
+
+Duplicate and Create Template answer two different needs: Duplicate gives you one more wormhole right now, in this galaxy; Create Template gives you a mould you can reuse across galaxies and across sessions.
+
+## Sorting the wormhole list
+
+Click any column header in the wormhole list to sort by that column; click it again to reverse the order. Sort by name to find a wormhole alphabetically, or by the last-touched column to bring your most recent work to the top. The sort is a view convenience only; it changes nothing about the wormholes themselves or how they appear to visitors.
+
+## Templates
+
+A template is a reusable starting point for new wormholes. If you find yourself creating wormhole after wormhole with the same shape (the same type, the same handful of keywords, the same theme of description, the same kind of embedded media), you can capture that shape once and stamp out new wormholes from it, rather than filling the same fields in by hand every time.
+
+Templates are **private to you**. The templates you create are yours alone; another editor on the same instance does not see them, and you do not see theirs. (An admin can see every template, the same way an admin can see every galaxy.)
+
+### Creating a template from a wormhole
+
+You do not build a template from a blank form. You build it from a wormhole you already like. Open the wormhole's row actions menu and choose **Create Template**:
+
+![A wormhole row actions menu open, showing View, Edit, Duplicate, Create Template, and Delete](assets/images/editor-manual/15-create-template-action.png)
+
+Telaris captures a copy of that wormhole's structure and content: its type, keywords, description, URL, behaviour switches, and media settings. If the wormhole carries Hotglue content, the template copies that content too, so a wormhole created from the template opens onto its own private copy of the same freeform page. The original wormhole is untouched; the template is a separate, standalone thing from the moment it is made. Editing or deleting the wormhole later does not change the template, and vice versa.
+
+The new template takes the wormhole's name. You can rename it later from the Templates tab.
+
+### Basing a new wormhole on a template
+
+Next to **New Wormhole** in the editor home is a small dropdown. Its default is **No template**, which gives you the ordinary blank form. Pick a template from the dropdown instead, and the next wormhole you create opens with that template's fields already filled in:
+
+![The editor home toolbar: the New Wormhole button beside a dropdown reading No template, with a list of saved templates](assets/images/editor-manual/16-template-selector.png)
+
+The modal that opens is the ordinary New Wormhole modal, pre-populated. Everything is still editable: change the name (you will almost always want to, since the template's name is only a placeholder), adjust the keywords, rewrite the description. Nothing is locked. The template only decides where the form starts, not where it ends. If the template included Hotglue content, the new wormhole gets its own private copy of that content, which you then edit independently.
+
+Choosing a template is a per-creation choice. The dropdown does not stay "armed"; after you create one wormhole from a template, it returns to **No template** so your next wormhole is blank unless you pick a template again.
+
+### Managing your templates
+
+The editor home has three tabs across the top: **Wormholes**, **Templates**, and **Hotglue content**. The Templates tab lists every template you own:
+
+![The Templates tab: a table of templates with Name and Hotglue columns, a search box, and per-row Rename and Delete actions](assets/images/editor-manual/17-templates-tab.png)
+
+The list has two columns: the template **Name**, and a **Hotglue** column that marks the templates that carry Hotglue content. A search box filters the list by name. Click a column header to sort.
+
+Each template's actions are:
+
+- **Rename** changes the template's name. This is purely a label for your own use; it does not touch any wormhole already created from the template.
+- **Delete** removes the template. Wormholes you already created from it are not affected; they are ordinary wormholes now, with no living link back to the template. Deleting a template cannot be undone.
+
+In this first version, renaming and deleting are the only edits. To change what a template contains, create a fresh template from a wormhole that has the shape you want, and delete the old one.
 
 ## Things worth knowing
 

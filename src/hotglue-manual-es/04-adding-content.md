@@ -28,6 +28,13 @@ Las herramientas de un cuadro de texto te permiten darle forma en detalle:
 - **Altura de línea**, **espaciado entre letras** y **espaciado entre palabras**.
 - **Alineación del texto**: izquierda, centro, derecha, y luego justificado.
 - **Relleno** dentro de la caja.
+- **Desplazamiento**: mantén la caja al tamaño que fijaste y muestra una barra de desplazamiento cuando las palabras se pasen de ella.
+
+### Texto desplazable
+
+Normalmente un cuadro de texto crece para acomodar sus palabras: si escribes más de lo que cabe, la caja se derrama más allá del tamaño que dibujaste. La herramienta de **desplazamiento** (el icono de las flechas arriba y abajo) cambia eso. Actívala y la caja conserva exactamente el tamaño que le diste; si el texto es más largo que la caja, aparece una barra de desplazamiento vertical y quien lee se desplaza por él en el mismo sitio. El texto sigue ajustándose al ancho de la caja, así que solo se añade una barra de desplazamiento vertical, nunca una horizontal.
+
+Úsala cuando el tamaño de una caja importa para tu diseño (un panel fijo, una columna que debe alinearse con su vecina) pero el texto de dentro puede ser largo. La herramienta es por caja: un cuadro de texto puede desplazarse mientras la caja de al lado crece libremente. Haz clic en el icono de nuevo para desactivar el desplazamiento y devolver la caja a su comportamiento normal de derrame. El ajuste se guarda con la página, así que la barra de desplazamiento está ahí para quien visita, no solo mientras editas.
 
 Los cuadros de texto también entienden algunas macros que se rellenan solas automáticamente, como `$BASEURL$` y `$PAGE$`. Escríbelas en un cuadro de texto y se reemplazan cuando se muestra la página.
 

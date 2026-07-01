@@ -14,7 +14,7 @@ A visão mostra uma tabela das páginas Hotglue que você pode alcançar, com um
 
 ![A lista de Conteúdo hotglue com três páginas: uma atribuída a um buraco de minhoca, uma sem atribuição e uma segunda página atribuída, cada uma com uma data de Atualizado e um menu de ações](assets/images/hotglue-manual-pt/02-hotglue-content-list.png)
 
-Clique no título de uma página para abri-la na sobreposição do editor.
+Clique no título de uma página para abri-la na sobreposição do editor. Clique no cabeçalho da coluna **Título**, **Buraco de minhoca atribuído** ou **Atualizado** para ordenar por aquela coluna; clique de novo para inverter a ordem. Uma pequena seta marca a coluna pela qual você ordenou.
 
 ## Criando e nomeando uma página
 
@@ -43,6 +43,7 @@ A ação **Duplicar** no menu de uma linha faz uma cópia de uma página (o seu 
 O menu de ações de uma linha dá três formas de olhar uma página:
 
 - **Ver no navegador** abre a página Hotglue pura numa nova aba, exatamente como quem visita a veria, e copia o seu endereço para a área de transferência. Isso funciona para qualquer página, atribuída ou não.
+- **Copiar URL direta** copia esse mesmo endereço para a área de transferência sem abrir uma aba. Use quando você só quer o link para colar em algum lugar.
 - **Ver no buraco de minhoca** abre uma prévia da página dentro do seu buraco de minhoca, na mesma janela. Disponível apenas para páginas atribuídas.
 - **Ver na galáxia** abre o visualizador tridimensional ao vivo da galáxia focado no buraco de minhoca, numa nova janela. Disponível apenas para páginas atribuídas.
 
@@ -54,6 +55,7 @@ Enquanto uma página está aberta no editor, o botão **Revisões** abre o seu h
 
 - A caixa **Buscar** filtra a lista enquanto você digita, correspondendo ao título da página, ao nome do buraco de minhoca e ao nome da galáxia.
 - O seletor de galáxia no cabeçalho do editor também serve de filtro: escolha uma galáxia para mostrar apenas as páginas Hotglue cujos buracos de minhoca ficam lá, ou deixe em todas as galáxias para ver tudo.
+- **Páginas sem atribuição aparecem em qualquer filtro de galáxia.** Uma página não anexada a nenhum buraco de minhoca não tem galáxia própria, então permanece visível para qualquer galáxia que você filtre. Uma página que você acabou de fazer não vai "sumir" porque você trocou o seletor de galáxia; ela está simplesmente sem atribuição até você anexá-la.
 
 ## Trabalhando em lote
 

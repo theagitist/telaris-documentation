@@ -48,6 +48,9 @@ Completa tres campos, en orden. Omite el resto por ahora.
 
 Deja **Tipo de agujero de gusano** en **Objeto**; ese es el valor por defecto para un agujero de gusano que carga contenido.
 
+> [!tip] Plantillas
+> Una vez que hayas hecho un agujero de gusano que te gusta, puedes guardar su forma como plantilla y empezar futuros agujeros de gusano a partir de ella. El desplegable junto a **Nuevo agujero de gusano** elige una plantilla (o **Sin plantilla** para un formulario en blanco). El Manual del editor cubre las plantillas en detalle.
+
 ## Paso 4: Añade una imagen (opcional)
 
 Dentro del mismo modal, baja hasta **Visual principal**. La pestaña **Imagen** está activa por defecto.

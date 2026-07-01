@@ -22,7 +22,7 @@ The everyday situations an editor runs into, what to try, and when to ask your o
 
 1. Confirm the **Current Galaxy** dropdown is on the right galaxy (or set to *All my galaxies*). The wormhole may be in a different galaxy than you expect, especially if you used the Galaxy dropdown inside the wormhole modal.
 2. Use the search box on the editor home. Search for the wormhole's name; if it exists in any galaxy you can edit, search finds it.
-3. Check the **Touched today** filter; if you accidentally clicked it, only today's edits show.
+3. Confirm you are on the **Wormholes** tab, not the Templates or Hotglue content tab; the wormhole list only shows under the first tab.
 
 **When to ask your operator**: if search across All my galaxies returns nothing and you are certain you saved the wormhole. The wormhole may have been deleted (by you, or by another editor); your operator may be able to restore from a snapshot.
 

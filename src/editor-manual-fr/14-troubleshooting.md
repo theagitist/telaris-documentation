@@ -22,7 +22,7 @@ Les situations quotidiennes qu'une personne qui édite rencontre, ce qu'il faut 
 
 1. Confirme que le menu déroulant **Galaxie actuelle** est sur la bonne galaxie (ou réglé sur *Toutes mes galaxies*). Le trou de ver peut être dans une galaxie différente de ce que tu attends, surtout si tu as utilisé le menu déroulant Galaxie à l'intérieur de la fenêtre de trou de ver.
 2. Utilise le champ de recherche sur la page d'édition. Cherche le nom du trou de ver ; s'il existe dans n'importe quelle galaxie que tu peux éditer, la recherche le trouve.
-3. Vérifie le filtre **Modifiés aujourd'hui** ; si tu l'as cliqué par accident, seules les éditions du jour s'affichent.
+3. Confirme que tu es sur l'onglet **Trous de ver**, et non sur l'onglet Modèles ou Contenu hotglue ; la liste de trous de ver ne s'affiche que sous le premier onglet.
 
 **Quand demander à qui exploite** : si la recherche sur Toutes mes galaxies ne renvoie rien et que tu es certaine d'avoir enregistré le trou de ver. Le trou de ver a peut-être été supprimé (par toi, ou par un autre compte d'édition) ; qui exploite peut peut-être restaurer depuis un instantané.
 

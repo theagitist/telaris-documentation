@@ -28,6 +28,13 @@ Les outils d'une boîte de texte te permettent de la façonner en détail :
 - **Hauteur de ligne**, **espacement des lettres** et **espacement des mots**.
 - **Alignement du texte** : à gauche, centré, à droite, puis justifié.
 - **Marge intérieure** dans la boîte.
+- **Défilement** : garder la boîte à la taille que tu as fixée et afficher une barre de défilement quand les mots la dépassent.
+
+### Texte défilant
+
+Normalement, une boîte de texte grandit pour contenir ses mots : tape plus qu'elle ne peut afficher et la boîte déborde au-delà de la taille que tu as dessinée. L'outil de **défilement** (l'icône aux flèches haut-et-bas) change cela. Active-le et la boîte garde exactement la taille que tu lui as donnée ; si le texte est plus long que la boîte, une barre de défilement verticale apparaît et qui lit fait défiler sur place. Le texte s'ajuste toujours à la largeur de la boîte, donc seule une barre de défilement verticale est ajoutée, jamais une horizontale.
+
+Utilise-le quand la taille d'une boîte compte pour ta mise en page (un panneau fixe, une colonne qui doit s'aligner avec sa voisine) mais que le texte à l'intérieur peut être long. L'outil est par boîte : une boîte de texte peut défiler pendant que la boîte à côté grandit librement. Clique de nouveau sur l'icône pour désactiver le défilement et rendre à la boîte son comportement de débordement normal. Le réglage est enregistré avec la page, donc la barre de défilement est là pour qui visite, pas seulement pendant que tu édites.
 
 Les boîtes de texte comprennent aussi quelques macros qui se remplissent automatiquement, comme `$BASEURL$` et `$PAGE$`. Saisis-les dans une boîte de texte et elles sont remplacées quand la page est affichée.
 

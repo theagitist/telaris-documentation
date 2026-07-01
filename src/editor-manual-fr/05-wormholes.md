@@ -91,12 +91,60 @@ L'enregistrement applique le changement immédiatement. Qui visite la galaxie ve
 
 ## Dupliquer, voir, supprimer
 
-Le menu d'actions sur chaque ligne de trou de ver offre quatre opérations :
+Le menu d'actions sur chaque ligne de trou de ver offre ces opérations :
 
 - **Voir** ouvre un aperçu en lecture seule de la fiche d'information du trou de ver comme qui visite la verra. Utilise-le chaque fois que tu veux vérifier un changement avant de considérer le travail comme terminé.
 - **Modifier** ouvre la fenêtre ci-dessus.
 - **Dupliquer** crée une copie du trou de ver, avec le même contenu, dans la même galaxie, nommée « Nom d'origine (Copie) ». Le nouveau trou de ver reçoit une nouvelle position dans la scène 3D ; tout le reste est repris. Utile quand tu veux un quasi-doublon comme point de départ.
+- **Créer un modèle** enregistre la forme du trou de ver comme un modèle réutilisable à partir duquel tu pourras estamper de nouveaux trous de ver plus tard. La section Modèles ci-dessous le couvre entièrement.
 - **Supprimer** retire le trou de ver. Une fenêtre de confirmation apparaît d'abord ; les suppressions sont permanentes (qui exploite l'instance peut parfois restaurer depuis un instantané, mais la réponse devrait être : ne supprime que si tu en es sûre).
+
+Dupliquer et Créer un modèle répondent à deux besoins différents : Dupliquer te donne un trou de ver de plus tout de suite, dans cette galaxie ; Créer un modèle te donne un moule que tu peux réutiliser à travers les galaxies et à travers les sessions.
+
+## Trier la liste de trous de ver
+
+Clique sur n'importe quel en-tête de colonne dans la liste de trous de ver pour trier selon cette colonne ; clique de nouveau pour inverser l'ordre. Trie par nom pour trouver un trou de ver par ordre alphabétique, ou par la colonne de dernière modification pour remonter ton travail le plus récent en haut. Le tri est une simple commodité d'affichage ; il ne change rien aux trous de ver eux-mêmes ni à la façon dont ils apparaissent à qui visite.
+
+## Modèles
+
+Un modèle est un point de départ réutilisable pour de nouveaux trous de ver. Si tu te retrouves à créer trou de ver après trou de ver avec la même forme (le même type, la même poignée de mots-clés, le même thème de description, le même genre de média intégré), tu peux saisir cette forme une fois et estamper de nouveaux trous de ver à partir d'elle, au lieu de remplir les mêmes champs à la main à chaque fois.
+
+Les modèles sont **privés à toi**. Les modèles que tu crées sont les tiens seulement ; un autre compte d'édition sur la même instance ne les voit pas, et tu ne vois pas les siens. (L'administration peut voir chaque modèle, de la même façon qu'elle peut voir chaque galaxie.)
+
+### Créer un modèle à partir d'un trou de ver
+
+Tu ne construis pas un modèle à partir d'un formulaire vide. Tu le construis à partir d'un trou de ver que tu aimes déjà. Ouvre le menu d'actions de la ligne du trou de ver et choisis **Créer un modèle** :
+
+![Le menu d'actions d'une ligne de trou de ver ouvert, montrant Voir, Modifier, Dupliquer, Créer un modèle et Supprimer](assets/images/editor-manual-fr/15-create-template-action.png)
+
+Telaris saisit une copie de la structure et du contenu de ce trou de ver : son type, ses mots-clés, sa description, son URL, ses bascules de comportement et ses réglages de médias. Si le trou de ver porte du contenu Hotglue, le modèle copie aussi ce contenu, de sorte qu'un trou de ver créé à partir du modèle s'ouvre sur sa propre copie privée de la même page en forme libre. Le trou de ver d'origine n'est pas touché ; le modèle est une chose séparée et autonome dès l'instant où il est fait. Modifier ou supprimer le trou de ver plus tard ne change pas le modèle, et réciproquement.
+
+Le nouveau modèle prend le nom du trou de ver. Tu peux le renommer plus tard depuis l'onglet Modèles.
+
+### Baser un nouveau trou de ver sur un modèle
+
+À côté de **Nouveau trou de ver** sur la page d'édition se trouve un petit menu déroulant. Sa valeur par défaut est **Aucun modèle**, qui te donne le formulaire vide ordinaire. Choisis plutôt un modèle dans le menu déroulant, et le prochain trou de ver que tu crées s'ouvre avec les champs de ce modèle déjà remplis :
+
+![La barre d'outils de la page d'édition : le bouton Nouveau trou de ver à côté d'un menu déroulant affichant Aucun modèle, avec une liste de modèles enregistrés](assets/images/editor-manual-fr/16-template-selector.png)
+
+La fenêtre qui s'ouvre est la fenêtre Nouveau trou de ver ordinaire, pré-remplie. Tout reste modifiable : change le nom (tu voudras presque toujours le faire, puisque le nom du modèle n'est qu'un espace réservé), ajuste les mots-clés, réécris la description. Rien n'est verrouillé. Le modèle décide seulement où le formulaire commence, pas où il finit. Si le modèle incluait du contenu Hotglue, le nouveau trou de ver reçoit sa propre copie privée de ce contenu, que tu modifies ensuite indépendamment.
+
+Choisir un modèle est un choix par création. Le menu déroulant ne reste pas « armé » ; après que tu as créé un trou de ver à partir d'un modèle, il revient à **Aucun modèle** pour que ton prochain trou de ver soit vide à moins que tu ne choisisses de nouveau un modèle.
+
+### Gérer tes modèles
+
+La page d'édition a trois onglets en haut : **Trous de ver**, **Modèles** et **Contenu hotglue**. L'onglet Modèles liste chaque modèle que tu possèdes :
+
+![L'onglet Modèles : un tableau de modèles avec les colonnes Nom et Hotglue, une boîte de recherche, et des actions Renommer et Supprimer par ligne](assets/images/editor-manual-fr/17-templates-tab.png)
+
+La liste a deux colonnes : le **Nom** du modèle, et une colonne **Hotglue** qui marque les modèles porteurs de contenu Hotglue. Une boîte de recherche filtre la liste par nom. Clique sur un en-tête de colonne pour trier.
+
+Les actions de chaque modèle sont :
+
+- **Renommer** change le nom du modèle. C'est purement une étiquette pour ton propre usage ; cela ne touche aucun trou de ver déjà créé à partir du modèle.
+- **Supprimer** retire le modèle. Les trous de ver que tu as déjà créés à partir de lui ne sont pas affectés ; ce sont désormais des trous de ver ordinaires, sans lien vivant vers le modèle. Supprimer un modèle est irréversible.
+
+Dans cette première version, renommer et supprimer sont les seules modifications. Pour changer ce qu'un modèle contient, crée un nouveau modèle à partir d'un trou de ver qui a la forme voulue, et supprime l'ancien.
 
 ## Choses qu'il vaut la peine de savoir
 

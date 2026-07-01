@@ -1,0 +1,8 @@
+title: Admin Manual
+subtitle: "For the person running a Telaris instance: users, access, settings, federation, and backups."
+version: v0.1
+doc_class: manual
+locale: en
+page_size: A4
+cover_tagline: The console behind the archive.
+app_version: Covers Telaris v6.12.28

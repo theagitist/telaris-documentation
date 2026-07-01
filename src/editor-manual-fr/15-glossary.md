@@ -2,8 +2,6 @@
 
 Chaque concept nommé dans le manuel d'édition, en un seul endroit. Style dictionnaire ; chaque entrée te dit ce que signifie le terme et quel chapitre le parcourt.
 
-**Action en masse par mot-clé**. Une fenêtre (chapitre 7) qui agit sur chaque trou de ver de la galaxie courante porteur d'un mot-clé choisi : les supprimer en lot, ou les déplacer en lot vers une autre galaxie.
-
 **Amas**. Un regroupement de galaxies géré par l'administration qui se comporte comme une galaxie à part entière. L'édition ne rédige pas d'amas ; elle les voit dans le sélecteur si elle y a accès. Le chapitre 12 couvre le comportement d'union en général.
 
 **Aperçu de la visite**. Un bouton à côté de la configuration de visite automatique (chapitre 11) qui ouvre une vue de visite dans un nouvel onglet avec la visite en cours, pour que tu puisses vérifier la configuration avant d'enregistrer.
@@ -61,6 +59,8 @@ Chaque concept nommé dans le manuel d'édition, en un seul endroit. Style dicti
 **Médias**. Le nom collectif pour image, vidéo, audio, PDF et code à intégrer attachés à un trou de ver. Chapitre 6.
 
 **Mettre en avant**. Un drapeau par trou de ver (chapitre 5) qui rend le trou de ver plus grand et plus saillant dans la scène 3D. Souvent jumelé à la visite automatique pour l'emphase narrative.
+
+**Modèle**. Un point de départ privé et réutilisable pour de nouveaux trous de ver, saisi à partir d'un trou de ver existant (son type, ses mots-clés, sa description, ses médias, et tout contenu Hotglue). Géré dans l'onglet Modèles ; appliqué via le menu déroulant à côté de Nouveau trou de ver. Chapitre 5.
 
 **Mot-clé**. Une courte étiquette attachée aux trous de ver (chapitre 7). Deux trous de ver qui partagent un mot-clé sont connectés. Les mots-clés sont insensibles à la casse et globaux par texte à travers l'instance.
 

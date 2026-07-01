@@ -86,7 +86,9 @@ Essa é a principal forma pela qual visitantes viajam lateralmente por uma rede 
 
 ### Vista 2D
 
-Quando ligado, um pequeno alternador **3D / 2D** aparece no topo da tela da visitante. Mudar para 2D colapsa a cena em uma grade plana de chips de buraco de minhoca: cada chip é o ícone do buraco de minhoca mais o nome, dispostos em linhas. A vista 2D carrega mais rápido e é mais fácil de escanear; algumas visitantes preferem para encontrar um buraco de minhoca específico depressa.
+Quando ligado, um pequeno alternador **3D / 2D** aparece no topo da tela da visitante. Mudar para 2D colapsa a cena em um mapa plano de chips de buraco de minhoca: cada chip é o ícone do buraco de minhoca mais o nome. A vista 2D carrega mais rápido e é mais fácil de escanear; algumas visitantes preferem para encontrar um buraco de minhoca específico depressa.
+
+O mapa 2D pode ser **ampliado e deslocado** (role ou pince para ampliar, arraste para deslocar), e um controle **Fit** (Ajustar) traz todos os buracos de minhoca à vista de uma vez, para que nada fique empilhado fora da tela, por mais buracos de minhoca que a galáxia tenha. Quando há mais de uma galáxia em vista (uma união de galáxias, capítulo 12), a lista de galáxias ao lado do mapa esmaece as galáxias para as quais você não está apontando, e cada chip de buraco de minhoca leva o nome da sua galáxia como prefixo, para que você distinga buracos de minhoca de mesmo nome.
 
 A escolha da visitante entre 3D e 2D persiste no navegador (ela não precisa ficar escolhendo de novo).
 
@@ -100,5 +102,5 @@ Não há interruptor global para esconder rodapés de procedência; se o seu tra
 
 - **A visitante vê o que você publicou, não o seu rascunho.** Não há um modo "preview" separado da vista publicada; quando você salva um buraco de minhoca ou uma configuração de galáxia, o próximo carregamento da página da visitante reflete a mudança. Para pré-visualizar uma mudança sem afetar visitantes, você precisaria fazer a mudança em uma galáxia que ainda não é pública.
 - **A cena 3D roda no navegador da visitante.** Dispositivos mais antigos ou computadores de baixa potência podem ter dificuldade com galáxias muito densas. O alternador para a vista 2D é o remédio padrão.
-- **Áudio com reprodução automática pode ser bloqueado pelo navegador da visitante.** A maioria dos navegadores não permite que áudio comece sem a interação da visitante. Se você liga o Reproduzir automaticamente (capítulo 6) e uma visitante relata que não há som, esta é a causa mais provável; o primeiro clique da visitante na página costuma desbloquear o áudio.
+- **Áudio com reprodução automática pode ser bloqueado pelo navegador da visitante.** A maioria dos navegadores não permite que áudio comece sem a interação da visitante. Se você liga o Reproduzir automaticamente (capítulo 6) e uma visitante relata que não há som, esta é a causa mais provável; o primeiro clique da visitante na página costuma desbloquear o áudio. Uma galáxia com uma paisagem sonora mostra um pequeno controle de **som ligado/desligado** na cena; na primeira vez que uma visitante o liga, a paisagem sonora começa (vale a mesma regra do gesto do navegador).
 - **Os interruptores de Descoberta são independentes entre si.** Passeio automático e foco em inatividade podem estar ligados ao mesmo tempo (o spotlight entra se o percurso termina ou não começou). Escolha as combinações que casam com sua intenção editorial; os interruptores não se condicionam mutuamente.

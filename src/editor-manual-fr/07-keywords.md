@@ -2,7 +2,7 @@
 
 Les mots-clés sont de courtes étiquettes que tu attaches aux trous de ver. Ils sont la manière dont Telaris connecte le contenu sans dossiers. Un mot-clé est la différence entre une galaxie qui est une *liste* et une galaxie qui est une *toile* ; tout le reste, dans le quotidien de l'édition, se construit par-dessus.
 
-Ce chapitre couvre l'attribution de mots-clés depuis l'intérieur de la fenêtre de trou de ver, la palette d'étiquettes, et les opérations en lot pour travailler sur plusieurs trous de ver à la fois. La **toile** de mots-clés (la surface de dessin relationnelle pour les mots-clés) a son propre chapitre (8).
+Ce chapitre couvre l'attribution de mots-clés depuis l'intérieur de la fenêtre de trou de ver, la palette d'étiquettes, et comment travailler sur plusieurs trous de ver à la fois. La **toile** de mots-clés (la surface de dessin relationnelle pour les mots-clés) a son propre chapitre (8).
 
 ## Attribuer des mots-clés
 
@@ -42,24 +42,9 @@ C'est aussi pourquoi renommer un mot-clé change la couleur : la couleur est att
 
 Ouvre la fenêtre Modifier du trou de ver (chapitre 5). Le champ Mots-clés montre les étiquettes existantes. Ajoute des étiquettes comme ci-dessus ; retire avec le × ; enregistre. Les changements s'appliquent au prochain chargement de page de qui visite.
 
-## Opérations en lot : la fenêtre Action en masse par mot-clé
+## Agir sur plusieurs trous de ver à la fois
 
-Quand tu as besoin d'agir sur **chaque trou de ver porteur d'un mot-clé donné** à la fois, la fenêtre Action en masse par mot-clé est la surface. Ouvre-la depuis la page d'édition, dans la rangée de boutons à côté de **Nouveau trou de ver** :
-
-![Fenêtre d'action groupée par mot-clé : choisis un mot-clé, choisis Supprimer ou Déplacer, vois le compte, applique](assets/images/editor-manual-fr/09-bulk-by-keyword-modal.png)
-
-La fenêtre est limitée à la **galaxie courante** : elle ne peut agir que sur les trous de ver à l'intérieur de la galaxie que tu as sélectionnée. Étapes :
-
-1. **Choisis un mot-clé** dans le menu déroulant. Le menu déroulant liste chaque mot-clé de la galaxie, avec son nombre d'utilisations à côté. Telaris met à jour le compte de trous de ver en dessous à mesure que tu changes de sélection, pour que tu saches toujours ce que l'action touchera.
-2. **Choisis une action** :
-   - **Supprimer les trous de ver correspondants** retire chaque trou de ver portant le mot-clé choisi. Les suppressions sont permanentes (la même mise en garde qu'au chapitre 5 s'applique ; demande à qui exploite l'instance un instantané avant toute action irréversible).
-   - **Les déplacer vers une autre galaxie** apparaît avec un menu déroulant supplémentaire quand cette action est choisie. Les trous de ver sont transférés vers la galaxie choisie avec leurs mots-clés et leurs médias.
-3. **Appliquer** exécute l'opération. **Annuler** ferme sans changement.
-
-La fenêtre d'action groupée est un outil tranchant. Deux manières de la rendre moins tranchante :
-
-- Prends un instantané avant l'opération, si qui exploite l'instance t'a donné la possibilité d'en prendre, ou demande-lui d'en prendre un.
-- Lance une recherche rapide (le champ de recherche sur la page d'édition) du mot-clé avant d'ouvrir la fenêtre, pour voir exactement quels trous de ver seront affectés et confirmer qu'aucun n'est gardé par erreur.
+Pour trouver et agir sur chaque trou de ver porteur d'un mot-clé donné, tape le mot-clé dans le champ de recherche de la page d'édition. La liste se réduit aux trous de ver correspondants, et tu peux ouvrir le menu d'actions de chacun pour le modifier, le déplacer (en changeant sa galaxie dans la fenêtre Modifier), ou le supprimer. Chercher d'abord, puis agir trou de ver par trou de ver, te garde devant exactement ce que tu es sur le point de changer, plutôt que de déclencher une seule action balayante contre un décompte que tu ne peux pas voir.
 
 ## Alias (synonymes par galaxie)
 
@@ -78,5 +63,5 @@ C'est un filtre doux (il ne retire pas les trous de ver de la scène, il les att
 - **Un trou de ver sans mots-clés est permis mais silencieux.** Qui visite peut encore l'atteindre par la recherche par nom ou en cliquant en 3D ; la personne ne l'atteindra pas par la couche d'étiquettes de mots-clés. Utilise zéro mot-clé quand le rôle du trou de ver est purement solitaire.
 - **Les noms de mots-clés sont cherchés dans le champ de recherche de la page d'édition** aux côtés des noms et descriptions de trous de ver. Chercher un mot-clé est la manière la plus rapide d'auditer quels trous de ver le portent.
 - **Renommer un mot-clé le met à jour partout sur l'instance.** Renommer *médicinale* le renomme dans chaque galaxie qui utilise le mot. Il n'y a pas de renommage par galaxie.
-- **Supprimer un mot-clé le retire de chaque trou de ver qui le porte.** Les trous de ver survivent ; l'étiquette du mot-clé disparaît d'eux. Les suppressions passent par la toile de mots-clés (chapitre 8) ; elles ne sont pas dans la fenêtre Action en masse par mot-clé, qui supprime des trous de ver, pas des mots-clés.
+- **Supprimer un mot-clé le retire de chaque trou de ver qui le porte.** Les trous de ver survivent ; l'étiquette du mot-clé disparaît d'eux. Supprimer un mot-clé (via la toile de mots-clés, chapitre 8) retire le mot ; supprimer un trou de ver (via le menu d'actions de sa ligne, chapitre 5) retire le contenu. Ce sont des opérations différentes.
 - **Il n'y a pas de nombre maximum de mots-clés par trou de ver**, mais la lisibilité pratique suggère que trois à sept suffisent. Au-delà de dix, la bande d'étiquettes sur la fiche d'information commence à passer à la ligne de façon disgracieuse.

@@ -14,7 +14,7 @@ La vista muestra una tabla de las páginas de Hotglue a las que puedes llegar, c
 
 ![La lista de Contenido hotglue con tres páginas: una asignada a un agujero de gusano, una sin asignar y una segunda página asignada, cada una con una fecha de Actualizado y un menú de acciones](assets/images/hotglue-manual-es/02-hotglue-content-list.png)
 
-Haz clic en el título de una página para abrirla en la superposición del editor.
+Haz clic en el título de una página para abrirla en la superposición del editor. Haz clic en el encabezado de la columna **Título**, **Agujero de gusano asignado** o **Actualizado** para ordenar por esa columna; haz clic de nuevo para invertir el orden. Una pequeña flecha marca la columna por la que ordenaste.
 
 ## Crear y nombrar una página
 
@@ -43,6 +43,7 @@ La acción **Duplicar** en el menú de una fila hace una copia de una página (s
 El menú de acciones de una fila ofrece tres formas de mirar una página:
 
 - **Ver en el navegador** abre la página de Hotglue desnuda en una pestaña nueva, exactamente como la vería quien visita, y copia su dirección a tu portapapeles. Esto funciona para cualquier página, asignada o no.
+- **Copiar URL directa** copia esa misma dirección a tu portapapeles sin abrir una pestaña. Úsala cuando solo quieres el enlace para pegarlo en algún sitio.
 - **Ver en el agujero de gusano** abre una vista previa de la página dentro de su agujero de gusano, en la misma ventana. Disponible solo para páginas asignadas.
 - **Ver en la galaxia** abre el visor tridimensional de la galaxia en vivo enfocado en el agujero de gusano, en una ventana nueva. Disponible solo para páginas asignadas.
 
@@ -54,6 +55,7 @@ Mientras una página está abierta en el editor, el botón **Revisiones** abre s
 
 - El cuadro **Buscar** filtra la lista a medida que escribes, coincidiendo con el título de la página, el nombre del agujero de gusano y el nombre de la galaxia.
 - El selector de galaxia del encabezado del editor también sirve de filtro: elige una galaxia para mostrar solo las páginas de Hotglue cuyos agujeros de gusano viven allí, o déjalo en todas las galaxias para verlo todo.
+- **Las páginas sin asignar se muestran bajo cualquier filtro de galaxia.** Una página que no está adjunta a ningún agujero de gusano no tiene galaxia propia, así que se mantiene visible sea cual sea la galaxia a la que filtres. Una página que acabas de crear no va a "desaparecer" porque hayas cambiado el selector de galaxia; simplemente está sin asignar hasta que la adjuntes.
 
 ## Trabajar en bloque
 

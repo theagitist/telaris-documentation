@@ -22,7 +22,7 @@ As situações cotidianas em que uma editora se encontra, o que tentar, e quando
 
 1. Confirme que o menu suspenso **Galáxia atual** está na galáxia certa (ou em *Todas as minhas galáxias*). O buraco de minhoca pode estar em uma galáxia diferente da esperada, especialmente se você usou o menu **Galáxia destino** dentro do modal do buraco de minhoca.
 2. Use a caixa de busca da tela inicial da editora. Busque pelo nome do buraco de minhoca; se ele existe em qualquer galáxia que você pode editar, a busca encontra.
-3. Verifique o filtro **Modificados hoje**; se você clicou nele sem querer, só as edições de hoje aparecem.
+3. Confirme que você está na aba **Buracos de minhoca**, não na aba Modelos ou Conteúdo hotglue; a lista de buracos de minhoca só aparece na primeira aba.
 
 **Quando perguntar à sua operadora**: se a busca em **Todas as minhas galáxias** não retorna nada e você tem certeza de que salvou o buraco de minhoca. Ele pode ter sido apagado (por você, ou por outra editora); sua operadora talvez possa restaurar a partir de um snapshot.
 

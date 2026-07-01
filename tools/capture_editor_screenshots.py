@@ -188,11 +188,25 @@ SHOTS: list[Shot] = [
         description="New Wormhole modal with the PDF media tab active.",
     ),
     Shot(
-        name="09-bulk-by-keyword-modal",
+        name="15-create-template-action",
         route="/edit/?slug=manual-demo-coastal-plants",
-        prepare=lambda page: open_bulk_by_keyword_modal(page),
+        prepare=lambda page: open_first_row_actions_menu(page),
         full_page=False,
-        description="Bulk by keyword modal: keyword list with counts and bulk-action buttons.",
+        description="Wormhole row actions menu open: View, Edit, Duplicate, Create Template, Delete.",
+    ),
+    Shot(
+        name="16-template-selector",
+        route="/edit/?slug=manual-demo-coastal-plants",
+        prepare=lambda page: show_template_selector(page),
+        full_page=False,
+        description="Editor toolbar: New Wormhole button beside the template selector (No template default).",
+    ),
+    Shot(
+        name="17-templates-tab",
+        route="/edit/?slug=manual-demo-coastal-plants",
+        prepare=lambda page: open_templates_tab(page),
+        full_page=False,
+        description="Templates tab: table of templates with Name and Hotglue columns, search box, per-row Rename/Delete.",
     ),
     Shot(
         name="10-keyword-canvas",
@@ -284,13 +298,36 @@ def wait_for_canvas(page: Page) -> None:
     page.wait_for_timeout(2500)
 
 
-def open_bulk_by_keyword_modal(page: Page) -> None:
-    """Open the Bulk by keyword modal via its trigger button."""
-    page.wait_for_selector("#bulk-by-keyword-btn", timeout=15_000)
-    page.wait_for_timeout(800)  # let the wormhole list finish loading first
-    page.click("#bulk-by-keyword-btn")
-    page.wait_for_selector("#bulk_by_keyword_modal[open]", timeout=10_000)
-    page.wait_for_timeout(800)
+def open_first_row_actions_menu(page: Page) -> None:
+    """Open the actions dropdown on the first wormhole row so Create Template shows.
+
+    The row actions menu is a DaisyUI dropdown: a `label[tabindex=0]` (the ⋮
+    button) that reveals its `.dropdown-content` menu on focus. Clicking the
+    first row's label opens the menu with View / Edit / Duplicate / Create
+    Template / Delete.
+    """
+    page.wait_for_selector('#nodes-list .dropdown-end > label[tabindex="0"]', timeout=20_000)
+    page.wait_for_timeout(1200)  # let the async list settle before interacting
+    label = page.query_selector('#nodes-list .dropdown-end > label[tabindex="0"]')
+    label.click()
+    page.wait_for_timeout(700)  # let the dropdown-content render/animate open
+
+
+def show_template_selector(page: Page) -> None:
+    """Frame the editor toolbar with the template selector beside New Wormhole."""
+    page.wait_for_selector("#template-selector", timeout=20_000)
+    page.wait_for_timeout(1500)  # let renderTemplateSelector populate the options
+    page.evaluate("window.scrollTo(0, 0)")
+    page.wait_for_timeout(400)
+
+
+def open_templates_tab(page: Page) -> None:
+    """Switch to the Templates tab and wait for the seeded templates to render."""
+    page.wait_for_selector("#etab-templates", timeout=20_000)
+    page.wait_for_timeout(1000)
+    page.evaluate("switchEditorTab('templates')")
+    page.wait_for_selector("#tpl-list", timeout=10_000)
+    page.wait_for_timeout(1500)  # let the template rows paint
 
 
 def open_create_modal_on_tab(page: Page, tab: str) -> None:

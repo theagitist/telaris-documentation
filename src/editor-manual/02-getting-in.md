@@ -61,13 +61,15 @@ The page is laid out in two cards:
 **Bottom card: your wormholes.**
 
 - **Wormholes (N)** at the top left tells you how many wormholes are in the current galaxy view. *N* is a number; when you pick *All my galaxies*, it counts across every galaxy.
-- **New Wormhole** opens the form to create a new wormhole. Chapter 5 covers this in detail.
-- **Touched today** narrows the list to wormholes you have edited since midnight. Useful for picking up where you left off.
-- **Bulk by keyword** opens a modal for batch operations across many wormholes at once (delete every wormhole tagged with a keyword, move them all to another galaxy). Chapter 7 covers this surface.
+- **New Wormhole** opens the form to create a new wormhole. Chapter 5 covers this in detail. Next to it is a small template dropdown (default **No template**) that lets a new wormhole start from a saved template; chapter 5 covers templates.
 - **?** opens a small panel listing every keyboard shortcut the editor supports. Memorising even two or three will speed up your day; the most useful are `n` (new wormhole), `/` (focus the search box), and `g` (open galaxy settings).
 - **Search** filters the wormhole list as you type. It searches across wormhole names, descriptions, galaxy names, and keywords; one search box, all four columns.
 
-The wormhole list itself shows: name, type, galaxy, keywords, an accentuated flag, created date, updated date, and an actions menu. Subsequent chapters explain each column.
+Across the top of the card are three tabs: **Wormholes** (the list described here), **Templates** (your reusable wormhole starting points), and **Hotglue content** (freeform media pages). Chapter 5 covers Templates; the separate Hotglue Manual covers Hotglue content.
+
+The wormhole list itself shows: name, type, galaxy, keywords, an accentuated flag, created date, updated date, and an actions menu. Click any column header to sort by it. Subsequent chapters explain each column.
+
+On a phone or a narrow screen, the same list re-flows into stacked cards, one wormhole per card, with each field labelled; the actions menu and every button stay reachable. The editor surface is usable on a phone, though a wider screen is more comfortable for laying out keywords and media.
 
 ## Logging out
 

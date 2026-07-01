@@ -61,13 +61,15 @@ La página está organizada en dos tarjetas:
 **Tarjeta inferior: tus agujeros de gusano.**
 
 - **Agujeros de gusano (N)** arriba a la izquierda te dice cuántos agujeros de gusano hay en la vista de galaxia actual. *N* es un número; cuando eliges *Todas mis galaxias*, cuenta todas las galaxias.
-- **Nuevo agujero de gusano** abre el formulario para crear un nuevo agujero de gusano. El capítulo 5 lo cubre en detalle.
-- **Modificados hoy** acota la lista a los agujeros de gusano que has editado desde medianoche. Útil para retomar el trabajo donde lo dejaste.
-- **Acción en bloque por palabra clave** abre un cuadro modal para operaciones por lote sobre muchos agujeros de gusano a la vez (borrar todos los marcados con una palabra clave, moverlos todos a otra galaxia). El capítulo 7 cubre esta superficie.
+- **Nuevo agujero de gusano** abre el formulario para crear un nuevo agujero de gusano. El capítulo 5 lo cubre en detalle. Junto a él hay un pequeño desplegable de plantillas (por defecto **Sin plantilla**) que permite que un nuevo agujero de gusano parta de una plantilla guardada; el capítulo 5 cubre las plantillas.
 - **?** abre un pequeño panel que lista todos los atajos de teclado que el editor admite. Memorizar siquiera dos o tres acelera tu día; los más útiles son `n` (nuevo agujero de gusano), `/` (enfocar la búsqueda), y `g` (abrir los ajustes de galaxia).
 - **Buscar** filtra la lista de agujeros de gusano a medida que escribes. Busca en nombres de agujeros de gusano, descripciones, nombres de galaxias y palabras clave; un solo campo, las cuatro columnas.
 
-La lista de agujeros de gusano misma muestra: nombre, tipo, galaxia, palabras clave, una marca de acentuación, fecha de creación, fecha de actualización, y un menú de acciones. Los capítulos siguientes explican cada columna.
+A lo largo de la parte superior de la tarjeta hay tres pestañas: **Agujeros de gusano** (la lista descrita aquí), **Plantillas** (tus puntos de partida reutilizables para agujeros de gusano) y **Contenido hotglue** (páginas de medios de formato libre). El capítulo 5 cubre las Plantillas; el Manual de Hotglue aparte cubre el Contenido hotglue.
+
+La lista de agujeros de gusano misma muestra: nombre, tipo, galaxia, palabras clave, una marca de acentuación, fecha de creación, fecha de actualización, y un menú de acciones. Haz clic en el encabezado de cualquier columna para ordenar por ella. Los capítulos siguientes explican cada columna.
+
+En un teléfono o una pantalla estrecha, la misma lista se reorganiza en tarjetas apiladas, un agujero de gusano por tarjeta, con cada campo etiquetado; el menú de acciones y todos los botones siguen siendo accesibles. La superficie de edición es usable en un teléfono, aunque una pantalla más ancha resulta más cómoda para disponer palabras clave y medios.
 
 ## Cerrar sesión
 

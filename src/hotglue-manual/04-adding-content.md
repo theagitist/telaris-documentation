@@ -28,6 +28,13 @@ A text box's tools let you shape it in detail:
 - **Line height**, **letter spacing**, and **word spacing**.
 - **Text alignment**: left, centre, right, then justified.
 - **Padding** inside the box.
+- **Scrolling**: keep the box at the size you set and show a scrollbar when the words run past it.
+
+### Scrolling text
+
+Normally a text box grows to fit its words: type more than fits and the box spills past the size you drew. The **scrolling** tool (the up-and-down arrows icon) changes that. Turn it on and the box keeps exactly the size you gave it; if the text is longer than the box, a vertical scrollbar appears and the reader scrolls through it in place. The text still wraps to the box's width, so only a vertical scrollbar is ever added, never a horizontal one.
+
+Use it when a box's size matters to your layout (a fixed panel, a column that must line up with a neighbour) but the text inside it may be long. The tool is per box: one text box can scroll while the box beside it grows freely. Click the icon again to turn scrolling off and return the box to its normal spill behaviour. The setting is saved with the page, so the scrollbar is there for visitors, not only while you edit.
 
 Text boxes also understand a few macros that fill themselves in automatically, such as `$BASEURL$` and `$PAGE$`. Type them into a text box and they are replaced when the page is shown.
 

@@ -28,6 +28,13 @@ As ferramentas de uma caixa de texto permitem moldá-la em detalhe:
 - **Altura de linha**, **espaçamento entre letras** e **espaçamento entre palavras**.
 - **Alinhamento do texto**: à esquerda, centralizado, à direita, depois justificado.
 - **Espaçamento interno** dentro da caixa.
+- **Rolagem**: mantém a caixa no tamanho que você definiu e mostra uma barra de rolagem quando as palavras passam dele.
+
+### Texto com rolagem
+
+Normalmente uma caixa de texto cresce para caber suas palavras: digite mais do que cabe e a caixa transborda para além do tamanho que você desenhou. A ferramenta de **rolagem** (o ícone de setas para cima e para baixo) muda isso. Ligue-a e a caixa mantém exatamente o tamanho que você deu; se o texto for mais comprido que a caixa, aparece uma barra de rolagem vertical e a leitora percorre o texto ali mesmo. O texto continua quebrando na largura da caixa, então só uma barra de rolagem vertical é adicionada, nunca uma horizontal.
+
+Use quando o tamanho de uma caixa importa para o seu layout (um painel fixo, uma coluna que precisa se alinhar com a vizinha) mas o texto dentro dela pode ser longo. A ferramenta é por caixa: uma caixa de texto pode rolar enquanto a caixa ao lado cresce livremente. Clique no ícone de novo para desligar a rolagem e devolver a caixa ao seu comportamento normal de transbordar. A configuração é salva com a página, então a barra de rolagem fica lá para as visitantes, não só enquanto você edita.
 
 As caixas de texto também entendem algumas macros que se preenchem automaticamente, como `$BASEURL$` e `$PAGE$`. Digite-as numa caixa de texto e elas são substituídas quando a página é exibida.
 

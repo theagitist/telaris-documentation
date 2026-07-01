@@ -1,8 +1,8 @@
 title: Editor Manual
 subtitle: For people authoring galaxies, wormholes, and connections inside a Telaris instance.
-version: v0.2
+version: v0.3
 doc_class: manual
 locale: en
 page_size: A4
 cover_tagline: A field guide to a non-hierarchical archive.
-app_version: Covers Telaris v6.12.15
+app_version: Covers Telaris v6.12.28

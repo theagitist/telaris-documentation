@@ -14,7 +14,7 @@ The view shows a table of the Hotglue pages you can reach, with a count in the h
 
 ![The Hotglue content list with three pages: one assigned to a wormhole, one not assigned, and a second assigned page, each with an Updated date and an actions menu](assets/images/hotglue-manual/02-hotglue-content-list.png)
 
-Click a page's title to open it in the editor overlay.
+Click a page's title to open it in the editor overlay. Click the **Title**, **Assigned wormhole**, or **Updated** column header to sort by that column; click it again to reverse the order. A small arrow marks the column you sorted by.
 
 ## Creating and naming a page
 
@@ -43,6 +43,7 @@ The **Duplicate** action in a row's menu makes a copy of a page (its title gains
 A row's actions menu gives three ways to look at a page:
 
 - **View in browser** opens the bare Hotglue page in a new tab, exactly as a visitor would see it, and copies its address to your clipboard. This works for any page, assigned or not.
+- **Copy direct URL** copies that same address to your clipboard without opening a tab. Use it when you just want the link to paste somewhere.
 - **View in wormhole** opens a preview of the page inside its wormhole, in the same window. Available only for assigned pages.
 - **View in galaxy** opens the live three-dimensional galaxy viewer focused on the wormhole, in a new window. Available only for assigned pages.
 
@@ -54,6 +55,7 @@ While a page is open in the editor, the **Revisions** button opens its history, 
 
 - The **Search** box filters the list as you type, matching on page title, wormhole name, and galaxy name.
 - The editor's header galaxy selector doubles as a filter: pick a galaxy to show only the Hotglue pages whose wormholes live there, or leave it on all galaxies to see everything.
+- **Unassigned pages show under every galaxy filter.** A page not attached to any wormhole has no galaxy of its own, so it stays visible whichever galaxy you filter to. A page you just made will not "disappear" because you switched the galaxy selector; it is simply unassigned until you attach it.
 
 ## Working in bulk
 

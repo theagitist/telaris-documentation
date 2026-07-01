@@ -23,7 +23,7 @@ Las situaciones cotidianas con las que se encuentra una editora, qué intentar, 
 
 1. Confirma que el desplegable **Galaxia actual** está en la galaxia correcta (o fijado en *Todas mis galaxias*). El agujero de gusano puede estar en una galaxia distinta a la que esperas, sobre todo si usaste el desplegable Galaxia dentro del modal del agujero de gusano.
 2. Usa el cuadro de búsqueda en el inicio del editor. Busca por el nombre del agujero de gusano; si existe en cualquier galaxia que puedas editar, la búsqueda lo encuentra.
-3. Comprueba el filtro **Modificados hoy**; si lo hiciste clic por accidente, solo se muestran las ediciones de hoy.
+3. Confirma que estás en la pestaña **Agujeros de gusano**, no en la pestaña Plantillas ni en la de Contenido hotglue; la lista de agujeros de gusano solo se muestra bajo la primera pestaña.
 
 **Cuándo preguntar a tu operadora**: si la búsqueda en Todas mis galaxias no devuelve nada y estás segura de que guardaste el agujero de gusano. El agujero de gusano puede haber sido eliminado (por ti, o por otra editora); tu operadora puede ser capaz de restaurarlo desde una instantánea.
 

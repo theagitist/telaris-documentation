@@ -48,6 +48,9 @@ Fill in three things, in order. Skip the rest for now.
 
 Leave **Wormhole type** on **Object**; that is the default for a content-bearing wormhole.
 
+> [!tip] Templates
+> Once you have made a wormhole you like, you can save its shape as a template and start future wormholes from it. The dropdown next to **New Wormhole** picks a template (or **No template** for a blank form). The Editor Manual covers templates in full.
+
 ## Step 4: Add an image (optional)
 
 Still inside the same modal, scroll down to **Primary visual**. The **Image** tab is the default.

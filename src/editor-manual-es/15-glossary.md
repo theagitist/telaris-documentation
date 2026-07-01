@@ -2,8 +2,6 @@
 
 Cada concepto nombrado en el manual de la editora, en un solo lugar. Estilo diccionario; cada entrada te dice qué significa el término y qué capítulo lo recorre.
 
-**Acción en bloque por palabra clave**. Un modal (capítulo 7) que opera sobre cada agujero de gusano de la galaxia actual que carga una palabra clave elegida: borrarlos por lote, o moverlos por lote a otra galaxia.
-
 **Acentuar agujero de gusano**. Una marca por agujero de gusano (capítulo 5) que hace que el agujero de gusano se represente más grande y prominente en la escena 3D. A menudo emparejada con el recorrido automático para énfasis narrativo.
 
 **Agujero de gusano**. La unidad más pequeña de contenido en Telaris. Un solo pasaje de texto, imagen, video, PDF, audio, o composición. Capítulo 5.
@@ -63,6 +61,8 @@ Cada concepto nombrado en el manual de la editora, en un solo lugar. Estilo dicc
 **PDF**. Un tipo de medio documento. Incrustado en la ficha de la visitante con un lector dentro de la página. Capítulo 6.
 
 **Píldora**. La píldora pastel que representa una palabra clave en la interfaz del editor. Cada palabra clave tiene un color determinista por texto; el color es el mismo en toda la instancia.
+
+**Plantilla**. Un punto de partida privado y reutilizable para nuevos agujeros de gusano, capturado a partir de un agujero de gusano existente (su tipo, palabras clave, descripción, medios, y cualquier contenido de Hotglue). Se gestiona en la pestaña Plantillas; se aplica mediante el desplegable junto a Nuevo agujero de gusano. Capítulo 5.
 
 **Portal**. Un agujero de gusano cuyo tipo es Portal: en vez de cargar contenido, apunta a otra galaxia. Las visitantes que lo abren lo atraviesan. Capítulo 9.
 

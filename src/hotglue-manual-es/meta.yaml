@@ -1,8 +1,8 @@
 title: Manual de Hotglue
 subtitle: Para quien edita componiendo páginas de medios de formato libre dentro de Telaris.
-version: v0.1
+version: v0.2
 doc_class: manual
 locale: es
 page_size: A4
 cover_tagline: Un lienzo donde los medios van donde tú los pones.
-app_version: Cubre Telaris v6.12.x
+app_version: Cubre Telaris v6.12.28

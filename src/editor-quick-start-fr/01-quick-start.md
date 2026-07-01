@@ -48,6 +48,9 @@ Remplis trois champs, dans l'ordre. Laisse le reste pour plus tard.
 
 Laisse **Type de trou de ver** sur **Objet** ; c'est la valeur par défaut pour un trou de ver qui porte du contenu.
 
+> [!tip] Modèles
+> Une fois que tu as fait un trou de ver qui te plaît, tu peux enregistrer sa forme comme modèle et démarrer tes prochains trous de ver à partir de lui. Le menu déroulant à côté de **Nouveau trou de ver** choisit un modèle (ou **Aucun modèle** pour un formulaire vide). Le Manuel d'édition couvre les modèles en détail.
+
 ## Étape 4 : Ajoute une image (facultatif)
 
 Toujours dans la même fenêtre, descends jusqu'à **Visuel principal**. L'onglet **Image** est actif par défaut.
