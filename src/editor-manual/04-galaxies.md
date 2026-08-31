@@ -36,7 +36,7 @@ The modal is the central place where you shape what a galaxy is and how it behav
 
 **Tagline** (optional, short). A one-line description shown next to or below the galaxy name in the visitor's UI. The tagline does not appear in the 3D scene; its main audience is the picker and the public listing.
 
-**Visual Theme**. A dropdown that picks the look of the 3D scene: *Cosmic* (stars, planets, rockets) is the default and the most common; other themes are *Simple*, *Abstract*, *Rectangles*, *Stripes*, and *Tech*. Pick the one whose vocabulary matches your content. The theme can be changed any time; the change applies to all visitors immediately, but does not alter what you authored, only how it is rendered.
+**Visual Theme**. A dropdown that picks the look of the 3D scene: *Cosmic* (stars, planets, rockets) is the default and the most common; other themes are *Simple*, *Abstract*, *Rectangles*, *Stripes*, and *Tech*; *Rhizome* is a light connection map; and *Cornrow* and *Adire* set the scene on a self-similar African fractal background, cited to Ron Eglash's *African Fractals* (1999). Pick the one whose vocabulary matches your content. The theme can be changed any time; the change applies to all visitors immediately, but does not alter what you authored, only how it is rendered.
 
 **Tags** (optional). Short labels that group this galaxy with other galaxies. Two galaxies that share a tag form a *galaxy union*: visitors who follow the tag see wormholes from both at once, with each wormhole keeping the visual style of its source galaxy. Use tags when several galaxies are siblings in some larger arrangement. The Tags input autocompletes from tags you have used in your other galaxies and from tags shared by galaxies prefixed with the same `[bracket]`.
 
