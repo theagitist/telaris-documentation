@@ -90,6 +90,8 @@ When on, a small **3D / 2D** toggle appears at the top of the visitor's screen. 
 
 The 2D map can be **zoomed and panned** (scroll or pinch to zoom, drag to pan), and a **Fit** control returns every wormhole to view at once, so nothing stays stacked off-screen no matter how many wormholes the galaxy holds. When more than one galaxy is in view (a galaxy union, chapter 12), the galaxy list beside the map dims the galaxies you are not pointing at, and each wormhole chip carries its galaxy's name as a prefix so you can tell same-named wormholes apart.
 
+If an editor has drawn a map for the galaxy in the **Map editor** (chapter 8), the 2D view shows that map instead: wormholes where the editor placed them, the paths between them, and any routes to follow.
+
 The visitor's choice between 3D and 2D persists in their browser (you do not have to keep choosing).
 
 ## Provenance footers and attribution

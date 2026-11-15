@@ -95,3 +95,36 @@ Si une galaxie ne donne jamais envie d'ouvrir la toile, c'est très bien. La toi
 - **Pas d'annulation à l'intérieur de la surface de toile.** Un mauvais geste se corrige par un autre geste ; une suppression accidentelle, en redessinant la ligne. Si quelque chose tourne mal, demande à qui exploite ton instance au sujet d'un instantané.
 - **Qui visite ne voit pas les étiquettes directement.** La toile est une surface d'édition ; ce que voit qui visite dans la scène 3D est influencé par l'arrangement de mots-clés (quels trous de ver partagent des mots-clés ; quelles étiquettes ont des relations), mais qui visite ne regarde pas la grille d'étiquettes elle-même.
 - **Les notes de ligne sont remontées à qui visite seulement au survol** dans le panneau des trous de ver liés (le chapitre 10 a le détail côté visite). La note fait partie de l'artefact public ; écris-la pour qui lira plus tard, pas pour toi-même.
+
+## Tracer des chemins entre trous de ver (l'Éditeur de carte)
+
+La toile trace des lignes entre *mots-clés*. L'**Éditeur de carte** trace des lignes entre *trous de ver* : des chemins que tu dessines à la main, comme on esquisse une promenade dans un lieu. Sers-t'en quand l'ordre du voyage compte, par exemple un labyrinthe dont les étudiantes et étudiants écrivent les salles, mais dont le chemin est fixé d'avance.
+
+### Ouvrir l'Éditeur de carte
+
+Choisis une galaxie depuis la page d'édition. À côté de **Toile** se trouve un bouton **Carte** ; clique dessus et l'Éditeur de carte s'ouvre dans un nouvel onglet. Comme la toile, il ne fonctionne que sur ordinateur.
+
+Tous les trous de ver de la galaxie apparaissent sur la carte. Ceux qui sont estompés n'ont pas encore de place : **fais glisser** un trou de ver pour le poser où tu veux. Les positions s'enregistrent toutes seules.
+
+### Tracer un chemin
+
+1. Survole un trou de ver ; de petits points d'ancrage apparaissent sur son bord.
+2. Clique sur un point d'ancrage du trou de ver où le chemin **commence**, puis sur un point du trou de ver où il **finit**. (Tu peux aussi glisser d'un point à l'autre.)
+3. Écris une note facultative et enregistre-la, ou passe. La note apparaît au survol du chemin.
+
+Appuie sur **Échap** pendant le tracé pour annuler. Maintiens **Espace** et fais glisser pour te déplacer ; utilise la molette pour zoomer.
+
+### Sens
+
+Un nouveau chemin est **à sens unique** : il va du premier trou de ver sur lequel tu as cliqué au second. Pour le changer, clique sur le chemin et choisis **Changer de sens**. Chaque clic passe à l'option suivante : un sens, le sens inverse ou double sens. Clique de nouveau sur le chemin et choisis **Modifier la note** ou **Supprimer** pour changer sa note ou l'enlever. Seule la personne qui a tracé le chemin, ou une personne administratrice, peut le modifier.
+
+### Parcours
+
+Un parcours est une suite nommée de trous de ver à suivre étape par étape. Dans le panneau **Parcours**, clique sur **Nouveau parcours**, puis sur les trous de ver dans l'ordre (clique de nouveau sur le dernier pour l'annuler), puis sur **Enregistrer le parcours** et donne-lui un nom. Les parcours se suivent dans la vue 2D.
+
+### Ce que voient les visiteurs et visiteuses
+
+- **En 3D** (sur la page propre de la galaxie), les chemins apparaissent comme des lignes fines et sinueuses entre les trous de ver. Les chemins à sens unique portent une lente ondulation de lumière qui coule vers la destination ; ceux à double sens restent immobiles et plus pâles. Survoler un trou de ver allume ses chemins.
+- **En 2D** (quand la vue 2D de la galaxie est activée, chapitre 10), la carte montre ta disposition, tes chemins avec le même sens qui coule, et les parcours.
+- **Sur la fiche d'un trou de ver**, une liste **Mène à** montre où vont ses chemins. Un clic sur un nom mène au trou de ver suivant, en 2D et en 3D.
+- Dès qu'une galaxie a au moins un chemin tracé, les lignes automatiques de mots-clés y sont masquées, pour ne montrer que le trajet que tu as dessiné. Supprime tous les chemins pour les faire revenir.

@@ -90,6 +90,8 @@ Cuando está encendido, aparece un pequeño conmutador **3D / 2D** en la parte s
 
 El mapa 2D puede **acercarse y desplazarse** (scroll o pellizco para hacer zoom, arrastre para desplazar), y un control **Fit** (Ajustar) devuelve todos los agujeros de gusano a la vista a la vez, para que nada quede apilado fuera de pantalla por muchos agujeros de gusano que tenga la galaxia. Cuando hay más de una galaxia en la vista (una unión de galaxias, capítulo 12), la lista de galaxias junto al mapa atenúa las galaxias a las que no estás apuntando, y cada píldora de agujero de gusano lleva el nombre de su galaxia como prefijo para que puedas distinguir agujeros de gusano con el mismo nombre.
 
+Si una persona editora dibujó un mapa de la galaxia en el **Editor de mapa** (capítulo 8), la vista 2D muestra ese mapa: los agujeros de gusano donde se colocaron, los caminos entre ellos y las rutas para recorrer.
+
 La elección de la visitante entre 3D y 2D persiste en su navegador (no tiene que volver a elegir).
 
 ## Pies de procedencia y atribución

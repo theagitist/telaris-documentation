@@ -95,3 +95,36 @@ Se uma galáxia nunca parece pedir que se abra a tela, isso é um desfecho bom. 
 - **Não há desfazer na superfície da tela.** Um movimento errado se corrige com outro movimento; uma deleção acidental, redesenhando a linha. Se algo der muito errado, pergunte à sua operadora sobre um snapshot.
 - **A visitante não vê os chips diretamente.** A tela é uma superfície da editora; o que as visitantes veem na cena 3D é influenciado pelo arranjo das palavras-chave (quais buracos de minhoca compartilham palavras; quais chips têm relações), mas elas não olham para a grade de chips em si.
 - **As anotações das linhas aparecem para a visitante apenas ao passar o mouse** no painel de buracos de minhoca relacionados (o capítulo 10 traz o detalhe do lado da visitante). A anotação é parte do artefato público; escreva-a para uma leitora futura, não para você mesma.
+
+## Traçar caminhos entre buracos de minhoca (o Editor de mapa)
+
+A tela traça linhas entre *palavras-chave*. O **Editor de mapa** traça linhas entre *buracos de minhoca*: caminhos que você desenha à mão, como quem esboça um passeio por um lugar. Use-o quando a ordem da viagem importa, por exemplo um labirinto em que estudantes escrevem as salas mas o caminho entre elas já está definido.
+
+### Abrir o Editor de mapa
+
+Selecione uma galáxia na página de edição. Ao lado de **Tela** há um botão **Mapa**; clique nele e o Editor de mapa abre numa nova aba. Como a tela, funciona apenas no computador.
+
+Todos os buracos de minhoca da galáxia aparecem no mapa. Os que aparecem esmaecidos ainda não foram posicionados: **arraste** um buraco de minhoca para colocá-lo onde quiser. As posições são salvas automaticamente.
+
+### Traçar um caminho
+
+1. Passe o cursor sobre um buraco de minhoca; aparecem pequenos pontos de ancoragem na borda.
+2. Clique num ponto de ancoragem do buraco de minhoca onde o caminho **começa** e depois num do buraco onde ele **termina**. (Você também pode arrastar de um ponto ao outro.)
+3. Escreva uma nota opcional e salve, ou pule. A nota aparece quando alguém passa o cursor sobre o caminho.
+
+Pressione **Esc** enquanto traça para cancelar. Mantenha **Espaço** e arraste para deslocar a vista; use a roda do mouse para ampliar.
+
+### Direção
+
+Um caminho novo é **de mão única**: vai do primeiro buraco de minhoca que você clicou até o segundo. Para mudar, clique no caminho e escolha **Mudar direção**. Cada clique passa para a próxima opção: um sentido, o sentido contrário ou mão dupla. Clique no caminho de novo e escolha **Editar nota** ou **Excluir** para mudar a nota ou removê-lo. Só quem traçou o caminho, ou uma pessoa administradora, pode alterá-lo.
+
+### Rotas
+
+Uma rota é uma sequência nomeada de buracos de minhoca que pode ser percorrida passo a passo. No painel **Rotas**, clique em **Nova rota**, clique nos buracos de minhoca em ordem (clique de novo no último para desfazer), depois em **Salvar rota** e dê um nome. As rotas são percorridas na vista 2D.
+
+### O que quem visita vê
+
+- **Em 3D** (na página própria da galáxia), os caminhos aparecem como linhas finas e sinuosas entre os buracos de minhoca. Os de mão única levam uma onda lenta de luz fluindo em direção ao destino; os de mão dupla ficam parados e mais tênues. Passar o cursor sobre um buraco de minhoca ilumina os caminhos dele.
+- **Em 2D** (quando a vista 2D da galáxia está ativada, capítulo 10), o mapa mostra a sua disposição, os seus caminhos com a mesma direção fluindo, e as rotas.
+- **Na ficha de um buraco de minhoca**, uma lista **Leva a** mostra para onde vão os caminhos. Clicar num nome leva ao próximo buraco de minhoca, em 2D e 3D.
+- Assim que uma galáxia tem pelo menos um caminho traçado, as linhas automáticas de palavras-chave ficam ocultas nela, para que só apareça o percurso que você desenhou. Exclua todos os caminhos para trazê-las de volta.

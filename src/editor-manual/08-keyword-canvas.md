@@ -95,3 +95,36 @@ If a galaxy never feels like it warrants opening the canvas, that is a fine outc
 - **No undo within the canvas surface.** A wrong move is corrected by another move; an accidental delete by re-drawing the line. If something goes badly wrong, ask your operator about a snapshot.
 - **The visitor does not see the chips directly.** The canvas is an editor's surface; what visitors see in the 3D scene is influenced by the keyword arrangement (which wormholes share keywords; which chips have relations), but visitors do not look at the chip grid itself.
 - **Line notes are surfaced to visitors only on hover** in the related-wormholes panel (chapter 10 has the visitor-side detail). The note is part of the public artefact; write it for a future reader, not for yourself.
+
+## Drawing paths between wormholes (the Map editor)
+
+The keyword canvas draws lines between *keywords*. The **Map editor** draws lines between *wormholes*: paths you lay down by hand, the way you would sketch a walk through a place. Use it when the order of the journey matters, for example a labyrinth where students write the rooms but the way through them is set in advance.
+
+### Opening the Map editor
+
+Select a galaxy from the editor home. Next to **Canvas** there is a **Map** button; select it and the Map editor opens in a new tab. Like the canvas, it is a desktop-only surface.
+
+Every wormhole of the galaxy appears on the map. Faded wormholes have not been placed yet: **drag** a wormhole to put it where you want it. Positions save automatically.
+
+### Drawing a path
+
+1. Hover a wormhole; small anchor dots appear on its edge.
+2. Click an anchor dot on the wormhole where the path **starts**, then click an anchor dot on the wormhole where it **ends**. (You can also drag from one anchor to the other.)
+3. Type an optional note and save, or skip it. The note appears when someone hovers the path.
+
+Press **Esc** while drawing to cancel. Hold **Space** and drag to pan; use the mouse wheel to zoom.
+
+### Direction
+
+A new path is **one-way**: it points from the first wormhole you clicked to the second. To change that, click the path and choose **Change direction**. Each click moves to the next option: one way, the other way, or two-way. Click the path again and choose **Edit note** or **Delete** to change its note or remove it. Only the person who drew a path, or an admin, can change it.
+
+### Routes
+
+A route is a named sequence of wormholes that visitors can step through. In the **Routes** panel, select **New route**, click the wormholes in order (click the last one again to undo it), then **Save route** and give it a name. Visitors can follow routes in the 2D view.
+
+### What visitors see
+
+- **In 3D** (on the galaxy's own page), drawn paths appear as thin, winding lines between wormholes. One-way paths carry a slow ripple of light flowing toward the destination; two-way paths stay still and dimmer. Hovering a wormhole lights up its paths.
+- **In 2D** (when the galaxy's 2D view is on, chapter 10), the map shows your placement, your paths with the same flowing direction, and the routes.
+- **On a wormhole's card**, a **Leads to** list shows where its paths go. Visitors click a name to move to the next wormhole, in 2D and 3D.
+- As soon as a galaxy has at least one drawn path, the automatic keyword lines are hidden in that galaxy, so visitors see only the journey you drew. Delete every path to bring the keyword lines back.

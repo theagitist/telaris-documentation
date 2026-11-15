@@ -90,6 +90,8 @@ Quand elle est activée, une petite bascule **3D / 2D** apparaît en haut de l'�
 
 La carte 2D peut être **zoomée et déplacée** (défile ou pince pour zoomer, fais glisser pour déplacer), et un contrôle **Fit** ramène tous les trous de ver dans la vue d'un seul coup, pour que rien ne reste empilé hors de l'écran, peu importe le nombre de trous de ver que contient la galaxie. Quand plus d'une galaxie est en vue (une union de galaxies, chapitre 12), la liste de galaxies à côté de la carte atténue les galaxies que tu ne pointes pas, et chaque étiquette de trou de ver porte le nom de sa galaxie en préfixe pour que tu puisses distinguer des trous de ver aux noms identiques.
 
+Si une personne a dessiné une carte de la galaxie dans l'**Éditeur de carte** (chapitre 8), la vue 2D montre cette carte : les trous de ver là où ils ont été placés, les chemins entre eux et les parcours à suivre.
+
 Le choix de qui visite entre 3D et 2D persiste dans son navigateur (tu n'as pas à choisir à nouveau).
 
 ## Pieds de provenance et attribution

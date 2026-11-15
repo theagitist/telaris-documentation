@@ -90,6 +90,8 @@ Quando ligado, um pequeno alternador **3D / 2D** aparece no topo da tela da visi
 
 O mapa 2D pode ser **ampliado e deslocado** (role ou pince para ampliar, arraste para deslocar), e um controle **Fit** (Ajustar) traz todos os buracos de minhoca à vista de uma vez, para que nada fique empilhado fora da tela, por mais buracos de minhoca que a galáxia tenha. Quando há mais de uma galáxia em vista (uma união de galáxias, capítulo 12), a lista de galáxias ao lado do mapa esmaece as galáxias para as quais você não está apontando, e cada chip de buraco de minhoca leva o nome da sua galáxia como prefixo, para que você distinga buracos de minhoca de mesmo nome.
 
+Se alguém da edição desenhou um mapa da galáxia no **Editor de mapa** (capítulo 8), a vista 2D mostra esse mapa: os buracos de minhoca onde foram posicionados, os caminhos entre eles e as rotas para percorrer.
+
 A escolha da visitante entre 3D e 2D persiste no navegador (ela não precisa ficar escolhendo de novo).
 
 ## Rodapés de procedência e atribuição
