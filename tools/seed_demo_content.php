@@ -227,6 +227,55 @@ $tidePools = [
         'description' => "Lives in borrowed snail shells and trades up as it grows. Tide pools are full of them on quiet days.",
         'keywords' => ['intertidal', 'animal'],
     ],
+    // The four below give the Map editor demo (chapter 8) enough wormholes to
+    // read as a walk from the splash zone down to the low tide line.
+    [
+        'name' => 'Gooseneck Barnacle',
+        'description' => "Clusters on wave-battered rock in the splash zone, feeding with feathery legs when the surf washes over.",
+        'keywords' => ['intertidal', 'animal'],
+    ],
+    [
+        'name' => 'Black Turban Snail',
+        'description' => "Grazes algae film off the upper rocks; its empty shells often become homes for hermit crabs.",
+        'keywords' => ['intertidal', 'animal'],
+    ],
+    [
+        'name' => 'Purple Shore Crab',
+        'description' => "Quick, shy crab of the middle shore, hiding under rocks by day and scavenging at night.",
+        'keywords' => ['intertidal', 'animal'],
+    ],
+    [
+        'name' => 'Sea Lettuce',
+        'description' => "Thin, bright green alga that carpets tide pools and feeds snails, crabs and fish.",
+        'keywords' => ['intertidal', 'alga'],
+    ],
+];
+
+// Map editor demo (chapter 8): placements, paths and one route on the tide
+// pools galaxy, laid out from the splash zone (left) to the low tide line
+// (right). Kept off the coastal plants galaxy so its keyword-line shots stay valid.
+$tidePoolMap = [
+    'positions' => [
+        'Gooseneck Barnacle' => [300, 700], 'Black Turban Snail' => [300, 1300],
+        'Purple Shore Crab' => [700, 1000],
+        'Hermit Crab' => [1050, 650], 'Sea Lettuce' => [1050, 1350],
+        'Ochre Sea Star' => [1400, 650], 'Tidepool Sculpin' => [1400, 1350],
+        'Giant Green Anemone' => [1750, 1000],
+    ],
+    // [from, to, directed, note]
+    'paths' => [
+        ['Gooseneck Barnacle', 'Purple Shore Crab', true, 'Down from the splash zone'],
+        ['Black Turban Snail', 'Purple Shore Crab', true, null],
+        ['Gooseneck Barnacle', 'Hermit Crab', true, null],
+        ['Purple Shore Crab', 'Hermit Crab', true, null],
+        ['Purple Shore Crab', 'Sea Lettuce', true, null],
+        ['Hermit Crab', 'Sea Lettuce', false, null],
+        ['Hermit Crab', 'Ochre Sea Star', true, null],
+        ['Sea Lettuce', 'Tidepool Sculpin', true, null],
+        ['Ochre Sea Star', 'Giant Green Anemone', true, null],
+        ['Tidepool Sculpin', 'Giant Green Anemone', true, null],
+    ],
+    'route' => ['Low tide walk', ['Gooseneck Barnacle', 'Purple Shore Crab', 'Hermit Crab', 'Ochre Sea Star', 'Giant Green Anemone']],
 ];
 
 // ---------------------------------------------------------------------------
@@ -321,6 +370,42 @@ echo "\nEditor account:\n";
 $editorId = ensure_user(DEMO_EDITOR_EMAIL, DEMO_EDITOR_FIRST, DEMO_EDITOR_LAST, USER_TYPE_EDITOR);
 db_set_user_constellations($editorId, [$coastalId, $tidePoolsId]);
 echo "  assigned to: coastal plants (id={$coastalId}) and tide pools (id={$tidePoolsId})\n";
+
+// Map editor demo on the tide pools galaxy. Authored by the capture editor so
+// the path window shows Change direction / Edit note / Delete. Idempotent:
+// placements are upserts; paths and the route are created only when missing.
+echo "\nMap (tide pools):\n";
+$pdo = getDB();
+$ids = [];
+$st = $pdo->prepare('SELECT id, name FROM nodes WHERE constellation_id = :cid');
+$st->execute([':cid' => $tidePoolsId]);
+foreach ($st->fetchAll() as $r) $ids[$r['name']] = (int)$r['id'];
+foreach ($tidePoolMap['positions'] as $name => [$x, $y]) {
+    db_record_node_position($ids[$name], (float)$x, (float)$y, $editorId);
+}
+echo "  placed " . count($tidePoolMap['positions']) . " wormholes\n";
+$anchors = function (array $p, array $q): array {
+    $dx = $q[0] - $p[0]; $dy = $q[1] - $p[1];
+    if (abs($dx) >= abs($dy)) return $dx >= 0 ? ['right', 'left'] : ['left', 'right'];
+    return $dy >= 0 ? ['bottom', 'top'] : ['top', 'bottom'];
+};
+$exists = $pdo->prepare('SELECT 1 FROM node_paths WHERE node_a_id = :a AND node_b_id = :b');
+foreach ($tidePoolMap['paths'] as [$from, $to, $directed, $note]) {
+    $a = $ids[$from]; $b = $ids[$to];
+    $exists->execute([':a' => min($a, $b), ':b' => max($a, $b)]);
+    if ($exists->fetch()) { echo "  reusing path: {$from} -> {$to}\n"; continue; }
+    [$aa, $ab] = $anchors($tidePoolMap['positions'][$from], $tidePoolMap['positions'][$to]);
+    db_create_node_path($a, $b, $editorId, $note, $aa, $ab, $directed);
+    echo "  created path: {$from} -> {$to}\n";
+}
+[$routeName, $stops] = $tidePoolMap['route'];
+$hasRoute = array_filter(db_get_galaxy_routes($tidePoolsId), fn($r) => $r['name'] === $routeName);
+if ($hasRoute) {
+    echo "  reusing route: {$routeName}\n";
+} else {
+    db_create_node_route($tidePoolsId, $routeName, array_map(fn($n) => $ids[$n], $stops), $editorId);
+    echo "  created route: {$routeName}\n";
+}
 
 echo "\nSeed complete.\n";
 echo "Capture credentials env vars (set in ~/.telaris-capture-credentials):\n";

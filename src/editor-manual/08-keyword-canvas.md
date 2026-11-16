@@ -106,10 +106,13 @@ Select a galaxy from the editor home. Next to **Canvas** there is a **Map** butt
 
 Every wormhole of the galaxy appears on the map. Faded wormholes have not been placed yet: **drag** a wormhole to put it where you want it. Positions save automatically.
 
+![The Map editor: wormholes placed from the splash zone to the low tide line, one-way and two-way paths between them, and the Routes panel](assets/images/editor-manual/18-map-editor.png)
+
 ### Drawing a path
 
 1. Hover a wormhole; small anchor dots appear on its edge.
 2. Click an anchor dot on the wormhole where the path **starts**, then click an anchor dot on the wormhole where it **ends**. (You can also drag from one anchor to the other.)
+
 The path is saved as soon as you click the second wormhole. To add a note, click the path and choose **Edit note**; the note appears when someone hovers the path.
 
 Press **Esc** while drawing to cancel. Hold **Space** and drag to pan; use the mouse wheel to zoom.
@@ -117,6 +120,8 @@ Press **Esc** while drawing to cancel. Hold **Space** and drag to pan; use the m
 ### Direction
 
 A new path is **one-way**: it points from the first wormhole you clicked to the second. To change that, click the path and choose **Change direction**. Each click moves to the next option: one way, the other way, or two-way. Click the path again and choose **Edit note** or **Delete** to change its note or remove it. Only the person who drew a path, or an admin, can change it.
+
+![A path's window: its direction, who drew it, its note, and the Change direction, Edit note and Delete buttons](assets/images/editor-manual/19-map-path-window.png)
 
 ### Routes
 
@@ -128,3 +133,5 @@ A route is a named sequence of wormholes that visitors can step through. In the 
 - **In 2D** (when the galaxy's 2D view is on, chapter 10), the map shows your placement, your paths with the same flowing direction, and the routes.
 - **On a wormhole's card**, a **Leads to** list shows where its paths go. Visitors click a name to move to the next wormhole, in 2D and 3D.
 - As soon as a galaxy has at least one drawn path, the automatic keyword lines are hidden in that galaxy, so visitors see only the journey you drew. Delete every path to bring the keyword lines back.
+
+![The same galaxy in 3D: wormholes keep their places from the map, and the drawn paths wind between them](assets/images/editor-manual/20-map-visitor-3d.png)

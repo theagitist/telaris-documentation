@@ -243,7 +243,46 @@ SHOTS: list[Shot] = [
         full_page=False,
         description="Edit Wormhole modal with the Hotglue media tab active: the help line and the centered Edit hotglue content button.",
     ),
+    # Map editor (chapter 8). The map lives on the tide pools galaxy (412); see
+    # the map block in tools/seed_demo_content.php.
+    Shot(
+        name="18-map-editor",
+        route="/edit/keyword-canvas.php?mode=map&galaxy_id=412",
+        prepare=lambda page: wait_for_canvas(page),
+        full_page=False,
+        description="Map editor: placed wormholes, one-way and two-way paths, the Routes panel.",
+    ),
+    Shot(
+        name="19-map-path-window",
+        route="/edit/keyword-canvas.php?mode=map&galaxy_id=412",
+        prepare=lambda page: open_map_path_window(page),
+        full_page=False,
+        description="A path's window: direction arrow, note, Change direction, Edit note, Delete.",
+    ),
+    Shot(
+        name="20-map-visitor-3d",
+        route="/manual-demo-tide-pools",
+        prepare=lambda page: wait_for_visitor_scene(page),
+        full_page=False,
+        description="Visitor 3D view of the tide pools galaxy, laid out as the drawn map, with flowing paths.",
+    ),
 ]
+
+
+def open_map_path_window(page: Page) -> None:
+    """Click the first drawn path that carries a note, opening its window."""
+    wait_for_canvas(page)
+    pt = page.evaluate("""(() => {
+        const hits = [...document.querySelectorAll('line[data-kc-line-hit]')];
+        const el = hits.find(h => (h.textContent || '').includes('splash')) || hits[0];
+        const m = el.getScreenCTM();
+        const x = (+el.getAttribute('x1') + +el.getAttribute('x2')) / 2;
+        const y = (+el.getAttribute('y1') + +el.getAttribute('y2')) / 2;
+        return {x: m.a * x + m.c * y + m.e, y: m.b * x + m.d * y + m.f};
+    })()""")
+    page.mouse.click(pt["x"], pt["y"])
+    page.wait_for_selector("#kc-line-modal[open]", timeout=10_000)
+    page.wait_for_timeout(600)
 
 
 def open_edit_modal_on_hotglue_tab(page: Page, wormhole_name: str) -> None:

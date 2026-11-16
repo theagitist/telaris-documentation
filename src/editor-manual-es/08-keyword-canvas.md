@@ -106,10 +106,13 @@ Selecciona una galaxia desde la página de edición. Junto a **Lienzo** hay un b
 
 Todos los agujeros de gusano de la galaxia aparecen en el mapa. Los que se ven atenuados aún no tienen lugar: **arrastra** un agujero de gusano para ponerlo donde quieras. Las posiciones se guardan solas.
 
+![El Editor de mapa: agujeros de gusano ubicados de la zona de salpicadura a la línea de marea baja, caminos de un solo sentido y de doble sentido entre ellos, y el panel Rutas](assets/images/editor-manual-es/18-map-editor.png)
+
 ### Trazar un camino
 
 1. Pasa el cursor sobre un agujero de gusano; aparecen pequeños puntos de anclaje en su borde.
 2. Pulsa un punto de anclaje del agujero de gusano donde el camino **empieza** y luego uno del agujero donde **termina**. (También puedes arrastrar de un punto al otro.)
+
 El camino se guarda en cuanto pulsas el segundo agujero de gusano. Para añadir una nota, pulsa el camino y elige **Editar nota**; la nota aparece cuando alguien pasa el cursor sobre el camino.
 
 Pulsa **Esc** mientras trazas para cancelar. Mantén **Espacio** y arrastra para desplazarte; usa la rueda del ratón para hacer zoom.
@@ -117,6 +120,8 @@ Pulsa **Esc** mientras trazas para cancelar. Mantén **Espacio** y arrastra para
 ### Dirección
 
 Un camino nuevo es **de un solo sentido**: va del primer agujero de gusano que pulsaste al segundo. Para cambiarlo, pulsa el camino y elige **Cambiar dirección**. Cada pulsación pasa a la siguiente opción: un sentido, el sentido contrario o doble sentido. Pulsa el camino otra vez y elige **Editar nota** o **Eliminar** para cambiar su nota o quitarlo. Solo quien trazó el camino, o una persona administradora, puede modificarlo.
+
+![La ventana de un camino: su dirección, quién lo trazó, su nota y los botones Cambiar dirección, Editar nota y Eliminar](assets/images/editor-manual-es/19-map-path-window.png)
 
 ### Rutas
 
@@ -128,3 +133,5 @@ Una ruta es una secuencia con nombre de agujeros de gusano que se puede recorrer
 - **En 2D** (cuando la vista 2D de la galaxia está activada, capítulo 10), el mapa muestra tu disposición, tus caminos con la misma dirección fluyendo, y las rutas.
 - **En la ficha de un agujero de gusano**, una lista **Lleva a** muestra adónde van sus caminos. Al pulsar un nombre se pasa al siguiente agujero de gusano, en 2D y 3D.
 - En cuanto una galaxia tiene al menos un camino trazado, las líneas automáticas de palabras clave se ocultan en esa galaxia, así solo se ve el recorrido que dibujaste. Elimina todos los caminos para que vuelvan.
+
+![La misma galaxia en 3D: los agujeros de gusano conservan su lugar del mapa y los caminos trazados serpentean entre ellos](assets/images/editor-manual-es/20-map-visitor-3d.png)

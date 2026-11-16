@@ -1,6 +1,6 @@
 # Démarrage rapide
 
-Voici la version courte. Cinq étapes, quatre pages, et tu auras publié ton premier trou de ver. Pour tout ce qui dépasse les bases (portails, toile de mots-clés, visites, vues multigalaxies, dépannage, le pourquoi et le pourquoi-pas des choix éditoriaux), le **Manuel d'édition** complet est disponible à :
+Voici la version courte. Cinq étapes, quatre pages, et tu auras publié ton premier trou de ver. Pour tout ce qui dépasse les bases (portails, toile de mots-clés, Éditeur de carte, visites, vues multigalaxies, dépannage, le pourquoi et le pourquoi-pas des choix éditoriaux), le **Manuel d'édition** complet est disponible à :
 
 <https://www.telaris.ca/docs/editor-manual-fr.pdf>
 
@@ -73,7 +73,7 @@ Pour le voir comme qui visite le verra, repère le bouton **Voir** à côté du 
 Tu tiens la boucle. À partir d'ici :
 
 - **Répète.** Fais un autre trou de ver. Puis un autre. Une galaxie d'un seul trou de ver est techniquement valide ; une galaxie de dix commence à ressembler à une archive.
-- **Explore.** Ce Démarrage rapide a couvert le chemin le plus court possible. La surface d'édition offre bien plus que ce que tu viens de voir. Fouine dans la fenêtre de trou de ver que tu connais déjà ; essaie les champs **Vidéo (MP4)**, **PDF** et audio et l'onglet **Hotglue** ; ouvre le bouton **Paramètres** à côté du sélecteur de galaxie et regarde les options de découverte ; ouvre le bouton **Toile** pour voir la toile de mots-clés ; essaie le bouton **Action en masse par mot-clé** sur la page d'édition. Rien dans l'édition n'est destructif à première vue ; ouvrir une fenêtre ne change rien tant que tu n'enregistres pas.
+- **Explore.** Ce Démarrage rapide a couvert le chemin le plus court possible. La surface d'édition offre bien plus que ce que tu viens de voir. Fouine dans la fenêtre de trou de ver que tu connais déjà ; essaie les champs **Vidéo (MP4)**, **PDF** et audio et l'onglet **Hotglue** ; ouvre le bouton **Paramètres** à côté du sélecteur de galaxie et regarde les options de découverte ; ouvre le bouton **Toile** pour voir la toile de mots-clés ; ouvre le bouton **Carte**, juste à côté, pour tracer des chemins entre trous de ver. Rien dans l'édition n'est destructif à première vue ; ouvrir une fenêtre ne change rien tant que tu n'enregistres pas.
 - **Lis le Manuel d'édition complet.** Un manuel complet est disponible à <https://www.telaris.ca/docs/editor-manual-fr.pdf>, en quinze chapitres qui parcourent chaque surface en détail : galaxies, chaque type de média, portails entre galaxies, toile de mots-clés, vues pour qui visite, visites, travail multigalaxies, choix éditoriaux, dépannage, et un glossaire. Parcours sa table des matières et plonge dans les chapitres dont tu as besoin ; rien dans ce Démarrage rapide n'est invalidé par ce que tu y trouveras.
 - **Utilise les mots-clés avec soin.** Deux ou trois mots-clés précis par trou de ver connectent plus utilement que dix génériques. Les étiquettes de mots-clés que tu attribues sont la manière dont qui visite découvre la trame que tu tisses.
 

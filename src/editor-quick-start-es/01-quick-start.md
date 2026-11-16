@@ -1,6 +1,6 @@
 # Inicio rápido
 
-Esta es la versión corta. Cinco pasos, cuatro páginas, y habrás publicado tu primer agujero de gusano. Para todo lo demás (portales, lienzo de palabras clave, recorridos, vistas multigalaxia, resolución de problemas, el por qué y el por qué no de las decisiones editoriales), el **Manual del editor** completo está disponible en:
+Esta es la versión corta. Cinco pasos, cuatro páginas, y habrás publicado tu primer agujero de gusano. Para todo lo demás (portales, lienzo de palabras clave, Editor de mapa, recorridos, vistas multigalaxia, resolución de problemas, el por qué y el por qué no de las decisiones editoriales), el **Manual del editor** completo está disponible en:
 
 <https://www.telaris.ca/docs/editor-manual-es.pdf>
 
@@ -73,7 +73,7 @@ Para verlo como lo verá una visitante, busca el botón **Ver** junto al selecto
 Ya tienes el bucle. Desde aquí:
 
 - **Repite.** Haz otro agujero de gusano. Y otro. Una galaxia de un agujero de gusano es técnicamente válida; una galaxia de diez ya empieza a sentirse como un archivo.
-- **Explora.** Este Inicio rápido cubrió el camino más corto posible. La superficie de edición tiene mucho más que lo que acabas de ver. Curiosea por el modal de agujero de gusano que ya conoces; prueba los campos **Video (MP4)**, **PDF** y audio y la pestaña **Hotglue**; abre el botón **Ajustes** junto al selector de galaxia y mira las opciones de descubrimiento; abre el botón **Lienzo** y conoce el lienzo de palabras clave; prueba el botón **Acción en bloque por palabra clave** en la página de edición. Nada en la edición es destructivo a primera vista; abrir un modal no cambia nada hasta que guardas.
+- **Explora.** Este Inicio rápido cubrió el camino más corto posible. La superficie de edición tiene mucho más que lo que acabas de ver. Curiosea por el modal de agujero de gusano que ya conoces; prueba los campos **Video (MP4)**, **PDF** y audio y la pestaña **Hotglue**; abre el botón **Ajustes** junto al selector de galaxia y mira las opciones de descubrimiento; abre el botón **Lienzo** y conoce el lienzo de palabras clave; abre el botón **Mapa**, a su lado, para trazar caminos entre agujeros de gusano. Nada en la edición es destructivo a primera vista; abrir un modal no cambia nada hasta que guardas.
 - **Lee el Manual del editor completo.** Hay un manual completo disponible en <https://www.telaris.ca/docs/editor-manual-es.pdf>, en quince capítulos que recorren cada superficie en detalle: galaxias, cada tipo de medio, portales entre galaxias, el lienzo de palabras clave, vistas de visitante, recorridos, trabajo multigalaxia, decisiones editoriales, resolución de problemas, y un glosario. Hojea su tabla de contenidos y métete en los capítulos que necesites; nada de este Inicio rápido queda invalidado por lo que encontrarás allí.
 - **Usa las palabras clave con cuidado.** Dos o tres palabras clave precisas por agujero de gusano conectan más útilmente que diez genéricas. Las fichas de palabras clave que asignas son cómo las visitantes descubren la red que estás tejiendo.
 
