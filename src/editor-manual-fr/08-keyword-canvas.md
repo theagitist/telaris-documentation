@@ -110,7 +110,7 @@ Tous les trous de ver de la galaxie apparaissent sur la carte. Ceux qui sont est
 
 1. Survole un trou de ver ; de petits points d'ancrage apparaissent sur son bord.
 2. Clique sur un point d'ancrage du trou de ver où le chemin **commence**, puis sur un point du trou de ver où il **finit**. (Tu peux aussi glisser d'un point à l'autre.)
-3. Écris une note facultative et enregistre-la, ou passe. La note apparaît au survol du chemin.
+Le chemin est enregistré dès que tu cliques sur le second trou de ver. Pour ajouter une note, clique sur le chemin et choisis **Modifier la note** ; la note apparaît au survol du chemin.
 
 Appuie sur **Échap** pendant le tracé pour annuler. Maintiens **Espace** et fais glisser pour te déplacer ; utilise la molette pour zoomer.
 
@@ -124,7 +124,7 @@ Un parcours est une suite nommée de trous de ver à suivre étape par étape. D
 
 ### Ce que voient les visiteurs et visiteuses
 
-- **En 3D** (sur la page propre de la galaxie), les chemins apparaissent comme des lignes fines et sinueuses entre les trous de ver. Les chemins à sens unique portent une lente ondulation de lumière qui coule vers la destination ; ceux à double sens restent immobiles et plus pâles. Survoler un trou de ver allume ses chemins.
+- **En 3D** (sur la page propre de la galaxie), les trous de ver prennent les places que tu leur as données sur la carte, ainsi l'espace correspond à la carte 2D et qui visite peut s'orienter. Ceux que tu n'as pas placés se trouvent sur un anneau autour de la carte. Les chemins apparaissent comme des lignes fines et sinueuses entre les trous de ver. Les chemins à sens unique portent une lente ondulation de lumière qui coule vers la destination ; ceux à double sens restent immobiles et plus pâles. Survoler un trou de ver allume ses chemins.
 - **En 2D** (quand la vue 2D de la galaxie est activée, chapitre 10), la carte montre ta disposition, tes chemins avec le même sens qui coule, et les parcours.
 - **Sur la fiche d'un trou de ver**, une liste **Mène à** montre où vont ses chemins. Un clic sur un nom mène au trou de ver suivant, en 2D et en 3D.
 - Dès qu'une galaxie a au moins un chemin tracé, les lignes automatiques de mots-clés y sont masquées, pour ne montrer que le trajet que tu as dessiné. Supprime tous les chemins pour les faire revenir.

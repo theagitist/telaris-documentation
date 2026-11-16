@@ -110,7 +110,7 @@ Every wormhole of the galaxy appears on the map. Faded wormholes have not been p
 
 1. Hover a wormhole; small anchor dots appear on its edge.
 2. Click an anchor dot on the wormhole where the path **starts**, then click an anchor dot on the wormhole where it **ends**. (You can also drag from one anchor to the other.)
-3. Type an optional note and save, or skip it. The note appears when someone hovers the path.
+The path is saved as soon as you click the second wormhole. To add a note, click the path and choose **Edit note**; the note appears when someone hovers the path.
 
 Press **Esc** while drawing to cancel. Hold **Space** and drag to pan; use the mouse wheel to zoom.
 
@@ -124,7 +124,7 @@ A route is a named sequence of wormholes that visitors can step through. In the 
 
 ### What visitors see
 
-- **In 3D** (on the galaxy's own page), drawn paths appear as thin, winding lines between wormholes. One-way paths carry a slow ripple of light flowing toward the destination; two-way paths stay still and dimmer. Hovering a wormhole lights up its paths.
+- **In 3D** (on the galaxy's own page), wormholes take the places you gave them on the map, so the space matches the 2D map and visitors can find their way. Wormholes you did not place sit on a ring around the map. Drawn paths appear as thin, winding lines between wormholes. One-way paths carry a slow ripple of light flowing toward the destination; two-way paths stay still and dimmer. Hovering a wormhole lights up its paths.
 - **In 2D** (when the galaxy's 2D view is on, chapter 10), the map shows your placement, your paths with the same flowing direction, and the routes.
 - **On a wormhole's card**, a **Leads to** list shows where its paths go. Visitors click a name to move to the next wormhole, in 2D and 3D.
 - As soon as a galaxy has at least one drawn path, the automatic keyword lines are hidden in that galaxy, so visitors see only the journey you drew. Delete every path to bring the keyword lines back.
